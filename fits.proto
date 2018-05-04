@@ -1,0 +1,34 @@
+// Protocol buffer for FITS astronomical data.
+
+// Declaration
+syntax = "proto3";
+package fits_proto;
+// import "google/protobuf/timestamp.proto";  // example import
+
+// Java declaration
+option java_package = "com.engineerolabs.fits_proto";
+option java_outer_classname = "FitsProto";
+
+// C# declaration
+option csharp_namespace = "EngineeroLabs.Protobuf.FitsProto";
+
+// Messages
+message Header {
+  NAXIS = 1;
+  NAXISn = 2;
+  option XTENSION = 3;
+}
+
+message Data {
+  BITPIX = 1;
+}
+
+message Hdu {
+  repeated Header header = 1;
+  option repeated Data data = 2;
+}
+
+message Fits {
+  Hdu primary_hdu = 1;
+  option repeated Hdu extensions = 2;
+}
