@@ -13,13 +13,25 @@ option java_outer_classname = "FitsProto";
 option csharp_namespace = "EngineeroLabs.Protobuf.FitsProto";
 
 // Messages
+message Pair {
+  // Key-value pair for dictionary-like mapping.
+  string key = 1;
+  string value = 2;
+}
+
+message Dictionary {
+  // List of key-value mappings.
+  repeated Pair pairs = 1;
+}
+
 message Header {
-  size = 1;
-  option extension = 2;
+  repeated int32 size = 1;
+  option string extension = 2;
+  option repeated Pair keywords = 3;
 }
 
 message Data {
-  data = 1;
+  repeated double data = 1;
 }
 
 message Hdu {
