@@ -13,21 +13,42 @@ option java_outer_classname = "FitsProto";
 option csharp_namespace = "EngineeroLabs.Protobuf.FitsProto";
 
 // Messages
-message Pair {
-  // Key-value pair for dictionary-like mapping.
+message StringPair {
+  // Key-value pair for dictionary-like mapping of strings.
   string key = 1;
   string value = 2;
 }
 
+message IntPair {
+  // Key-value pair for dictionary-like mapping of 32-bit integers.
+  string key = 1;
+  int32 value = 2;
+}
+
+message FloatPair {
+  // Key-value pair for dictionary-like mapping of double-precision floating point numbers.
+  string key = 1;
+  double value = 2;
+}
+
+message BoolPair {
+  // Key-value pair for dictionary-like mapping of booleans.
+  string key = 1;
+  bool value = 2;
+}
+
 message Dictionary {
-  // List of key-value mappings.
-  repeated Pair pairs = 1;
+  // List of key-value mappings of any type.
+  option repeated StringPair string_pairs = 1;
+  option repeated IntPair int_pairs = 2;
+  option repeated FloatPair float_pairs = 3;
+  option repeated BoolPair bool_pairs = 4;
 }
 
 message Header {
   repeated int32 size = 1;
   option string extension = 2;
-  option repeated Pair keywords = 3;
+  option Dictionary keywords = 3;
 }
 
 message Data {
