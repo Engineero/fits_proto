@@ -25,6 +25,7 @@ message IntPair {
   string key = 1;
   int32 value = 2;
   option string comment = 3;
+  option string units = 4;
 }
 
 message FloatPair {
@@ -32,6 +33,7 @@ message FloatPair {
   string key = 1;
   double value = 2;
   option string comment = 3;
+  option string units = 4;
 }
 
 message BoolPair {
