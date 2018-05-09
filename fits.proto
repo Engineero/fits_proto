@@ -52,9 +52,10 @@ message Dictionary {
 message Header {
   repeated int32 size = 1;
   option string extension = 2;
-  option Dictionary keywords = 3;
+  option int extension_ver = 3;
   option string comment = 4;
   option string history = 5;
+  option Dictionary keywords = 6;
 }
 
 message Data {
