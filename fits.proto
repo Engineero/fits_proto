@@ -17,24 +17,28 @@ message StringPair {
   // Key-value pair for dictionary-like mapping of strings.
   string key = 1;
   string value = 2;
+  option string comment = 3;
 }
 
 message IntPair {
   // Key-value pair for dictionary-like mapping of 32-bit integers.
   string key = 1;
   int32 value = 2;
+  option string comment = 3;
 }
 
 message FloatPair {
   // Key-value pair for dictionary-like mapping of double-precision floating point numbers.
   string key = 1;
   double value = 2;
+  option string comment = 3;
 }
 
 message BoolPair {
   // Key-value pair for dictionary-like mapping of booleans.
   string key = 1;
   bool value = 2;
+  option string comment = 3;
 }
 
 message Dictionary {
