@@ -14,13 +14,12 @@ option csharp_namespace = "EngineeroLabs.Protobuf.FitsProto";
 
 // Messages
 message Header {
-  NAXIS = 1;
-  NAXISn = 2;
-  option XTENSION = 3;
+  size = 1;
+  option extension = 2;
 }
 
 message Data {
-  BITPIX = 1;
+  data = 1;
 }
 
 message Hdu {
@@ -30,5 +29,5 @@ message Hdu {
 
 message Fits {
   Hdu primary_hdu = 1;
-  option repeated Hdu extensions = 2;
+  option repeated Hdu extension = 2;
 }
