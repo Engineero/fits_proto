@@ -60,13 +60,28 @@ message Header {
   option Dictionary keywords = 6;
 }
 
-message Data {
+message Data32 {
+  repeated float data = 1;
+}
+
+message Data64 {
   repeated double data = 1;
+}
+
+message DataInt32 {
+  repeated int32 data = 1;
+}
+
+message DataInt64 {
+  repeated int16 data = 1;
 }
 
 message Hdu {
   repeated Header header = 1;
-  option repeated Data data = 2;
+  option repeated Data32 data32 = 2;
+  option repeated Data64 data64 = 3;
+  option repeated DataInt32 data_int32 = 4;
+  option repeated DataInt64 data_int64 = 5;
 }
 
 message Fits {
