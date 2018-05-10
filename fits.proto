@@ -13,69 +13,64 @@ option java_outer_classname = "FitsProto";
 option csharp_namespace = "EngineeroLabs.Protobuf.FitsProto";
 
 // Messages
-message StringPair {
-  // Key-value pair for dictionary-like mapping of strings.
-  string key = 1;
-  string value = 2;
-  string comment = 3;
-}
-
-message Int32Pair {
-  // Key-value pair for dictionary-like mapping of 32-bit integers.
-  string key = 1;
-  int32 value = 2;
-  string comment = 3;
-  string units = 4;
-}
-
-message SInt32Pair {
-  // Key-value pair for dictionary-like mapping of 32-bit signed integers.
-  string key = 1;
-  sint32 value = 2;
-  string comment = 3;
-  string units = 4;
-}
-
-message Int64Pair {
-  // Key-value pair for dictionary-like mapping of 64-bit integers.
-  string key = 1;
-  int64 value = 2;
-  string comment = 3;
-  string units = 4;
-}
-
-message SInt64Pair {
-  // Key-value pair for dictionary-like mapping of 64-bit signed integers.
-  string key = 1;
-  sint64 value = 2;
-  string comment = 3;
-  string units = 4;
-}
-
-message FloatPair {
-  // Key-value pair for dictionary-like mapping of single-precision floating point numbers.
-  string key = 1;
-  float value = 2;
-  string comment = 3;
-  string units = 4;
-}
-
-message DoublePair {
-  // Key-value pair for dictionary-like mapping of double-precision floating point numbers.
-  string key = 1;
-  double value = 2;
-  string comment = 3;
-  string units = 4;
-}
-
-message BoolPair {
-  // Key-value pair for dictionary-like mapping of booleans.
-  string key = 1;
-  bool value = 2;
-  string comment = 3;
-}
 
 message Dictionary {
+  // Define key-value pair message types.
+  message StringPair {
+    // Key-value pair for dictionary-like mapping of strings.
+    string key = 1;
+    string value = 2;
+    string comment = 3;
+  }
+  message Int32Pair {
+    // Key-value pair for dictionary-like mapping of 32-bit integers.
+    string key = 1;
+    int32 value = 2;
+    string comment = 3;
+    string units = 4;
+  }
+  message SInt32Pair {
+    // Key-value pair for dictionary-like mapping of 32-bit signed integers.
+    string key = 1;
+    sint32 value = 2;
+    string comment = 3;
+    string units = 4;
+  }
+  message Int64Pair {
+    // Key-value pair for dictionary-like mapping of 64-bit integers.
+    string key = 1;
+    int64 value = 2;
+    string comment = 3;
+    string units = 4;
+  }
+  message SInt64Pair {
+    // Key-value pair for dictionary-like mapping of 64-bit signed integers.
+    string key = 1;
+    sint64 value = 2;
+    string comment = 3;
+    string units = 4;
+  }
+  message FloatPair {
+    // Key-value pair for dictionary-like mapping of single-precision floating point numbers.
+    string key = 1;
+    float value = 2;
+    string comment = 3;
+    string units = 4;
+  }
+  message DoublePair {
+    // Key-value pair for dictionary-like mapping of double-precision floating point numbers.
+    string key = 1;
+    double value = 2;
+    string comment = 3;
+    string units = 4;
+  }
+  message BoolPair {
+    // Key-value pair for dictionary-like mapping of booleans.
+    string key = 1;
+    bool value = 2;
+    string comment = 3;
+  }
+
   // List of key-value mappings of any type.
   repeated StringPair string_pairs = 1;
   repeated Int32Pair int32_pairs = 2;
@@ -87,6 +82,7 @@ message Dictionary {
   repeated BoolPair bool_pairs = 8;
 }
 
+// Header message for FITS blocks.
 message Header {
   repeated int32 size = 1;
   string extension = 2;
@@ -96,31 +92,30 @@ message Header {
   Dictionary keywords = 6;
 }
 
-message FloatData {
-  repeated float data = 1;
-}
 
-message DoubleData {
-  repeated double data = 1;
-}
-
-message Int32Data {
-  repeated int32 data = 1;
-}
-
-message Int64Data {
-  repeated int64 data = 1;
-}
-
-message SInt32Data {
-  repeated sint32 data = 1;
-}
-
-message SInt64Data {
-  repeated sint64 data = 1;
-}
-
+// Header-data unit, basic building block of a FITS file.
 message Hdu {
+  // Define data message types for use in HDU.
+  message FloatData {
+    repeated float data = 1;
+  }
+  message DoubleData {
+    repeated double data = 1;
+  }
+  message Int32Data {
+    repeated int32 data = 1;
+  }
+  message Int64Data {
+    repeated int64 data = 1;
+  }
+  message SInt32Data {
+    repeated sint32 data = 1;
+  }
+  message SInt64Data {
+    repeated sint64 data = 1;
+  }
+
+  // Define the header-data unit.
   repeated Header header = 1;
   repeated FloatData float_data = 2;
   repeated DoubleData double_data = 3;
@@ -130,7 +125,8 @@ message Hdu {
   repeated SInt64Data sint64_data = 7;
 }
 
+// The actual FITS file message.
 message Fits {
-  Hdu primary_hdu = 1;
-  repeated Hdu extension = 2;
+  Hdu primary_hdu = 1;  // mandatory primary HDU
+  repeated Hdu extension = 2;  // optional extension HDUs
 }
