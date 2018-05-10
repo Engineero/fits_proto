@@ -17,83 +17,83 @@ message StringPair {
   // Key-value pair for dictionary-like mapping of strings.
   string key = 1;
   string value = 2;
-  option string comment = 3;
+  string comment = 3;
 }
 
 message Int32Pair {
   // Key-value pair for dictionary-like mapping of 32-bit integers.
   string key = 1;
   int32 value = 2;
-  option string comment = 3;
-  option string units = 4;
+  string comment = 3;
+  string units = 4;
 }
 
 message SInt32Pair {
   // Key-value pair for dictionary-like mapping of 32-bit signed integers.
   string key = 1;
   sint32 value = 2;
-  option string comment = 3;
-  option string units = 4;
+  string comment = 3;
+  string units = 4;
 }
 
 message Int64Pair {
   // Key-value pair for dictionary-like mapping of 64-bit integers.
   string key = 1;
   int64 value = 2;
-  option string comment = 3;
-  option string units = 4;
+  string comment = 3;
+  string units = 4;
 }
 
 message SInt64Pair {
   // Key-value pair for dictionary-like mapping of 64-bit signed integers.
   string key = 1;
   sint64 value = 2;
-  option string comment = 3;
-  option string units = 4;
+  string comment = 3;
+  string units = 4;
 }
 
 message FloatPair {
   // Key-value pair for dictionary-like mapping of single-precision floating point numbers.
   string key = 1;
   float value = 2;
-  option string comment = 3;
-  option string units = 4;
+  string comment = 3;
+  string units = 4;
 }
 
 message DoublePair {
   // Key-value pair for dictionary-like mapping of double-precision floating point numbers.
   string key = 1;
   double value = 2;
-  option string comment = 3;
-  option string units = 4;
+  string comment = 3;
+  string units = 4;
 }
 
 message BoolPair {
   // Key-value pair for dictionary-like mapping of booleans.
   string key = 1;
   bool value = 2;
-  option string comment = 3;
+  string comment = 3;
 }
 
 message Dictionary {
   // List of key-value mappings of any type.
-  option repeated StringPair string_pairs = 1;
-  option repeated Int32Pair int32_pairs = 2;
-  option repeated SInt32Pair sint32_pairs = 3;
-  option repeated Int64Pair int64_pairs = 4;
-  option repeated SInt64Pair sint64_pairs = 5;
-  option repeated FloatPair float_pairs = 6;
-  option repeated DoublePair double_pairs = 7;
-  option repeated BoolPair bool_pairs = 8;
+  repeated StringPair string_pairs = 1;
+  repeated Int32Pair int32_pairs = 2;
+  repeated SInt32Pair sint32_pairs = 3;
+  repeated Int64Pair int64_pairs = 4;
+  repeated SInt64Pair sint64_pairs = 5;
+  repeated FloatPair float_pairs = 6;
+  repeated DoublePair double_pairs = 7;
+  repeated BoolPair bool_pairs = 8;
 }
 
 message Header {
   repeated int32 size = 1;
-  option string extension = 2;
-  option int32 extension_ver = 3;
-  option string comment = 4;
-  option string history = 5;
-  option Dictionary keywords = 6;
+  string extension = 2;
+  int32 extension_ver = 3;
+  string comment = 4;
+  string history = 5;
+  Dictionary keywords = 6;
 }
 
 message FloatData {
@@ -122,15 +122,15 @@ message SInt64Data {
 
 message Hdu {
   repeated Header header = 1;
-  option repeated FloatData float_data = 2;
-  option repeated DoubleData double_data = 3;
-  option repeated Int32Data int32_data = 4;
-  option repeated Int64Data int64_data = 5;
-  option repeated SInt32Data sint32_data = 6;
-  option repeated SInt64Data sint64_data = 7;
+  repeated FloatData float_data = 2;
+  repeated DoubleData double_data = 3;
+  repeated Int32Data int32_data = 4;
+  repeated Int64Data int64_data = 5;
+  repeated SInt32Data sint32_data = 6;
+  repeated SInt64Data sint64_data = 7;
 }
 
 message Fits {
   Hdu primary_hdu = 1;
-  option repeated Hdu extension = 2;
+  repeated Hdu extension = 2;
 }
