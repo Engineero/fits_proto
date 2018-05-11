@@ -83,7 +83,7 @@ option csharp_namespace = "EngineeroLabs.Protobuf.FitsProto";
 
 // Header message for FITS blocks.
 message Header {
-  bool simple = 1 [default = true];
+  bool simple = 1;
   int32 bitpix = 2;  // redundant for protobuf
   repeated int32 size = 3;  // comprises all NAXIS from standard
   string comment = 4;
