@@ -13,113 +13,84 @@ option java_outer_classname = "FitsProto";
 option csharp_namespace = "EngineeroLabs.Protobuf.FitsProto";
 
 // Messages
-//message Dictionary {
-//  // Define key-value pair message types.
-//  message StringPair {
-//    // Key-value pair for dictionary-like mapping of strings.
-//    string key = 1;
-//    string value = 2;
-//    string comment = 3;
-//  }
-//  message Int32Pair {
-//    // Key-value pair for dictionary-like mapping of 32-bit integers.
-//    string key = 1;
-//    int32 value = 2;
-//    string comment = 3;
-//    string units = 4;
-//  }
-//  message SInt32Pair {
-//    // Key-value pair for dictionary-like mapping of 32-bit signed integers.
-//    string key = 1;
-//    sint32 value = 2;
-//    string comment = 3;
-//    string units = 4;
-//  }
-//  message Int64Pair {
-//    // Key-value pair for dictionary-like mapping of 64-bit integers.
-//    string key = 1;
-//    int64 value = 2;
-//    string comment = 3;
-//    string units = 4;
-//  }
-//  message SInt64Pair {
-//    // Key-value pair for dictionary-like mapping of 64-bit signed integers.
-//    string key = 1;
-//    sint64 value = 2;
-//    string comment = 3;
-//    string units = 4;
-//  }
-//  message FloatPair {
-//    // Key-value pair for dictionary-like mapping of single-precision floating point numbers.
-//    string key = 1;
-//    float value = 2;
-//    string comment = 3;
-//    string units = 4;
-//  }
-//  message DoublePair {
-//    // Key-value pair for dictionary-like mapping of double-precision floating point numbers.
-//    string key = 1;
-//    double value = 2;
-//    string comment = 3;
-//    string units = 4;
-//  }
-//  message BoolPair {
-//    // Key-value pair for dictionary-like mapping of booleans.
-//    string key = 1;
-//    bool value = 2;
-//    string comment = 3;
-//  }
-//
-//  // List of key-value mappings of any type.
-//  repeated StringPair string_pairs = 1;
-//  repeated Int32Pair int32_pairs = 2;
-//  repeated SInt32Pair sint32_pairs = 3;
-//  repeated Int64Pair int64_pairs = 4;
-//  repeated SInt64Pair sint64_pairs = 5;
-//  repeated FloatPair float_pairs = 6;
-//  repeated DoublePair double_pairs = 7;
-//  repeated BoolPair bool_pairs = 8;
-//}
+message Dictionary {
+  // Define key-value pair message types.
+  message StringPair {
+    // Key-value pair for dictionary-like mapping of strings.
+    string key = 1;
+    string value = 2;
+    string comment = 3;
+  }
+  message Int32Pair {
+    // Key-value pair for dictionary-like mapping of 32-bit integers.
+    string key = 1;
+    int32 value = 2;
+    string comment = 3;
+    string units = 4;
+  }
+  message SInt32Pair {
+    // Key-value pair for dictionary-like mapping of 32-bit signed integers.
+    string key = 1;
+    sint32 value = 2;
+    string comment = 3;
+    string units = 4;
+  }
+  message Int64Pair {
+    // Key-value pair for dictionary-like mapping of 64-bit integers.
+    string key = 1;
+    int64 value = 2;
+    string comment = 3;
+    string units = 4;
+  }
+  message SInt64Pair {
+    // Key-value pair for dictionary-like mapping of 64-bit signed integers.
+    string key = 1;
+    sint64 value = 2;
+    string comment = 3;
+    string units = 4;
+  }
+  message FloatPair {
+    // Key-value pair for dictionary-like mapping of single-precision floating point numbers.
+    string key = 1;
+    float value = 2;
+    string comment = 3;
+    string units = 4;
+  }
+  message DoublePair {
+    // Key-value pair for dictionary-like mapping of double-precision floating point numbers.
+    string key = 1;
+    double value = 2;
+    string comment = 3;
+    string units = 4;
+  }
+  message BoolPair {
+    // Key-value pair for dictionary-like mapping of booleans.
+    string key = 1;
+    bool value = 2;
+    string comment = 3;
+  }
+
+  // List of key-value mappings of any type.
+  repeated StringPair string_pairs = 1;
+  repeated Int32Pair int32_pairs = 2;
+  repeated SInt32Pair sint32_pairs = 3;
+  repeated Int64Pair int64_pairs = 4;
+  repeated SInt64Pair sint64_pairs = 5;
+  repeated FloatPair float_pairs = 6;
+  repeated DoublePair double_pairs = 7;
+  repeated BoolPair bool_pairs = 8;
+}
 
 // Header message for FITS blocks.
 message Header {
-  bool simple = 1;
+  bool simple = 1;  // True if conforms to FITS standard
   int32 bitpix = 2;  // redundant for protobuf
   repeated int32 size = 3;  // comprises all NAXIS from standard
   string comment = 4;
   string history = 5;
-  string extension = 6;
-  int32 p_count = 7;
-  int32 g_count = 8;
-  string t_fields = 9;
-  repeated int32 t_form = 10;
-  repeated int32 t_bcol = 11;
-  bool zip_image = 12;
-  string zip_type = 13;
-  bool zip_table = 14;
-  bool groups = 15;
-  string date = 16;
-  string obs_date = 17;
-  string origin = 18;
-  string author = 19;
-  string reference = 20;
-  string object = 21;
-  string observer = 22;
-  string inherit = 23;
-  int32 checksum = 24;
-  int32 datasum = 25;
-  string ext_name = 26;
-  int32 ext_ver = 27;
-  int32 ext_level = 28;
-  string equinox = 29;
-  string epoch = 30;
-  bool blocked = 31;
-  bool extended = 32;
-  string telescope = 33;
-  string instrument = 34;
-  int32 bscale = 35;
-  int32 bzero = 36;
-  string bunit = 37;
+  int32 n_extensions = 6;  // number of extensions
+  string extension = 7;  // extension name/type
+  Dictionary keywords = 8;  // all other keywords by type
 }
 
 
