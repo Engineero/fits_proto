@@ -15,7 +15,17 @@
 #*******************************************************************************
 
 import unittest
+from astropy.io import fits
+from .. import fits_pb2 as fp
 
+
+class TestFitsProto(unittest.TestCase):
+    """ Tests for the FITS protobuf. """
+    def setUp(self):
+        self.fname = fits.util.get_testdata_filepath('test0.fits')
+        self.hdul = fits.open(fits_image_filename)
+
+    def test_
 
 
 #*******************************************************************************
