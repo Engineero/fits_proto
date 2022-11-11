@@ -117,7 +117,7 @@ message Hdu {
   }
 
   // Define the header-data unit.
-  Header header = 1;
+  repeated Header header = 1;
   oneof payload {
     repeated float float_data = 2;
     repeated double double_data = 3;
