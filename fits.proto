@@ -12,73 +12,19 @@ option java_outer_classname = "FitsProto";
 // C# declaration
 option csharp_namespace = "EngineeroLabs.Protobuf.FitsProto";
 
-// Messages
-message Dictionary {
-  // Define key-value pair message types.
-  message StringPair {
-    // Key-value pair for dictionary-like mapping of strings.
-    string key = 1;
-    string value = 2;
-    string comment = 3;
+// Data element
+message Data {
+  oneof value {
+    string string_val = 1;
+    int32 int32_val = 2;
+    sint32 sint32_val = 3;
+    int64 int64_val = 4;
+    sint64 sint64_val = 5;
+    float float_val = 6;
+    double double_val = 7;
+    bool bool_val = 8;
   }
-  message Int32Pair {
-    // Key-value pair for dictionary-like mapping of 32-bit integers.
-    string key = 1;
-    int32 value = 2;
-    string comment = 3;
-    string units = 4;
-  }
-  message SInt32Pair {
-    // Key-value pair for dictionary-like mapping of 32-bit signed integers.
-    string key = 1;
-    sint32 value = 2;
-    string comment = 3;
-    string units = 4;
-  }
-  message Int64Pair {
-    // Key-value pair for dictionary-like mapping of 64-bit integers.
-    string key = 1;
-    int64 value = 2;
-    string comment = 3;
-    string units = 4;
-  }
-  message SInt64Pair {
-    // Key-value pair for dictionary-like mapping of 64-bit signed integers.
-    string key = 1;
-    sint64 value = 2;
-    string comment = 3;
-    string units = 4;
-  }
-  message FloatPair {
-    // Key-value pair for dictionary-like mapping of single-precision floating point numbers.
-    string key = 1;
-    float value = 2;
-    string comment = 3;
-    string units = 4;
-  }
-  message DoublePair {
-    // Key-value pair for dictionary-like mapping of double-precision floating point numbers.
-    string key = 1;
-    double value = 2;
-    string comment = 3;
-    string units = 4;
-  }
-  message BoolPair {
-    // Key-value pair for dictionary-like mapping of booleans.
-    string key = 1;
-    bool value = 2;
-    string comment = 3;
-  }
-
-  // List of key-value mappings of any type.
-  repeated StringPair string_pairs = 1;
-  repeated Int32Pair int32_pairs = 2;
-  repeated SInt32Pair sint32_pairs = 3;
-  repeated Int64Pair int64_pairs = 4;
-  repeated SInt64Pair sint64_pairs = 5;
-  repeated FloatPair float_pairs = 6;
-  repeated DoublePair double_pairs = 7;
-  repeated BoolPair bool_pairs = 8;
+  string comment = 9;
 }
 
 // Header message for FITS blocks.
@@ -90,7 +36,7 @@ message Header {
   string history = 5;
   int32 n_extensions = 6;  // number of extensions
   string extension = 7;  // extension name/type
-  Dictionary keywords = 8;  // all other keywords by type
+  map<string, Data> keywords = 8;  // all other keywords by type
 }
 
 
