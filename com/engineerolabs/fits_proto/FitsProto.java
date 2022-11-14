@@ -14,8 +14,8 @@ public final class FitsProto {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface DataOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:fits.proto.Data)
+  public interface KeywordDataOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:fits_proto.KeywordData)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -124,25 +124,25 @@ public final class FitsProto {
     com.google.protobuf.ByteString
         getCommentBytes();
 
-    public com.engineerolabs.fits_proto.FitsProto.Data.ValueCase getValueCase();
+    public com.engineerolabs.fits_proto.FitsProto.KeywordData.ValueCase getValueCase();
   }
   /**
    * <pre>
    * Data element
    * </pre>
    *
-   * Protobuf type {@code fits.proto.Data}
+   * Protobuf type {@code fits_proto.KeywordData}
    */
-  public static final class Data extends
+  public static final class KeywordData extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:fits.proto.Data)
-      DataOrBuilder {
+      // @@protoc_insertion_point(message_implements:fits_proto.KeywordData)
+      KeywordDataOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use Data.newBuilder() to construct.
-    private Data(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use KeywordData.newBuilder() to construct.
+    private KeywordData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Data() {
+    private KeywordData() {
       comment_ = "";
     }
 
@@ -150,7 +150,7 @@ public final class FitsProto {
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new Data();
+      return new KeywordData();
     }
 
     @java.lang.Override
@@ -160,15 +160,15 @@ public final class FitsProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Data_descriptor;
+      return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_KeywordData_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Data_fieldAccessorTable
+      return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_KeywordData_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.engineerolabs.fits_proto.FitsProto.Data.class, com.engineerolabs.fits_proto.FitsProto.Data.Builder.class);
+              com.engineerolabs.fits_proto.FitsProto.KeywordData.class, com.engineerolabs.fits_proto.FitsProto.KeywordData.Builder.class);
     }
 
     private int valueCase_ = 0;
@@ -569,10 +569,10 @@ public final class FitsProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.Data)) {
+      if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.KeywordData)) {
         return super.equals(obj);
       }
-      com.engineerolabs.fits_proto.FitsProto.Data other = (com.engineerolabs.fits_proto.FitsProto.Data) obj;
+      com.engineerolabs.fits_proto.FitsProto.KeywordData other = (com.engineerolabs.fits_proto.FitsProto.KeywordData) obj;
 
       if (!getComment()
           .equals(other.getComment())) return false;
@@ -674,69 +674,69 @@ public final class FitsProto {
       return hash;
     }
 
-    public static com.engineerolabs.fits_proto.FitsProto.Data parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.KeywordData parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Data parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.KeywordData parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Data parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.KeywordData parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Data parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.KeywordData parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Data parseFrom(byte[] data)
+    public static com.engineerolabs.fits_proto.FitsProto.KeywordData parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Data parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.KeywordData parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Data parseFrom(java.io.InputStream input)
+    public static com.engineerolabs.fits_proto.FitsProto.KeywordData parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Data parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.KeywordData parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Data parseDelimitedFrom(java.io.InputStream input)
+    public static com.engineerolabs.fits_proto.FitsProto.KeywordData parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Data parseDelimitedFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.KeywordData parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Data parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.KeywordData parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Data parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.KeywordData parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -749,7 +749,7 @@ public final class FitsProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.Data prototype) {
+    public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.KeywordData prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -769,26 +769,26 @@ public final class FitsProto {
      * Data element
      * </pre>
      *
-     * Protobuf type {@code fits.proto.Data}
+     * Protobuf type {@code fits_proto.KeywordData}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:fits.proto.Data)
-        com.engineerolabs.fits_proto.FitsProto.DataOrBuilder {
+        // @@protoc_insertion_point(builder_implements:fits_proto.KeywordData)
+        com.engineerolabs.fits_proto.FitsProto.KeywordDataOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Data_descriptor;
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_KeywordData_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Data_fieldAccessorTable
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_KeywordData_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.engineerolabs.fits_proto.FitsProto.Data.class, com.engineerolabs.fits_proto.FitsProto.Data.Builder.class);
+                com.engineerolabs.fits_proto.FitsProto.KeywordData.class, com.engineerolabs.fits_proto.FitsProto.KeywordData.Builder.class);
       }
 
-      // Construct using com.engineerolabs.fits_proto.FitsProto.Data.newBuilder()
+      // Construct using com.engineerolabs.fits_proto.FitsProto.KeywordData.newBuilder()
       private Builder() {
 
       }
@@ -811,17 +811,17 @@ public final class FitsProto {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Data_descriptor;
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_KeywordData_descriptor;
       }
 
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Data getDefaultInstanceForType() {
-        return com.engineerolabs.fits_proto.FitsProto.Data.getDefaultInstance();
+      public com.engineerolabs.fits_proto.FitsProto.KeywordData getDefaultInstanceForType() {
+        return com.engineerolabs.fits_proto.FitsProto.KeywordData.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Data build() {
-        com.engineerolabs.fits_proto.FitsProto.Data result = buildPartial();
+      public com.engineerolabs.fits_proto.FitsProto.KeywordData build() {
+        com.engineerolabs.fits_proto.FitsProto.KeywordData result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -829,8 +829,8 @@ public final class FitsProto {
       }
 
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Data buildPartial() {
-        com.engineerolabs.fits_proto.FitsProto.Data result = new com.engineerolabs.fits_proto.FitsProto.Data(this);
+      public com.engineerolabs.fits_proto.FitsProto.KeywordData buildPartial() {
+        com.engineerolabs.fits_proto.FitsProto.KeywordData result = new com.engineerolabs.fits_proto.FitsProto.KeywordData(this);
         if (valueCase_ == 1) {
           result.value_ = value_;
         }
@@ -895,16 +895,16 @@ public final class FitsProto {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.engineerolabs.fits_proto.FitsProto.Data) {
-          return mergeFrom((com.engineerolabs.fits_proto.FitsProto.Data)other);
+        if (other instanceof com.engineerolabs.fits_proto.FitsProto.KeywordData) {
+          return mergeFrom((com.engineerolabs.fits_proto.FitsProto.KeywordData)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.Data other) {
-        if (other == com.engineerolabs.fits_proto.FitsProto.Data.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.KeywordData other) {
+        if (other == com.engineerolabs.fits_proto.FitsProto.KeywordData.getDefaultInstance()) return this;
         if (!other.getComment().isEmpty()) {
           comment_ = other.comment_;
           onChanged();
@@ -1523,23 +1523,23 @@ public final class FitsProto {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:fits.proto.Data)
+      // @@protoc_insertion_point(builder_scope:fits_proto.KeywordData)
     }
 
-    // @@protoc_insertion_point(class_scope:fits.proto.Data)
-    private static final com.engineerolabs.fits_proto.FitsProto.Data DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:fits_proto.KeywordData)
+    private static final com.engineerolabs.fits_proto.FitsProto.KeywordData DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.Data();
+      DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.KeywordData();
     }
 
-    public static com.engineerolabs.fits_proto.FitsProto.Data getDefaultInstance() {
+    public static com.engineerolabs.fits_proto.FitsProto.KeywordData getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Data>
-        PARSER = new com.google.protobuf.AbstractParser<Data>() {
+    private static final com.google.protobuf.Parser<KeywordData>
+        PARSER = new com.google.protobuf.AbstractParser<KeywordData>() {
       @java.lang.Override
-      public Data parsePartialFrom(
+      public KeywordData parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1558,24 +1558,24 @@ public final class FitsProto {
       }
     };
 
-    public static com.google.protobuf.Parser<Data> parser() {
+    public static com.google.protobuf.Parser<KeywordData> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Data> getParserForType() {
+    public com.google.protobuf.Parser<KeywordData> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Data getDefaultInstanceForType() {
+    public com.engineerolabs.fits_proto.FitsProto.KeywordData getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface HeaderOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:fits.proto.Header)
+  public interface FitsHeaderOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:fits_proto.FitsHeader)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -1686,7 +1686,7 @@ public final class FitsProto {
      * all other keywords by type
      * </pre>
      *
-     * <code>map&lt;string, .fits.proto.Data&gt; keywords = 8;</code>
+     * <code>map&lt;string, .fits_proto.KeywordData&gt; keywords = 8;</code>
      */
     int getKeywordsCount();
     /**
@@ -1694,7 +1694,7 @@ public final class FitsProto {
      * all other keywords by type
      * </pre>
      *
-     * <code>map&lt;string, .fits.proto.Data&gt; keywords = 8;</code>
+     * <code>map&lt;string, .fits_proto.KeywordData&gt; keywords = 8;</code>
      */
     boolean containsKeywords(
         java.lang.String key);
@@ -1702,39 +1702,39 @@ public final class FitsProto {
      * Use {@link #getKeywordsMap()} instead.
      */
     @java.lang.Deprecated
-    java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data>
+    java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData>
     getKeywords();
     /**
      * <pre>
      * all other keywords by type
      * </pre>
      *
-     * <code>map&lt;string, .fits.proto.Data&gt; keywords = 8;</code>
+     * <code>map&lt;string, .fits_proto.KeywordData&gt; keywords = 8;</code>
      */
-    java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data>
+    java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData>
     getKeywordsMap();
     /**
      * <pre>
      * all other keywords by type
      * </pre>
      *
-     * <code>map&lt;string, .fits.proto.Data&gt; keywords = 8;</code>
+     * <code>map&lt;string, .fits_proto.KeywordData&gt; keywords = 8;</code>
      */
 
     /* nullable */
-com.engineerolabs.fits_proto.FitsProto.Data getKeywordsOrDefault(
+com.engineerolabs.fits_proto.FitsProto.KeywordData getKeywordsOrDefault(
         java.lang.String key,
         /* nullable */
-com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
+com.engineerolabs.fits_proto.FitsProto.KeywordData defaultValue);
     /**
      * <pre>
      * all other keywords by type
      * </pre>
      *
-     * <code>map&lt;string, .fits.proto.Data&gt; keywords = 8;</code>
+     * <code>map&lt;string, .fits_proto.KeywordData&gt; keywords = 8;</code>
      */
 
-    com.engineerolabs.fits_proto.FitsProto.Data getKeywordsOrThrow(
+    com.engineerolabs.fits_proto.FitsProto.KeywordData getKeywordsOrThrow(
         java.lang.String key);
   }
   /**
@@ -1742,18 +1742,18 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
    * Header message for FITS blocks.
    * </pre>
    *
-   * Protobuf type {@code fits.proto.Header}
+   * Protobuf type {@code fits_proto.FitsHeader}
    */
-  public static final class Header extends
+  public static final class FitsHeader extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:fits.proto.Header)
-      HeaderOrBuilder {
+      // @@protoc_insertion_point(message_implements:fits_proto.FitsHeader)
+      FitsHeaderOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use Header.newBuilder() to construct.
-    private Header(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use FitsHeader.newBuilder() to construct.
+    private FitsHeader(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Header() {
+    private FitsHeader() {
       size_ = emptyIntList();
       comment_ = "";
       history_ = "";
@@ -1764,7 +1764,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new Header();
+      return new FitsHeader();
     }
 
     @java.lang.Override
@@ -1774,7 +1774,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Header_descriptor;
+      return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHeader_descriptor;
     }
 
     @SuppressWarnings({"rawtypes"})
@@ -1792,9 +1792,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Header_fieldAccessorTable
+      return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHeader_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.engineerolabs.fits_proto.FitsProto.Header.class, com.engineerolabs.fits_proto.FitsProto.Header.Builder.class);
+              com.engineerolabs.fits_proto.FitsProto.FitsHeader.class, com.engineerolabs.fits_proto.FitsProto.FitsHeader.Builder.class);
     }
 
     public static final int SIMPLE_FIELD_NUMBER = 1;
@@ -2007,18 +2007,18 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
     public static final int KEYWORDS_FIELD_NUMBER = 8;
     private static final class KeywordsDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
-          java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data> defaultEntry =
+          java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData> defaultEntry =
               com.google.protobuf.MapEntry
-              .<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data>newDefaultInstance(
-                  com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Header_KeywordsEntry_descriptor, 
+              .<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData>newDefaultInstance(
+                  com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHeader_KeywordsEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "",
                   com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                  com.engineerolabs.fits_proto.FitsProto.Data.getDefaultInstance());
+                  com.engineerolabs.fits_proto.FitsProto.KeywordData.getDefaultInstance());
     }
     private com.google.protobuf.MapField<
-        java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data> keywords_;
-    private com.google.protobuf.MapField<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data>
+        java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData> keywords_;
+    private com.google.protobuf.MapField<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData>
     internalGetKeywords() {
       if (keywords_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
@@ -2035,7 +2035,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * all other keywords by type
      * </pre>
      *
-     * <code>map&lt;string, .fits.proto.Data&gt; keywords = 8;</code>
+     * <code>map&lt;string, .fits_proto.KeywordData&gt; keywords = 8;</code>
      */
 
     @java.lang.Override
@@ -2049,7 +2049,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data> getKeywords() {
+    public java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData> getKeywords() {
       return getKeywordsMap();
     }
     /**
@@ -2057,11 +2057,11 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * all other keywords by type
      * </pre>
      *
-     * <code>map&lt;string, .fits.proto.Data&gt; keywords = 8;</code>
+     * <code>map&lt;string, .fits_proto.KeywordData&gt; keywords = 8;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data> getKeywordsMap() {
+    public java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData> getKeywordsMap() {
       return internalGetKeywords().getMap();
     }
     /**
@@ -2069,15 +2069,15 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * all other keywords by type
      * </pre>
      *
-     * <code>map&lt;string, .fits.proto.Data&gt; keywords = 8;</code>
+     * <code>map&lt;string, .fits_proto.KeywordData&gt; keywords = 8;</code>
      */
     @java.lang.Override
 
-    public com.engineerolabs.fits_proto.FitsProto.Data getKeywordsOrDefault(
+    public com.engineerolabs.fits_proto.FitsProto.KeywordData getKeywordsOrDefault(
         java.lang.String key,
-        com.engineerolabs.fits_proto.FitsProto.Data defaultValue) {
+        com.engineerolabs.fits_proto.FitsProto.KeywordData defaultValue) {
       if (key == null) { throw new NullPointerException("map key"); }
-      java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data> map =
+      java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData> map =
           internalGetKeywords().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
@@ -2086,14 +2086,14 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * all other keywords by type
      * </pre>
      *
-     * <code>map&lt;string, .fits.proto.Data&gt; keywords = 8;</code>
+     * <code>map&lt;string, .fits_proto.KeywordData&gt; keywords = 8;</code>
      */
     @java.lang.Override
 
-    public com.engineerolabs.fits_proto.FitsProto.Data getKeywordsOrThrow(
+    public com.engineerolabs.fits_proto.FitsProto.KeywordData getKeywordsOrThrow(
         java.lang.String key) {
       if (key == null) { throw new NullPointerException("map key"); }
-      java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data> map =
+      java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData> map =
           internalGetKeywords().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
@@ -2191,9 +2191,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(extension_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, extension_);
       }
-      for (java.util.Map.Entry<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data> entry
+      for (java.util.Map.Entry<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData> entry
            : internalGetKeywords().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data>
+        com.google.protobuf.MapEntry<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData>
         keywords__ = KeywordsDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
@@ -2211,10 +2211,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.Header)) {
+      if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.FitsHeader)) {
         return super.equals(obj);
       }
-      com.engineerolabs.fits_proto.FitsProto.Header other = (com.engineerolabs.fits_proto.FitsProto.Header) obj;
+      com.engineerolabs.fits_proto.FitsProto.FitsHeader other = (com.engineerolabs.fits_proto.FitsProto.FitsHeader) obj;
 
       if (getSimple()
           != other.getSimple()) return false;
@@ -2269,69 +2269,69 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       return hash;
     }
 
-    public static com.engineerolabs.fits_proto.FitsProto.Header parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHeader parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Header parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHeader parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Header parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHeader parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Header parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHeader parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Header parseFrom(byte[] data)
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHeader parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Header parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHeader parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Header parseFrom(java.io.InputStream input)
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHeader parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Header parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHeader parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Header parseDelimitedFrom(java.io.InputStream input)
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHeader parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Header parseDelimitedFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHeader parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Header parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHeader parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Header parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHeader parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2344,7 +2344,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.Header prototype) {
+    public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.FitsHeader prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2364,15 +2364,15 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * Header message for FITS blocks.
      * </pre>
      *
-     * Protobuf type {@code fits.proto.Header}
+     * Protobuf type {@code fits_proto.FitsHeader}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:fits.proto.Header)
-        com.engineerolabs.fits_proto.FitsProto.HeaderOrBuilder {
+        // @@protoc_insertion_point(builder_implements:fits_proto.FitsHeader)
+        com.engineerolabs.fits_proto.FitsProto.FitsHeaderOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Header_descriptor;
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHeader_descriptor;
       }
 
       @SuppressWarnings({"rawtypes"})
@@ -2400,12 +2400,12 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Header_fieldAccessorTable
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHeader_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.engineerolabs.fits_proto.FitsProto.Header.class, com.engineerolabs.fits_proto.FitsProto.Header.Builder.class);
+                com.engineerolabs.fits_proto.FitsProto.FitsHeader.class, com.engineerolabs.fits_proto.FitsProto.FitsHeader.Builder.class);
       }
 
-      // Construct using com.engineerolabs.fits_proto.FitsProto.Header.newBuilder()
+      // Construct using com.engineerolabs.fits_proto.FitsProto.FitsHeader.newBuilder()
       private Builder() {
 
       }
@@ -2439,17 +2439,17 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Header_descriptor;
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHeader_descriptor;
       }
 
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Header getDefaultInstanceForType() {
-        return com.engineerolabs.fits_proto.FitsProto.Header.getDefaultInstance();
+      public com.engineerolabs.fits_proto.FitsProto.FitsHeader getDefaultInstanceForType() {
+        return com.engineerolabs.fits_proto.FitsProto.FitsHeader.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Header build() {
-        com.engineerolabs.fits_proto.FitsProto.Header result = buildPartial();
+      public com.engineerolabs.fits_proto.FitsProto.FitsHeader build() {
+        com.engineerolabs.fits_proto.FitsProto.FitsHeader result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2457,8 +2457,8 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Header buildPartial() {
-        com.engineerolabs.fits_proto.FitsProto.Header result = new com.engineerolabs.fits_proto.FitsProto.Header(this);
+      public com.engineerolabs.fits_proto.FitsProto.FitsHeader buildPartial() {
+        com.engineerolabs.fits_proto.FitsProto.FitsHeader result = new com.engineerolabs.fits_proto.FitsProto.FitsHeader(this);
         int from_bitField0_ = bitField0_;
         result.simple_ = simple_;
         result.bitpix_ = bitpix_;
@@ -2511,16 +2511,16 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.engineerolabs.fits_proto.FitsProto.Header) {
-          return mergeFrom((com.engineerolabs.fits_proto.FitsProto.Header)other);
+        if (other instanceof com.engineerolabs.fits_proto.FitsProto.FitsHeader) {
+          return mergeFrom((com.engineerolabs.fits_proto.FitsProto.FitsHeader)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.Header other) {
-        if (other == com.engineerolabs.fits_proto.FitsProto.Header.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.FitsHeader other) {
+        if (other == com.engineerolabs.fits_proto.FitsProto.FitsHeader.getDefaultInstance()) return this;
         if (other.getSimple() != false) {
           setSimple(other.getSimple());
         }
@@ -2627,7 +2627,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
                 break;
               } // case 58
               case 66: {
-                com.google.protobuf.MapEntry<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data>
+                com.google.protobuf.MapEntry<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData>
                 keywords__ = input.readMessage(
                     KeywordsDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
                 internalGetMutableKeywords().getMutableMap().put(
@@ -3136,8 +3136,8 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
       private com.google.protobuf.MapField<
-          java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data> keywords_;
-      private com.google.protobuf.MapField<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data>
+          java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData> keywords_;
+      private com.google.protobuf.MapField<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData>
       internalGetKeywords() {
         if (keywords_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
@@ -3145,7 +3145,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
         return keywords_;
       }
-      private com.google.protobuf.MapField<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data>
+      private com.google.protobuf.MapField<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData>
       internalGetMutableKeywords() {
         onChanged();;
         if (keywords_ == null) {
@@ -3166,7 +3166,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * all other keywords by type
        * </pre>
        *
-       * <code>map&lt;string, .fits.proto.Data&gt; keywords = 8;</code>
+       * <code>map&lt;string, .fits_proto.KeywordData&gt; keywords = 8;</code>
        */
 
       @java.lang.Override
@@ -3180,7 +3180,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data> getKeywords() {
+      public java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData> getKeywords() {
         return getKeywordsMap();
       }
       /**
@@ -3188,11 +3188,11 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * all other keywords by type
        * </pre>
        *
-       * <code>map&lt;string, .fits.proto.Data&gt; keywords = 8;</code>
+       * <code>map&lt;string, .fits_proto.KeywordData&gt; keywords = 8;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data> getKeywordsMap() {
+      public java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData> getKeywordsMap() {
         return internalGetKeywords().getMap();
       }
       /**
@@ -3200,15 +3200,15 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * all other keywords by type
        * </pre>
        *
-       * <code>map&lt;string, .fits.proto.Data&gt; keywords = 8;</code>
+       * <code>map&lt;string, .fits_proto.KeywordData&gt; keywords = 8;</code>
        */
       @java.lang.Override
 
-      public com.engineerolabs.fits_proto.FitsProto.Data getKeywordsOrDefault(
+      public com.engineerolabs.fits_proto.FitsProto.KeywordData getKeywordsOrDefault(
           java.lang.String key,
-          com.engineerolabs.fits_proto.FitsProto.Data defaultValue) {
+          com.engineerolabs.fits_proto.FitsProto.KeywordData defaultValue) {
         if (key == null) { throw new NullPointerException("map key"); }
-        java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data> map =
+        java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData> map =
             internalGetKeywords().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
@@ -3217,14 +3217,14 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * all other keywords by type
        * </pre>
        *
-       * <code>map&lt;string, .fits.proto.Data&gt; keywords = 8;</code>
+       * <code>map&lt;string, .fits_proto.KeywordData&gt; keywords = 8;</code>
        */
       @java.lang.Override
 
-      public com.engineerolabs.fits_proto.FitsProto.Data getKeywordsOrThrow(
+      public com.engineerolabs.fits_proto.FitsProto.KeywordData getKeywordsOrThrow(
           java.lang.String key) {
         if (key == null) { throw new NullPointerException("map key"); }
-        java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data> map =
+        java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData> map =
             internalGetKeywords().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
@@ -3242,7 +3242,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * all other keywords by type
        * </pre>
        *
-       * <code>map&lt;string, .fits.proto.Data&gt; keywords = 8;</code>
+       * <code>map&lt;string, .fits_proto.KeywordData&gt; keywords = 8;</code>
        */
 
       public Builder removeKeywords(
@@ -3256,7 +3256,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Use alternate mutation accessors instead.
        */
       @java.lang.Deprecated
-      public java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data>
+      public java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData>
       getMutableKeywords() {
         return internalGetMutableKeywords().getMutableMap();
       }
@@ -3265,11 +3265,11 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * all other keywords by type
        * </pre>
        *
-       * <code>map&lt;string, .fits.proto.Data&gt; keywords = 8;</code>
+       * <code>map&lt;string, .fits_proto.KeywordData&gt; keywords = 8;</code>
        */
       public Builder putKeywords(
           java.lang.String key,
-          com.engineerolabs.fits_proto.FitsProto.Data value) {
+          com.engineerolabs.fits_proto.FitsProto.KeywordData value) {
         if (key == null) { throw new NullPointerException("map key"); }
         if (value == null) {
   throw new NullPointerException("map value");
@@ -3284,11 +3284,11 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * all other keywords by type
        * </pre>
        *
-       * <code>map&lt;string, .fits.proto.Data&gt; keywords = 8;</code>
+       * <code>map&lt;string, .fits_proto.KeywordData&gt; keywords = 8;</code>
        */
 
       public Builder putAllKeywords(
-          java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.Data> values) {
+          java.util.Map<java.lang.String, com.engineerolabs.fits_proto.FitsProto.KeywordData> values) {
         internalGetMutableKeywords().getMutableMap()
             .putAll(values);
         return this;
@@ -3306,23 +3306,23 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
 
-      // @@protoc_insertion_point(builder_scope:fits.proto.Header)
+      // @@protoc_insertion_point(builder_scope:fits_proto.FitsHeader)
     }
 
-    // @@protoc_insertion_point(class_scope:fits.proto.Header)
-    private static final com.engineerolabs.fits_proto.FitsProto.Header DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:fits_proto.FitsHeader)
+    private static final com.engineerolabs.fits_proto.FitsProto.FitsHeader DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.Header();
+      DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.FitsHeader();
     }
 
-    public static com.engineerolabs.fits_proto.FitsProto.Header getDefaultInstance() {
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHeader getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Header>
-        PARSER = new com.google.protobuf.AbstractParser<Header>() {
+    private static final com.google.protobuf.Parser<FitsHeader>
+        PARSER = new com.google.protobuf.AbstractParser<FitsHeader>() {
       @java.lang.Override
-      public Header parsePartialFrom(
+      public FitsHeader parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3341,24 +3341,24 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
     };
 
-    public static com.google.protobuf.Parser<Header> parser() {
+    public static com.google.protobuf.Parser<FitsHeader> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Header> getParserForType() {
+    public com.google.protobuf.Parser<FitsHeader> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Header getDefaultInstanceForType() {
+    public com.engineerolabs.fits_proto.FitsProto.FitsHeader getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface HduOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:fits.proto.Hdu)
+  public interface FitsHduOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:fits_proto.FitsHdu)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -3366,24 +3366,24 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * Define the header-data unit.
      * </pre>
      *
-     * <code>repeated .fits.proto.Header header = 1;</code>
+     * <code>repeated .fits_proto.FitsHeader header = 1;</code>
      */
-    java.util.List<com.engineerolabs.fits_proto.FitsProto.Header> 
+    java.util.List<com.engineerolabs.fits_proto.FitsProto.FitsHeader> 
         getHeaderList();
     /**
      * <pre>
      * Define the header-data unit.
      * </pre>
      *
-     * <code>repeated .fits.proto.Header header = 1;</code>
+     * <code>repeated .fits_proto.FitsHeader header = 1;</code>
      */
-    com.engineerolabs.fits_proto.FitsProto.Header getHeader(int index);
+    com.engineerolabs.fits_proto.FitsProto.FitsHeader getHeader(int index);
     /**
      * <pre>
      * Define the header-data unit.
      * </pre>
      *
-     * <code>repeated .fits.proto.Header header = 1;</code>
+     * <code>repeated .fits_proto.FitsHeader header = 1;</code>
      */
     int getHeaderCount();
     /**
@@ -3391,129 +3391,129 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * Define the header-data unit.
      * </pre>
      *
-     * <code>repeated .fits.proto.Header header = 1;</code>
+     * <code>repeated .fits_proto.FitsHeader header = 1;</code>
      */
-    java.util.List<? extends com.engineerolabs.fits_proto.FitsProto.HeaderOrBuilder> 
+    java.util.List<? extends com.engineerolabs.fits_proto.FitsProto.FitsHeaderOrBuilder> 
         getHeaderOrBuilderList();
     /**
      * <pre>
      * Define the header-data unit.
      * </pre>
      *
-     * <code>repeated .fits.proto.Header header = 1;</code>
+     * <code>repeated .fits_proto.FitsHeader header = 1;</code>
      */
-    com.engineerolabs.fits_proto.FitsProto.HeaderOrBuilder getHeaderOrBuilder(
+    com.engineerolabs.fits_proto.FitsProto.FitsHeaderOrBuilder getHeaderOrBuilder(
         int index);
 
     /**
-     * <code>.fits.proto.Hdu.FloatData float_data = 2;</code>
+     * <code>.fits_proto.FitsHdu.FloatData float_data = 2;</code>
      * @return Whether the floatData field is set.
      */
     boolean hasFloatData();
     /**
-     * <code>.fits.proto.Hdu.FloatData float_data = 2;</code>
+     * <code>.fits_proto.FitsHdu.FloatData float_data = 2;</code>
      * @return The floatData.
      */
-    com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData getFloatData();
+    com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData getFloatData();
     /**
-     * <code>.fits.proto.Hdu.FloatData float_data = 2;</code>
+     * <code>.fits_proto.FitsHdu.FloatData float_data = 2;</code>
      */
-    com.engineerolabs.fits_proto.FitsProto.Hdu.FloatDataOrBuilder getFloatDataOrBuilder();
+    com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatDataOrBuilder getFloatDataOrBuilder();
 
     /**
-     * <code>.fits.proto.Hdu.DoubleData double_data = 3;</code>
+     * <code>.fits_proto.FitsHdu.DoubleData double_data = 3;</code>
      * @return Whether the doubleData field is set.
      */
     boolean hasDoubleData();
     /**
-     * <code>.fits.proto.Hdu.DoubleData double_data = 3;</code>
+     * <code>.fits_proto.FitsHdu.DoubleData double_data = 3;</code>
      * @return The doubleData.
      */
-    com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData getDoubleData();
+    com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData getDoubleData();
     /**
-     * <code>.fits.proto.Hdu.DoubleData double_data = 3;</code>
+     * <code>.fits_proto.FitsHdu.DoubleData double_data = 3;</code>
      */
-    com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleDataOrBuilder getDoubleDataOrBuilder();
+    com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleDataOrBuilder getDoubleDataOrBuilder();
 
     /**
-     * <code>.fits.proto.Hdu.Int32Data int32_data = 4;</code>
+     * <code>.fits_proto.FitsHdu.Int32Data int32_data = 4;</code>
      * @return Whether the int32Data field is set.
      */
     boolean hasInt32Data();
     /**
-     * <code>.fits.proto.Hdu.Int32Data int32_data = 4;</code>
+     * <code>.fits_proto.FitsHdu.Int32Data int32_data = 4;</code>
      * @return The int32Data.
      */
-    com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data getInt32Data();
+    com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data getInt32Data();
     /**
-     * <code>.fits.proto.Hdu.Int32Data int32_data = 4;</code>
+     * <code>.fits_proto.FitsHdu.Int32Data int32_data = 4;</code>
      */
-    com.engineerolabs.fits_proto.FitsProto.Hdu.Int32DataOrBuilder getInt32DataOrBuilder();
+    com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32DataOrBuilder getInt32DataOrBuilder();
 
     /**
-     * <code>.fits.proto.Hdu.Int64Data int64_data = 5;</code>
+     * <code>.fits_proto.FitsHdu.Int64Data int64_data = 5;</code>
      * @return Whether the int64Data field is set.
      */
     boolean hasInt64Data();
     /**
-     * <code>.fits.proto.Hdu.Int64Data int64_data = 5;</code>
+     * <code>.fits_proto.FitsHdu.Int64Data int64_data = 5;</code>
      * @return The int64Data.
      */
-    com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data getInt64Data();
+    com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data getInt64Data();
     /**
-     * <code>.fits.proto.Hdu.Int64Data int64_data = 5;</code>
+     * <code>.fits_proto.FitsHdu.Int64Data int64_data = 5;</code>
      */
-    com.engineerolabs.fits_proto.FitsProto.Hdu.Int64DataOrBuilder getInt64DataOrBuilder();
+    com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64DataOrBuilder getInt64DataOrBuilder();
 
     /**
-     * <code>.fits.proto.Hdu.SInt32Data sint32_data = 6;</code>
+     * <code>.fits_proto.FitsHdu.SInt32Data sint32_data = 6;</code>
      * @return Whether the sint32Data field is set.
      */
     boolean hasSint32Data();
     /**
-     * <code>.fits.proto.Hdu.SInt32Data sint32_data = 6;</code>
+     * <code>.fits_proto.FitsHdu.SInt32Data sint32_data = 6;</code>
      * @return The sint32Data.
      */
-    com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data getSint32Data();
+    com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data getSint32Data();
     /**
-     * <code>.fits.proto.Hdu.SInt32Data sint32_data = 6;</code>
+     * <code>.fits_proto.FitsHdu.SInt32Data sint32_data = 6;</code>
      */
-    com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32DataOrBuilder getSint32DataOrBuilder();
+    com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32DataOrBuilder getSint32DataOrBuilder();
 
     /**
-     * <code>.fits.proto.Hdu.SInt64Data sint64_data = 7;</code>
+     * <code>.fits_proto.FitsHdu.SInt64Data sint64_data = 7;</code>
      * @return Whether the sint64Data field is set.
      */
     boolean hasSint64Data();
     /**
-     * <code>.fits.proto.Hdu.SInt64Data sint64_data = 7;</code>
+     * <code>.fits_proto.FitsHdu.SInt64Data sint64_data = 7;</code>
      * @return The sint64Data.
      */
-    com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data getSint64Data();
+    com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data getSint64Data();
     /**
-     * <code>.fits.proto.Hdu.SInt64Data sint64_data = 7;</code>
+     * <code>.fits_proto.FitsHdu.SInt64Data sint64_data = 7;</code>
      */
-    com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64DataOrBuilder getSint64DataOrBuilder();
+    com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64DataOrBuilder getSint64DataOrBuilder();
 
-    public com.engineerolabs.fits_proto.FitsProto.Hdu.PayloadCase getPayloadCase();
+    public com.engineerolabs.fits_proto.FitsProto.FitsHdu.PayloadCase getPayloadCase();
   }
   /**
    * <pre>
    * Header-data unit, basic building block of a FITS file.
    * </pre>
    *
-   * Protobuf type {@code fits.proto.Hdu}
+   * Protobuf type {@code fits_proto.FitsHdu}
    */
-  public static final class Hdu extends
+  public static final class FitsHdu extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:fits.proto.Hdu)
-      HduOrBuilder {
+      // @@protoc_insertion_point(message_implements:fits_proto.FitsHdu)
+      FitsHduOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use Hdu.newBuilder() to construct.
-    private Hdu(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use FitsHdu.newBuilder() to construct.
+    private FitsHdu(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Hdu() {
+    private FitsHdu() {
       header_ = java.util.Collections.emptyList();
     }
 
@@ -3521,7 +3521,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new Hdu();
+      return new FitsHdu();
     }
 
     @java.lang.Override
@@ -3531,19 +3531,19 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_descriptor;
+      return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_fieldAccessorTable
+      return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.engineerolabs.fits_proto.FitsProto.Hdu.class, com.engineerolabs.fits_proto.FitsProto.Hdu.Builder.class);
+              com.engineerolabs.fits_proto.FitsProto.FitsHdu.class, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Builder.class);
     }
 
     public interface FloatDataOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:fits.proto.Hdu.FloatData)
+        // @@protoc_insertion_point(interface_extends:fits_proto.FitsHdu.FloatData)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -3568,11 +3568,11 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * Define data message types for use in HDU.
      * </pre>
      *
-     * Protobuf type {@code fits.proto.Hdu.FloatData}
+     * Protobuf type {@code fits_proto.FitsHdu.FloatData}
      */
     public static final class FloatData extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:fits.proto.Hdu.FloatData)
+        // @@protoc_insertion_point(message_implements:fits_proto.FitsHdu.FloatData)
         FloatDataOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use FloatData.newBuilder() to construct.
@@ -3597,15 +3597,15 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_FloatData_descriptor;
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_FloatData_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_FloatData_fieldAccessorTable
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_FloatData_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.class, com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.Builder.class);
+                com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.class, com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.Builder.class);
       }
 
       public static final int DATA_FIELD_NUMBER = 1;
@@ -3688,10 +3688,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData)) {
+        if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData)) {
           return super.equals(obj);
         }
-        com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData other = (com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData) obj;
+        com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData other = (com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData) obj;
 
         if (!getDataList()
             .equals(other.getDataList())) return false;
@@ -3715,69 +3715,69 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return hash;
       }
 
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData parseFrom(byte[] data)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData parseFrom(java.io.InputStream input)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData parseDelimitedFrom(java.io.InputStream input)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData parseDelimitedFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -3790,7 +3790,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData prototype) {
+      public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       @java.lang.Override
@@ -3810,26 +3810,26 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Define data message types for use in HDU.
        * </pre>
        *
-       * Protobuf type {@code fits.proto.Hdu.FloatData}
+       * Protobuf type {@code fits_proto.FitsHdu.FloatData}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:fits.proto.Hdu.FloatData)
-          com.engineerolabs.fits_proto.FitsProto.Hdu.FloatDataOrBuilder {
+          // @@protoc_insertion_point(builder_implements:fits_proto.FitsHdu.FloatData)
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatDataOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_FloatData_descriptor;
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_FloatData_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_FloatData_fieldAccessorTable
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_FloatData_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.class, com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.Builder.class);
+                  com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.class, com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.Builder.class);
         }
 
-        // Construct using com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.newBuilder()
+        // Construct using com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.newBuilder()
         private Builder() {
 
         }
@@ -3850,17 +3850,17 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_FloatData_descriptor;
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_FloatData_descriptor;
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData getDefaultInstanceForType() {
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.getDefaultInstance();
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData getDefaultInstanceForType() {
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.getDefaultInstance();
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData build() {
-          com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData result = buildPartial();
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData build() {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
@@ -3868,8 +3868,8 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData buildPartial() {
-          com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData result = new com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData(this);
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData buildPartial() {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData result = new com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData(this);
           int from_bitField0_ = bitField0_;
           if (((bitField0_ & 0x00000001) != 0)) {
             data_.makeImmutable();
@@ -3914,16 +3914,16 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
         @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData) {
-            return mergeFrom((com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData)other);
+          if (other instanceof com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData) {
+            return mergeFrom((com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData other) {
-          if (other == com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.getDefaultInstance()) return this;
+        public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData other) {
+          if (other == com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.getDefaultInstance()) return this;
           if (!other.data_.isEmpty()) {
             if (data_.isEmpty()) {
               data_ = other.data_;
@@ -4084,16 +4084,16 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
 
 
-        // @@protoc_insertion_point(builder_scope:fits.proto.Hdu.FloatData)
+        // @@protoc_insertion_point(builder_scope:fits_proto.FitsHdu.FloatData)
       }
 
-      // @@protoc_insertion_point(class_scope:fits.proto.Hdu.FloatData)
-      private static final com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData DEFAULT_INSTANCE;
+      // @@protoc_insertion_point(class_scope:fits_proto.FitsHdu.FloatData)
+      private static final com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData();
+        DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData();
       }
 
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData getDefaultInstance() {
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -4129,14 +4129,14 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData getDefaultInstanceForType() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
     }
 
     public interface DoubleDataOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:fits.proto.Hdu.DoubleData)
+        // @@protoc_insertion_point(interface_extends:fits_proto.FitsHdu.DoubleData)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -4157,11 +4157,11 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       double getData(int index);
     }
     /**
-     * Protobuf type {@code fits.proto.Hdu.DoubleData}
+     * Protobuf type {@code fits_proto.FitsHdu.DoubleData}
      */
     public static final class DoubleData extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:fits.proto.Hdu.DoubleData)
+        // @@protoc_insertion_point(message_implements:fits_proto.FitsHdu.DoubleData)
         DoubleDataOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use DoubleData.newBuilder() to construct.
@@ -4186,15 +4186,15 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_DoubleData_descriptor;
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_DoubleData_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_DoubleData_fieldAccessorTable
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_DoubleData_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.class, com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.Builder.class);
+                com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.class, com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.Builder.class);
       }
 
       public static final int DATA_FIELD_NUMBER = 1;
@@ -4277,10 +4277,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData)) {
+        if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData)) {
           return super.equals(obj);
         }
-        com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData other = (com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData) obj;
+        com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData other = (com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData) obj;
 
         if (!getDataList()
             .equals(other.getDataList())) return false;
@@ -4304,69 +4304,69 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return hash;
       }
 
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData parseFrom(byte[] data)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData parseFrom(java.io.InputStream input)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData parseDelimitedFrom(java.io.InputStream input)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData parseDelimitedFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -4379,7 +4379,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData prototype) {
+      public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       @java.lang.Override
@@ -4395,26 +4395,26 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return builder;
       }
       /**
-       * Protobuf type {@code fits.proto.Hdu.DoubleData}
+       * Protobuf type {@code fits_proto.FitsHdu.DoubleData}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:fits.proto.Hdu.DoubleData)
-          com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleDataOrBuilder {
+          // @@protoc_insertion_point(builder_implements:fits_proto.FitsHdu.DoubleData)
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleDataOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_DoubleData_descriptor;
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_DoubleData_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_DoubleData_fieldAccessorTable
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_DoubleData_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.class, com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.Builder.class);
+                  com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.class, com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.Builder.class);
         }
 
-        // Construct using com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.newBuilder()
+        // Construct using com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.newBuilder()
         private Builder() {
 
         }
@@ -4435,17 +4435,17 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_DoubleData_descriptor;
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_DoubleData_descriptor;
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData getDefaultInstanceForType() {
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.getDefaultInstance();
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData getDefaultInstanceForType() {
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.getDefaultInstance();
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData build() {
-          com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData result = buildPartial();
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData build() {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
@@ -4453,8 +4453,8 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData buildPartial() {
-          com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData result = new com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData(this);
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData buildPartial() {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData result = new com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData(this);
           int from_bitField0_ = bitField0_;
           if (((bitField0_ & 0x00000001) != 0)) {
             data_.makeImmutable();
@@ -4499,16 +4499,16 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
         @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData) {
-            return mergeFrom((com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData)other);
+          if (other instanceof com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData) {
+            return mergeFrom((com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData other) {
-          if (other == com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.getDefaultInstance()) return this;
+        public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData other) {
+          if (other == com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.getDefaultInstance()) return this;
           if (!other.data_.isEmpty()) {
             if (data_.isEmpty()) {
               data_ = other.data_;
@@ -4669,16 +4669,16 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
 
 
-        // @@protoc_insertion_point(builder_scope:fits.proto.Hdu.DoubleData)
+        // @@protoc_insertion_point(builder_scope:fits_proto.FitsHdu.DoubleData)
       }
 
-      // @@protoc_insertion_point(class_scope:fits.proto.Hdu.DoubleData)
-      private static final com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData DEFAULT_INSTANCE;
+      // @@protoc_insertion_point(class_scope:fits_proto.FitsHdu.DoubleData)
+      private static final com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData();
+        DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData();
       }
 
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData getDefaultInstance() {
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -4714,14 +4714,14 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData getDefaultInstanceForType() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
     }
 
     public interface Int32DataOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:fits.proto.Hdu.Int32Data)
+        // @@protoc_insertion_point(interface_extends:fits_proto.FitsHdu.Int32Data)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -4742,11 +4742,11 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       int getData(int index);
     }
     /**
-     * Protobuf type {@code fits.proto.Hdu.Int32Data}
+     * Protobuf type {@code fits_proto.FitsHdu.Int32Data}
      */
     public static final class Int32Data extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:fits.proto.Hdu.Int32Data)
+        // @@protoc_insertion_point(message_implements:fits_proto.FitsHdu.Int32Data)
         Int32DataOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use Int32Data.newBuilder() to construct.
@@ -4771,15 +4771,15 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_Int32Data_descriptor;
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_Int32Data_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_Int32Data_fieldAccessorTable
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_Int32Data_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.class, com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.Builder.class);
+                com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.class, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.Builder.class);
       }
 
       public static final int DATA_FIELD_NUMBER = 1;
@@ -4865,10 +4865,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data)) {
+        if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data)) {
           return super.equals(obj);
         }
-        com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data other = (com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data) obj;
+        com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data other = (com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data) obj;
 
         if (!getDataList()
             .equals(other.getDataList())) return false;
@@ -4892,69 +4892,69 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return hash;
       }
 
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data parseFrom(byte[] data)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data parseFrom(java.io.InputStream input)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data parseDelimitedFrom(java.io.InputStream input)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data parseDelimitedFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -4967,7 +4967,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data prototype) {
+      public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       @java.lang.Override
@@ -4983,26 +4983,26 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return builder;
       }
       /**
-       * Protobuf type {@code fits.proto.Hdu.Int32Data}
+       * Protobuf type {@code fits_proto.FitsHdu.Int32Data}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:fits.proto.Hdu.Int32Data)
-          com.engineerolabs.fits_proto.FitsProto.Hdu.Int32DataOrBuilder {
+          // @@protoc_insertion_point(builder_implements:fits_proto.FitsHdu.Int32Data)
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32DataOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_Int32Data_descriptor;
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_Int32Data_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_Int32Data_fieldAccessorTable
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_Int32Data_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.class, com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.Builder.class);
+                  com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.class, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.Builder.class);
         }
 
-        // Construct using com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.newBuilder()
+        // Construct using com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.newBuilder()
         private Builder() {
 
         }
@@ -5023,17 +5023,17 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_Int32Data_descriptor;
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_Int32Data_descriptor;
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data getDefaultInstanceForType() {
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.getDefaultInstance();
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data getDefaultInstanceForType() {
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.getDefaultInstance();
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data build() {
-          com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data result = buildPartial();
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data build() {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
@@ -5041,8 +5041,8 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data buildPartial() {
-          com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data result = new com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data(this);
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data buildPartial() {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data result = new com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data(this);
           int from_bitField0_ = bitField0_;
           if (((bitField0_ & 0x00000001) != 0)) {
             data_.makeImmutable();
@@ -5087,16 +5087,16 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
         @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data) {
-            return mergeFrom((com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data)other);
+          if (other instanceof com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data) {
+            return mergeFrom((com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data other) {
-          if (other == com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.getDefaultInstance()) return this;
+        public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data other) {
+          if (other == com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.getDefaultInstance()) return this;
           if (!other.data_.isEmpty()) {
             if (data_.isEmpty()) {
               data_ = other.data_;
@@ -5257,16 +5257,16 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
 
 
-        // @@protoc_insertion_point(builder_scope:fits.proto.Hdu.Int32Data)
+        // @@protoc_insertion_point(builder_scope:fits_proto.FitsHdu.Int32Data)
       }
 
-      // @@protoc_insertion_point(class_scope:fits.proto.Hdu.Int32Data)
-      private static final com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data DEFAULT_INSTANCE;
+      // @@protoc_insertion_point(class_scope:fits_proto.FitsHdu.Int32Data)
+      private static final com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data();
+        DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data();
       }
 
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data getDefaultInstance() {
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -5302,14 +5302,14 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data getDefaultInstanceForType() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
     }
 
     public interface Int64DataOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:fits.proto.Hdu.Int64Data)
+        // @@protoc_insertion_point(interface_extends:fits_proto.FitsHdu.Int64Data)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -5330,11 +5330,11 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       long getData(int index);
     }
     /**
-     * Protobuf type {@code fits.proto.Hdu.Int64Data}
+     * Protobuf type {@code fits_proto.FitsHdu.Int64Data}
      */
     public static final class Int64Data extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:fits.proto.Hdu.Int64Data)
+        // @@protoc_insertion_point(message_implements:fits_proto.FitsHdu.Int64Data)
         Int64DataOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use Int64Data.newBuilder() to construct.
@@ -5359,15 +5359,15 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_Int64Data_descriptor;
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_Int64Data_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_Int64Data_fieldAccessorTable
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_Int64Data_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.class, com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.Builder.class);
+                com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.class, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.Builder.class);
       }
 
       public static final int DATA_FIELD_NUMBER = 1;
@@ -5453,10 +5453,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data)) {
+        if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data)) {
           return super.equals(obj);
         }
-        com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data other = (com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data) obj;
+        com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data other = (com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data) obj;
 
         if (!getDataList()
             .equals(other.getDataList())) return false;
@@ -5480,69 +5480,69 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return hash;
       }
 
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data parseFrom(byte[] data)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data parseFrom(java.io.InputStream input)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data parseDelimitedFrom(java.io.InputStream input)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data parseDelimitedFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -5555,7 +5555,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data prototype) {
+      public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       @java.lang.Override
@@ -5571,26 +5571,26 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return builder;
       }
       /**
-       * Protobuf type {@code fits.proto.Hdu.Int64Data}
+       * Protobuf type {@code fits_proto.FitsHdu.Int64Data}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:fits.proto.Hdu.Int64Data)
-          com.engineerolabs.fits_proto.FitsProto.Hdu.Int64DataOrBuilder {
+          // @@protoc_insertion_point(builder_implements:fits_proto.FitsHdu.Int64Data)
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64DataOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_Int64Data_descriptor;
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_Int64Data_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_Int64Data_fieldAccessorTable
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_Int64Data_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.class, com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.Builder.class);
+                  com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.class, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.Builder.class);
         }
 
-        // Construct using com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.newBuilder()
+        // Construct using com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.newBuilder()
         private Builder() {
 
         }
@@ -5611,17 +5611,17 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_Int64Data_descriptor;
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_Int64Data_descriptor;
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data getDefaultInstanceForType() {
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.getDefaultInstance();
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data getDefaultInstanceForType() {
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.getDefaultInstance();
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data build() {
-          com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data result = buildPartial();
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data build() {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
@@ -5629,8 +5629,8 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data buildPartial() {
-          com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data result = new com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data(this);
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data buildPartial() {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data result = new com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data(this);
           int from_bitField0_ = bitField0_;
           if (((bitField0_ & 0x00000001) != 0)) {
             data_.makeImmutable();
@@ -5675,16 +5675,16 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
         @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data) {
-            return mergeFrom((com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data)other);
+          if (other instanceof com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data) {
+            return mergeFrom((com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data other) {
-          if (other == com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.getDefaultInstance()) return this;
+        public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data other) {
+          if (other == com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.getDefaultInstance()) return this;
           if (!other.data_.isEmpty()) {
             if (data_.isEmpty()) {
               data_ = other.data_;
@@ -5845,16 +5845,16 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
 
 
-        // @@protoc_insertion_point(builder_scope:fits.proto.Hdu.Int64Data)
+        // @@protoc_insertion_point(builder_scope:fits_proto.FitsHdu.Int64Data)
       }
 
-      // @@protoc_insertion_point(class_scope:fits.proto.Hdu.Int64Data)
-      private static final com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data DEFAULT_INSTANCE;
+      // @@protoc_insertion_point(class_scope:fits_proto.FitsHdu.Int64Data)
+      private static final com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data();
+        DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data();
       }
 
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data getDefaultInstance() {
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -5890,14 +5890,14 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data getDefaultInstanceForType() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
     }
 
     public interface SInt32DataOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:fits.proto.Hdu.SInt32Data)
+        // @@protoc_insertion_point(interface_extends:fits_proto.FitsHdu.SInt32Data)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -5918,11 +5918,11 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       int getData(int index);
     }
     /**
-     * Protobuf type {@code fits.proto.Hdu.SInt32Data}
+     * Protobuf type {@code fits_proto.FitsHdu.SInt32Data}
      */
     public static final class SInt32Data extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:fits.proto.Hdu.SInt32Data)
+        // @@protoc_insertion_point(message_implements:fits_proto.FitsHdu.SInt32Data)
         SInt32DataOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use SInt32Data.newBuilder() to construct.
@@ -5947,15 +5947,15 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_SInt32Data_descriptor;
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_SInt32Data_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_SInt32Data_fieldAccessorTable
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_SInt32Data_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.class, com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.Builder.class);
+                com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.class, com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.Builder.class);
       }
 
       public static final int DATA_FIELD_NUMBER = 1;
@@ -6041,10 +6041,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data)) {
+        if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data)) {
           return super.equals(obj);
         }
-        com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data other = (com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data) obj;
+        com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data other = (com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data) obj;
 
         if (!getDataList()
             .equals(other.getDataList())) return false;
@@ -6068,69 +6068,69 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return hash;
       }
 
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data parseFrom(byte[] data)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data parseFrom(java.io.InputStream input)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data parseDelimitedFrom(java.io.InputStream input)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data parseDelimitedFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -6143,7 +6143,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data prototype) {
+      public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       @java.lang.Override
@@ -6159,26 +6159,26 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return builder;
       }
       /**
-       * Protobuf type {@code fits.proto.Hdu.SInt32Data}
+       * Protobuf type {@code fits_proto.FitsHdu.SInt32Data}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:fits.proto.Hdu.SInt32Data)
-          com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32DataOrBuilder {
+          // @@protoc_insertion_point(builder_implements:fits_proto.FitsHdu.SInt32Data)
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32DataOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_SInt32Data_descriptor;
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_SInt32Data_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_SInt32Data_fieldAccessorTable
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_SInt32Data_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.class, com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.Builder.class);
+                  com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.class, com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.Builder.class);
         }
 
-        // Construct using com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.newBuilder()
+        // Construct using com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.newBuilder()
         private Builder() {
 
         }
@@ -6199,17 +6199,17 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_SInt32Data_descriptor;
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_SInt32Data_descriptor;
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data getDefaultInstanceForType() {
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.getDefaultInstance();
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data getDefaultInstanceForType() {
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.getDefaultInstance();
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data build() {
-          com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data result = buildPartial();
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data build() {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
@@ -6217,8 +6217,8 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data buildPartial() {
-          com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data result = new com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data(this);
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data buildPartial() {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data result = new com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data(this);
           int from_bitField0_ = bitField0_;
           if (((bitField0_ & 0x00000001) != 0)) {
             data_.makeImmutable();
@@ -6263,16 +6263,16 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
         @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data) {
-            return mergeFrom((com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data)other);
+          if (other instanceof com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data) {
+            return mergeFrom((com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data other) {
-          if (other == com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.getDefaultInstance()) return this;
+        public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data other) {
+          if (other == com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.getDefaultInstance()) return this;
           if (!other.data_.isEmpty()) {
             if (data_.isEmpty()) {
               data_ = other.data_;
@@ -6433,16 +6433,16 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
 
 
-        // @@protoc_insertion_point(builder_scope:fits.proto.Hdu.SInt32Data)
+        // @@protoc_insertion_point(builder_scope:fits_proto.FitsHdu.SInt32Data)
       }
 
-      // @@protoc_insertion_point(class_scope:fits.proto.Hdu.SInt32Data)
-      private static final com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data DEFAULT_INSTANCE;
+      // @@protoc_insertion_point(class_scope:fits_proto.FitsHdu.SInt32Data)
+      private static final com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data();
+        DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data();
       }
 
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data getDefaultInstance() {
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -6478,14 +6478,14 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data getDefaultInstanceForType() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
     }
 
     public interface SInt64DataOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:fits.proto.Hdu.SInt64Data)
+        // @@protoc_insertion_point(interface_extends:fits_proto.FitsHdu.SInt64Data)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -6506,11 +6506,11 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       long getData(int index);
     }
     /**
-     * Protobuf type {@code fits.proto.Hdu.SInt64Data}
+     * Protobuf type {@code fits_proto.FitsHdu.SInt64Data}
      */
     public static final class SInt64Data extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:fits.proto.Hdu.SInt64Data)
+        // @@protoc_insertion_point(message_implements:fits_proto.FitsHdu.SInt64Data)
         SInt64DataOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use SInt64Data.newBuilder() to construct.
@@ -6535,15 +6535,15 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_SInt64Data_descriptor;
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_SInt64Data_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_SInt64Data_fieldAccessorTable
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_SInt64Data_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.class, com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.Builder.class);
+                com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.class, com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.Builder.class);
       }
 
       public static final int DATA_FIELD_NUMBER = 1;
@@ -6629,10 +6629,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data)) {
+        if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data)) {
           return super.equals(obj);
         }
-        com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data other = (com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data) obj;
+        com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data other = (com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data) obj;
 
         if (!getDataList()
             .equals(other.getDataList())) return false;
@@ -6656,69 +6656,69 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return hash;
       }
 
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data parseFrom(byte[] data)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data parseFrom(java.io.InputStream input)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data parseDelimitedFrom(java.io.InputStream input)
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data parseDelimitedFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data parseFrom(
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -6731,7 +6731,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data prototype) {
+      public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       @java.lang.Override
@@ -6747,26 +6747,26 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return builder;
       }
       /**
-       * Protobuf type {@code fits.proto.Hdu.SInt64Data}
+       * Protobuf type {@code fits_proto.FitsHdu.SInt64Data}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:fits.proto.Hdu.SInt64Data)
-          com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64DataOrBuilder {
+          // @@protoc_insertion_point(builder_implements:fits_proto.FitsHdu.SInt64Data)
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64DataOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_SInt64Data_descriptor;
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_SInt64Data_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_SInt64Data_fieldAccessorTable
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_SInt64Data_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.class, com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.Builder.class);
+                  com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.class, com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.Builder.class);
         }
 
-        // Construct using com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.newBuilder()
+        // Construct using com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.newBuilder()
         private Builder() {
 
         }
@@ -6787,17 +6787,17 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_SInt64Data_descriptor;
+          return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_SInt64Data_descriptor;
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data getDefaultInstanceForType() {
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.getDefaultInstance();
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data getDefaultInstanceForType() {
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.getDefaultInstance();
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data build() {
-          com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data result = buildPartial();
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data build() {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
@@ -6805,8 +6805,8 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
 
         @java.lang.Override
-        public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data buildPartial() {
-          com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data result = new com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data(this);
+        public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data buildPartial() {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data result = new com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data(this);
           int from_bitField0_ = bitField0_;
           if (((bitField0_ & 0x00000001) != 0)) {
             data_.makeImmutable();
@@ -6851,16 +6851,16 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
         @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data) {
-            return mergeFrom((com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data)other);
+          if (other instanceof com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data) {
+            return mergeFrom((com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data other) {
-          if (other == com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.getDefaultInstance()) return this;
+        public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data other) {
+          if (other == com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.getDefaultInstance()) return this;
           if (!other.data_.isEmpty()) {
             if (data_.isEmpty()) {
               data_ = other.data_;
@@ -7021,16 +7021,16 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         }
 
 
-        // @@protoc_insertion_point(builder_scope:fits.proto.Hdu.SInt64Data)
+        // @@protoc_insertion_point(builder_scope:fits_proto.FitsHdu.SInt64Data)
       }
 
-      // @@protoc_insertion_point(class_scope:fits.proto.Hdu.SInt64Data)
-      private static final com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data DEFAULT_INSTANCE;
+      // @@protoc_insertion_point(class_scope:fits_proto.FitsHdu.SInt64Data)
+      private static final com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data();
+        DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data();
       }
 
-      public static com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data getDefaultInstance() {
+      public static com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -7066,7 +7066,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data getDefaultInstanceForType() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
@@ -7122,16 +7122,16 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
     }
 
     public static final int HEADER_FIELD_NUMBER = 1;
-    private java.util.List<com.engineerolabs.fits_proto.FitsProto.Header> header_;
+    private java.util.List<com.engineerolabs.fits_proto.FitsProto.FitsHeader> header_;
     /**
      * <pre>
      * Define the header-data unit.
      * </pre>
      *
-     * <code>repeated .fits.proto.Header header = 1;</code>
+     * <code>repeated .fits_proto.FitsHeader header = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<com.engineerolabs.fits_proto.FitsProto.Header> getHeaderList() {
+    public java.util.List<com.engineerolabs.fits_proto.FitsProto.FitsHeader> getHeaderList() {
       return header_;
     }
     /**
@@ -7139,10 +7139,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * Define the header-data unit.
      * </pre>
      *
-     * <code>repeated .fits.proto.Header header = 1;</code>
+     * <code>repeated .fits_proto.FitsHeader header = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends com.engineerolabs.fits_proto.FitsProto.HeaderOrBuilder> 
+    public java.util.List<? extends com.engineerolabs.fits_proto.FitsProto.FitsHeaderOrBuilder> 
         getHeaderOrBuilderList() {
       return header_;
     }
@@ -7151,7 +7151,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * Define the header-data unit.
      * </pre>
      *
-     * <code>repeated .fits.proto.Header header = 1;</code>
+     * <code>repeated .fits_proto.FitsHeader header = 1;</code>
      */
     @java.lang.Override
     public int getHeaderCount() {
@@ -7162,10 +7162,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * Define the header-data unit.
      * </pre>
      *
-     * <code>repeated .fits.proto.Header header = 1;</code>
+     * <code>repeated .fits_proto.FitsHeader header = 1;</code>
      */
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Header getHeader(int index) {
+    public com.engineerolabs.fits_proto.FitsProto.FitsHeader getHeader(int index) {
       return header_.get(index);
     }
     /**
@@ -7173,17 +7173,17 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * Define the header-data unit.
      * </pre>
      *
-     * <code>repeated .fits.proto.Header header = 1;</code>
+     * <code>repeated .fits_proto.FitsHeader header = 1;</code>
      */
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.HeaderOrBuilder getHeaderOrBuilder(
+    public com.engineerolabs.fits_proto.FitsProto.FitsHeaderOrBuilder getHeaderOrBuilder(
         int index) {
       return header_.get(index);
     }
 
     public static final int FLOAT_DATA_FIELD_NUMBER = 2;
     /**
-     * <code>.fits.proto.Hdu.FloatData float_data = 2;</code>
+     * <code>.fits_proto.FitsHdu.FloatData float_data = 2;</code>
      * @return Whether the floatData field is set.
      */
     @java.lang.Override
@@ -7191,30 +7191,30 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       return payloadCase_ == 2;
     }
     /**
-     * <code>.fits.proto.Hdu.FloatData float_data = 2;</code>
+     * <code>.fits_proto.FitsHdu.FloatData float_data = 2;</code>
      * @return The floatData.
      */
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData getFloatData() {
+    public com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData getFloatData() {
       if (payloadCase_ == 2) {
-         return (com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData) payload_;
+         return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData) payload_;
       }
-      return com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.getDefaultInstance();
+      return com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.getDefaultInstance();
     }
     /**
-     * <code>.fits.proto.Hdu.FloatData float_data = 2;</code>
+     * <code>.fits_proto.FitsHdu.FloatData float_data = 2;</code>
      */
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Hdu.FloatDataOrBuilder getFloatDataOrBuilder() {
+    public com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatDataOrBuilder getFloatDataOrBuilder() {
       if (payloadCase_ == 2) {
-         return (com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData) payload_;
+         return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData) payload_;
       }
-      return com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.getDefaultInstance();
+      return com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.getDefaultInstance();
     }
 
     public static final int DOUBLE_DATA_FIELD_NUMBER = 3;
     /**
-     * <code>.fits.proto.Hdu.DoubleData double_data = 3;</code>
+     * <code>.fits_proto.FitsHdu.DoubleData double_data = 3;</code>
      * @return Whether the doubleData field is set.
      */
     @java.lang.Override
@@ -7222,30 +7222,30 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       return payloadCase_ == 3;
     }
     /**
-     * <code>.fits.proto.Hdu.DoubleData double_data = 3;</code>
+     * <code>.fits_proto.FitsHdu.DoubleData double_data = 3;</code>
      * @return The doubleData.
      */
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData getDoubleData() {
+    public com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData getDoubleData() {
       if (payloadCase_ == 3) {
-         return (com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData) payload_;
+         return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData) payload_;
       }
-      return com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.getDefaultInstance();
+      return com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.getDefaultInstance();
     }
     /**
-     * <code>.fits.proto.Hdu.DoubleData double_data = 3;</code>
+     * <code>.fits_proto.FitsHdu.DoubleData double_data = 3;</code>
      */
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleDataOrBuilder getDoubleDataOrBuilder() {
+    public com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleDataOrBuilder getDoubleDataOrBuilder() {
       if (payloadCase_ == 3) {
-         return (com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData) payload_;
+         return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData) payload_;
       }
-      return com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.getDefaultInstance();
+      return com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.getDefaultInstance();
     }
 
     public static final int INT32_DATA_FIELD_NUMBER = 4;
     /**
-     * <code>.fits.proto.Hdu.Int32Data int32_data = 4;</code>
+     * <code>.fits_proto.FitsHdu.Int32Data int32_data = 4;</code>
      * @return Whether the int32Data field is set.
      */
     @java.lang.Override
@@ -7253,30 +7253,30 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       return payloadCase_ == 4;
     }
     /**
-     * <code>.fits.proto.Hdu.Int32Data int32_data = 4;</code>
+     * <code>.fits_proto.FitsHdu.Int32Data int32_data = 4;</code>
      * @return The int32Data.
      */
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data getInt32Data() {
+    public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data getInt32Data() {
       if (payloadCase_ == 4) {
-         return (com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data) payload_;
+         return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data) payload_;
       }
-      return com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.getDefaultInstance();
+      return com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.getDefaultInstance();
     }
     /**
-     * <code>.fits.proto.Hdu.Int32Data int32_data = 4;</code>
+     * <code>.fits_proto.FitsHdu.Int32Data int32_data = 4;</code>
      */
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Hdu.Int32DataOrBuilder getInt32DataOrBuilder() {
+    public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32DataOrBuilder getInt32DataOrBuilder() {
       if (payloadCase_ == 4) {
-         return (com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data) payload_;
+         return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data) payload_;
       }
-      return com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.getDefaultInstance();
+      return com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.getDefaultInstance();
     }
 
     public static final int INT64_DATA_FIELD_NUMBER = 5;
     /**
-     * <code>.fits.proto.Hdu.Int64Data int64_data = 5;</code>
+     * <code>.fits_proto.FitsHdu.Int64Data int64_data = 5;</code>
      * @return Whether the int64Data field is set.
      */
     @java.lang.Override
@@ -7284,30 +7284,30 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       return payloadCase_ == 5;
     }
     /**
-     * <code>.fits.proto.Hdu.Int64Data int64_data = 5;</code>
+     * <code>.fits_proto.FitsHdu.Int64Data int64_data = 5;</code>
      * @return The int64Data.
      */
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data getInt64Data() {
+    public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data getInt64Data() {
       if (payloadCase_ == 5) {
-         return (com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data) payload_;
+         return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data) payload_;
       }
-      return com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.getDefaultInstance();
+      return com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.getDefaultInstance();
     }
     /**
-     * <code>.fits.proto.Hdu.Int64Data int64_data = 5;</code>
+     * <code>.fits_proto.FitsHdu.Int64Data int64_data = 5;</code>
      */
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Hdu.Int64DataOrBuilder getInt64DataOrBuilder() {
+    public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64DataOrBuilder getInt64DataOrBuilder() {
       if (payloadCase_ == 5) {
-         return (com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data) payload_;
+         return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data) payload_;
       }
-      return com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.getDefaultInstance();
+      return com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.getDefaultInstance();
     }
 
     public static final int SINT32_DATA_FIELD_NUMBER = 6;
     /**
-     * <code>.fits.proto.Hdu.SInt32Data sint32_data = 6;</code>
+     * <code>.fits_proto.FitsHdu.SInt32Data sint32_data = 6;</code>
      * @return Whether the sint32Data field is set.
      */
     @java.lang.Override
@@ -7315,30 +7315,30 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       return payloadCase_ == 6;
     }
     /**
-     * <code>.fits.proto.Hdu.SInt32Data sint32_data = 6;</code>
+     * <code>.fits_proto.FitsHdu.SInt32Data sint32_data = 6;</code>
      * @return The sint32Data.
      */
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data getSint32Data() {
+    public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data getSint32Data() {
       if (payloadCase_ == 6) {
-         return (com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data) payload_;
+         return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data) payload_;
       }
-      return com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.getDefaultInstance();
+      return com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.getDefaultInstance();
     }
     /**
-     * <code>.fits.proto.Hdu.SInt32Data sint32_data = 6;</code>
+     * <code>.fits_proto.FitsHdu.SInt32Data sint32_data = 6;</code>
      */
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32DataOrBuilder getSint32DataOrBuilder() {
+    public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32DataOrBuilder getSint32DataOrBuilder() {
       if (payloadCase_ == 6) {
-         return (com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data) payload_;
+         return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data) payload_;
       }
-      return com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.getDefaultInstance();
+      return com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.getDefaultInstance();
     }
 
     public static final int SINT64_DATA_FIELD_NUMBER = 7;
     /**
-     * <code>.fits.proto.Hdu.SInt64Data sint64_data = 7;</code>
+     * <code>.fits_proto.FitsHdu.SInt64Data sint64_data = 7;</code>
      * @return Whether the sint64Data field is set.
      */
     @java.lang.Override
@@ -7346,25 +7346,25 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       return payloadCase_ == 7;
     }
     /**
-     * <code>.fits.proto.Hdu.SInt64Data sint64_data = 7;</code>
+     * <code>.fits_proto.FitsHdu.SInt64Data sint64_data = 7;</code>
      * @return The sint64Data.
      */
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data getSint64Data() {
+    public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data getSint64Data() {
       if (payloadCase_ == 7) {
-         return (com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data) payload_;
+         return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data) payload_;
       }
-      return com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.getDefaultInstance();
+      return com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.getDefaultInstance();
     }
     /**
-     * <code>.fits.proto.Hdu.SInt64Data sint64_data = 7;</code>
+     * <code>.fits_proto.FitsHdu.SInt64Data sint64_data = 7;</code>
      */
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64DataOrBuilder getSint64DataOrBuilder() {
+    public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64DataOrBuilder getSint64DataOrBuilder() {
       if (payloadCase_ == 7) {
-         return (com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data) payload_;
+         return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data) payload_;
       }
-      return com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.getDefaultInstance();
+      return com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -7385,22 +7385,22 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         output.writeMessage(1, header_.get(i));
       }
       if (payloadCase_ == 2) {
-        output.writeMessage(2, (com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData) payload_);
+        output.writeMessage(2, (com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData) payload_);
       }
       if (payloadCase_ == 3) {
-        output.writeMessage(3, (com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData) payload_);
+        output.writeMessage(3, (com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData) payload_);
       }
       if (payloadCase_ == 4) {
-        output.writeMessage(4, (com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data) payload_);
+        output.writeMessage(4, (com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data) payload_);
       }
       if (payloadCase_ == 5) {
-        output.writeMessage(5, (com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data) payload_);
+        output.writeMessage(5, (com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data) payload_);
       }
       if (payloadCase_ == 6) {
-        output.writeMessage(6, (com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data) payload_);
+        output.writeMessage(6, (com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data) payload_);
       }
       if (payloadCase_ == 7) {
-        output.writeMessage(7, (com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data) payload_);
+        output.writeMessage(7, (com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data) payload_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -7417,27 +7417,27 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
       if (payloadCase_ == 2) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, (com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData) payload_);
+          .computeMessageSize(2, (com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData) payload_);
       }
       if (payloadCase_ == 3) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, (com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData) payload_);
+          .computeMessageSize(3, (com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData) payload_);
       }
       if (payloadCase_ == 4) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, (com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data) payload_);
+          .computeMessageSize(4, (com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data) payload_);
       }
       if (payloadCase_ == 5) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, (com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data) payload_);
+          .computeMessageSize(5, (com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data) payload_);
       }
       if (payloadCase_ == 6) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, (com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data) payload_);
+          .computeMessageSize(6, (com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data) payload_);
       }
       if (payloadCase_ == 7) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, (com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data) payload_);
+          .computeMessageSize(7, (com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data) payload_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -7449,10 +7449,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.Hdu)) {
+      if (!(obj instanceof com.engineerolabs.fits_proto.FitsProto.FitsHdu)) {
         return super.equals(obj);
       }
-      com.engineerolabs.fits_proto.FitsProto.Hdu other = (com.engineerolabs.fits_proto.FitsProto.Hdu) obj;
+      com.engineerolabs.fits_proto.FitsProto.FitsHdu other = (com.engineerolabs.fits_proto.FitsProto.FitsHdu) obj;
 
       if (!getHeaderList()
           .equals(other.getHeaderList())) return false;
@@ -7533,69 +7533,69 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       return hash;
     }
 
-    public static com.engineerolabs.fits_proto.FitsProto.Hdu parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHdu parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Hdu parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHdu parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Hdu parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHdu parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Hdu parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHdu parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Hdu parseFrom(byte[] data)
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHdu parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Hdu parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHdu parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Hdu parseFrom(java.io.InputStream input)
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHdu parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Hdu parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHdu parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Hdu parseDelimitedFrom(java.io.InputStream input)
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHdu parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Hdu parseDelimitedFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHdu parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Hdu parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHdu parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.engineerolabs.fits_proto.FitsProto.Hdu parseFrom(
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHdu parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -7608,7 +7608,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.Hdu prototype) {
+    public static Builder newBuilder(com.engineerolabs.fits_proto.FitsProto.FitsHdu prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -7628,26 +7628,26 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * Header-data unit, basic building block of a FITS file.
      * </pre>
      *
-     * Protobuf type {@code fits.proto.Hdu}
+     * Protobuf type {@code fits_proto.FitsHdu}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:fits.proto.Hdu)
-        com.engineerolabs.fits_proto.FitsProto.HduOrBuilder {
+        // @@protoc_insertion_point(builder_implements:fits_proto.FitsHdu)
+        com.engineerolabs.fits_proto.FitsProto.FitsHduOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_descriptor;
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_fieldAccessorTable
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.engineerolabs.fits_proto.FitsProto.Hdu.class, com.engineerolabs.fits_proto.FitsProto.Hdu.Builder.class);
+                com.engineerolabs.fits_proto.FitsProto.FitsHdu.class, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Builder.class);
       }
 
-      // Construct using com.engineerolabs.fits_proto.FitsProto.Hdu.newBuilder()
+      // Construct using com.engineerolabs.fits_proto.FitsProto.FitsHdu.newBuilder()
       private Builder() {
 
       }
@@ -7693,17 +7693,17 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_Hdu_descriptor;
+        return com.engineerolabs.fits_proto.FitsProto.internal_static_fits_proto_FitsHdu_descriptor;
       }
 
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu getDefaultInstanceForType() {
-        return com.engineerolabs.fits_proto.FitsProto.Hdu.getDefaultInstance();
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu getDefaultInstanceForType() {
+        return com.engineerolabs.fits_proto.FitsProto.FitsHdu.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu build() {
-        com.engineerolabs.fits_proto.FitsProto.Hdu result = buildPartial();
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu build() {
+        com.engineerolabs.fits_proto.FitsProto.FitsHdu result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -7711,8 +7711,8 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu buildPartial() {
-        com.engineerolabs.fits_proto.FitsProto.Hdu result = new com.engineerolabs.fits_proto.FitsProto.Hdu(this);
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu buildPartial() {
+        com.engineerolabs.fits_proto.FitsProto.FitsHdu result = new com.engineerolabs.fits_proto.FitsProto.FitsHdu(this);
         int from_bitField0_ = bitField0_;
         if (headerBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
@@ -7804,16 +7804,16 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.engineerolabs.fits_proto.FitsProto.Hdu) {
-          return mergeFrom((com.engineerolabs.fits_proto.FitsProto.Hdu)other);
+        if (other instanceof com.engineerolabs.fits_proto.FitsProto.FitsHdu) {
+          return mergeFrom((com.engineerolabs.fits_proto.FitsProto.FitsHdu)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.Hdu other) {
-        if (other == com.engineerolabs.fits_proto.FitsProto.Hdu.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.engineerolabs.fits_proto.FitsProto.FitsHdu other) {
+        if (other == com.engineerolabs.fits_proto.FitsProto.FitsHdu.getDefaultInstance()) return this;
         if (headerBuilder_ == null) {
           if (!other.header_.isEmpty()) {
             if (header_.isEmpty()) {
@@ -7896,9 +7896,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
                 done = true;
                 break;
               case 10: {
-                com.engineerolabs.fits_proto.FitsProto.Header m =
+                com.engineerolabs.fits_proto.FitsProto.FitsHeader m =
                     input.readMessage(
-                        com.engineerolabs.fits_proto.FitsProto.Header.parser(),
+                        com.engineerolabs.fits_proto.FitsProto.FitsHeader.parser(),
                         extensionRegistry);
                 if (headerBuilder_ == null) {
                   ensureHeaderIsMutable();
@@ -7982,26 +7982,26 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
 
       private int bitField0_;
 
-      private java.util.List<com.engineerolabs.fits_proto.FitsProto.Header> header_ =
+      private java.util.List<com.engineerolabs.fits_proto.FitsProto.FitsHeader> header_ =
         java.util.Collections.emptyList();
       private void ensureHeaderIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          header_ = new java.util.ArrayList<com.engineerolabs.fits_proto.FitsProto.Header>(header_);
+          header_ = new java.util.ArrayList<com.engineerolabs.fits_proto.FitsProto.FitsHeader>(header_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.engineerolabs.fits_proto.FitsProto.Header, com.engineerolabs.fits_proto.FitsProto.Header.Builder, com.engineerolabs.fits_proto.FitsProto.HeaderOrBuilder> headerBuilder_;
+          com.engineerolabs.fits_proto.FitsProto.FitsHeader, com.engineerolabs.fits_proto.FitsProto.FitsHeader.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHeaderOrBuilder> headerBuilder_;
 
       /**
        * <pre>
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
-      public java.util.List<com.engineerolabs.fits_proto.FitsProto.Header> getHeaderList() {
+      public java.util.List<com.engineerolabs.fits_proto.FitsProto.FitsHeader> getHeaderList() {
         if (headerBuilder_ == null) {
           return java.util.Collections.unmodifiableList(header_);
         } else {
@@ -8013,7 +8013,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
       public int getHeaderCount() {
         if (headerBuilder_ == null) {
@@ -8027,9 +8027,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
-      public com.engineerolabs.fits_proto.FitsProto.Header getHeader(int index) {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHeader getHeader(int index) {
         if (headerBuilder_ == null) {
           return header_.get(index);
         } else {
@@ -8041,10 +8041,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
       public Builder setHeader(
-          int index, com.engineerolabs.fits_proto.FitsProto.Header value) {
+          int index, com.engineerolabs.fits_proto.FitsProto.FitsHeader value) {
         if (headerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -8062,10 +8062,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
       public Builder setHeader(
-          int index, com.engineerolabs.fits_proto.FitsProto.Header.Builder builderForValue) {
+          int index, com.engineerolabs.fits_proto.FitsProto.FitsHeader.Builder builderForValue) {
         if (headerBuilder_ == null) {
           ensureHeaderIsMutable();
           header_.set(index, builderForValue.build());
@@ -8080,9 +8080,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
-      public Builder addHeader(com.engineerolabs.fits_proto.FitsProto.Header value) {
+      public Builder addHeader(com.engineerolabs.fits_proto.FitsProto.FitsHeader value) {
         if (headerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -8100,10 +8100,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
       public Builder addHeader(
-          int index, com.engineerolabs.fits_proto.FitsProto.Header value) {
+          int index, com.engineerolabs.fits_proto.FitsProto.FitsHeader value) {
         if (headerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -8121,10 +8121,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
       public Builder addHeader(
-          com.engineerolabs.fits_proto.FitsProto.Header.Builder builderForValue) {
+          com.engineerolabs.fits_proto.FitsProto.FitsHeader.Builder builderForValue) {
         if (headerBuilder_ == null) {
           ensureHeaderIsMutable();
           header_.add(builderForValue.build());
@@ -8139,10 +8139,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
       public Builder addHeader(
-          int index, com.engineerolabs.fits_proto.FitsProto.Header.Builder builderForValue) {
+          int index, com.engineerolabs.fits_proto.FitsProto.FitsHeader.Builder builderForValue) {
         if (headerBuilder_ == null) {
           ensureHeaderIsMutable();
           header_.add(index, builderForValue.build());
@@ -8157,10 +8157,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
       public Builder addAllHeader(
-          java.lang.Iterable<? extends com.engineerolabs.fits_proto.FitsProto.Header> values) {
+          java.lang.Iterable<? extends com.engineerolabs.fits_proto.FitsProto.FitsHeader> values) {
         if (headerBuilder_ == null) {
           ensureHeaderIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -8176,7 +8176,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
       public Builder clearHeader() {
         if (headerBuilder_ == null) {
@@ -8193,7 +8193,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
       public Builder removeHeader(int index) {
         if (headerBuilder_ == null) {
@@ -8210,9 +8210,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
-      public com.engineerolabs.fits_proto.FitsProto.Header.Builder getHeaderBuilder(
+      public com.engineerolabs.fits_proto.FitsProto.FitsHeader.Builder getHeaderBuilder(
           int index) {
         return getHeaderFieldBuilder().getBuilder(index);
       }
@@ -8221,9 +8221,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
-      public com.engineerolabs.fits_proto.FitsProto.HeaderOrBuilder getHeaderOrBuilder(
+      public com.engineerolabs.fits_proto.FitsProto.FitsHeaderOrBuilder getHeaderOrBuilder(
           int index) {
         if (headerBuilder_ == null) {
           return header_.get(index);  } else {
@@ -8235,9 +8235,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
-      public java.util.List<? extends com.engineerolabs.fits_proto.FitsProto.HeaderOrBuilder> 
+      public java.util.List<? extends com.engineerolabs.fits_proto.FitsProto.FitsHeaderOrBuilder> 
            getHeaderOrBuilderList() {
         if (headerBuilder_ != null) {
           return headerBuilder_.getMessageOrBuilderList();
@@ -8250,41 +8250,41 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
-      public com.engineerolabs.fits_proto.FitsProto.Header.Builder addHeaderBuilder() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHeader.Builder addHeaderBuilder() {
         return getHeaderFieldBuilder().addBuilder(
-            com.engineerolabs.fits_proto.FitsProto.Header.getDefaultInstance());
+            com.engineerolabs.fits_proto.FitsProto.FitsHeader.getDefaultInstance());
       }
       /**
        * <pre>
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
-      public com.engineerolabs.fits_proto.FitsProto.Header.Builder addHeaderBuilder(
+      public com.engineerolabs.fits_proto.FitsProto.FitsHeader.Builder addHeaderBuilder(
           int index) {
         return getHeaderFieldBuilder().addBuilder(
-            index, com.engineerolabs.fits_proto.FitsProto.Header.getDefaultInstance());
+            index, com.engineerolabs.fits_proto.FitsProto.FitsHeader.getDefaultInstance());
       }
       /**
        * <pre>
        * Define the header-data unit.
        * </pre>
        *
-       * <code>repeated .fits.proto.Header header = 1;</code>
+       * <code>repeated .fits_proto.FitsHeader header = 1;</code>
        */
-      public java.util.List<com.engineerolabs.fits_proto.FitsProto.Header.Builder> 
+      public java.util.List<com.engineerolabs.fits_proto.FitsProto.FitsHeader.Builder> 
            getHeaderBuilderList() {
         return getHeaderFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.engineerolabs.fits_proto.FitsProto.Header, com.engineerolabs.fits_proto.FitsProto.Header.Builder, com.engineerolabs.fits_proto.FitsProto.HeaderOrBuilder> 
+          com.engineerolabs.fits_proto.FitsProto.FitsHeader, com.engineerolabs.fits_proto.FitsProto.FitsHeader.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHeaderOrBuilder> 
           getHeaderFieldBuilder() {
         if (headerBuilder_ == null) {
           headerBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.engineerolabs.fits_proto.FitsProto.Header, com.engineerolabs.fits_proto.FitsProto.Header.Builder, com.engineerolabs.fits_proto.FitsProto.HeaderOrBuilder>(
+              com.engineerolabs.fits_proto.FitsProto.FitsHeader, com.engineerolabs.fits_proto.FitsProto.FitsHeader.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHeaderOrBuilder>(
                   header_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -8295,9 +8295,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData, com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.FloatDataOrBuilder> floatDataBuilder_;
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData, com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatDataOrBuilder> floatDataBuilder_;
       /**
-       * <code>.fits.proto.Hdu.FloatData float_data = 2;</code>
+       * <code>.fits_proto.FitsHdu.FloatData float_data = 2;</code>
        * @return Whether the floatData field is set.
        */
       @java.lang.Override
@@ -8305,27 +8305,27 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return payloadCase_ == 2;
       }
       /**
-       * <code>.fits.proto.Hdu.FloatData float_data = 2;</code>
+       * <code>.fits_proto.FitsHdu.FloatData float_data = 2;</code>
        * @return The floatData.
        */
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData getFloatData() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData getFloatData() {
         if (floatDataBuilder_ == null) {
           if (payloadCase_ == 2) {
-            return (com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData) payload_;
+            return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData) payload_;
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.getDefaultInstance();
         } else {
           if (payloadCase_ == 2) {
             return floatDataBuilder_.getMessage();
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.getDefaultInstance();
         }
       }
       /**
-       * <code>.fits.proto.Hdu.FloatData float_data = 2;</code>
+       * <code>.fits_proto.FitsHdu.FloatData float_data = 2;</code>
        */
-      public Builder setFloatData(com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData value) {
+      public Builder setFloatData(com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData value) {
         if (floatDataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -8339,10 +8339,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.FloatData float_data = 2;</code>
+       * <code>.fits_proto.FitsHdu.FloatData float_data = 2;</code>
        */
       public Builder setFloatData(
-          com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.Builder builderForValue) {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.Builder builderForValue) {
         if (floatDataBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
@@ -8353,13 +8353,13 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.FloatData float_data = 2;</code>
+       * <code>.fits_proto.FitsHdu.FloatData float_data = 2;</code>
        */
-      public Builder mergeFloatData(com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData value) {
+      public Builder mergeFloatData(com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData value) {
         if (floatDataBuilder_ == null) {
           if (payloadCase_ == 2 &&
-              payload_ != com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.getDefaultInstance()) {
-            payload_ = com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.newBuilder((com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData) payload_)
+              payload_ != com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.getDefaultInstance()) {
+            payload_ = com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.newBuilder((com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -8376,7 +8376,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.FloatData float_data = 2;</code>
+       * <code>.fits_proto.FitsHdu.FloatData float_data = 2;</code>
        */
       public Builder clearFloatData() {
         if (floatDataBuilder_ == null) {
@@ -8395,38 +8395,38 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.FloatData float_data = 2;</code>
+       * <code>.fits_proto.FitsHdu.FloatData float_data = 2;</code>
        */
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.Builder getFloatDataBuilder() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.Builder getFloatDataBuilder() {
         return getFloatDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.fits.proto.Hdu.FloatData float_data = 2;</code>
+       * <code>.fits_proto.FitsHdu.FloatData float_data = 2;</code>
        */
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.FloatDataOrBuilder getFloatDataOrBuilder() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatDataOrBuilder getFloatDataOrBuilder() {
         if ((payloadCase_ == 2) && (floatDataBuilder_ != null)) {
           return floatDataBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 2) {
-            return (com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData) payload_;
+            return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData) payload_;
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.getDefaultInstance();
         }
       }
       /**
-       * <code>.fits.proto.Hdu.FloatData float_data = 2;</code>
+       * <code>.fits_proto.FitsHdu.FloatData float_data = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData, com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.FloatDataOrBuilder> 
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData, com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatDataOrBuilder> 
           getFloatDataFieldBuilder() {
         if (floatDataBuilder_ == null) {
           if (!(payloadCase_ == 2)) {
-            payload_ = com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.getDefaultInstance();
+            payload_ = com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.getDefaultInstance();
           }
           floatDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData, com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.FloatDataOrBuilder>(
-                  (com.engineerolabs.fits_proto.FitsProto.Hdu.FloatData) payload_,
+              com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData, com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatDataOrBuilder>(
+                  (com.engineerolabs.fits_proto.FitsProto.FitsHdu.FloatData) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
@@ -8437,9 +8437,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData, com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleDataOrBuilder> doubleDataBuilder_;
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData, com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleDataOrBuilder> doubleDataBuilder_;
       /**
-       * <code>.fits.proto.Hdu.DoubleData double_data = 3;</code>
+       * <code>.fits_proto.FitsHdu.DoubleData double_data = 3;</code>
        * @return Whether the doubleData field is set.
        */
       @java.lang.Override
@@ -8447,27 +8447,27 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return payloadCase_ == 3;
       }
       /**
-       * <code>.fits.proto.Hdu.DoubleData double_data = 3;</code>
+       * <code>.fits_proto.FitsHdu.DoubleData double_data = 3;</code>
        * @return The doubleData.
        */
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData getDoubleData() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData getDoubleData() {
         if (doubleDataBuilder_ == null) {
           if (payloadCase_ == 3) {
-            return (com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData) payload_;
+            return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData) payload_;
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.getDefaultInstance();
         } else {
           if (payloadCase_ == 3) {
             return doubleDataBuilder_.getMessage();
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.getDefaultInstance();
         }
       }
       /**
-       * <code>.fits.proto.Hdu.DoubleData double_data = 3;</code>
+       * <code>.fits_proto.FitsHdu.DoubleData double_data = 3;</code>
        */
-      public Builder setDoubleData(com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData value) {
+      public Builder setDoubleData(com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData value) {
         if (doubleDataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -8481,10 +8481,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.DoubleData double_data = 3;</code>
+       * <code>.fits_proto.FitsHdu.DoubleData double_data = 3;</code>
        */
       public Builder setDoubleData(
-          com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.Builder builderForValue) {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.Builder builderForValue) {
         if (doubleDataBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
@@ -8495,13 +8495,13 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.DoubleData double_data = 3;</code>
+       * <code>.fits_proto.FitsHdu.DoubleData double_data = 3;</code>
        */
-      public Builder mergeDoubleData(com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData value) {
+      public Builder mergeDoubleData(com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData value) {
         if (doubleDataBuilder_ == null) {
           if (payloadCase_ == 3 &&
-              payload_ != com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.getDefaultInstance()) {
-            payload_ = com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.newBuilder((com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData) payload_)
+              payload_ != com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.getDefaultInstance()) {
+            payload_ = com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.newBuilder((com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -8518,7 +8518,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.DoubleData double_data = 3;</code>
+       * <code>.fits_proto.FitsHdu.DoubleData double_data = 3;</code>
        */
       public Builder clearDoubleData() {
         if (doubleDataBuilder_ == null) {
@@ -8537,38 +8537,38 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.DoubleData double_data = 3;</code>
+       * <code>.fits_proto.FitsHdu.DoubleData double_data = 3;</code>
        */
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.Builder getDoubleDataBuilder() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.Builder getDoubleDataBuilder() {
         return getDoubleDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.fits.proto.Hdu.DoubleData double_data = 3;</code>
+       * <code>.fits_proto.FitsHdu.DoubleData double_data = 3;</code>
        */
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleDataOrBuilder getDoubleDataOrBuilder() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleDataOrBuilder getDoubleDataOrBuilder() {
         if ((payloadCase_ == 3) && (doubleDataBuilder_ != null)) {
           return doubleDataBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 3) {
-            return (com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData) payload_;
+            return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData) payload_;
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.getDefaultInstance();
         }
       }
       /**
-       * <code>.fits.proto.Hdu.DoubleData double_data = 3;</code>
+       * <code>.fits_proto.FitsHdu.DoubleData double_data = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData, com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleDataOrBuilder> 
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData, com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleDataOrBuilder> 
           getDoubleDataFieldBuilder() {
         if (doubleDataBuilder_ == null) {
           if (!(payloadCase_ == 3)) {
-            payload_ = com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.getDefaultInstance();
+            payload_ = com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.getDefaultInstance();
           }
           doubleDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData, com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleDataOrBuilder>(
-                  (com.engineerolabs.fits_proto.FitsProto.Hdu.DoubleData) payload_,
+              com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData, com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleDataOrBuilder>(
+                  (com.engineerolabs.fits_proto.FitsProto.FitsHdu.DoubleData) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
@@ -8579,9 +8579,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data, com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.Int32DataOrBuilder> int32DataBuilder_;
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32DataOrBuilder> int32DataBuilder_;
       /**
-       * <code>.fits.proto.Hdu.Int32Data int32_data = 4;</code>
+       * <code>.fits_proto.FitsHdu.Int32Data int32_data = 4;</code>
        * @return Whether the int32Data field is set.
        */
       @java.lang.Override
@@ -8589,27 +8589,27 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return payloadCase_ == 4;
       }
       /**
-       * <code>.fits.proto.Hdu.Int32Data int32_data = 4;</code>
+       * <code>.fits_proto.FitsHdu.Int32Data int32_data = 4;</code>
        * @return The int32Data.
        */
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data getInt32Data() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data getInt32Data() {
         if (int32DataBuilder_ == null) {
           if (payloadCase_ == 4) {
-            return (com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data) payload_;
+            return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data) payload_;
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.getDefaultInstance();
         } else {
           if (payloadCase_ == 4) {
             return int32DataBuilder_.getMessage();
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.getDefaultInstance();
         }
       }
       /**
-       * <code>.fits.proto.Hdu.Int32Data int32_data = 4;</code>
+       * <code>.fits_proto.FitsHdu.Int32Data int32_data = 4;</code>
        */
-      public Builder setInt32Data(com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data value) {
+      public Builder setInt32Data(com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data value) {
         if (int32DataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -8623,10 +8623,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.Int32Data int32_data = 4;</code>
+       * <code>.fits_proto.FitsHdu.Int32Data int32_data = 4;</code>
        */
       public Builder setInt32Data(
-          com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.Builder builderForValue) {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.Builder builderForValue) {
         if (int32DataBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
@@ -8637,13 +8637,13 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.Int32Data int32_data = 4;</code>
+       * <code>.fits_proto.FitsHdu.Int32Data int32_data = 4;</code>
        */
-      public Builder mergeInt32Data(com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data value) {
+      public Builder mergeInt32Data(com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data value) {
         if (int32DataBuilder_ == null) {
           if (payloadCase_ == 4 &&
-              payload_ != com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.getDefaultInstance()) {
-            payload_ = com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.newBuilder((com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data) payload_)
+              payload_ != com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.getDefaultInstance()) {
+            payload_ = com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.newBuilder((com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -8660,7 +8660,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.Int32Data int32_data = 4;</code>
+       * <code>.fits_proto.FitsHdu.Int32Data int32_data = 4;</code>
        */
       public Builder clearInt32Data() {
         if (int32DataBuilder_ == null) {
@@ -8679,38 +8679,38 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.Int32Data int32_data = 4;</code>
+       * <code>.fits_proto.FitsHdu.Int32Data int32_data = 4;</code>
        */
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.Builder getInt32DataBuilder() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.Builder getInt32DataBuilder() {
         return getInt32DataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.fits.proto.Hdu.Int32Data int32_data = 4;</code>
+       * <code>.fits_proto.FitsHdu.Int32Data int32_data = 4;</code>
        */
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.Int32DataOrBuilder getInt32DataOrBuilder() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32DataOrBuilder getInt32DataOrBuilder() {
         if ((payloadCase_ == 4) && (int32DataBuilder_ != null)) {
           return int32DataBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 4) {
-            return (com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data) payload_;
+            return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data) payload_;
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.getDefaultInstance();
         }
       }
       /**
-       * <code>.fits.proto.Hdu.Int32Data int32_data = 4;</code>
+       * <code>.fits_proto.FitsHdu.Int32Data int32_data = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data, com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.Int32DataOrBuilder> 
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32DataOrBuilder> 
           getInt32DataFieldBuilder() {
         if (int32DataBuilder_ == null) {
           if (!(payloadCase_ == 4)) {
-            payload_ = com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.getDefaultInstance();
+            payload_ = com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.getDefaultInstance();
           }
           int32DataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data, com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.Int32DataOrBuilder>(
-                  (com.engineerolabs.fits_proto.FitsProto.Hdu.Int32Data) payload_,
+              com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32DataOrBuilder>(
+                  (com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int32Data) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
@@ -8721,9 +8721,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data, com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.Int64DataOrBuilder> int64DataBuilder_;
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64DataOrBuilder> int64DataBuilder_;
       /**
-       * <code>.fits.proto.Hdu.Int64Data int64_data = 5;</code>
+       * <code>.fits_proto.FitsHdu.Int64Data int64_data = 5;</code>
        * @return Whether the int64Data field is set.
        */
       @java.lang.Override
@@ -8731,27 +8731,27 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return payloadCase_ == 5;
       }
       /**
-       * <code>.fits.proto.Hdu.Int64Data int64_data = 5;</code>
+       * <code>.fits_proto.FitsHdu.Int64Data int64_data = 5;</code>
        * @return The int64Data.
        */
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data getInt64Data() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data getInt64Data() {
         if (int64DataBuilder_ == null) {
           if (payloadCase_ == 5) {
-            return (com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data) payload_;
+            return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data) payload_;
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.getDefaultInstance();
         } else {
           if (payloadCase_ == 5) {
             return int64DataBuilder_.getMessage();
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.getDefaultInstance();
         }
       }
       /**
-       * <code>.fits.proto.Hdu.Int64Data int64_data = 5;</code>
+       * <code>.fits_proto.FitsHdu.Int64Data int64_data = 5;</code>
        */
-      public Builder setInt64Data(com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data value) {
+      public Builder setInt64Data(com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data value) {
         if (int64DataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -8765,10 +8765,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.Int64Data int64_data = 5;</code>
+       * <code>.fits_proto.FitsHdu.Int64Data int64_data = 5;</code>
        */
       public Builder setInt64Data(
-          com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.Builder builderForValue) {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.Builder builderForValue) {
         if (int64DataBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
@@ -8779,13 +8779,13 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.Int64Data int64_data = 5;</code>
+       * <code>.fits_proto.FitsHdu.Int64Data int64_data = 5;</code>
        */
-      public Builder mergeInt64Data(com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data value) {
+      public Builder mergeInt64Data(com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data value) {
         if (int64DataBuilder_ == null) {
           if (payloadCase_ == 5 &&
-              payload_ != com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.getDefaultInstance()) {
-            payload_ = com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.newBuilder((com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data) payload_)
+              payload_ != com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.getDefaultInstance()) {
+            payload_ = com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.newBuilder((com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -8802,7 +8802,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.Int64Data int64_data = 5;</code>
+       * <code>.fits_proto.FitsHdu.Int64Data int64_data = 5;</code>
        */
       public Builder clearInt64Data() {
         if (int64DataBuilder_ == null) {
@@ -8821,38 +8821,38 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.Int64Data int64_data = 5;</code>
+       * <code>.fits_proto.FitsHdu.Int64Data int64_data = 5;</code>
        */
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.Builder getInt64DataBuilder() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.Builder getInt64DataBuilder() {
         return getInt64DataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.fits.proto.Hdu.Int64Data int64_data = 5;</code>
+       * <code>.fits_proto.FitsHdu.Int64Data int64_data = 5;</code>
        */
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.Int64DataOrBuilder getInt64DataOrBuilder() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64DataOrBuilder getInt64DataOrBuilder() {
         if ((payloadCase_ == 5) && (int64DataBuilder_ != null)) {
           return int64DataBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 5) {
-            return (com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data) payload_;
+            return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data) payload_;
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.getDefaultInstance();
         }
       }
       /**
-       * <code>.fits.proto.Hdu.Int64Data int64_data = 5;</code>
+       * <code>.fits_proto.FitsHdu.Int64Data int64_data = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data, com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.Int64DataOrBuilder> 
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64DataOrBuilder> 
           getInt64DataFieldBuilder() {
         if (int64DataBuilder_ == null) {
           if (!(payloadCase_ == 5)) {
-            payload_ = com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.getDefaultInstance();
+            payload_ = com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.getDefaultInstance();
           }
           int64DataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data, com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.Int64DataOrBuilder>(
-                  (com.engineerolabs.fits_proto.FitsProto.Hdu.Int64Data) payload_,
+              com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64DataOrBuilder>(
+                  (com.engineerolabs.fits_proto.FitsProto.FitsHdu.Int64Data) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
@@ -8863,9 +8863,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data, com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32DataOrBuilder> sint32DataBuilder_;
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data, com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32DataOrBuilder> sint32DataBuilder_;
       /**
-       * <code>.fits.proto.Hdu.SInt32Data sint32_data = 6;</code>
+       * <code>.fits_proto.FitsHdu.SInt32Data sint32_data = 6;</code>
        * @return Whether the sint32Data field is set.
        */
       @java.lang.Override
@@ -8873,27 +8873,27 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return payloadCase_ == 6;
       }
       /**
-       * <code>.fits.proto.Hdu.SInt32Data sint32_data = 6;</code>
+       * <code>.fits_proto.FitsHdu.SInt32Data sint32_data = 6;</code>
        * @return The sint32Data.
        */
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data getSint32Data() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data getSint32Data() {
         if (sint32DataBuilder_ == null) {
           if (payloadCase_ == 6) {
-            return (com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data) payload_;
+            return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data) payload_;
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.getDefaultInstance();
         } else {
           if (payloadCase_ == 6) {
             return sint32DataBuilder_.getMessage();
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.getDefaultInstance();
         }
       }
       /**
-       * <code>.fits.proto.Hdu.SInt32Data sint32_data = 6;</code>
+       * <code>.fits_proto.FitsHdu.SInt32Data sint32_data = 6;</code>
        */
-      public Builder setSint32Data(com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data value) {
+      public Builder setSint32Data(com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data value) {
         if (sint32DataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -8907,10 +8907,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.SInt32Data sint32_data = 6;</code>
+       * <code>.fits_proto.FitsHdu.SInt32Data sint32_data = 6;</code>
        */
       public Builder setSint32Data(
-          com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.Builder builderForValue) {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.Builder builderForValue) {
         if (sint32DataBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
@@ -8921,13 +8921,13 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.SInt32Data sint32_data = 6;</code>
+       * <code>.fits_proto.FitsHdu.SInt32Data sint32_data = 6;</code>
        */
-      public Builder mergeSint32Data(com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data value) {
+      public Builder mergeSint32Data(com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data value) {
         if (sint32DataBuilder_ == null) {
           if (payloadCase_ == 6 &&
-              payload_ != com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.getDefaultInstance()) {
-            payload_ = com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.newBuilder((com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data) payload_)
+              payload_ != com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.getDefaultInstance()) {
+            payload_ = com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.newBuilder((com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -8944,7 +8944,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.SInt32Data sint32_data = 6;</code>
+       * <code>.fits_proto.FitsHdu.SInt32Data sint32_data = 6;</code>
        */
       public Builder clearSint32Data() {
         if (sint32DataBuilder_ == null) {
@@ -8963,38 +8963,38 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.SInt32Data sint32_data = 6;</code>
+       * <code>.fits_proto.FitsHdu.SInt32Data sint32_data = 6;</code>
        */
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.Builder getSint32DataBuilder() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.Builder getSint32DataBuilder() {
         return getSint32DataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.fits.proto.Hdu.SInt32Data sint32_data = 6;</code>
+       * <code>.fits_proto.FitsHdu.SInt32Data sint32_data = 6;</code>
        */
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32DataOrBuilder getSint32DataOrBuilder() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32DataOrBuilder getSint32DataOrBuilder() {
         if ((payloadCase_ == 6) && (sint32DataBuilder_ != null)) {
           return sint32DataBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 6) {
-            return (com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data) payload_;
+            return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data) payload_;
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.getDefaultInstance();
         }
       }
       /**
-       * <code>.fits.proto.Hdu.SInt32Data sint32_data = 6;</code>
+       * <code>.fits_proto.FitsHdu.SInt32Data sint32_data = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data, com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32DataOrBuilder> 
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data, com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32DataOrBuilder> 
           getSint32DataFieldBuilder() {
         if (sint32DataBuilder_ == null) {
           if (!(payloadCase_ == 6)) {
-            payload_ = com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.getDefaultInstance();
+            payload_ = com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.getDefaultInstance();
           }
           sint32DataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data, com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32DataOrBuilder>(
-                  (com.engineerolabs.fits_proto.FitsProto.Hdu.SInt32Data) payload_,
+              com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data, com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32DataOrBuilder>(
+                  (com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt32Data) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
@@ -9005,9 +9005,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data, com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64DataOrBuilder> sint64DataBuilder_;
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data, com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64DataOrBuilder> sint64DataBuilder_;
       /**
-       * <code>.fits.proto.Hdu.SInt64Data sint64_data = 7;</code>
+       * <code>.fits_proto.FitsHdu.SInt64Data sint64_data = 7;</code>
        * @return Whether the sint64Data field is set.
        */
       @java.lang.Override
@@ -9015,27 +9015,27 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return payloadCase_ == 7;
       }
       /**
-       * <code>.fits.proto.Hdu.SInt64Data sint64_data = 7;</code>
+       * <code>.fits_proto.FitsHdu.SInt64Data sint64_data = 7;</code>
        * @return The sint64Data.
        */
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data getSint64Data() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data getSint64Data() {
         if (sint64DataBuilder_ == null) {
           if (payloadCase_ == 7) {
-            return (com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data) payload_;
+            return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data) payload_;
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.getDefaultInstance();
         } else {
           if (payloadCase_ == 7) {
             return sint64DataBuilder_.getMessage();
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.getDefaultInstance();
         }
       }
       /**
-       * <code>.fits.proto.Hdu.SInt64Data sint64_data = 7;</code>
+       * <code>.fits_proto.FitsHdu.SInt64Data sint64_data = 7;</code>
        */
-      public Builder setSint64Data(com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data value) {
+      public Builder setSint64Data(com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data value) {
         if (sint64DataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9049,10 +9049,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.SInt64Data sint64_data = 7;</code>
+       * <code>.fits_proto.FitsHdu.SInt64Data sint64_data = 7;</code>
        */
       public Builder setSint64Data(
-          com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.Builder builderForValue) {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.Builder builderForValue) {
         if (sint64DataBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
@@ -9063,13 +9063,13 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.SInt64Data sint64_data = 7;</code>
+       * <code>.fits_proto.FitsHdu.SInt64Data sint64_data = 7;</code>
        */
-      public Builder mergeSint64Data(com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data value) {
+      public Builder mergeSint64Data(com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data value) {
         if (sint64DataBuilder_ == null) {
           if (payloadCase_ == 7 &&
-              payload_ != com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.getDefaultInstance()) {
-            payload_ = com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.newBuilder((com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data) payload_)
+              payload_ != com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.getDefaultInstance()) {
+            payload_ = com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.newBuilder((com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -9086,7 +9086,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.SInt64Data sint64_data = 7;</code>
+       * <code>.fits_proto.FitsHdu.SInt64Data sint64_data = 7;</code>
        */
       public Builder clearSint64Data() {
         if (sint64DataBuilder_ == null) {
@@ -9105,38 +9105,38 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
         return this;
       }
       /**
-       * <code>.fits.proto.Hdu.SInt64Data sint64_data = 7;</code>
+       * <code>.fits_proto.FitsHdu.SInt64Data sint64_data = 7;</code>
        */
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.Builder getSint64DataBuilder() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.Builder getSint64DataBuilder() {
         return getSint64DataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.fits.proto.Hdu.SInt64Data sint64_data = 7;</code>
+       * <code>.fits_proto.FitsHdu.SInt64Data sint64_data = 7;</code>
        */
       @java.lang.Override
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64DataOrBuilder getSint64DataOrBuilder() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64DataOrBuilder getSint64DataOrBuilder() {
         if ((payloadCase_ == 7) && (sint64DataBuilder_ != null)) {
           return sint64DataBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 7) {
-            return (com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data) payload_;
+            return (com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data) payload_;
           }
-          return com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.getDefaultInstance();
+          return com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.getDefaultInstance();
         }
       }
       /**
-       * <code>.fits.proto.Hdu.SInt64Data sint64_data = 7;</code>
+       * <code>.fits_proto.FitsHdu.SInt64Data sint64_data = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data, com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64DataOrBuilder> 
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data, com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64DataOrBuilder> 
           getSint64DataFieldBuilder() {
         if (sint64DataBuilder_ == null) {
           if (!(payloadCase_ == 7)) {
-            payload_ = com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.getDefaultInstance();
+            payload_ = com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.getDefaultInstance();
           }
           sint64DataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data, com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data.Builder, com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64DataOrBuilder>(
-                  (com.engineerolabs.fits_proto.FitsProto.Hdu.SInt64Data) payload_,
+              com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data, com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64DataOrBuilder>(
+                  (com.engineerolabs.fits_proto.FitsProto.FitsHdu.SInt64Data) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
@@ -9158,23 +9158,23 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
 
-      // @@protoc_insertion_point(builder_scope:fits.proto.Hdu)
+      // @@protoc_insertion_point(builder_scope:fits_proto.FitsHdu)
     }
 
-    // @@protoc_insertion_point(class_scope:fits.proto.Hdu)
-    private static final com.engineerolabs.fits_proto.FitsProto.Hdu DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:fits_proto.FitsHdu)
+    private static final com.engineerolabs.fits_proto.FitsProto.FitsHdu DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.Hdu();
+      DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.FitsHdu();
     }
 
-    public static com.engineerolabs.fits_proto.FitsProto.Hdu getDefaultInstance() {
+    public static com.engineerolabs.fits_proto.FitsProto.FitsHdu getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Hdu>
-        PARSER = new com.google.protobuf.AbstractParser<Hdu>() {
+    private static final com.google.protobuf.Parser<FitsHdu>
+        PARSER = new com.google.protobuf.AbstractParser<FitsHdu>() {
       @java.lang.Override
-      public Hdu parsePartialFrom(
+      public FitsHdu parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -9193,24 +9193,24 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
     };
 
-    public static com.google.protobuf.Parser<Hdu> parser() {
+    public static com.google.protobuf.Parser<FitsHdu> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Hdu> getParserForType() {
+    public com.google.protobuf.Parser<FitsHdu> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Hdu getDefaultInstanceForType() {
+    public com.engineerolabs.fits_proto.FitsProto.FitsHdu getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface FitsOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:fits.proto.Fits)
+      // @@protoc_insertion_point(interface_extends:fits_proto.Fits)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -9218,24 +9218,24 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * mandatory primary, plus optional extensions
      * </pre>
      *
-     * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+     * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
      */
-    java.util.List<com.engineerolabs.fits_proto.FitsProto.Hdu> 
+    java.util.List<com.engineerolabs.fits_proto.FitsProto.FitsHdu> 
         getHduList();
     /**
      * <pre>
      * mandatory primary, plus optional extensions
      * </pre>
      *
-     * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+     * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
      */
-    com.engineerolabs.fits_proto.FitsProto.Hdu getHdu(int index);
+    com.engineerolabs.fits_proto.FitsProto.FitsHdu getHdu(int index);
     /**
      * <pre>
      * mandatory primary, plus optional extensions
      * </pre>
      *
-     * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+     * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
      */
     int getHduCount();
     /**
@@ -9243,18 +9243,18 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * mandatory primary, plus optional extensions
      * </pre>
      *
-     * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+     * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
      */
-    java.util.List<? extends com.engineerolabs.fits_proto.FitsProto.HduOrBuilder> 
+    java.util.List<? extends com.engineerolabs.fits_proto.FitsProto.FitsHduOrBuilder> 
         getHduOrBuilderList();
     /**
      * <pre>
      * mandatory primary, plus optional extensions
      * </pre>
      *
-     * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+     * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
      */
-    com.engineerolabs.fits_proto.FitsProto.HduOrBuilder getHduOrBuilder(
+    com.engineerolabs.fits_proto.FitsProto.FitsHduOrBuilder getHduOrBuilder(
         int index);
   }
   /**
@@ -9262,11 +9262,11 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
    * The actual FITS file message.
    * </pre>
    *
-   * Protobuf type {@code fits.proto.Fits}
+   * Protobuf type {@code fits_proto.Fits}
    */
   public static final class Fits extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:fits.proto.Fits)
+      // @@protoc_insertion_point(message_implements:fits_proto.Fits)
       FitsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use Fits.newBuilder() to construct.
@@ -9303,16 +9303,16 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
     }
 
     public static final int HDU_FIELD_NUMBER = 1;
-    private java.util.List<com.engineerolabs.fits_proto.FitsProto.Hdu> hdu_;
+    private java.util.List<com.engineerolabs.fits_proto.FitsProto.FitsHdu> hdu_;
     /**
      * <pre>
      * mandatory primary, plus optional extensions
      * </pre>
      *
-     * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+     * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<com.engineerolabs.fits_proto.FitsProto.Hdu> getHduList() {
+    public java.util.List<com.engineerolabs.fits_proto.FitsProto.FitsHdu> getHduList() {
       return hdu_;
     }
     /**
@@ -9320,10 +9320,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * mandatory primary, plus optional extensions
      * </pre>
      *
-     * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+     * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends com.engineerolabs.fits_proto.FitsProto.HduOrBuilder> 
+    public java.util.List<? extends com.engineerolabs.fits_proto.FitsProto.FitsHduOrBuilder> 
         getHduOrBuilderList() {
       return hdu_;
     }
@@ -9332,7 +9332,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * mandatory primary, plus optional extensions
      * </pre>
      *
-     * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+     * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
      */
     @java.lang.Override
     public int getHduCount() {
@@ -9343,10 +9343,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * mandatory primary, plus optional extensions
      * </pre>
      *
-     * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+     * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
      */
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.Hdu getHdu(int index) {
+    public com.engineerolabs.fits_proto.FitsProto.FitsHdu getHdu(int index) {
       return hdu_.get(index);
     }
     /**
@@ -9354,10 +9354,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * mandatory primary, plus optional extensions
      * </pre>
      *
-     * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+     * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
      */
     @java.lang.Override
-    public com.engineerolabs.fits_proto.FitsProto.HduOrBuilder getHduOrBuilder(
+    public com.engineerolabs.fits_proto.FitsProto.FitsHduOrBuilder getHduOrBuilder(
         int index) {
       return hdu_.get(index);
     }
@@ -9524,11 +9524,11 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
      * The actual FITS file message.
      * </pre>
      *
-     * Protobuf type {@code fits.proto.Fits}
+     * Protobuf type {@code fits_proto.Fits}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:fits.proto.Fits)
+        // @@protoc_insertion_point(builder_implements:fits_proto.Fits)
         com.engineerolabs.fits_proto.FitsProto.FitsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
@@ -9700,9 +9700,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
                 done = true;
                 break;
               case 10: {
-                com.engineerolabs.fits_proto.FitsProto.Hdu m =
+                com.engineerolabs.fits_proto.FitsProto.FitsHdu m =
                     input.readMessage(
-                        com.engineerolabs.fits_proto.FitsProto.Hdu.parser(),
+                        com.engineerolabs.fits_proto.FitsProto.FitsHdu.parser(),
                         extensionRegistry);
                 if (hduBuilder_ == null) {
                   ensureHduIsMutable();
@@ -9729,26 +9729,26 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
       private int bitField0_;
 
-      private java.util.List<com.engineerolabs.fits_proto.FitsProto.Hdu> hdu_ =
+      private java.util.List<com.engineerolabs.fits_proto.FitsProto.FitsHdu> hdu_ =
         java.util.Collections.emptyList();
       private void ensureHduIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          hdu_ = new java.util.ArrayList<com.engineerolabs.fits_proto.FitsProto.Hdu>(hdu_);
+          hdu_ = new java.util.ArrayList<com.engineerolabs.fits_proto.FitsProto.FitsHdu>(hdu_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.engineerolabs.fits_proto.FitsProto.Hdu, com.engineerolabs.fits_proto.FitsProto.Hdu.Builder, com.engineerolabs.fits_proto.FitsProto.HduOrBuilder> hduBuilder_;
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHduOrBuilder> hduBuilder_;
 
       /**
        * <pre>
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
-      public java.util.List<com.engineerolabs.fits_proto.FitsProto.Hdu> getHduList() {
+      public java.util.List<com.engineerolabs.fits_proto.FitsProto.FitsHdu> getHduList() {
         if (hduBuilder_ == null) {
           return java.util.Collections.unmodifiableList(hdu_);
         } else {
@@ -9760,7 +9760,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
       public int getHduCount() {
         if (hduBuilder_ == null) {
@@ -9774,9 +9774,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
-      public com.engineerolabs.fits_proto.FitsProto.Hdu getHdu(int index) {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu getHdu(int index) {
         if (hduBuilder_ == null) {
           return hdu_.get(index);
         } else {
@@ -9788,10 +9788,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
       public Builder setHdu(
-          int index, com.engineerolabs.fits_proto.FitsProto.Hdu value) {
+          int index, com.engineerolabs.fits_proto.FitsProto.FitsHdu value) {
         if (hduBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9809,10 +9809,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
       public Builder setHdu(
-          int index, com.engineerolabs.fits_proto.FitsProto.Hdu.Builder builderForValue) {
+          int index, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Builder builderForValue) {
         if (hduBuilder_ == null) {
           ensureHduIsMutable();
           hdu_.set(index, builderForValue.build());
@@ -9827,9 +9827,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
-      public Builder addHdu(com.engineerolabs.fits_proto.FitsProto.Hdu value) {
+      public Builder addHdu(com.engineerolabs.fits_proto.FitsProto.FitsHdu value) {
         if (hduBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9847,10 +9847,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
       public Builder addHdu(
-          int index, com.engineerolabs.fits_proto.FitsProto.Hdu value) {
+          int index, com.engineerolabs.fits_proto.FitsProto.FitsHdu value) {
         if (hduBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9868,10 +9868,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
       public Builder addHdu(
-          com.engineerolabs.fits_proto.FitsProto.Hdu.Builder builderForValue) {
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu.Builder builderForValue) {
         if (hduBuilder_ == null) {
           ensureHduIsMutable();
           hdu_.add(builderForValue.build());
@@ -9886,10 +9886,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
       public Builder addHdu(
-          int index, com.engineerolabs.fits_proto.FitsProto.Hdu.Builder builderForValue) {
+          int index, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Builder builderForValue) {
         if (hduBuilder_ == null) {
           ensureHduIsMutable();
           hdu_.add(index, builderForValue.build());
@@ -9904,10 +9904,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
       public Builder addAllHdu(
-          java.lang.Iterable<? extends com.engineerolabs.fits_proto.FitsProto.Hdu> values) {
+          java.lang.Iterable<? extends com.engineerolabs.fits_proto.FitsProto.FitsHdu> values) {
         if (hduBuilder_ == null) {
           ensureHduIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -9923,7 +9923,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
       public Builder clearHdu() {
         if (hduBuilder_ == null) {
@@ -9940,7 +9940,7 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
       public Builder removeHdu(int index) {
         if (hduBuilder_ == null) {
@@ -9957,9 +9957,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.Builder getHduBuilder(
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Builder getHduBuilder(
           int index) {
         return getHduFieldBuilder().getBuilder(index);
       }
@@ -9968,9 +9968,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
-      public com.engineerolabs.fits_proto.FitsProto.HduOrBuilder getHduOrBuilder(
+      public com.engineerolabs.fits_proto.FitsProto.FitsHduOrBuilder getHduOrBuilder(
           int index) {
         if (hduBuilder_ == null) {
           return hdu_.get(index);  } else {
@@ -9982,9 +9982,9 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
-      public java.util.List<? extends com.engineerolabs.fits_proto.FitsProto.HduOrBuilder> 
+      public java.util.List<? extends com.engineerolabs.fits_proto.FitsProto.FitsHduOrBuilder> 
            getHduOrBuilderList() {
         if (hduBuilder_ != null) {
           return hduBuilder_.getMessageOrBuilderList();
@@ -9997,41 +9997,41 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.Builder addHduBuilder() {
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Builder addHduBuilder() {
         return getHduFieldBuilder().addBuilder(
-            com.engineerolabs.fits_proto.FitsProto.Hdu.getDefaultInstance());
+            com.engineerolabs.fits_proto.FitsProto.FitsHdu.getDefaultInstance());
       }
       /**
        * <pre>
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
-      public com.engineerolabs.fits_proto.FitsProto.Hdu.Builder addHduBuilder(
+      public com.engineerolabs.fits_proto.FitsProto.FitsHdu.Builder addHduBuilder(
           int index) {
         return getHduFieldBuilder().addBuilder(
-            index, com.engineerolabs.fits_proto.FitsProto.Hdu.getDefaultInstance());
+            index, com.engineerolabs.fits_proto.FitsProto.FitsHdu.getDefaultInstance());
       }
       /**
        * <pre>
        * mandatory primary, plus optional extensions
        * </pre>
        *
-       * <code>repeated .fits.proto.Hdu hdu = 1;</code>
+       * <code>repeated .fits_proto.FitsHdu hdu = 1;</code>
        */
-      public java.util.List<com.engineerolabs.fits_proto.FitsProto.Hdu.Builder> 
+      public java.util.List<com.engineerolabs.fits_proto.FitsProto.FitsHdu.Builder> 
            getHduBuilderList() {
         return getHduFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.engineerolabs.fits_proto.FitsProto.Hdu, com.engineerolabs.fits_proto.FitsProto.Hdu.Builder, com.engineerolabs.fits_proto.FitsProto.HduOrBuilder> 
+          com.engineerolabs.fits_proto.FitsProto.FitsHdu, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHduOrBuilder> 
           getHduFieldBuilder() {
         if (hduBuilder_ == null) {
           hduBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.engineerolabs.fits_proto.FitsProto.Hdu, com.engineerolabs.fits_proto.FitsProto.Hdu.Builder, com.engineerolabs.fits_proto.FitsProto.HduOrBuilder>(
+              com.engineerolabs.fits_proto.FitsProto.FitsHdu, com.engineerolabs.fits_proto.FitsProto.FitsHdu.Builder, com.engineerolabs.fits_proto.FitsProto.FitsHduOrBuilder>(
                   hdu_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -10053,10 +10053,10 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       }
 
 
-      // @@protoc_insertion_point(builder_scope:fits.proto.Fits)
+      // @@protoc_insertion_point(builder_scope:fits_proto.Fits)
     }
 
-    // @@protoc_insertion_point(class_scope:fits.proto.Fits)
+    // @@protoc_insertion_point(class_scope:fits_proto.Fits)
     private static final com.engineerolabs.fits_proto.FitsProto.Fits DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.engineerolabs.fits_proto.FitsProto.Fits();
@@ -10105,55 +10105,55 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_fits_proto_Data_descriptor;
+    internal_static_fits_proto_KeywordData_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_fits_proto_Data_fieldAccessorTable;
+      internal_static_fits_proto_KeywordData_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_fits_proto_Header_descriptor;
+    internal_static_fits_proto_FitsHeader_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_fits_proto_Header_fieldAccessorTable;
+      internal_static_fits_proto_FitsHeader_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_fits_proto_Header_KeywordsEntry_descriptor;
+    internal_static_fits_proto_FitsHeader_KeywordsEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_fits_proto_Header_KeywordsEntry_fieldAccessorTable;
+      internal_static_fits_proto_FitsHeader_KeywordsEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_fits_proto_Hdu_descriptor;
+    internal_static_fits_proto_FitsHdu_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_fits_proto_Hdu_fieldAccessorTable;
+      internal_static_fits_proto_FitsHdu_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_fits_proto_Hdu_FloatData_descriptor;
+    internal_static_fits_proto_FitsHdu_FloatData_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_fits_proto_Hdu_FloatData_fieldAccessorTable;
+      internal_static_fits_proto_FitsHdu_FloatData_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_fits_proto_Hdu_DoubleData_descriptor;
+    internal_static_fits_proto_FitsHdu_DoubleData_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_fits_proto_Hdu_DoubleData_fieldAccessorTable;
+      internal_static_fits_proto_FitsHdu_DoubleData_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_fits_proto_Hdu_Int32Data_descriptor;
+    internal_static_fits_proto_FitsHdu_Int32Data_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_fits_proto_Hdu_Int32Data_fieldAccessorTable;
+      internal_static_fits_proto_FitsHdu_Int32Data_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_fits_proto_Hdu_Int64Data_descriptor;
+    internal_static_fits_proto_FitsHdu_Int64Data_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_fits_proto_Hdu_Int64Data_fieldAccessorTable;
+      internal_static_fits_proto_FitsHdu_Int64Data_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_fits_proto_Hdu_SInt32Data_descriptor;
+    internal_static_fits_proto_FitsHdu_SInt32Data_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_fits_proto_Hdu_SInt32Data_fieldAccessorTable;
+      internal_static_fits_proto_FitsHdu_SInt32Data_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_fits_proto_Hdu_SInt64Data_descriptor;
+    internal_static_fits_proto_FitsHdu_SInt64Data_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_fits_proto_Hdu_SInt64Data_fieldAccessorTable;
+      internal_static_fits_proto_FitsHdu_SInt64Data_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_fits_proto_Fits_descriptor;
   private static final 
@@ -10168,99 +10168,100 @@ com.engineerolabs.fits_proto.FitsProto.Data defaultValue);
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\nfits.proto\022\nfits.proto\"\313\001\n\004Data\022\024\n\nstr" +
-      "ing_val\030\001 \001(\tH\000\022\023\n\tint32_val\030\002 \001(\005H\000\022\024\n\n" +
-      "sint32_val\030\003 \001(\021H\000\022\023\n\tint64_val\030\004 \001(\003H\000\022" +
-      "\024\n\nsint64_val\030\005 \001(\022H\000\022\023\n\tfloat_val\030\006 \001(\002" +
-      "H\000\022\024\n\ndouble_val\030\007 \001(\001H\000\022\022\n\010bool_val\030\010 \001" +
-      "(\010H\000\022\017\n\007comment\030\t \001(\tB\007\n\005value\"\370\001\n\006Heade" +
-      "r\022\016\n\006simple\030\001 \001(\010\022\016\n\006bitpix\030\002 \001(\005\022\014\n\004siz" +
-      "e\030\003 \003(\005\022\017\n\007comment\030\004 \001(\t\022\017\n\007history\030\005 \001(" +
-      "\t\022\024\n\014n_extensions\030\006 \001(\005\022\021\n\textension\030\007 \001" +
-      "(\t\0222\n\010keywords\030\010 \003(\0132 .fits.proto.Header" +
-      ".KeywordsEntry\032A\n\rKeywordsEntry\022\013\n\003key\030\001" +
-      " \001(\t\022\037\n\005value\030\002 \001(\0132\020.fits.proto.Data:\0028" +
-      "\001\"\205\004\n\003Hdu\022\"\n\006header\030\001 \003(\0132\022.fits.proto.H" +
-      "eader\022/\n\nfloat_data\030\002 \001(\0132\031.fits.proto.H" +
-      "du.FloatDataH\000\0221\n\013double_data\030\003 \001(\0132\032.fi" +
-      "ts.proto.Hdu.DoubleDataH\000\022/\n\nint32_data\030" +
-      "\004 \001(\0132\031.fits.proto.Hdu.Int32DataH\000\022/\n\nin" +
-      "t64_data\030\005 \001(\0132\031.fits.proto.Hdu.Int64Dat" +
-      "aH\000\0221\n\013sint32_data\030\006 \001(\0132\032.fits.proto.Hd" +
-      "u.SInt32DataH\000\0221\n\013sint64_data\030\007 \001(\0132\032.fi" +
-      "ts.proto.Hdu.SInt64DataH\000\032\031\n\tFloatData\022\014" +
-      "\n\004data\030\001 \003(\002\032\032\n\nDoubleData\022\014\n\004data\030\001 \003(\001" +
-      "\032\031\n\tInt32Data\022\014\n\004data\030\001 \003(\005\032\031\n\tInt64Data" +
-      "\022\014\n\004data\030\001 \003(\003\032\032\n\nSInt32Data\022\014\n\004data\030\001 \003" +
-      "(\021\032\032\n\nSInt64Data\022\014\n\004data\030\001 \003(\022B\t\n\007payloa" +
-      "d\"$\n\004Fits\022\034\n\003hdu\030\001 \003(\0132\017.fits.proto.HduB" +
-      "L\n\034com.engineerolabs.fits_protoB\tFitsPro" +
-      "to\252\002 EngineeroLabs.Protobuf.FitsProtob\006p" +
-      "roto3"
+      "\n\nfits.proto\022\nfits_proto\"\322\001\n\013KeywordData" +
+      "\022\024\n\nstring_val\030\001 \001(\tH\000\022\023\n\tint32_val\030\002 \001(" +
+      "\005H\000\022\024\n\nsint32_val\030\003 \001(\021H\000\022\023\n\tint64_val\030\004" +
+      " \001(\003H\000\022\024\n\nsint64_val\030\005 \001(\022H\000\022\023\n\tfloat_va" +
+      "l\030\006 \001(\002H\000\022\024\n\ndouble_val\030\007 \001(\001H\000\022\022\n\010bool_" +
+      "val\030\010 \001(\010H\000\022\017\n\007comment\030\t \001(\tB\007\n\005value\"\207\002" +
+      "\n\nFitsHeader\022\016\n\006simple\030\001 \001(\010\022\016\n\006bitpix\030\002" +
+      " \001(\005\022\014\n\004size\030\003 \003(\005\022\017\n\007comment\030\004 \001(\t\022\017\n\007h" +
+      "istory\030\005 \001(\t\022\024\n\014n_extensions\030\006 \001(\005\022\021\n\tex" +
+      "tension\030\007 \001(\t\0226\n\010keywords\030\010 \003(\0132$.fits_p" +
+      "roto.FitsHeader.KeywordsEntry\032H\n\rKeyword" +
+      "sEntry\022\013\n\003key\030\001 \001(\t\022&\n\005value\030\002 \001(\0132\027.fit" +
+      "s_proto.KeywordData:\0028\001\"\245\004\n\007FitsHdu\022&\n\006h" +
+      "eader\030\001 \003(\0132\026.fits_proto.FitsHeader\0223\n\nf" +
+      "loat_data\030\002 \001(\0132\035.fits_proto.FitsHdu.Flo" +
+      "atDataH\000\0225\n\013double_data\030\003 \001(\0132\036.fits_pro" +
+      "to.FitsHdu.DoubleDataH\000\0223\n\nint32_data\030\004 " +
+      "\001(\0132\035.fits_proto.FitsHdu.Int32DataH\000\0223\n\n" +
+      "int64_data\030\005 \001(\0132\035.fits_proto.FitsHdu.In" +
+      "t64DataH\000\0225\n\013sint32_data\030\006 \001(\0132\036.fits_pr" +
+      "oto.FitsHdu.SInt32DataH\000\0225\n\013sint64_data\030" +
+      "\007 \001(\0132\036.fits_proto.FitsHdu.SInt64DataH\000\032" +
+      "\031\n\tFloatData\022\014\n\004data\030\001 \003(\002\032\032\n\nDoubleData" +
+      "\022\014\n\004data\030\001 \003(\001\032\031\n\tInt32Data\022\014\n\004data\030\001 \003(" +
+      "\005\032\031\n\tInt64Data\022\014\n\004data\030\001 \003(\003\032\032\n\nSInt32Da" +
+      "ta\022\014\n\004data\030\001 \003(\021\032\032\n\nSInt64Data\022\014\n\004data\030\001" +
+      " \003(\022B\t\n\007payload\"(\n\004Fits\022 \n\003hdu\030\001 \003(\0132\023.f" +
+      "its_proto.FitsHduBL\n\034com.engineerolabs.f" +
+      "its_protoB\tFitsProto\252\002 EngineeroLabs.Pro" +
+      "tobuf.FitsProtob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_fits_proto_Data_descriptor =
+    internal_static_fits_proto_KeywordData_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_fits_proto_Data_fieldAccessorTable = new
+    internal_static_fits_proto_KeywordData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_fits_proto_Data_descriptor,
+        internal_static_fits_proto_KeywordData_descriptor,
         new java.lang.String[] { "StringVal", "Int32Val", "Sint32Val", "Int64Val", "Sint64Val", "FloatVal", "DoubleVal", "BoolVal", "Comment", "Value", });
-    internal_static_fits_proto_Header_descriptor =
+    internal_static_fits_proto_FitsHeader_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_fits_proto_Header_fieldAccessorTable = new
+    internal_static_fits_proto_FitsHeader_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_fits_proto_Header_descriptor,
+        internal_static_fits_proto_FitsHeader_descriptor,
         new java.lang.String[] { "Simple", "Bitpix", "Size", "Comment", "History", "NExtensions", "Extension", "Keywords", });
-    internal_static_fits_proto_Header_KeywordsEntry_descriptor =
-      internal_static_fits_proto_Header_descriptor.getNestedTypes().get(0);
-    internal_static_fits_proto_Header_KeywordsEntry_fieldAccessorTable = new
+    internal_static_fits_proto_FitsHeader_KeywordsEntry_descriptor =
+      internal_static_fits_proto_FitsHeader_descriptor.getNestedTypes().get(0);
+    internal_static_fits_proto_FitsHeader_KeywordsEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_fits_proto_Header_KeywordsEntry_descriptor,
+        internal_static_fits_proto_FitsHeader_KeywordsEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    internal_static_fits_proto_Hdu_descriptor =
+    internal_static_fits_proto_FitsHdu_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_fits_proto_Hdu_fieldAccessorTable = new
+    internal_static_fits_proto_FitsHdu_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_fits_proto_Hdu_descriptor,
+        internal_static_fits_proto_FitsHdu_descriptor,
         new java.lang.String[] { "Header", "FloatData", "DoubleData", "Int32Data", "Int64Data", "Sint32Data", "Sint64Data", "Payload", });
-    internal_static_fits_proto_Hdu_FloatData_descriptor =
-      internal_static_fits_proto_Hdu_descriptor.getNestedTypes().get(0);
-    internal_static_fits_proto_Hdu_FloatData_fieldAccessorTable = new
+    internal_static_fits_proto_FitsHdu_FloatData_descriptor =
+      internal_static_fits_proto_FitsHdu_descriptor.getNestedTypes().get(0);
+    internal_static_fits_proto_FitsHdu_FloatData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_fits_proto_Hdu_FloatData_descriptor,
+        internal_static_fits_proto_FitsHdu_FloatData_descriptor,
         new java.lang.String[] { "Data", });
-    internal_static_fits_proto_Hdu_DoubleData_descriptor =
-      internal_static_fits_proto_Hdu_descriptor.getNestedTypes().get(1);
-    internal_static_fits_proto_Hdu_DoubleData_fieldAccessorTable = new
+    internal_static_fits_proto_FitsHdu_DoubleData_descriptor =
+      internal_static_fits_proto_FitsHdu_descriptor.getNestedTypes().get(1);
+    internal_static_fits_proto_FitsHdu_DoubleData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_fits_proto_Hdu_DoubleData_descriptor,
+        internal_static_fits_proto_FitsHdu_DoubleData_descriptor,
         new java.lang.String[] { "Data", });
-    internal_static_fits_proto_Hdu_Int32Data_descriptor =
-      internal_static_fits_proto_Hdu_descriptor.getNestedTypes().get(2);
-    internal_static_fits_proto_Hdu_Int32Data_fieldAccessorTable = new
+    internal_static_fits_proto_FitsHdu_Int32Data_descriptor =
+      internal_static_fits_proto_FitsHdu_descriptor.getNestedTypes().get(2);
+    internal_static_fits_proto_FitsHdu_Int32Data_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_fits_proto_Hdu_Int32Data_descriptor,
+        internal_static_fits_proto_FitsHdu_Int32Data_descriptor,
         new java.lang.String[] { "Data", });
-    internal_static_fits_proto_Hdu_Int64Data_descriptor =
-      internal_static_fits_proto_Hdu_descriptor.getNestedTypes().get(3);
-    internal_static_fits_proto_Hdu_Int64Data_fieldAccessorTable = new
+    internal_static_fits_proto_FitsHdu_Int64Data_descriptor =
+      internal_static_fits_proto_FitsHdu_descriptor.getNestedTypes().get(3);
+    internal_static_fits_proto_FitsHdu_Int64Data_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_fits_proto_Hdu_Int64Data_descriptor,
+        internal_static_fits_proto_FitsHdu_Int64Data_descriptor,
         new java.lang.String[] { "Data", });
-    internal_static_fits_proto_Hdu_SInt32Data_descriptor =
-      internal_static_fits_proto_Hdu_descriptor.getNestedTypes().get(4);
-    internal_static_fits_proto_Hdu_SInt32Data_fieldAccessorTable = new
+    internal_static_fits_proto_FitsHdu_SInt32Data_descriptor =
+      internal_static_fits_proto_FitsHdu_descriptor.getNestedTypes().get(4);
+    internal_static_fits_proto_FitsHdu_SInt32Data_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_fits_proto_Hdu_SInt32Data_descriptor,
+        internal_static_fits_proto_FitsHdu_SInt32Data_descriptor,
         new java.lang.String[] { "Data", });
-    internal_static_fits_proto_Hdu_SInt64Data_descriptor =
-      internal_static_fits_proto_Hdu_descriptor.getNestedTypes().get(5);
-    internal_static_fits_proto_Hdu_SInt64Data_fieldAccessorTable = new
+    internal_static_fits_proto_FitsHdu_SInt64Data_descriptor =
+      internal_static_fits_proto_FitsHdu_descriptor.getNestedTypes().get(5);
+    internal_static_fits_proto_FitsHdu_SInt64Data_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_fits_proto_Hdu_SInt64Data_descriptor,
+        internal_static_fits_proto_FitsHdu_SInt64Data_descriptor,
         new java.lang.String[] { "Data", });
     internal_static_fits_proto_Fits_descriptor =
       getDescriptor().getMessageTypes().get(3);

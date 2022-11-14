@@ -20,35 +20,34 @@ PROTOBUF_PRAGMA_INIT_SEG
 namespace _pb = ::PROTOBUF_NAMESPACE_ID;
 namespace _pbi = _pb::internal;
 
-namespace fits {
-namespace proto {
-PROTOBUF_CONSTEXPR Data::Data(
+namespace fits_proto {
+PROTOBUF_CONSTEXPR KeywordData::KeywordData(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.comment_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_.value_)*/{}
   , /*decltype(_impl_._cached_size_)*/{}
   , /*decltype(_impl_._oneof_case_)*/{}} {}
-struct DataDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR DataDefaultTypeInternal()
+struct KeywordDataDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR KeywordDataDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~DataDefaultTypeInternal() {}
+  ~KeywordDataDefaultTypeInternal() {}
   union {
-    Data _instance;
+    KeywordData _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 DataDefaultTypeInternal _Data_default_instance_;
-PROTOBUF_CONSTEXPR Header_KeywordsEntry_DoNotUse::Header_KeywordsEntry_DoNotUse(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 KeywordDataDefaultTypeInternal _KeywordData_default_instance_;
+PROTOBUF_CONSTEXPR FitsHeader_KeywordsEntry_DoNotUse::FitsHeader_KeywordsEntry_DoNotUse(
     ::_pbi::ConstantInitialized) {}
-struct Header_KeywordsEntry_DoNotUseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR Header_KeywordsEntry_DoNotUseDefaultTypeInternal()
+struct FitsHeader_KeywordsEntry_DoNotUseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR FitsHeader_KeywordsEntry_DoNotUseDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~Header_KeywordsEntry_DoNotUseDefaultTypeInternal() {}
+  ~FitsHeader_KeywordsEntry_DoNotUseDefaultTypeInternal() {}
   union {
-    Header_KeywordsEntry_DoNotUse _instance;
+    FitsHeader_KeywordsEntry_DoNotUse _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Header_KeywordsEntry_DoNotUseDefaultTypeInternal _Header_KeywordsEntry_DoNotUse_default_instance_;
-PROTOBUF_CONSTEXPR Header::Header(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FitsHeader_KeywordsEntry_DoNotUseDefaultTypeInternal _FitsHeader_KeywordsEntry_DoNotUse_default_instance_;
+PROTOBUF_CONSTEXPR FitsHeader::FitsHeader(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.size_)*/{}
   , /*decltype(_impl_._size_cached_byte_size_)*/{0}
@@ -60,112 +59,112 @@ PROTOBUF_CONSTEXPR Header::Header(
   , /*decltype(_impl_.bitpix_)*/0
   , /*decltype(_impl_.n_extensions_)*/0
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct HeaderDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR HeaderDefaultTypeInternal()
+struct FitsHeaderDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR FitsHeaderDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~HeaderDefaultTypeInternal() {}
+  ~FitsHeaderDefaultTypeInternal() {}
   union {
-    Header _instance;
+    FitsHeader _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 HeaderDefaultTypeInternal _Header_default_instance_;
-PROTOBUF_CONSTEXPR Hdu_FloatData::Hdu_FloatData(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FitsHeaderDefaultTypeInternal _FitsHeader_default_instance_;
+PROTOBUF_CONSTEXPR FitsHdu_FloatData::FitsHdu_FloatData(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.data_)*/{}
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct Hdu_FloatDataDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR Hdu_FloatDataDefaultTypeInternal()
+struct FitsHdu_FloatDataDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR FitsHdu_FloatDataDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~Hdu_FloatDataDefaultTypeInternal() {}
+  ~FitsHdu_FloatDataDefaultTypeInternal() {}
   union {
-    Hdu_FloatData _instance;
+    FitsHdu_FloatData _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Hdu_FloatDataDefaultTypeInternal _Hdu_FloatData_default_instance_;
-PROTOBUF_CONSTEXPR Hdu_DoubleData::Hdu_DoubleData(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FitsHdu_FloatDataDefaultTypeInternal _FitsHdu_FloatData_default_instance_;
+PROTOBUF_CONSTEXPR FitsHdu_DoubleData::FitsHdu_DoubleData(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.data_)*/{}
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct Hdu_DoubleDataDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR Hdu_DoubleDataDefaultTypeInternal()
+struct FitsHdu_DoubleDataDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR FitsHdu_DoubleDataDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~Hdu_DoubleDataDefaultTypeInternal() {}
+  ~FitsHdu_DoubleDataDefaultTypeInternal() {}
   union {
-    Hdu_DoubleData _instance;
+    FitsHdu_DoubleData _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Hdu_DoubleDataDefaultTypeInternal _Hdu_DoubleData_default_instance_;
-PROTOBUF_CONSTEXPR Hdu_Int32Data::Hdu_Int32Data(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.data_)*/{}
-  , /*decltype(_impl_._data_cached_byte_size_)*/{0}
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct Hdu_Int32DataDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR Hdu_Int32DataDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~Hdu_Int32DataDefaultTypeInternal() {}
-  union {
-    Hdu_Int32Data _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Hdu_Int32DataDefaultTypeInternal _Hdu_Int32Data_default_instance_;
-PROTOBUF_CONSTEXPR Hdu_Int64Data::Hdu_Int64Data(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FitsHdu_DoubleDataDefaultTypeInternal _FitsHdu_DoubleData_default_instance_;
+PROTOBUF_CONSTEXPR FitsHdu_Int32Data::FitsHdu_Int32Data(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.data_)*/{}
   , /*decltype(_impl_._data_cached_byte_size_)*/{0}
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct Hdu_Int64DataDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR Hdu_Int64DataDefaultTypeInternal()
+struct FitsHdu_Int32DataDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR FitsHdu_Int32DataDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~Hdu_Int64DataDefaultTypeInternal() {}
+  ~FitsHdu_Int32DataDefaultTypeInternal() {}
   union {
-    Hdu_Int64Data _instance;
+    FitsHdu_Int32Data _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Hdu_Int64DataDefaultTypeInternal _Hdu_Int64Data_default_instance_;
-PROTOBUF_CONSTEXPR Hdu_SInt32Data::Hdu_SInt32Data(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FitsHdu_Int32DataDefaultTypeInternal _FitsHdu_Int32Data_default_instance_;
+PROTOBUF_CONSTEXPR FitsHdu_Int64Data::FitsHdu_Int64Data(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.data_)*/{}
   , /*decltype(_impl_._data_cached_byte_size_)*/{0}
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct Hdu_SInt32DataDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR Hdu_SInt32DataDefaultTypeInternal()
+struct FitsHdu_Int64DataDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR FitsHdu_Int64DataDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~Hdu_SInt32DataDefaultTypeInternal() {}
+  ~FitsHdu_Int64DataDefaultTypeInternal() {}
   union {
-    Hdu_SInt32Data _instance;
+    FitsHdu_Int64Data _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Hdu_SInt32DataDefaultTypeInternal _Hdu_SInt32Data_default_instance_;
-PROTOBUF_CONSTEXPR Hdu_SInt64Data::Hdu_SInt64Data(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FitsHdu_Int64DataDefaultTypeInternal _FitsHdu_Int64Data_default_instance_;
+PROTOBUF_CONSTEXPR FitsHdu_SInt32Data::FitsHdu_SInt32Data(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.data_)*/{}
   , /*decltype(_impl_._data_cached_byte_size_)*/{0}
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct Hdu_SInt64DataDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR Hdu_SInt64DataDefaultTypeInternal()
+struct FitsHdu_SInt32DataDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR FitsHdu_SInt32DataDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~Hdu_SInt64DataDefaultTypeInternal() {}
+  ~FitsHdu_SInt32DataDefaultTypeInternal() {}
   union {
-    Hdu_SInt64Data _instance;
+    FitsHdu_SInt32Data _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Hdu_SInt64DataDefaultTypeInternal _Hdu_SInt64Data_default_instance_;
-PROTOBUF_CONSTEXPR Hdu::Hdu(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FitsHdu_SInt32DataDefaultTypeInternal _FitsHdu_SInt32Data_default_instance_;
+PROTOBUF_CONSTEXPR FitsHdu_SInt64Data::FitsHdu_SInt64Data(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.data_)*/{}
+  , /*decltype(_impl_._data_cached_byte_size_)*/{0}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct FitsHdu_SInt64DataDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR FitsHdu_SInt64DataDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~FitsHdu_SInt64DataDefaultTypeInternal() {}
+  union {
+    FitsHdu_SInt64Data _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FitsHdu_SInt64DataDefaultTypeInternal _FitsHdu_SInt64Data_default_instance_;
+PROTOBUF_CONSTEXPR FitsHdu::FitsHdu(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.header_)*/{}
   , /*decltype(_impl_.payload_)*/{}
   , /*decltype(_impl_._cached_size_)*/{}
   , /*decltype(_impl_._oneof_case_)*/{}} {}
-struct HduDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR HduDefaultTypeInternal()
+struct FitsHduDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR FitsHduDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~HduDefaultTypeInternal() {}
+  ~FitsHduDefaultTypeInternal() {}
   union {
-    Hdu _instance;
+    FitsHdu _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 HduDefaultTypeInternal _Hdu_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FitsHduDefaultTypeInternal _FitsHdu_default_instance_;
 PROTOBUF_CONSTEXPR Fits::Fits(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.hdu_)*/{}
@@ -179,17 +178,16 @@ struct FitsDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FitsDefaultTypeInternal _Fits_default_instance_;
-}  // namespace proto
-}  // namespace fits
+}  // namespace fits_proto
 static ::_pb::Metadata file_level_metadata_fits_2eproto[11];
 static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_fits_2eproto = nullptr;
 static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_fits_2eproto = nullptr;
 
 const uint32_t TableStruct_fits_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Data, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::KeywordData, _internal_metadata_),
   ~0u,  // no _extensions_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Data, _impl_._oneof_case_[0]),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::KeywordData, _impl_._oneof_case_[0]),
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
   ::_pbi::kInvalidFieldOffsetTag,
@@ -200,158 +198,159 @@ const uint32_t TableStruct_fits_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(pro
   ::_pbi::kInvalidFieldOffsetTag,
   ::_pbi::kInvalidFieldOffsetTag,
   ::_pbi::kInvalidFieldOffsetTag,
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Data, _impl_.comment_),
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Data, _impl_.value_),
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Header_KeywordsEntry_DoNotUse, _has_bits_),
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Header_KeywordsEntry_DoNotUse, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::KeywordData, _impl_.comment_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::KeywordData, _impl_.value_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHeader_KeywordsEntry_DoNotUse, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHeader_KeywordsEntry_DoNotUse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Header_KeywordsEntry_DoNotUse, key_),
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Header_KeywordsEntry_DoNotUse, value_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHeader_KeywordsEntry_DoNotUse, key_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHeader_KeywordsEntry_DoNotUse, value_),
   0,
   1,
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Header, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHeader, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Header, _impl_.simple_),
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Header, _impl_.bitpix_),
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Header, _impl_.size_),
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Header, _impl_.comment_),
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Header, _impl_.history_),
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Header, _impl_.n_extensions_),
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Header, _impl_.extension_),
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Header, _impl_.keywords_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHeader, _impl_.simple_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHeader, _impl_.bitpix_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHeader, _impl_.size_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHeader, _impl_.comment_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHeader, _impl_.history_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHeader, _impl_.n_extensions_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHeader, _impl_.extension_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHeader, _impl_.keywords_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Hdu_FloatData, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHdu_FloatData, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Hdu_FloatData, _impl_.data_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHdu_FloatData, _impl_.data_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Hdu_DoubleData, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHdu_DoubleData, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Hdu_DoubleData, _impl_.data_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHdu_DoubleData, _impl_.data_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Hdu_Int32Data, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHdu_Int32Data, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Hdu_Int32Data, _impl_.data_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHdu_Int32Data, _impl_.data_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Hdu_Int64Data, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHdu_Int64Data, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Hdu_Int64Data, _impl_.data_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHdu_Int64Data, _impl_.data_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Hdu_SInt32Data, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHdu_SInt32Data, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Hdu_SInt32Data, _impl_.data_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHdu_SInt32Data, _impl_.data_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Hdu_SInt64Data, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHdu_SInt64Data, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Hdu_SInt64Data, _impl_.data_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHdu_SInt64Data, _impl_.data_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Hdu, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHdu, _internal_metadata_),
   ~0u,  // no _extensions_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Hdu, _impl_._oneof_case_[0]),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHdu, _impl_._oneof_case_[0]),
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Hdu, _impl_.header_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHdu, _impl_.header_),
   ::_pbi::kInvalidFieldOffsetTag,
   ::_pbi::kInvalidFieldOffsetTag,
   ::_pbi::kInvalidFieldOffsetTag,
   ::_pbi::kInvalidFieldOffsetTag,
   ::_pbi::kInvalidFieldOffsetTag,
   ::_pbi::kInvalidFieldOffsetTag,
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Hdu, _impl_.payload_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::FitsHdu, _impl_.payload_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Fits, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::Fits, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fits::proto::Fits, _impl_.hdu_),
+  PROTOBUF_FIELD_OFFSET(::fits_proto::Fits, _impl_.hdu_),
 };
 static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::fits::proto::Data)},
-  { 16, 24, -1, sizeof(::fits::proto::Header_KeywordsEntry_DoNotUse)},
-  { 26, -1, -1, sizeof(::fits::proto::Header)},
-  { 40, -1, -1, sizeof(::fits::proto::Hdu_FloatData)},
-  { 47, -1, -1, sizeof(::fits::proto::Hdu_DoubleData)},
-  { 54, -1, -1, sizeof(::fits::proto::Hdu_Int32Data)},
-  { 61, -1, -1, sizeof(::fits::proto::Hdu_Int64Data)},
-  { 68, -1, -1, sizeof(::fits::proto::Hdu_SInt32Data)},
-  { 75, -1, -1, sizeof(::fits::proto::Hdu_SInt64Data)},
-  { 82, -1, -1, sizeof(::fits::proto::Hdu)},
-  { 96, -1, -1, sizeof(::fits::proto::Fits)},
+  { 0, -1, -1, sizeof(::fits_proto::KeywordData)},
+  { 16, 24, -1, sizeof(::fits_proto::FitsHeader_KeywordsEntry_DoNotUse)},
+  { 26, -1, -1, sizeof(::fits_proto::FitsHeader)},
+  { 40, -1, -1, sizeof(::fits_proto::FitsHdu_FloatData)},
+  { 47, -1, -1, sizeof(::fits_proto::FitsHdu_DoubleData)},
+  { 54, -1, -1, sizeof(::fits_proto::FitsHdu_Int32Data)},
+  { 61, -1, -1, sizeof(::fits_proto::FitsHdu_Int64Data)},
+  { 68, -1, -1, sizeof(::fits_proto::FitsHdu_SInt32Data)},
+  { 75, -1, -1, sizeof(::fits_proto::FitsHdu_SInt64Data)},
+  { 82, -1, -1, sizeof(::fits_proto::FitsHdu)},
+  { 96, -1, -1, sizeof(::fits_proto::Fits)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
-  &::fits::proto::_Data_default_instance_._instance,
-  &::fits::proto::_Header_KeywordsEntry_DoNotUse_default_instance_._instance,
-  &::fits::proto::_Header_default_instance_._instance,
-  &::fits::proto::_Hdu_FloatData_default_instance_._instance,
-  &::fits::proto::_Hdu_DoubleData_default_instance_._instance,
-  &::fits::proto::_Hdu_Int32Data_default_instance_._instance,
-  &::fits::proto::_Hdu_Int64Data_default_instance_._instance,
-  &::fits::proto::_Hdu_SInt32Data_default_instance_._instance,
-  &::fits::proto::_Hdu_SInt64Data_default_instance_._instance,
-  &::fits::proto::_Hdu_default_instance_._instance,
-  &::fits::proto::_Fits_default_instance_._instance,
+  &::fits_proto::_KeywordData_default_instance_._instance,
+  &::fits_proto::_FitsHeader_KeywordsEntry_DoNotUse_default_instance_._instance,
+  &::fits_proto::_FitsHeader_default_instance_._instance,
+  &::fits_proto::_FitsHdu_FloatData_default_instance_._instance,
+  &::fits_proto::_FitsHdu_DoubleData_default_instance_._instance,
+  &::fits_proto::_FitsHdu_Int32Data_default_instance_._instance,
+  &::fits_proto::_FitsHdu_Int64Data_default_instance_._instance,
+  &::fits_proto::_FitsHdu_SInt32Data_default_instance_._instance,
+  &::fits_proto::_FitsHdu_SInt64Data_default_instance_._instance,
+  &::fits_proto::_FitsHdu_default_instance_._instance,
+  &::fits_proto::_Fits_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_fits_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\nfits.proto\022\nfits.proto\"\313\001\n\004Data\022\024\n\nstr"
-  "ing_val\030\001 \001(\tH\000\022\023\n\tint32_val\030\002 \001(\005H\000\022\024\n\n"
-  "sint32_val\030\003 \001(\021H\000\022\023\n\tint64_val\030\004 \001(\003H\000\022"
-  "\024\n\nsint64_val\030\005 \001(\022H\000\022\023\n\tfloat_val\030\006 \001(\002"
-  "H\000\022\024\n\ndouble_val\030\007 \001(\001H\000\022\022\n\010bool_val\030\010 \001"
-  "(\010H\000\022\017\n\007comment\030\t \001(\tB\007\n\005value\"\370\001\n\006Heade"
-  "r\022\016\n\006simple\030\001 \001(\010\022\016\n\006bitpix\030\002 \001(\005\022\014\n\004siz"
-  "e\030\003 \003(\005\022\017\n\007comment\030\004 \001(\t\022\017\n\007history\030\005 \001("
-  "\t\022\024\n\014n_extensions\030\006 \001(\005\022\021\n\textension\030\007 \001"
-  "(\t\0222\n\010keywords\030\010 \003(\0132 .fits.proto.Header"
-  ".KeywordsEntry\032A\n\rKeywordsEntry\022\013\n\003key\030\001"
-  " \001(\t\022\037\n\005value\030\002 \001(\0132\020.fits.proto.Data:\0028"
-  "\001\"\205\004\n\003Hdu\022\"\n\006header\030\001 \003(\0132\022.fits.proto.H"
-  "eader\022/\n\nfloat_data\030\002 \001(\0132\031.fits.proto.H"
-  "du.FloatDataH\000\0221\n\013double_data\030\003 \001(\0132\032.fi"
-  "ts.proto.Hdu.DoubleDataH\000\022/\n\nint32_data\030"
-  "\004 \001(\0132\031.fits.proto.Hdu.Int32DataH\000\022/\n\nin"
-  "t64_data\030\005 \001(\0132\031.fits.proto.Hdu.Int64Dat"
-  "aH\000\0221\n\013sint32_data\030\006 \001(\0132\032.fits.proto.Hd"
-  "u.SInt32DataH\000\0221\n\013sint64_data\030\007 \001(\0132\032.fi"
-  "ts.proto.Hdu.SInt64DataH\000\032\031\n\tFloatData\022\014"
-  "\n\004data\030\001 \003(\002\032\032\n\nDoubleData\022\014\n\004data\030\001 \003(\001"
-  "\032\031\n\tInt32Data\022\014\n\004data\030\001 \003(\005\032\031\n\tInt64Data"
-  "\022\014\n\004data\030\001 \003(\003\032\032\n\nSInt32Data\022\014\n\004data\030\001 \003"
-  "(\021\032\032\n\nSInt64Data\022\014\n\004data\030\001 \003(\022B\t\n\007payloa"
-  "d\"$\n\004Fits\022\034\n\003hdu\030\001 \003(\0132\017.fits.proto.HduB"
-  "L\n\034com.engineerolabs.fits_protoB\tFitsPro"
-  "to\252\002 EngineeroLabs.Protobuf.FitsProtob\006p"
-  "roto3"
+  "\n\nfits.proto\022\nfits_proto\"\322\001\n\013KeywordData"
+  "\022\024\n\nstring_val\030\001 \001(\tH\000\022\023\n\tint32_val\030\002 \001("
+  "\005H\000\022\024\n\nsint32_val\030\003 \001(\021H\000\022\023\n\tint64_val\030\004"
+  " \001(\003H\000\022\024\n\nsint64_val\030\005 \001(\022H\000\022\023\n\tfloat_va"
+  "l\030\006 \001(\002H\000\022\024\n\ndouble_val\030\007 \001(\001H\000\022\022\n\010bool_"
+  "val\030\010 \001(\010H\000\022\017\n\007comment\030\t \001(\tB\007\n\005value\"\207\002"
+  "\n\nFitsHeader\022\016\n\006simple\030\001 \001(\010\022\016\n\006bitpix\030\002"
+  " \001(\005\022\014\n\004size\030\003 \003(\005\022\017\n\007comment\030\004 \001(\t\022\017\n\007h"
+  "istory\030\005 \001(\t\022\024\n\014n_extensions\030\006 \001(\005\022\021\n\tex"
+  "tension\030\007 \001(\t\0226\n\010keywords\030\010 \003(\0132$.fits_p"
+  "roto.FitsHeader.KeywordsEntry\032H\n\rKeyword"
+  "sEntry\022\013\n\003key\030\001 \001(\t\022&\n\005value\030\002 \001(\0132\027.fit"
+  "s_proto.KeywordData:\0028\001\"\245\004\n\007FitsHdu\022&\n\006h"
+  "eader\030\001 \003(\0132\026.fits_proto.FitsHeader\0223\n\nf"
+  "loat_data\030\002 \001(\0132\035.fits_proto.FitsHdu.Flo"
+  "atDataH\000\0225\n\013double_data\030\003 \001(\0132\036.fits_pro"
+  "to.FitsHdu.DoubleDataH\000\0223\n\nint32_data\030\004 "
+  "\001(\0132\035.fits_proto.FitsHdu.Int32DataH\000\0223\n\n"
+  "int64_data\030\005 \001(\0132\035.fits_proto.FitsHdu.In"
+  "t64DataH\000\0225\n\013sint32_data\030\006 \001(\0132\036.fits_pr"
+  "oto.FitsHdu.SInt32DataH\000\0225\n\013sint64_data\030"
+  "\007 \001(\0132\036.fits_proto.FitsHdu.SInt64DataH\000\032"
+  "\031\n\tFloatData\022\014\n\004data\030\001 \003(\002\032\032\n\nDoubleData"
+  "\022\014\n\004data\030\001 \003(\001\032\031\n\tInt32Data\022\014\n\004data\030\001 \003("
+  "\005\032\031\n\tInt64Data\022\014\n\004data\030\001 \003(\003\032\032\n\nSInt32Da"
+  "ta\022\014\n\004data\030\001 \003(\021\032\032\n\nSInt64Data\022\014\n\004data\030\001"
+  " \003(\022B\t\n\007payload\"(\n\004Fits\022 \n\003hdu\030\001 \003(\0132\023.f"
+  "its_proto.FitsHduBL\n\034com.engineerolabs.f"
+  "its_protoB\tFitsProto\252\002 EngineeroLabs.Pro"
+  "tobuf.FitsProtob\006proto3"
   ;
 static ::_pbi::once_flag descriptor_table_fits_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_fits_2eproto = {
-    false, false, 1125, descriptor_table_protodef_fits_2eproto,
+    false, false, 1183, descriptor_table_protodef_fits_2eproto,
     "fits.proto",
     &descriptor_table_fits_2eproto_once, nullptr, 0, 11,
     schemas, file_default_instances, TableStruct_fits_2eproto::offsets,
@@ -364,24 +363,23 @@ PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_fits_2ep
 
 // Force running AddDescriptors() at dynamic initialization time.
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_fits_2eproto(&descriptor_table_fits_2eproto);
-namespace fits {
-namespace proto {
+namespace fits_proto {
 
 // ===================================================================
 
-class Data::_Internal {
+class KeywordData::_Internal {
  public:
 };
 
-Data::Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+KeywordData::KeywordData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:fits.proto.Data)
+  // @@protoc_insertion_point(arena_constructor:fits_proto.KeywordData)
 }
-Data::Data(const Data& from)
+KeywordData::KeywordData(const KeywordData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Data* const _this = this; (void)_this;
+  KeywordData* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.comment_){}
     , decltype(_impl_.value_){}
@@ -435,10 +433,10 @@ Data::Data(const Data& from)
       break;
     }
   }
-  // @@protoc_insertion_point(copy_constructor:fits.proto.Data)
+  // @@protoc_insertion_point(copy_constructor:fits_proto.KeywordData)
 }
 
-inline void Data::SharedCtor(
+inline void KeywordData::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -455,8 +453,8 @@ inline void Data::SharedCtor(
   clear_has_value();
 }
 
-Data::~Data() {
-  // @@protoc_insertion_point(destructor:fits.proto.Data)
+KeywordData::~KeywordData() {
+  // @@protoc_insertion_point(destructor:fits_proto.KeywordData)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -464,7 +462,7 @@ Data::~Data() {
   SharedDtor();
 }
 
-inline void Data::SharedDtor() {
+inline void KeywordData::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.comment_.Destroy();
   if (has_value()) {
@@ -472,12 +470,12 @@ inline void Data::SharedDtor() {
   }
 }
 
-void Data::SetCachedSize(int size) const {
+void KeywordData::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Data::clear_value() {
-// @@protoc_insertion_point(one_of_clear_start:fits.proto.Data)
+void KeywordData::clear_value() {
+// @@protoc_insertion_point(one_of_clear_start:fits_proto.KeywordData)
   switch (value_case()) {
     case kStringVal: {
       _impl_.value_.string_val_.Destroy();
@@ -519,8 +517,8 @@ void Data::clear_value() {
 }
 
 
-void Data::Clear() {
-// @@protoc_insertion_point(message_clear_start:fits.proto.Data)
+void KeywordData::Clear() {
+// @@protoc_insertion_point(message_clear_start:fits_proto.KeywordData)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -530,7 +528,7 @@ void Data::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Data::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* KeywordData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -542,7 +540,7 @@ const char* Data::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
           auto str = _internal_mutable_string_val();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "fits.proto.Data.string_val"));
+          CHK_(::_pbi::VerifyUTF8(str, "fits_proto.KeywordData.string_val"));
         } else
           goto handle_unusual;
         continue;
@@ -608,7 +606,7 @@ const char* Data::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
           auto str = _internal_mutable_comment();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "fits.proto.Data.comment"));
+          CHK_(::_pbi::VerifyUTF8(str, "fits_proto.KeywordData.comment"));
         } else
           goto handle_unusual;
         continue;
@@ -635,9 +633,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Data::_InternalSerialize(
+uint8_t* KeywordData::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fits.proto.Data)
+  // @@protoc_insertion_point(serialize_to_array_start:fits_proto.KeywordData)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -646,7 +644,7 @@ uint8_t* Data::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_string_val().data(), static_cast<int>(this->_internal_string_val().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "fits.proto.Data.string_val");
+      "fits_proto.KeywordData.string_val");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_string_val(), target);
   }
@@ -698,7 +696,7 @@ uint8_t* Data::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_comment().data(), static_cast<int>(this->_internal_comment().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "fits.proto.Data.comment");
+      "fits_proto.KeywordData.comment");
     target = stream->WriteStringMaybeAliased(
         9, this->_internal_comment(), target);
   }
@@ -707,12 +705,12 @@ uint8_t* Data::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fits.proto.Data)
+  // @@protoc_insertion_point(serialize_to_array_end:fits_proto.KeywordData)
   return target;
 }
 
-size_t Data::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fits.proto.Data)
+size_t KeywordData::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:fits_proto.KeywordData)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -776,17 +774,17 @@ size_t Data::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Data::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData KeywordData::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Data::MergeImpl
+    KeywordData::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Data::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*KeywordData::GetClassData() const { return &_class_data_; }
 
 
-void Data::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Data*>(&to_msg);
-  auto& from = static_cast<const Data&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:fits.proto.Data)
+void KeywordData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<KeywordData*>(&to_msg);
+  auto& from = static_cast<const KeywordData&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:fits_proto.KeywordData)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -834,18 +832,18 @@ void Data::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void Data::CopyFrom(const Data& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fits.proto.Data)
+void KeywordData::CopyFrom(const KeywordData& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:fits_proto.KeywordData)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Data::IsInitialized() const {
+bool KeywordData::IsInitialized() const {
   return true;
 }
 
-void Data::InternalSwap(Data* other) {
+void KeywordData::InternalSwap(KeywordData* other) {
   using std::swap;
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
@@ -858,7 +856,7 @@ void Data::InternalSwap(Data* other) {
   swap(_impl_._oneof_case_[0], other->_impl_._oneof_case_[0]);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Data::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata KeywordData::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_fits_2eproto_getter, &descriptor_table_fits_2eproto_once,
       file_level_metadata_fits_2eproto[0]);
@@ -866,13 +864,13 @@ void Data::InternalSwap(Data* other) {
 
 // ===================================================================
 
-Header_KeywordsEntry_DoNotUse::Header_KeywordsEntry_DoNotUse() {}
-Header_KeywordsEntry_DoNotUse::Header_KeywordsEntry_DoNotUse(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+FitsHeader_KeywordsEntry_DoNotUse::FitsHeader_KeywordsEntry_DoNotUse() {}
+FitsHeader_KeywordsEntry_DoNotUse::FitsHeader_KeywordsEntry_DoNotUse(::PROTOBUF_NAMESPACE_ID::Arena* arena)
     : SuperType(arena) {}
-void Header_KeywordsEntry_DoNotUse::MergeFrom(const Header_KeywordsEntry_DoNotUse& other) {
+void FitsHeader_KeywordsEntry_DoNotUse::MergeFrom(const FitsHeader_KeywordsEntry_DoNotUse& other) {
   MergeFromInternal(other);
 }
-::PROTOBUF_NAMESPACE_ID::Metadata Header_KeywordsEntry_DoNotUse::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata FitsHeader_KeywordsEntry_DoNotUse::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_fits_2eproto_getter, &descriptor_table_fits_2eproto_once,
       file_level_metadata_fits_2eproto[1]);
@@ -880,22 +878,22 @@ void Header_KeywordsEntry_DoNotUse::MergeFrom(const Header_KeywordsEntry_DoNotUs
 
 // ===================================================================
 
-class Header::_Internal {
+class FitsHeader::_Internal {
  public:
 };
 
-Header::Header(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+FitsHeader::FitsHeader(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
   if (arena != nullptr && !is_message_owned) {
-    arena->OwnCustomDestructor(this, &Header::ArenaDtor);
+    arena->OwnCustomDestructor(this, &FitsHeader::ArenaDtor);
   }
-  // @@protoc_insertion_point(arena_constructor:fits.proto.Header)
+  // @@protoc_insertion_point(arena_constructor:fits_proto.FitsHeader)
 }
-Header::Header(const Header& from)
+FitsHeader::FitsHeader(const FitsHeader& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Header* const _this = this; (void)_this;
+  FitsHeader* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.size_){from._impl_.size_}
     , /*decltype(_impl_._size_cached_byte_size_)*/{0}
@@ -937,10 +935,10 @@ Header::Header(const Header& from)
   ::memcpy(&_impl_.simple_, &from._impl_.simple_,
     static_cast<size_t>(reinterpret_cast<char*>(&_impl_.n_extensions_) -
     reinterpret_cast<char*>(&_impl_.simple_)) + sizeof(_impl_.n_extensions_));
-  // @@protoc_insertion_point(copy_constructor:fits.proto.Header)
+  // @@protoc_insertion_point(copy_constructor:fits_proto.FitsHeader)
 }
 
-inline void Header::SharedCtor(
+inline void FitsHeader::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -970,8 +968,8 @@ inline void Header::SharedCtor(
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
-Header::~Header() {
-  // @@protoc_insertion_point(destructor:fits.proto.Header)
+FitsHeader::~FitsHeader() {
+  // @@protoc_insertion_point(destructor:fits_proto.FitsHeader)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     ArenaDtor(this);
@@ -980,7 +978,7 @@ Header::~Header() {
   SharedDtor();
 }
 
-inline void Header::SharedDtor() {
+inline void FitsHeader::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.size_.~RepeatedField();
   _impl_.keywords_.Destruct();
@@ -990,16 +988,16 @@ inline void Header::SharedDtor() {
   _impl_.extension_.Destroy();
 }
 
-void Header::ArenaDtor(void* object) {
-  Header* _this = reinterpret_cast< Header* >(object);
+void FitsHeader::ArenaDtor(void* object) {
+  FitsHeader* _this = reinterpret_cast< FitsHeader* >(object);
   _this->_impl_.keywords_.Destruct();
 }
-void Header::SetCachedSize(int size) const {
+void FitsHeader::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Header::Clear() {
-// @@protoc_insertion_point(message_clear_start:fits.proto.Header)
+void FitsHeader::Clear() {
+// @@protoc_insertion_point(message_clear_start:fits_proto.FitsHeader)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1015,7 +1013,7 @@ void Header::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Header::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* FitsHeader::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -1054,7 +1052,7 @@ const char* Header::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
           auto str = _internal_mutable_comment();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "fits.proto.Header.comment"));
+          CHK_(::_pbi::VerifyUTF8(str, "fits_proto.FitsHeader.comment"));
         } else
           goto handle_unusual;
         continue;
@@ -1064,7 +1062,7 @@ const char* Header::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
           auto str = _internal_mutable_history();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "fits.proto.Header.history"));
+          CHK_(::_pbi::VerifyUTF8(str, "fits_proto.FitsHeader.history"));
         } else
           goto handle_unusual;
         continue;
@@ -1082,11 +1080,11 @@ const char* Header::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
           auto str = _internal_mutable_extension();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "fits.proto.Header.extension"));
+          CHK_(::_pbi::VerifyUTF8(str, "fits_proto.FitsHeader.extension"));
         } else
           goto handle_unusual;
         continue;
-      // map<string, .fits.proto.Data> keywords = 8;
+      // map<string, .fits_proto.KeywordData> keywords = 8;
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 66)) {
           ptr -= 1;
@@ -1122,9 +1120,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Header::_InternalSerialize(
+uint8_t* FitsHeader::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fits.proto.Header)
+  // @@protoc_insertion_point(serialize_to_array_start:fits_proto.FitsHeader)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1154,7 +1152,7 @@ uint8_t* Header::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_comment().data(), static_cast<int>(this->_internal_comment().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "fits.proto.Header.comment");
+      "fits_proto.FitsHeader.comment");
     target = stream->WriteStringMaybeAliased(
         4, this->_internal_comment(), target);
   }
@@ -1164,7 +1162,7 @@ uint8_t* Header::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_history().data(), static_cast<int>(this->_internal_history().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "fits.proto.Header.history");
+      "fits_proto.FitsHeader.history");
     target = stream->WriteStringMaybeAliased(
         5, this->_internal_history(), target);
   }
@@ -1180,22 +1178,22 @@ uint8_t* Header::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_extension().data(), static_cast<int>(this->_internal_extension().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "fits.proto.Header.extension");
+      "fits_proto.FitsHeader.extension");
     target = stream->WriteStringMaybeAliased(
         7, this->_internal_extension(), target);
   }
 
-  // map<string, .fits.proto.Data> keywords = 8;
+  // map<string, .fits_proto.KeywordData> keywords = 8;
   if (!this->_internal_keywords().empty()) {
-    using MapType = ::_pb::Map<std::string, ::fits::proto::Data>;
-    using WireHelper = Header_KeywordsEntry_DoNotUse::Funcs;
+    using MapType = ::_pb::Map<std::string, ::fits_proto::KeywordData>;
+    using WireHelper = FitsHeader_KeywordsEntry_DoNotUse::Funcs;
     const auto& map_field = this->_internal_keywords();
     auto check_utf8 = [](const MapType::value_type& entry) {
       (void)entry;
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
         entry.first.data(), static_cast<int>(entry.first.length()),
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-        "fits.proto.Header.KeywordsEntry.key");
+        "fits_proto.FitsHeader.KeywordsEntry.key");
     };
 
     if (stream->IsSerializationDeterministic() && map_field.size() > 1) {
@@ -1215,12 +1213,12 @@ uint8_t* Header::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fits.proto.Header)
+  // @@protoc_insertion_point(serialize_to_array_end:fits_proto.FitsHeader)
   return target;
 }
 
-size_t Header::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fits.proto.Header)
+size_t FitsHeader::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:fits_proto.FitsHeader)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -1241,13 +1239,13 @@ size_t Header::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // map<string, .fits.proto.Data> keywords = 8;
+  // map<string, .fits_proto.KeywordData> keywords = 8;
   total_size += 1 *
       ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->_internal_keywords_size());
-  for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits::proto::Data >::const_iterator
+  for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::KeywordData >::const_iterator
       it = this->_internal_keywords().begin();
       it != this->_internal_keywords().end(); ++it) {
-    total_size += Header_KeywordsEntry_DoNotUse::Funcs::ByteSizeLong(it->first, it->second);
+    total_size += FitsHeader_KeywordsEntry_DoNotUse::Funcs::ByteSizeLong(it->first, it->second);
   }
 
   // string comment = 4;
@@ -1289,17 +1287,17 @@ size_t Header::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Header::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData FitsHeader::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Header::MergeImpl
+    FitsHeader::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Header::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*FitsHeader::GetClassData() const { return &_class_data_; }
 
 
-void Header::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Header*>(&to_msg);
-  auto& from = static_cast<const Header&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:fits.proto.Header)
+void FitsHeader::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<FitsHeader*>(&to_msg);
+  auto& from = static_cast<const FitsHeader&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:fits_proto.FitsHeader)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1327,18 +1325,18 @@ void Header::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBU
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void Header::CopyFrom(const Header& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fits.proto.Header)
+void FitsHeader::CopyFrom(const FitsHeader& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:fits_proto.FitsHeader)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Header::IsInitialized() const {
+bool FitsHeader::IsInitialized() const {
   return true;
 }
 
-void Header::InternalSwap(Header* other) {
+void FitsHeader::InternalSwap(FitsHeader* other) {
   using std::swap;
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
@@ -1358,14 +1356,14 @@ void Header::InternalSwap(Header* other) {
       &other->_impl_.extension_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Header, _impl_.n_extensions_)
-      + sizeof(Header::_impl_.n_extensions_)
-      - PROTOBUF_FIELD_OFFSET(Header, _impl_.simple_)>(
+      PROTOBUF_FIELD_OFFSET(FitsHeader, _impl_.n_extensions_)
+      + sizeof(FitsHeader::_impl_.n_extensions_)
+      - PROTOBUF_FIELD_OFFSET(FitsHeader, _impl_.simple_)>(
           reinterpret_cast<char*>(&_impl_.simple_),
           reinterpret_cast<char*>(&other->_impl_.simple_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Header::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata FitsHeader::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_fits_2eproto_getter, &descriptor_table_fits_2eproto_once,
       file_level_metadata_fits_2eproto[2]);
@@ -1373,28 +1371,28 @@ void Header::InternalSwap(Header* other) {
 
 // ===================================================================
 
-class Hdu_FloatData::_Internal {
+class FitsHdu_FloatData::_Internal {
  public:
 };
 
-Hdu_FloatData::Hdu_FloatData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+FitsHdu_FloatData::FitsHdu_FloatData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:fits.proto.Hdu.FloatData)
+  // @@protoc_insertion_point(arena_constructor:fits_proto.FitsHdu.FloatData)
 }
-Hdu_FloatData::Hdu_FloatData(const Hdu_FloatData& from)
+FitsHdu_FloatData::FitsHdu_FloatData(const FitsHdu_FloatData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Hdu_FloatData* const _this = this; (void)_this;
+  FitsHdu_FloatData* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.data_){from._impl_.data_}
     , /*decltype(_impl_._cached_size_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:fits.proto.Hdu.FloatData)
+  // @@protoc_insertion_point(copy_constructor:fits_proto.FitsHdu.FloatData)
 }
 
-inline void Hdu_FloatData::SharedCtor(
+inline void FitsHdu_FloatData::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -1404,8 +1402,8 @@ inline void Hdu_FloatData::SharedCtor(
   };
 }
 
-Hdu_FloatData::~Hdu_FloatData() {
-  // @@protoc_insertion_point(destructor:fits.proto.Hdu.FloatData)
+FitsHdu_FloatData::~FitsHdu_FloatData() {
+  // @@protoc_insertion_point(destructor:fits_proto.FitsHdu.FloatData)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -1413,17 +1411,17 @@ Hdu_FloatData::~Hdu_FloatData() {
   SharedDtor();
 }
 
-inline void Hdu_FloatData::SharedDtor() {
+inline void FitsHdu_FloatData::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.data_.~RepeatedField();
 }
 
-void Hdu_FloatData::SetCachedSize(int size) const {
+void FitsHdu_FloatData::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Hdu_FloatData::Clear() {
-// @@protoc_insertion_point(message_clear_start:fits.proto.Hdu.FloatData)
+void FitsHdu_FloatData::Clear() {
+// @@protoc_insertion_point(message_clear_start:fits_proto.FitsHdu.FloatData)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1432,7 +1430,7 @@ void Hdu_FloatData::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Hdu_FloatData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* FitsHdu_FloatData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -1472,9 +1470,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Hdu_FloatData::_InternalSerialize(
+uint8_t* FitsHdu_FloatData::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fits.proto.Hdu.FloatData)
+  // @@protoc_insertion_point(serialize_to_array_start:fits_proto.FitsHdu.FloatData)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1487,12 +1485,12 @@ uint8_t* Hdu_FloatData::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fits.proto.Hdu.FloatData)
+  // @@protoc_insertion_point(serialize_to_array_end:fits_proto.FitsHdu.FloatData)
   return target;
 }
 
-size_t Hdu_FloatData::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fits.proto.Hdu.FloatData)
+size_t FitsHdu_FloatData::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:fits_proto.FitsHdu.FloatData)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -1513,17 +1511,17 @@ size_t Hdu_FloatData::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Hdu_FloatData::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData FitsHdu_FloatData::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Hdu_FloatData::MergeImpl
+    FitsHdu_FloatData::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Hdu_FloatData::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*FitsHdu_FloatData::GetClassData() const { return &_class_data_; }
 
 
-void Hdu_FloatData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Hdu_FloatData*>(&to_msg);
-  auto& from = static_cast<const Hdu_FloatData&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:fits.proto.Hdu.FloatData)
+void FitsHdu_FloatData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<FitsHdu_FloatData*>(&to_msg);
+  auto& from = static_cast<const FitsHdu_FloatData&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:fits_proto.FitsHdu.FloatData)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1532,24 +1530,24 @@ void Hdu_FloatData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void Hdu_FloatData::CopyFrom(const Hdu_FloatData& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fits.proto.Hdu.FloatData)
+void FitsHdu_FloatData::CopyFrom(const FitsHdu_FloatData& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:fits_proto.FitsHdu.FloatData)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Hdu_FloatData::IsInitialized() const {
+bool FitsHdu_FloatData::IsInitialized() const {
   return true;
 }
 
-void Hdu_FloatData::InternalSwap(Hdu_FloatData* other) {
+void FitsHdu_FloatData::InternalSwap(FitsHdu_FloatData* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.data_.InternalSwap(&other->_impl_.data_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Hdu_FloatData::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata FitsHdu_FloatData::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_fits_2eproto_getter, &descriptor_table_fits_2eproto_once,
       file_level_metadata_fits_2eproto[3]);
@@ -1557,28 +1555,28 @@ void Hdu_FloatData::InternalSwap(Hdu_FloatData* other) {
 
 // ===================================================================
 
-class Hdu_DoubleData::_Internal {
+class FitsHdu_DoubleData::_Internal {
  public:
 };
 
-Hdu_DoubleData::Hdu_DoubleData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+FitsHdu_DoubleData::FitsHdu_DoubleData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:fits.proto.Hdu.DoubleData)
+  // @@protoc_insertion_point(arena_constructor:fits_proto.FitsHdu.DoubleData)
 }
-Hdu_DoubleData::Hdu_DoubleData(const Hdu_DoubleData& from)
+FitsHdu_DoubleData::FitsHdu_DoubleData(const FitsHdu_DoubleData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Hdu_DoubleData* const _this = this; (void)_this;
+  FitsHdu_DoubleData* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.data_){from._impl_.data_}
     , /*decltype(_impl_._cached_size_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:fits.proto.Hdu.DoubleData)
+  // @@protoc_insertion_point(copy_constructor:fits_proto.FitsHdu.DoubleData)
 }
 
-inline void Hdu_DoubleData::SharedCtor(
+inline void FitsHdu_DoubleData::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -1588,8 +1586,8 @@ inline void Hdu_DoubleData::SharedCtor(
   };
 }
 
-Hdu_DoubleData::~Hdu_DoubleData() {
-  // @@protoc_insertion_point(destructor:fits.proto.Hdu.DoubleData)
+FitsHdu_DoubleData::~FitsHdu_DoubleData() {
+  // @@protoc_insertion_point(destructor:fits_proto.FitsHdu.DoubleData)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -1597,17 +1595,17 @@ Hdu_DoubleData::~Hdu_DoubleData() {
   SharedDtor();
 }
 
-inline void Hdu_DoubleData::SharedDtor() {
+inline void FitsHdu_DoubleData::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.data_.~RepeatedField();
 }
 
-void Hdu_DoubleData::SetCachedSize(int size) const {
+void FitsHdu_DoubleData::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Hdu_DoubleData::Clear() {
-// @@protoc_insertion_point(message_clear_start:fits.proto.Hdu.DoubleData)
+void FitsHdu_DoubleData::Clear() {
+// @@protoc_insertion_point(message_clear_start:fits_proto.FitsHdu.DoubleData)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1616,7 +1614,7 @@ void Hdu_DoubleData::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Hdu_DoubleData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* FitsHdu_DoubleData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -1656,9 +1654,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Hdu_DoubleData::_InternalSerialize(
+uint8_t* FitsHdu_DoubleData::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fits.proto.Hdu.DoubleData)
+  // @@protoc_insertion_point(serialize_to_array_start:fits_proto.FitsHdu.DoubleData)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1671,12 +1669,12 @@ uint8_t* Hdu_DoubleData::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fits.proto.Hdu.DoubleData)
+  // @@protoc_insertion_point(serialize_to_array_end:fits_proto.FitsHdu.DoubleData)
   return target;
 }
 
-size_t Hdu_DoubleData::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fits.proto.Hdu.DoubleData)
+size_t FitsHdu_DoubleData::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:fits_proto.FitsHdu.DoubleData)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -1697,17 +1695,17 @@ size_t Hdu_DoubleData::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Hdu_DoubleData::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData FitsHdu_DoubleData::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Hdu_DoubleData::MergeImpl
+    FitsHdu_DoubleData::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Hdu_DoubleData::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*FitsHdu_DoubleData::GetClassData() const { return &_class_data_; }
 
 
-void Hdu_DoubleData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Hdu_DoubleData*>(&to_msg);
-  auto& from = static_cast<const Hdu_DoubleData&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:fits.proto.Hdu.DoubleData)
+void FitsHdu_DoubleData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<FitsHdu_DoubleData*>(&to_msg);
+  auto& from = static_cast<const FitsHdu_DoubleData&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:fits_proto.FitsHdu.DoubleData)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1716,24 +1714,24 @@ void Hdu_DoubleData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const :
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void Hdu_DoubleData::CopyFrom(const Hdu_DoubleData& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fits.proto.Hdu.DoubleData)
+void FitsHdu_DoubleData::CopyFrom(const FitsHdu_DoubleData& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:fits_proto.FitsHdu.DoubleData)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Hdu_DoubleData::IsInitialized() const {
+bool FitsHdu_DoubleData::IsInitialized() const {
   return true;
 }
 
-void Hdu_DoubleData::InternalSwap(Hdu_DoubleData* other) {
+void FitsHdu_DoubleData::InternalSwap(FitsHdu_DoubleData* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.data_.InternalSwap(&other->_impl_.data_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Hdu_DoubleData::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata FitsHdu_DoubleData::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_fits_2eproto_getter, &descriptor_table_fits_2eproto_once,
       file_level_metadata_fits_2eproto[4]);
@@ -1741,29 +1739,29 @@ void Hdu_DoubleData::InternalSwap(Hdu_DoubleData* other) {
 
 // ===================================================================
 
-class Hdu_Int32Data::_Internal {
+class FitsHdu_Int32Data::_Internal {
  public:
 };
 
-Hdu_Int32Data::Hdu_Int32Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+FitsHdu_Int32Data::FitsHdu_Int32Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:fits.proto.Hdu.Int32Data)
+  // @@protoc_insertion_point(arena_constructor:fits_proto.FitsHdu.Int32Data)
 }
-Hdu_Int32Data::Hdu_Int32Data(const Hdu_Int32Data& from)
+FitsHdu_Int32Data::FitsHdu_Int32Data(const FitsHdu_Int32Data& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Hdu_Int32Data* const _this = this; (void)_this;
+  FitsHdu_Int32Data* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.data_){from._impl_.data_}
     , /*decltype(_impl_._data_cached_byte_size_)*/{0}
     , /*decltype(_impl_._cached_size_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:fits.proto.Hdu.Int32Data)
+  // @@protoc_insertion_point(copy_constructor:fits_proto.FitsHdu.Int32Data)
 }
 
-inline void Hdu_Int32Data::SharedCtor(
+inline void FitsHdu_Int32Data::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -1774,8 +1772,8 @@ inline void Hdu_Int32Data::SharedCtor(
   };
 }
 
-Hdu_Int32Data::~Hdu_Int32Data() {
-  // @@protoc_insertion_point(destructor:fits.proto.Hdu.Int32Data)
+FitsHdu_Int32Data::~FitsHdu_Int32Data() {
+  // @@protoc_insertion_point(destructor:fits_proto.FitsHdu.Int32Data)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -1783,17 +1781,17 @@ Hdu_Int32Data::~Hdu_Int32Data() {
   SharedDtor();
 }
 
-inline void Hdu_Int32Data::SharedDtor() {
+inline void FitsHdu_Int32Data::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.data_.~RepeatedField();
 }
 
-void Hdu_Int32Data::SetCachedSize(int size) const {
+void FitsHdu_Int32Data::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Hdu_Int32Data::Clear() {
-// @@protoc_insertion_point(message_clear_start:fits.proto.Hdu.Int32Data)
+void FitsHdu_Int32Data::Clear() {
+// @@protoc_insertion_point(message_clear_start:fits_proto.FitsHdu.Int32Data)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1802,7 +1800,7 @@ void Hdu_Int32Data::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Hdu_Int32Data::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* FitsHdu_Int32Data::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -1842,9 +1840,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Hdu_Int32Data::_InternalSerialize(
+uint8_t* FitsHdu_Int32Data::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fits.proto.Hdu.Int32Data)
+  // @@protoc_insertion_point(serialize_to_array_start:fits_proto.FitsHdu.Int32Data)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1861,12 +1859,12 @@ uint8_t* Hdu_Int32Data::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fits.proto.Hdu.Int32Data)
+  // @@protoc_insertion_point(serialize_to_array_end:fits_proto.FitsHdu.Int32Data)
   return target;
 }
 
-size_t Hdu_Int32Data::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fits.proto.Hdu.Int32Data)
+size_t FitsHdu_Int32Data::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:fits_proto.FitsHdu.Int32Data)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -1890,17 +1888,17 @@ size_t Hdu_Int32Data::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Hdu_Int32Data::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData FitsHdu_Int32Data::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Hdu_Int32Data::MergeImpl
+    FitsHdu_Int32Data::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Hdu_Int32Data::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*FitsHdu_Int32Data::GetClassData() const { return &_class_data_; }
 
 
-void Hdu_Int32Data::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Hdu_Int32Data*>(&to_msg);
-  auto& from = static_cast<const Hdu_Int32Data&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:fits.proto.Hdu.Int32Data)
+void FitsHdu_Int32Data::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<FitsHdu_Int32Data*>(&to_msg);
+  auto& from = static_cast<const FitsHdu_Int32Data&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:fits_proto.FitsHdu.Int32Data)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1909,24 +1907,24 @@ void Hdu_Int32Data::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void Hdu_Int32Data::CopyFrom(const Hdu_Int32Data& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fits.proto.Hdu.Int32Data)
+void FitsHdu_Int32Data::CopyFrom(const FitsHdu_Int32Data& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:fits_proto.FitsHdu.Int32Data)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Hdu_Int32Data::IsInitialized() const {
+bool FitsHdu_Int32Data::IsInitialized() const {
   return true;
 }
 
-void Hdu_Int32Data::InternalSwap(Hdu_Int32Data* other) {
+void FitsHdu_Int32Data::InternalSwap(FitsHdu_Int32Data* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.data_.InternalSwap(&other->_impl_.data_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Hdu_Int32Data::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata FitsHdu_Int32Data::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_fits_2eproto_getter, &descriptor_table_fits_2eproto_once,
       file_level_metadata_fits_2eproto[5]);
@@ -1934,29 +1932,29 @@ void Hdu_Int32Data::InternalSwap(Hdu_Int32Data* other) {
 
 // ===================================================================
 
-class Hdu_Int64Data::_Internal {
+class FitsHdu_Int64Data::_Internal {
  public:
 };
 
-Hdu_Int64Data::Hdu_Int64Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+FitsHdu_Int64Data::FitsHdu_Int64Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:fits.proto.Hdu.Int64Data)
+  // @@protoc_insertion_point(arena_constructor:fits_proto.FitsHdu.Int64Data)
 }
-Hdu_Int64Data::Hdu_Int64Data(const Hdu_Int64Data& from)
+FitsHdu_Int64Data::FitsHdu_Int64Data(const FitsHdu_Int64Data& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Hdu_Int64Data* const _this = this; (void)_this;
+  FitsHdu_Int64Data* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.data_){from._impl_.data_}
     , /*decltype(_impl_._data_cached_byte_size_)*/{0}
     , /*decltype(_impl_._cached_size_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:fits.proto.Hdu.Int64Data)
+  // @@protoc_insertion_point(copy_constructor:fits_proto.FitsHdu.Int64Data)
 }
 
-inline void Hdu_Int64Data::SharedCtor(
+inline void FitsHdu_Int64Data::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -1967,8 +1965,8 @@ inline void Hdu_Int64Data::SharedCtor(
   };
 }
 
-Hdu_Int64Data::~Hdu_Int64Data() {
-  // @@protoc_insertion_point(destructor:fits.proto.Hdu.Int64Data)
+FitsHdu_Int64Data::~FitsHdu_Int64Data() {
+  // @@protoc_insertion_point(destructor:fits_proto.FitsHdu.Int64Data)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -1976,17 +1974,17 @@ Hdu_Int64Data::~Hdu_Int64Data() {
   SharedDtor();
 }
 
-inline void Hdu_Int64Data::SharedDtor() {
+inline void FitsHdu_Int64Data::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.data_.~RepeatedField();
 }
 
-void Hdu_Int64Data::SetCachedSize(int size) const {
+void FitsHdu_Int64Data::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Hdu_Int64Data::Clear() {
-// @@protoc_insertion_point(message_clear_start:fits.proto.Hdu.Int64Data)
+void FitsHdu_Int64Data::Clear() {
+// @@protoc_insertion_point(message_clear_start:fits_proto.FitsHdu.Int64Data)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1995,7 +1993,7 @@ void Hdu_Int64Data::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Hdu_Int64Data::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* FitsHdu_Int64Data::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -2035,9 +2033,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Hdu_Int64Data::_InternalSerialize(
+uint8_t* FitsHdu_Int64Data::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fits.proto.Hdu.Int64Data)
+  // @@protoc_insertion_point(serialize_to_array_start:fits_proto.FitsHdu.Int64Data)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2054,12 +2052,12 @@ uint8_t* Hdu_Int64Data::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fits.proto.Hdu.Int64Data)
+  // @@protoc_insertion_point(serialize_to_array_end:fits_proto.FitsHdu.Int64Data)
   return target;
 }
 
-size_t Hdu_Int64Data::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fits.proto.Hdu.Int64Data)
+size_t FitsHdu_Int64Data::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:fits_proto.FitsHdu.Int64Data)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -2083,17 +2081,17 @@ size_t Hdu_Int64Data::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Hdu_Int64Data::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData FitsHdu_Int64Data::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Hdu_Int64Data::MergeImpl
+    FitsHdu_Int64Data::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Hdu_Int64Data::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*FitsHdu_Int64Data::GetClassData() const { return &_class_data_; }
 
 
-void Hdu_Int64Data::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Hdu_Int64Data*>(&to_msg);
-  auto& from = static_cast<const Hdu_Int64Data&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:fits.proto.Hdu.Int64Data)
+void FitsHdu_Int64Data::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<FitsHdu_Int64Data*>(&to_msg);
+  auto& from = static_cast<const FitsHdu_Int64Data&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:fits_proto.FitsHdu.Int64Data)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2102,24 +2100,24 @@ void Hdu_Int64Data::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void Hdu_Int64Data::CopyFrom(const Hdu_Int64Data& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fits.proto.Hdu.Int64Data)
+void FitsHdu_Int64Data::CopyFrom(const FitsHdu_Int64Data& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:fits_proto.FitsHdu.Int64Data)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Hdu_Int64Data::IsInitialized() const {
+bool FitsHdu_Int64Data::IsInitialized() const {
   return true;
 }
 
-void Hdu_Int64Data::InternalSwap(Hdu_Int64Data* other) {
+void FitsHdu_Int64Data::InternalSwap(FitsHdu_Int64Data* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.data_.InternalSwap(&other->_impl_.data_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Hdu_Int64Data::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata FitsHdu_Int64Data::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_fits_2eproto_getter, &descriptor_table_fits_2eproto_once,
       file_level_metadata_fits_2eproto[6]);
@@ -2127,29 +2125,29 @@ void Hdu_Int64Data::InternalSwap(Hdu_Int64Data* other) {
 
 // ===================================================================
 
-class Hdu_SInt32Data::_Internal {
+class FitsHdu_SInt32Data::_Internal {
  public:
 };
 
-Hdu_SInt32Data::Hdu_SInt32Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+FitsHdu_SInt32Data::FitsHdu_SInt32Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:fits.proto.Hdu.SInt32Data)
+  // @@protoc_insertion_point(arena_constructor:fits_proto.FitsHdu.SInt32Data)
 }
-Hdu_SInt32Data::Hdu_SInt32Data(const Hdu_SInt32Data& from)
+FitsHdu_SInt32Data::FitsHdu_SInt32Data(const FitsHdu_SInt32Data& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Hdu_SInt32Data* const _this = this; (void)_this;
+  FitsHdu_SInt32Data* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.data_){from._impl_.data_}
     , /*decltype(_impl_._data_cached_byte_size_)*/{0}
     , /*decltype(_impl_._cached_size_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:fits.proto.Hdu.SInt32Data)
+  // @@protoc_insertion_point(copy_constructor:fits_proto.FitsHdu.SInt32Data)
 }
 
-inline void Hdu_SInt32Data::SharedCtor(
+inline void FitsHdu_SInt32Data::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -2160,8 +2158,8 @@ inline void Hdu_SInt32Data::SharedCtor(
   };
 }
 
-Hdu_SInt32Data::~Hdu_SInt32Data() {
-  // @@protoc_insertion_point(destructor:fits.proto.Hdu.SInt32Data)
+FitsHdu_SInt32Data::~FitsHdu_SInt32Data() {
+  // @@protoc_insertion_point(destructor:fits_proto.FitsHdu.SInt32Data)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -2169,17 +2167,17 @@ Hdu_SInt32Data::~Hdu_SInt32Data() {
   SharedDtor();
 }
 
-inline void Hdu_SInt32Data::SharedDtor() {
+inline void FitsHdu_SInt32Data::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.data_.~RepeatedField();
 }
 
-void Hdu_SInt32Data::SetCachedSize(int size) const {
+void FitsHdu_SInt32Data::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Hdu_SInt32Data::Clear() {
-// @@protoc_insertion_point(message_clear_start:fits.proto.Hdu.SInt32Data)
+void FitsHdu_SInt32Data::Clear() {
+// @@protoc_insertion_point(message_clear_start:fits_proto.FitsHdu.SInt32Data)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2188,7 +2186,7 @@ void Hdu_SInt32Data::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Hdu_SInt32Data::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* FitsHdu_SInt32Data::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -2228,9 +2226,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Hdu_SInt32Data::_InternalSerialize(
+uint8_t* FitsHdu_SInt32Data::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fits.proto.Hdu.SInt32Data)
+  // @@protoc_insertion_point(serialize_to_array_start:fits_proto.FitsHdu.SInt32Data)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2247,12 +2245,12 @@ uint8_t* Hdu_SInt32Data::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fits.proto.Hdu.SInt32Data)
+  // @@protoc_insertion_point(serialize_to_array_end:fits_proto.FitsHdu.SInt32Data)
   return target;
 }
 
-size_t Hdu_SInt32Data::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fits.proto.Hdu.SInt32Data)
+size_t FitsHdu_SInt32Data::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:fits_proto.FitsHdu.SInt32Data)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -2276,17 +2274,17 @@ size_t Hdu_SInt32Data::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Hdu_SInt32Data::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData FitsHdu_SInt32Data::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Hdu_SInt32Data::MergeImpl
+    FitsHdu_SInt32Data::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Hdu_SInt32Data::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*FitsHdu_SInt32Data::GetClassData() const { return &_class_data_; }
 
 
-void Hdu_SInt32Data::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Hdu_SInt32Data*>(&to_msg);
-  auto& from = static_cast<const Hdu_SInt32Data&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:fits.proto.Hdu.SInt32Data)
+void FitsHdu_SInt32Data::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<FitsHdu_SInt32Data*>(&to_msg);
+  auto& from = static_cast<const FitsHdu_SInt32Data&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:fits_proto.FitsHdu.SInt32Data)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2295,24 +2293,24 @@ void Hdu_SInt32Data::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const :
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void Hdu_SInt32Data::CopyFrom(const Hdu_SInt32Data& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fits.proto.Hdu.SInt32Data)
+void FitsHdu_SInt32Data::CopyFrom(const FitsHdu_SInt32Data& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:fits_proto.FitsHdu.SInt32Data)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Hdu_SInt32Data::IsInitialized() const {
+bool FitsHdu_SInt32Data::IsInitialized() const {
   return true;
 }
 
-void Hdu_SInt32Data::InternalSwap(Hdu_SInt32Data* other) {
+void FitsHdu_SInt32Data::InternalSwap(FitsHdu_SInt32Data* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.data_.InternalSwap(&other->_impl_.data_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Hdu_SInt32Data::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata FitsHdu_SInt32Data::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_fits_2eproto_getter, &descriptor_table_fits_2eproto_once,
       file_level_metadata_fits_2eproto[7]);
@@ -2320,29 +2318,29 @@ void Hdu_SInt32Data::InternalSwap(Hdu_SInt32Data* other) {
 
 // ===================================================================
 
-class Hdu_SInt64Data::_Internal {
+class FitsHdu_SInt64Data::_Internal {
  public:
 };
 
-Hdu_SInt64Data::Hdu_SInt64Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+FitsHdu_SInt64Data::FitsHdu_SInt64Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:fits.proto.Hdu.SInt64Data)
+  // @@protoc_insertion_point(arena_constructor:fits_proto.FitsHdu.SInt64Data)
 }
-Hdu_SInt64Data::Hdu_SInt64Data(const Hdu_SInt64Data& from)
+FitsHdu_SInt64Data::FitsHdu_SInt64Data(const FitsHdu_SInt64Data& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Hdu_SInt64Data* const _this = this; (void)_this;
+  FitsHdu_SInt64Data* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.data_){from._impl_.data_}
     , /*decltype(_impl_._data_cached_byte_size_)*/{0}
     , /*decltype(_impl_._cached_size_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:fits.proto.Hdu.SInt64Data)
+  // @@protoc_insertion_point(copy_constructor:fits_proto.FitsHdu.SInt64Data)
 }
 
-inline void Hdu_SInt64Data::SharedCtor(
+inline void FitsHdu_SInt64Data::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -2353,8 +2351,8 @@ inline void Hdu_SInt64Data::SharedCtor(
   };
 }
 
-Hdu_SInt64Data::~Hdu_SInt64Data() {
-  // @@protoc_insertion_point(destructor:fits.proto.Hdu.SInt64Data)
+FitsHdu_SInt64Data::~FitsHdu_SInt64Data() {
+  // @@protoc_insertion_point(destructor:fits_proto.FitsHdu.SInt64Data)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -2362,17 +2360,17 @@ Hdu_SInt64Data::~Hdu_SInt64Data() {
   SharedDtor();
 }
 
-inline void Hdu_SInt64Data::SharedDtor() {
+inline void FitsHdu_SInt64Data::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.data_.~RepeatedField();
 }
 
-void Hdu_SInt64Data::SetCachedSize(int size) const {
+void FitsHdu_SInt64Data::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Hdu_SInt64Data::Clear() {
-// @@protoc_insertion_point(message_clear_start:fits.proto.Hdu.SInt64Data)
+void FitsHdu_SInt64Data::Clear() {
+// @@protoc_insertion_point(message_clear_start:fits_proto.FitsHdu.SInt64Data)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2381,7 +2379,7 @@ void Hdu_SInt64Data::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Hdu_SInt64Data::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* FitsHdu_SInt64Data::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -2421,9 +2419,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Hdu_SInt64Data::_InternalSerialize(
+uint8_t* FitsHdu_SInt64Data::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fits.proto.Hdu.SInt64Data)
+  // @@protoc_insertion_point(serialize_to_array_start:fits_proto.FitsHdu.SInt64Data)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2440,12 +2438,12 @@ uint8_t* Hdu_SInt64Data::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fits.proto.Hdu.SInt64Data)
+  // @@protoc_insertion_point(serialize_to_array_end:fits_proto.FitsHdu.SInt64Data)
   return target;
 }
 
-size_t Hdu_SInt64Data::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fits.proto.Hdu.SInt64Data)
+size_t FitsHdu_SInt64Data::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:fits_proto.FitsHdu.SInt64Data)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -2469,17 +2467,17 @@ size_t Hdu_SInt64Data::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Hdu_SInt64Data::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData FitsHdu_SInt64Data::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Hdu_SInt64Data::MergeImpl
+    FitsHdu_SInt64Data::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Hdu_SInt64Data::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*FitsHdu_SInt64Data::GetClassData() const { return &_class_data_; }
 
 
-void Hdu_SInt64Data::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Hdu_SInt64Data*>(&to_msg);
-  auto& from = static_cast<const Hdu_SInt64Data&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:fits.proto.Hdu.SInt64Data)
+void FitsHdu_SInt64Data::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<FitsHdu_SInt64Data*>(&to_msg);
+  auto& from = static_cast<const FitsHdu_SInt64Data&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:fits_proto.FitsHdu.SInt64Data)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2488,24 +2486,24 @@ void Hdu_SInt64Data::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const :
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void Hdu_SInt64Data::CopyFrom(const Hdu_SInt64Data& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fits.proto.Hdu.SInt64Data)
+void FitsHdu_SInt64Data::CopyFrom(const FitsHdu_SInt64Data& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:fits_proto.FitsHdu.SInt64Data)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Hdu_SInt64Data::IsInitialized() const {
+bool FitsHdu_SInt64Data::IsInitialized() const {
   return true;
 }
 
-void Hdu_SInt64Data::InternalSwap(Hdu_SInt64Data* other) {
+void FitsHdu_SInt64Data::InternalSwap(FitsHdu_SInt64Data* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.data_.InternalSwap(&other->_impl_.data_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Hdu_SInt64Data::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata FitsHdu_SInt64Data::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_fits_2eproto_getter, &descriptor_table_fits_2eproto_once,
       file_level_metadata_fits_2eproto[8]);
@@ -2513,41 +2511,41 @@ void Hdu_SInt64Data::InternalSwap(Hdu_SInt64Data* other) {
 
 // ===================================================================
 
-class Hdu::_Internal {
+class FitsHdu::_Internal {
  public:
-  static const ::fits::proto::Hdu_FloatData& float_data(const Hdu* msg);
-  static const ::fits::proto::Hdu_DoubleData& double_data(const Hdu* msg);
-  static const ::fits::proto::Hdu_Int32Data& int32_data(const Hdu* msg);
-  static const ::fits::proto::Hdu_Int64Data& int64_data(const Hdu* msg);
-  static const ::fits::proto::Hdu_SInt32Data& sint32_data(const Hdu* msg);
-  static const ::fits::proto::Hdu_SInt64Data& sint64_data(const Hdu* msg);
+  static const ::fits_proto::FitsHdu_FloatData& float_data(const FitsHdu* msg);
+  static const ::fits_proto::FitsHdu_DoubleData& double_data(const FitsHdu* msg);
+  static const ::fits_proto::FitsHdu_Int32Data& int32_data(const FitsHdu* msg);
+  static const ::fits_proto::FitsHdu_Int64Data& int64_data(const FitsHdu* msg);
+  static const ::fits_proto::FitsHdu_SInt32Data& sint32_data(const FitsHdu* msg);
+  static const ::fits_proto::FitsHdu_SInt64Data& sint64_data(const FitsHdu* msg);
 };
 
-const ::fits::proto::Hdu_FloatData&
-Hdu::_Internal::float_data(const Hdu* msg) {
+const ::fits_proto::FitsHdu_FloatData&
+FitsHdu::_Internal::float_data(const FitsHdu* msg) {
   return *msg->_impl_.payload_.float_data_;
 }
-const ::fits::proto::Hdu_DoubleData&
-Hdu::_Internal::double_data(const Hdu* msg) {
+const ::fits_proto::FitsHdu_DoubleData&
+FitsHdu::_Internal::double_data(const FitsHdu* msg) {
   return *msg->_impl_.payload_.double_data_;
 }
-const ::fits::proto::Hdu_Int32Data&
-Hdu::_Internal::int32_data(const Hdu* msg) {
+const ::fits_proto::FitsHdu_Int32Data&
+FitsHdu::_Internal::int32_data(const FitsHdu* msg) {
   return *msg->_impl_.payload_.int32_data_;
 }
-const ::fits::proto::Hdu_Int64Data&
-Hdu::_Internal::int64_data(const Hdu* msg) {
+const ::fits_proto::FitsHdu_Int64Data&
+FitsHdu::_Internal::int64_data(const FitsHdu* msg) {
   return *msg->_impl_.payload_.int64_data_;
 }
-const ::fits::proto::Hdu_SInt32Data&
-Hdu::_Internal::sint32_data(const Hdu* msg) {
+const ::fits_proto::FitsHdu_SInt32Data&
+FitsHdu::_Internal::sint32_data(const FitsHdu* msg) {
   return *msg->_impl_.payload_.sint32_data_;
 }
-const ::fits::proto::Hdu_SInt64Data&
-Hdu::_Internal::sint64_data(const Hdu* msg) {
+const ::fits_proto::FitsHdu_SInt64Data&
+FitsHdu::_Internal::sint64_data(const FitsHdu* msg) {
   return *msg->_impl_.payload_.sint64_data_;
 }
-void Hdu::set_allocated_float_data(::fits::proto::Hdu_FloatData* float_data) {
+void FitsHdu::set_allocated_float_data(::fits_proto::FitsHdu_FloatData* float_data) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_payload();
   if (float_data) {
@@ -2560,9 +2558,9 @@ void Hdu::set_allocated_float_data(::fits::proto::Hdu_FloatData* float_data) {
     set_has_float_data();
     _impl_.payload_.float_data_ = float_data;
   }
-  // @@protoc_insertion_point(field_set_allocated:fits.proto.Hdu.float_data)
+  // @@protoc_insertion_point(field_set_allocated:fits_proto.FitsHdu.float_data)
 }
-void Hdu::set_allocated_double_data(::fits::proto::Hdu_DoubleData* double_data) {
+void FitsHdu::set_allocated_double_data(::fits_proto::FitsHdu_DoubleData* double_data) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_payload();
   if (double_data) {
@@ -2575,9 +2573,9 @@ void Hdu::set_allocated_double_data(::fits::proto::Hdu_DoubleData* double_data) 
     set_has_double_data();
     _impl_.payload_.double_data_ = double_data;
   }
-  // @@protoc_insertion_point(field_set_allocated:fits.proto.Hdu.double_data)
+  // @@protoc_insertion_point(field_set_allocated:fits_proto.FitsHdu.double_data)
 }
-void Hdu::set_allocated_int32_data(::fits::proto::Hdu_Int32Data* int32_data) {
+void FitsHdu::set_allocated_int32_data(::fits_proto::FitsHdu_Int32Data* int32_data) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_payload();
   if (int32_data) {
@@ -2590,9 +2588,9 @@ void Hdu::set_allocated_int32_data(::fits::proto::Hdu_Int32Data* int32_data) {
     set_has_int32_data();
     _impl_.payload_.int32_data_ = int32_data;
   }
-  // @@protoc_insertion_point(field_set_allocated:fits.proto.Hdu.int32_data)
+  // @@protoc_insertion_point(field_set_allocated:fits_proto.FitsHdu.int32_data)
 }
-void Hdu::set_allocated_int64_data(::fits::proto::Hdu_Int64Data* int64_data) {
+void FitsHdu::set_allocated_int64_data(::fits_proto::FitsHdu_Int64Data* int64_data) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_payload();
   if (int64_data) {
@@ -2605,9 +2603,9 @@ void Hdu::set_allocated_int64_data(::fits::proto::Hdu_Int64Data* int64_data) {
     set_has_int64_data();
     _impl_.payload_.int64_data_ = int64_data;
   }
-  // @@protoc_insertion_point(field_set_allocated:fits.proto.Hdu.int64_data)
+  // @@protoc_insertion_point(field_set_allocated:fits_proto.FitsHdu.int64_data)
 }
-void Hdu::set_allocated_sint32_data(::fits::proto::Hdu_SInt32Data* sint32_data) {
+void FitsHdu::set_allocated_sint32_data(::fits_proto::FitsHdu_SInt32Data* sint32_data) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_payload();
   if (sint32_data) {
@@ -2620,9 +2618,9 @@ void Hdu::set_allocated_sint32_data(::fits::proto::Hdu_SInt32Data* sint32_data) 
     set_has_sint32_data();
     _impl_.payload_.sint32_data_ = sint32_data;
   }
-  // @@protoc_insertion_point(field_set_allocated:fits.proto.Hdu.sint32_data)
+  // @@protoc_insertion_point(field_set_allocated:fits_proto.FitsHdu.sint32_data)
 }
-void Hdu::set_allocated_sint64_data(::fits::proto::Hdu_SInt64Data* sint64_data) {
+void FitsHdu::set_allocated_sint64_data(::fits_proto::FitsHdu_SInt64Data* sint64_data) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_payload();
   if (sint64_data) {
@@ -2635,17 +2633,17 @@ void Hdu::set_allocated_sint64_data(::fits::proto::Hdu_SInt64Data* sint64_data) 
     set_has_sint64_data();
     _impl_.payload_.sint64_data_ = sint64_data;
   }
-  // @@protoc_insertion_point(field_set_allocated:fits.proto.Hdu.sint64_data)
+  // @@protoc_insertion_point(field_set_allocated:fits_proto.FitsHdu.sint64_data)
 }
-Hdu::Hdu(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+FitsHdu::FitsHdu(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:fits.proto.Hdu)
+  // @@protoc_insertion_point(arena_constructor:fits_proto.FitsHdu)
 }
-Hdu::Hdu(const Hdu& from)
+FitsHdu::FitsHdu(const FitsHdu& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Hdu* const _this = this; (void)_this;
+  FitsHdu* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.header_){from._impl_.header_}
     , decltype(_impl_.payload_){}
@@ -2656,32 +2654,32 @@ Hdu::Hdu(const Hdu& from)
   clear_has_payload();
   switch (from.payload_case()) {
     case kFloatData: {
-      _this->_internal_mutable_float_data()->::fits::proto::Hdu_FloatData::MergeFrom(
+      _this->_internal_mutable_float_data()->::fits_proto::FitsHdu_FloatData::MergeFrom(
           from._internal_float_data());
       break;
     }
     case kDoubleData: {
-      _this->_internal_mutable_double_data()->::fits::proto::Hdu_DoubleData::MergeFrom(
+      _this->_internal_mutable_double_data()->::fits_proto::FitsHdu_DoubleData::MergeFrom(
           from._internal_double_data());
       break;
     }
     case kInt32Data: {
-      _this->_internal_mutable_int32_data()->::fits::proto::Hdu_Int32Data::MergeFrom(
+      _this->_internal_mutable_int32_data()->::fits_proto::FitsHdu_Int32Data::MergeFrom(
           from._internal_int32_data());
       break;
     }
     case kInt64Data: {
-      _this->_internal_mutable_int64_data()->::fits::proto::Hdu_Int64Data::MergeFrom(
+      _this->_internal_mutable_int64_data()->::fits_proto::FitsHdu_Int64Data::MergeFrom(
           from._internal_int64_data());
       break;
     }
     case kSint32Data: {
-      _this->_internal_mutable_sint32_data()->::fits::proto::Hdu_SInt32Data::MergeFrom(
+      _this->_internal_mutable_sint32_data()->::fits_proto::FitsHdu_SInt32Data::MergeFrom(
           from._internal_sint32_data());
       break;
     }
     case kSint64Data: {
-      _this->_internal_mutable_sint64_data()->::fits::proto::Hdu_SInt64Data::MergeFrom(
+      _this->_internal_mutable_sint64_data()->::fits_proto::FitsHdu_SInt64Data::MergeFrom(
           from._internal_sint64_data());
       break;
     }
@@ -2689,10 +2687,10 @@ Hdu::Hdu(const Hdu& from)
       break;
     }
   }
-  // @@protoc_insertion_point(copy_constructor:fits.proto.Hdu)
+  // @@protoc_insertion_point(copy_constructor:fits_proto.FitsHdu)
 }
 
-inline void Hdu::SharedCtor(
+inline void FitsHdu::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -2705,8 +2703,8 @@ inline void Hdu::SharedCtor(
   clear_has_payload();
 }
 
-Hdu::~Hdu() {
-  // @@protoc_insertion_point(destructor:fits.proto.Hdu)
+FitsHdu::~FitsHdu() {
+  // @@protoc_insertion_point(destructor:fits_proto.FitsHdu)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -2714,7 +2712,7 @@ Hdu::~Hdu() {
   SharedDtor();
 }
 
-inline void Hdu::SharedDtor() {
+inline void FitsHdu::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.header_.~RepeatedPtrField();
   if (has_payload()) {
@@ -2722,12 +2720,12 @@ inline void Hdu::SharedDtor() {
   }
 }
 
-void Hdu::SetCachedSize(int size) const {
+void FitsHdu::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Hdu::clear_payload() {
-// @@protoc_insertion_point(one_of_clear_start:fits.proto.Hdu)
+void FitsHdu::clear_payload() {
+// @@protoc_insertion_point(one_of_clear_start:fits_proto.FitsHdu)
   switch (payload_case()) {
     case kFloatData: {
       if (GetArenaForAllocation() == nullptr) {
@@ -2773,8 +2771,8 @@ void Hdu::clear_payload() {
 }
 
 
-void Hdu::Clear() {
-// @@protoc_insertion_point(message_clear_start:fits.proto.Hdu)
+void FitsHdu::Clear() {
+// @@protoc_insertion_point(message_clear_start:fits_proto.FitsHdu)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2784,13 +2782,13 @@ void Hdu::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Hdu::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* FitsHdu::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // repeated .fits.proto.Header header = 1;
+      // repeated .fits_proto.FitsHeader header = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
@@ -2803,7 +2801,7 @@ const char* Hdu::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
         } else
           goto handle_unusual;
         continue;
-      // .fits.proto.Hdu.FloatData float_data = 2;
+      // .fits_proto.FitsHdu.FloatData float_data = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_float_data(), ptr);
@@ -2811,7 +2809,7 @@ const char* Hdu::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
         } else
           goto handle_unusual;
         continue;
-      // .fits.proto.Hdu.DoubleData double_data = 3;
+      // .fits_proto.FitsHdu.DoubleData double_data = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_double_data(), ptr);
@@ -2819,7 +2817,7 @@ const char* Hdu::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
         } else
           goto handle_unusual;
         continue;
-      // .fits.proto.Hdu.Int32Data int32_data = 4;
+      // .fits_proto.FitsHdu.Int32Data int32_data = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_int32_data(), ptr);
@@ -2827,7 +2825,7 @@ const char* Hdu::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
         } else
           goto handle_unusual;
         continue;
-      // .fits.proto.Hdu.Int64Data int64_data = 5;
+      // .fits_proto.FitsHdu.Int64Data int64_data = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_int64_data(), ptr);
@@ -2835,7 +2833,7 @@ const char* Hdu::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
         } else
           goto handle_unusual;
         continue;
-      // .fits.proto.Hdu.SInt32Data sint32_data = 6;
+      // .fits_proto.FitsHdu.SInt32Data sint32_data = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
           ptr = ctx->ParseMessage(_internal_mutable_sint32_data(), ptr);
@@ -2843,7 +2841,7 @@ const char* Hdu::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
         } else
           goto handle_unusual;
         continue;
-      // .fits.proto.Hdu.SInt64Data sint64_data = 7;
+      // .fits_proto.FitsHdu.SInt64Data sint64_data = 7;
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_sint64_data(), ptr);
@@ -2874,13 +2872,13 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Hdu::_InternalSerialize(
+uint8_t* FitsHdu::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fits.proto.Hdu)
+  // @@protoc_insertion_point(serialize_to_array_start:fits_proto.FitsHdu)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .fits.proto.Header header = 1;
+  // repeated .fits_proto.FitsHeader header = 1;
   for (unsigned i = 0,
       n = static_cast<unsigned>(this->_internal_header_size()); i < n; i++) {
     const auto& repfield = this->_internal_header(i);
@@ -2888,42 +2886,42 @@ uint8_t* Hdu::_InternalSerialize(
         InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
-  // .fits.proto.Hdu.FloatData float_data = 2;
+  // .fits_proto.FitsHdu.FloatData float_data = 2;
   if (_internal_has_float_data()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(2, _Internal::float_data(this),
         _Internal::float_data(this).GetCachedSize(), target, stream);
   }
 
-  // .fits.proto.Hdu.DoubleData double_data = 3;
+  // .fits_proto.FitsHdu.DoubleData double_data = 3;
   if (_internal_has_double_data()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(3, _Internal::double_data(this),
         _Internal::double_data(this).GetCachedSize(), target, stream);
   }
 
-  // .fits.proto.Hdu.Int32Data int32_data = 4;
+  // .fits_proto.FitsHdu.Int32Data int32_data = 4;
   if (_internal_has_int32_data()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(4, _Internal::int32_data(this),
         _Internal::int32_data(this).GetCachedSize(), target, stream);
   }
 
-  // .fits.proto.Hdu.Int64Data int64_data = 5;
+  // .fits_proto.FitsHdu.Int64Data int64_data = 5;
   if (_internal_has_int64_data()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(5, _Internal::int64_data(this),
         _Internal::int64_data(this).GetCachedSize(), target, stream);
   }
 
-  // .fits.proto.Hdu.SInt32Data sint32_data = 6;
+  // .fits_proto.FitsHdu.SInt32Data sint32_data = 6;
   if (_internal_has_sint32_data()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(6, _Internal::sint32_data(this),
         _Internal::sint32_data(this).GetCachedSize(), target, stream);
   }
 
-  // .fits.proto.Hdu.SInt64Data sint64_data = 7;
+  // .fits_proto.FitsHdu.SInt64Data sint64_data = 7;
   if (_internal_has_sint64_data()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(7, _Internal::sint64_data(this),
@@ -2934,19 +2932,19 @@ uint8_t* Hdu::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fits.proto.Hdu)
+  // @@protoc_insertion_point(serialize_to_array_end:fits_proto.FitsHdu)
   return target;
 }
 
-size_t Hdu::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fits.proto.Hdu)
+size_t FitsHdu::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:fits_proto.FitsHdu)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .fits.proto.Header header = 1;
+  // repeated .fits_proto.FitsHeader header = 1;
   total_size += 1UL * this->_internal_header_size();
   for (const auto& msg : this->_impl_.header_) {
     total_size +=
@@ -2954,42 +2952,42 @@ size_t Hdu::ByteSizeLong() const {
   }
 
   switch (payload_case()) {
-    // .fits.proto.Hdu.FloatData float_data = 2;
+    // .fits_proto.FitsHdu.FloatData float_data = 2;
     case kFloatData: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *_impl_.payload_.float_data_);
       break;
     }
-    // .fits.proto.Hdu.DoubleData double_data = 3;
+    // .fits_proto.FitsHdu.DoubleData double_data = 3;
     case kDoubleData: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *_impl_.payload_.double_data_);
       break;
     }
-    // .fits.proto.Hdu.Int32Data int32_data = 4;
+    // .fits_proto.FitsHdu.Int32Data int32_data = 4;
     case kInt32Data: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *_impl_.payload_.int32_data_);
       break;
     }
-    // .fits.proto.Hdu.Int64Data int64_data = 5;
+    // .fits_proto.FitsHdu.Int64Data int64_data = 5;
     case kInt64Data: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *_impl_.payload_.int64_data_);
       break;
     }
-    // .fits.proto.Hdu.SInt32Data sint32_data = 6;
+    // .fits_proto.FitsHdu.SInt32Data sint32_data = 6;
     case kSint32Data: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *_impl_.payload_.sint32_data_);
       break;
     }
-    // .fits.proto.Hdu.SInt64Data sint64_data = 7;
+    // .fits_proto.FitsHdu.SInt64Data sint64_data = 7;
     case kSint64Data: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -3003,17 +3001,17 @@ size_t Hdu::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Hdu::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData FitsHdu::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Hdu::MergeImpl
+    FitsHdu::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Hdu::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*FitsHdu::GetClassData() const { return &_class_data_; }
 
 
-void Hdu::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Hdu*>(&to_msg);
-  auto& from = static_cast<const Hdu&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:fits.proto.Hdu)
+void FitsHdu::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<FitsHdu*>(&to_msg);
+  auto& from = static_cast<const FitsHdu&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:fits_proto.FitsHdu)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3021,32 +3019,32 @@ void Hdu::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_N
   _this->_impl_.header_.MergeFrom(from._impl_.header_);
   switch (from.payload_case()) {
     case kFloatData: {
-      _this->_internal_mutable_float_data()->::fits::proto::Hdu_FloatData::MergeFrom(
+      _this->_internal_mutable_float_data()->::fits_proto::FitsHdu_FloatData::MergeFrom(
           from._internal_float_data());
       break;
     }
     case kDoubleData: {
-      _this->_internal_mutable_double_data()->::fits::proto::Hdu_DoubleData::MergeFrom(
+      _this->_internal_mutable_double_data()->::fits_proto::FitsHdu_DoubleData::MergeFrom(
           from._internal_double_data());
       break;
     }
     case kInt32Data: {
-      _this->_internal_mutable_int32_data()->::fits::proto::Hdu_Int32Data::MergeFrom(
+      _this->_internal_mutable_int32_data()->::fits_proto::FitsHdu_Int32Data::MergeFrom(
           from._internal_int32_data());
       break;
     }
     case kInt64Data: {
-      _this->_internal_mutable_int64_data()->::fits::proto::Hdu_Int64Data::MergeFrom(
+      _this->_internal_mutable_int64_data()->::fits_proto::FitsHdu_Int64Data::MergeFrom(
           from._internal_int64_data());
       break;
     }
     case kSint32Data: {
-      _this->_internal_mutable_sint32_data()->::fits::proto::Hdu_SInt32Data::MergeFrom(
+      _this->_internal_mutable_sint32_data()->::fits_proto::FitsHdu_SInt32Data::MergeFrom(
           from._internal_sint32_data());
       break;
     }
     case kSint64Data: {
-      _this->_internal_mutable_sint64_data()->::fits::proto::Hdu_SInt64Data::MergeFrom(
+      _this->_internal_mutable_sint64_data()->::fits_proto::FitsHdu_SInt64Data::MergeFrom(
           from._internal_sint64_data());
       break;
     }
@@ -3057,18 +3055,18 @@ void Hdu::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_N
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void Hdu::CopyFrom(const Hdu& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fits.proto.Hdu)
+void FitsHdu::CopyFrom(const FitsHdu& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:fits_proto.FitsHdu)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Hdu::IsInitialized() const {
+bool FitsHdu::IsInitialized() const {
   return true;
 }
 
-void Hdu::InternalSwap(Hdu* other) {
+void FitsHdu::InternalSwap(FitsHdu* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.header_.InternalSwap(&other->_impl_.header_);
@@ -3076,7 +3074,7 @@ void Hdu::InternalSwap(Hdu* other) {
   swap(_impl_._oneof_case_[0], other->_impl_._oneof_case_[0]);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Hdu::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata FitsHdu::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_fits_2eproto_getter, &descriptor_table_fits_2eproto_once,
       file_level_metadata_fits_2eproto[9]);
@@ -3092,7 +3090,7 @@ Fits::Fits(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:fits.proto.Fits)
+  // @@protoc_insertion_point(arena_constructor:fits_proto.Fits)
 }
 Fits::Fits(const Fits& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -3102,7 +3100,7 @@ Fits::Fits(const Fits& from)
     , /*decltype(_impl_._cached_size_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:fits.proto.Fits)
+  // @@protoc_insertion_point(copy_constructor:fits_proto.Fits)
 }
 
 inline void Fits::SharedCtor(
@@ -3116,7 +3114,7 @@ inline void Fits::SharedCtor(
 }
 
 Fits::~Fits() {
-  // @@protoc_insertion_point(destructor:fits.proto.Fits)
+  // @@protoc_insertion_point(destructor:fits_proto.Fits)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -3134,7 +3132,7 @@ void Fits::SetCachedSize(int size) const {
 }
 
 void Fits::Clear() {
-// @@protoc_insertion_point(message_clear_start:fits.proto.Fits)
+// @@protoc_insertion_point(message_clear_start:fits_proto.Fits)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3149,7 +3147,7 @@ const char* Fits::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // repeated .fits.proto.Hdu hdu = 1;
+      // repeated .fits_proto.FitsHdu hdu = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
@@ -3187,11 +3185,11 @@ failure:
 
 uint8_t* Fits::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fits.proto.Fits)
+  // @@protoc_insertion_point(serialize_to_array_start:fits_proto.Fits)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .fits.proto.Hdu hdu = 1;
+  // repeated .fits_proto.FitsHdu hdu = 1;
   for (unsigned i = 0,
       n = static_cast<unsigned>(this->_internal_hdu_size()); i < n; i++) {
     const auto& repfield = this->_internal_hdu(i);
@@ -3203,19 +3201,19 @@ uint8_t* Fits::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fits.proto.Fits)
+  // @@protoc_insertion_point(serialize_to_array_end:fits_proto.Fits)
   return target;
 }
 
 size_t Fits::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fits.proto.Fits)
+// @@protoc_insertion_point(message_byte_size_start:fits_proto.Fits)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .fits.proto.Hdu hdu = 1;
+  // repeated .fits_proto.FitsHdu hdu = 1;
   total_size += 1UL * this->_internal_hdu_size();
   for (const auto& msg : this->_impl_.hdu_) {
     total_size +=
@@ -3235,7 +3233,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Fits::GetClassData() const { r
 void Fits::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<Fits*>(&to_msg);
   auto& from = static_cast<const Fits&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:fits.proto.Fits)
+  // @@protoc_insertion_point(class_specific_merge_from_start:fits_proto.Fits)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3245,7 +3243,7 @@ void Fits::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_
 }
 
 void Fits::CopyFrom(const Fits& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fits.proto.Fits)
+// @@protoc_insertion_point(class_specific_copy_from_start:fits_proto.Fits)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3268,52 +3266,51 @@ void Fits::InternalSwap(Fits* other) {
 }
 
 // @@protoc_insertion_point(namespace_scope)
-}  // namespace proto
-}  // namespace fits
+}  // namespace fits_proto
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::fits::proto::Data*
-Arena::CreateMaybeMessage< ::fits::proto::Data >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fits::proto::Data >(arena);
+template<> PROTOBUF_NOINLINE ::fits_proto::KeywordData*
+Arena::CreateMaybeMessage< ::fits_proto::KeywordData >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::fits_proto::KeywordData >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fits::proto::Header_KeywordsEntry_DoNotUse*
-Arena::CreateMaybeMessage< ::fits::proto::Header_KeywordsEntry_DoNotUse >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fits::proto::Header_KeywordsEntry_DoNotUse >(arena);
+template<> PROTOBUF_NOINLINE ::fits_proto::FitsHeader_KeywordsEntry_DoNotUse*
+Arena::CreateMaybeMessage< ::fits_proto::FitsHeader_KeywordsEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::fits_proto::FitsHeader_KeywordsEntry_DoNotUse >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fits::proto::Header*
-Arena::CreateMaybeMessage< ::fits::proto::Header >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fits::proto::Header >(arena);
+template<> PROTOBUF_NOINLINE ::fits_proto::FitsHeader*
+Arena::CreateMaybeMessage< ::fits_proto::FitsHeader >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::fits_proto::FitsHeader >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fits::proto::Hdu_FloatData*
-Arena::CreateMaybeMessage< ::fits::proto::Hdu_FloatData >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fits::proto::Hdu_FloatData >(arena);
+template<> PROTOBUF_NOINLINE ::fits_proto::FitsHdu_FloatData*
+Arena::CreateMaybeMessage< ::fits_proto::FitsHdu_FloatData >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::fits_proto::FitsHdu_FloatData >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fits::proto::Hdu_DoubleData*
-Arena::CreateMaybeMessage< ::fits::proto::Hdu_DoubleData >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fits::proto::Hdu_DoubleData >(arena);
+template<> PROTOBUF_NOINLINE ::fits_proto::FitsHdu_DoubleData*
+Arena::CreateMaybeMessage< ::fits_proto::FitsHdu_DoubleData >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::fits_proto::FitsHdu_DoubleData >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fits::proto::Hdu_Int32Data*
-Arena::CreateMaybeMessage< ::fits::proto::Hdu_Int32Data >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fits::proto::Hdu_Int32Data >(arena);
+template<> PROTOBUF_NOINLINE ::fits_proto::FitsHdu_Int32Data*
+Arena::CreateMaybeMessage< ::fits_proto::FitsHdu_Int32Data >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::fits_proto::FitsHdu_Int32Data >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fits::proto::Hdu_Int64Data*
-Arena::CreateMaybeMessage< ::fits::proto::Hdu_Int64Data >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fits::proto::Hdu_Int64Data >(arena);
+template<> PROTOBUF_NOINLINE ::fits_proto::FitsHdu_Int64Data*
+Arena::CreateMaybeMessage< ::fits_proto::FitsHdu_Int64Data >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::fits_proto::FitsHdu_Int64Data >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fits::proto::Hdu_SInt32Data*
-Arena::CreateMaybeMessage< ::fits::proto::Hdu_SInt32Data >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fits::proto::Hdu_SInt32Data >(arena);
+template<> PROTOBUF_NOINLINE ::fits_proto::FitsHdu_SInt32Data*
+Arena::CreateMaybeMessage< ::fits_proto::FitsHdu_SInt32Data >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::fits_proto::FitsHdu_SInt32Data >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fits::proto::Hdu_SInt64Data*
-Arena::CreateMaybeMessage< ::fits::proto::Hdu_SInt64Data >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fits::proto::Hdu_SInt64Data >(arena);
+template<> PROTOBUF_NOINLINE ::fits_proto::FitsHdu_SInt64Data*
+Arena::CreateMaybeMessage< ::fits_proto::FitsHdu_SInt64Data >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::fits_proto::FitsHdu_SInt64Data >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fits::proto::Hdu*
-Arena::CreateMaybeMessage< ::fits::proto::Hdu >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fits::proto::Hdu >(arena);
+template<> PROTOBUF_NOINLINE ::fits_proto::FitsHdu*
+Arena::CreateMaybeMessage< ::fits_proto::FitsHdu >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::fits_proto::FitsHdu >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fits::proto::Fits*
-Arena::CreateMaybeMessage< ::fits::proto::Fits >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fits::proto::Fits >(arena);
+template<> PROTOBUF_NOINLINE ::fits_proto::Fits*
+Arena::CreateMaybeMessage< ::fits_proto::Fits >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::fits_proto::Fits >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 
