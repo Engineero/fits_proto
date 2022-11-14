@@ -1,0 +1,80 @@
+// Protocol buffer for FITS astronomical data.
+
+// Declaration
+syntax = "proto3";
+package fits.proto;
+// import "google/protobuf/timestamp.proto";  // example import
+
+// Java declaration
+option java_package = "com.engineerolabs.fits_proto";
+option java_outer_classname = "FitsProto";
+
+// C# declaration
+option csharp_namespace = "EngineeroLabs.Protobuf.FitsProto";
+
+// Data element
+message Data {
+  oneof value {
+    string string_val = 1;
+    int32 int32_val = 2;
+    sint32 sint32_val = 3;
+    int64 int64_val = 4;
+    sint64 sint64_val = 5;
+    float float_val = 6;
+    double double_val = 7;
+    bool bool_val = 8;
+  }
+  string comment = 9;
+}
+
+// Header message for FITS blocks.
+message Header {
+  bool simple = 1;  // True if conforms to FITS standard
+  int32 bitpix = 2;  // redundant for protobuf
+  repeated int32 size = 3;  // comprises all NAXIS from standard
+  string comment = 4;
+  string history = 5;
+  int32 n_extensions = 6;  // number of extensions
+  string extension = 7;  // extension name/type
+  map<string, Data> keywords = 8;  // all other keywords by type
+}
+
+
+// Header-data unit, basic building block of a FITS file.
+message Hdu {
+  // Define data message types for use in HDU.
+  message FloatData {
+    repeated float data = 1;
+  }
+  message DoubleData {
+    repeated double data = 1;
+  }
+  message Int32Data {
+    repeated int32 data = 1;
+  }
+  message Int64Data {
+    repeated int64 data = 1;
+  }
+  message SInt32Data {
+    repeated sint32 data = 1;
+  }
+  message SInt64Data {
+    repeated sint64 data = 1;
+  }
+
+  // Define the header-data unit.
+  repeated Header header = 1;
+  oneof payload {
+    repeated float float_data = 2;
+    repeated double double_data = 3;
+    repeated int32 int32_data = 4;
+    repeated int64 int64_data = 5;
+    repeated sint32 sint32_data = 6;
+    repeated sint64 sint64_data = 7;
+  }
+}
+
+// The actual FITS file message.
+message Fits {
+  repeated Hdu hdu = 1;  // mandatory primary, plus optional extensions
+}
