@@ -24,42 +24,44 @@ namespace EngineeroLabs.Protobuf.FitsProto {
     static FitsReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgpmaXRzLnByb3RvEgpmaXRzX3Byb3RvIssBCgREYXRhEhQKCnN0cmluZ192",
-            "YWwYASABKAlIABITCglpbnQzMl92YWwYAiABKAVIABIUCgpzaW50MzJfdmFs",
-            "GAMgASgRSAASEwoJaW50NjRfdmFsGAQgASgDSAASFAoKc2ludDY0X3ZhbBgF",
-            "IAEoEkgAEhMKCWZsb2F0X3ZhbBgGIAEoAkgAEhQKCmRvdWJsZV92YWwYByAB",
-            "KAFIABISCghib29sX3ZhbBgIIAEoCEgAEg8KB2NvbW1lbnQYCSABKAlCBwoF",
-            "dmFsdWUi+AEKBkhlYWRlchIOCgZzaW1wbGUYASABKAgSDgoGYml0cGl4GAIg",
-            "ASgFEgwKBHNpemUYAyADKAUSDwoHY29tbWVudBgEIAEoCRIPCgdoaXN0b3J5",
-            "GAUgASgJEhQKDG5fZXh0ZW5zaW9ucxgGIAEoBRIRCglleHRlbnNpb24YByAB",
-            "KAkSMgoIa2V5d29yZHMYCCADKAsyIC5maXRzX3Byb3RvLkhlYWRlci5LZXl3",
-            "b3Jkc0VudHJ5GkEKDUtleXdvcmRzRW50cnkSCwoDa2V5GAEgASgJEh8KBXZh",
-            "bHVlGAIgASgLMhAuZml0c19wcm90by5EYXRhOgI4ASKFBAoDSGR1EiIKBmhl",
-            "YWRlchgBIAMoCzISLmZpdHNfcHJvdG8uSGVhZGVyEi8KCmZsb2F0X2RhdGEY",
-            "AiABKAsyGS5maXRzX3Byb3RvLkhkdS5GbG9hdERhdGFIABIxCgtkb3VibGVf",
-            "ZGF0YRgDIAEoCzIaLmZpdHNfcHJvdG8uSGR1LkRvdWJsZURhdGFIABIvCgpp",
-            "bnQzMl9kYXRhGAQgASgLMhkuZml0c19wcm90by5IZHUuSW50MzJEYXRhSAAS",
-            "LwoKaW50NjRfZGF0YRgFIAEoCzIZLmZpdHNfcHJvdG8uSGR1LkludDY0RGF0",
-            "YUgAEjEKC3NpbnQzMl9kYXRhGAYgASgLMhouZml0c19wcm90by5IZHUuU0lu",
-            "dDMyRGF0YUgAEjEKC3NpbnQ2NF9kYXRhGAcgASgLMhouZml0c19wcm90by5I",
-            "ZHUuU0ludDY0RGF0YUgAGhkKCUZsb2F0RGF0YRIMCgRkYXRhGAEgAygCGhoK",
-            "CkRvdWJsZURhdGESDAoEZGF0YRgBIAMoARoZCglJbnQzMkRhdGESDAoEZGF0",
-            "YRgBIAMoBRoZCglJbnQ2NERhdGESDAoEZGF0YRgBIAMoAxoaCgpTSW50MzJE",
-            "YXRhEgwKBGRhdGEYASADKBEaGgoKU0ludDY0RGF0YRIMCgRkYXRhGAEgAygS",
-            "QgkKB3BheWxvYWQiJAoERml0cxIcCgNoZHUYASADKAsyDy5maXRzX3Byb3Rv",
-            "LkhkdUJMChxjb20uZW5naW5lZXJvbGFicy5maXRzX3Byb3RvQglGaXRzUHJv",
-            "dG+qAiBFbmdpbmVlcm9MYWJzLlByb3RvYnVmLkZpdHNQcm90b2IGcHJvdG8z"));
+            "CgpmaXRzLnByb3RvEgpmaXRzX3Byb3RvItIBCgtLZXl3b3JkRGF0YRIUCgpz",
+            "dHJpbmdfdmFsGAEgASgJSAASEwoJaW50MzJfdmFsGAIgASgFSAASFAoKc2lu",
+            "dDMyX3ZhbBgDIAEoEUgAEhMKCWludDY0X3ZhbBgEIAEoA0gAEhQKCnNpbnQ2",
+            "NF92YWwYBSABKBJIABITCglmbG9hdF92YWwYBiABKAJIABIUCgpkb3VibGVf",
+            "dmFsGAcgASgBSAASEgoIYm9vbF92YWwYCCABKAhIABIPCgdjb21tZW50GAkg",
+            "ASgJQgcKBXZhbHVlIocCCgpGaXRzSGVhZGVyEg4KBnNpbXBsZRgBIAEoCBIO",
+            "CgZiaXRwaXgYAiABKAUSDAoEc2l6ZRgDIAMoBRIPCgdjb21tZW50GAQgASgJ",
+            "Eg8KB2hpc3RvcnkYBSABKAkSFAoMbl9leHRlbnNpb25zGAYgASgFEhEKCWV4",
+            "dGVuc2lvbhgHIAEoCRI2CghrZXl3b3JkcxgIIAMoCzIkLmZpdHNfcHJvdG8u",
+            "Rml0c0hlYWRlci5LZXl3b3Jkc0VudHJ5GkgKDUtleXdvcmRzRW50cnkSCwoD",
+            "a2V5GAEgASgJEiYKBXZhbHVlGAIgASgLMhcuZml0c19wcm90by5LZXl3b3Jk",
+            "RGF0YToCOAEipQQKB0ZpdHNIZHUSJgoGaGVhZGVyGAEgAygLMhYuZml0c19w",
+            "cm90by5GaXRzSGVhZGVyEjMKCmZsb2F0X2RhdGEYAiABKAsyHS5maXRzX3By",
+            "b3RvLkZpdHNIZHUuRmxvYXREYXRhSAASNQoLZG91YmxlX2RhdGEYAyABKAsy",
+            "Hi5maXRzX3Byb3RvLkZpdHNIZHUuRG91YmxlRGF0YUgAEjMKCmludDMyX2Rh",
+            "dGEYBCABKAsyHS5maXRzX3Byb3RvLkZpdHNIZHUuSW50MzJEYXRhSAASMwoK",
+            "aW50NjRfZGF0YRgFIAEoCzIdLmZpdHNfcHJvdG8uRml0c0hkdS5JbnQ2NERh",
+            "dGFIABI1CgtzaW50MzJfZGF0YRgGIAEoCzIeLmZpdHNfcHJvdG8uRml0c0hk",
+            "dS5TSW50MzJEYXRhSAASNQoLc2ludDY0X2RhdGEYByABKAsyHi5maXRzX3By",
+            "b3RvLkZpdHNIZHUuU0ludDY0RGF0YUgAGhkKCUZsb2F0RGF0YRIMCgRkYXRh",
+            "GAEgAygCGhoKCkRvdWJsZURhdGESDAoEZGF0YRgBIAMoARoZCglJbnQzMkRh",
+            "dGESDAoEZGF0YRgBIAMoBRoZCglJbnQ2NERhdGESDAoEZGF0YRgBIAMoAxoa",
+            "CgpTSW50MzJEYXRhEgwKBGRhdGEYASADKBEaGgoKU0ludDY0RGF0YRIMCgRk",
+            "YXRhGAEgAygSQgkKB3BheWxvYWQiKAoERml0cxIgCgNoZHUYASADKAsyEy5m",
+            "aXRzX3Byb3RvLkZpdHNIZHVCTAocY29tLmVuZ2luZWVyb2xhYnMuZml0c19w",
+            "cm90b0IJRml0c1Byb3RvqgIgRW5naW5lZXJvTGFicy5Qcm90b2J1Zi5GaXRz",
+            "UHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.Data), global::EngineeroLabs.Protobuf.FitsProto.Data.Parser, new[]{ "StringVal", "Int32Val", "Sint32Val", "Int64Val", "Sint64Val", "FloatVal", "DoubleVal", "BoolVal", "Comment" }, new[]{ "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.Header), global::EngineeroLabs.Protobuf.FitsProto.Header.Parser, new[]{ "Simple", "Bitpix", "Size", "Comment", "History", "NExtensions", "Extension", "Keywords" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.Hdu), global::EngineeroLabs.Protobuf.FitsProto.Hdu.Parser, new[]{ "Header", "FloatData", "DoubleData", "Int32Data", "Int64Data", "Sint32Data", "Sint64Data" }, new[]{ "Payload" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.FloatData), global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.FloatData.Parser, new[]{ "Data" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.DoubleData), global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.DoubleData.Parser, new[]{ "Data" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int32Data), global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int32Data.Parser, new[]{ "Data" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int64Data), global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int64Data.Parser, new[]{ "Data" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt32Data), global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt32Data.Parser, new[]{ "Data" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt64Data), global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt64Data.Parser, new[]{ "Data" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.KeywordData), global::EngineeroLabs.Protobuf.FitsProto.KeywordData.Parser, new[]{ "StringVal", "Int32Val", "Sint32Val", "Int64Val", "Sint64Val", "FloatVal", "DoubleVal", "BoolVal", "Comment" }, new[]{ "Value" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.FitsHeader), global::EngineeroLabs.Protobuf.FitsProto.FitsHeader.Parser, new[]{ "Simple", "Bitpix", "Size", "Comment", "History", "NExtensions", "Extension", "Keywords" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.FitsHdu), global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Parser, new[]{ "Header", "FloatData", "DoubleData", "Int32Data", "Int64Data", "Sint32Data", "Sint64Data" }, new[]{ "Payload" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.FloatData), global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.FloatData.Parser, new[]{ "Data" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.DoubleData), global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.DoubleData.Parser, new[]{ "Data" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int32Data), global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int32Data.Parser, new[]{ "Data" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int64Data), global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int64Data.Parser, new[]{ "Data" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt32Data), global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt32Data.Parser, new[]{ "Data" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt64Data), global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt64Data.Parser, new[]{ "Data" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::EngineeroLabs.Protobuf.FitsProto.Fits), global::EngineeroLabs.Protobuf.FitsProto.Fits.Parser, new[]{ "Hdu" }, null, null, null, null)
           }));
     }
@@ -70,16 +72,16 @@ namespace EngineeroLabs.Protobuf.FitsProto {
   /// <summary>
   /// Data element
   /// </summary>
-  public sealed partial class Data : pb::IMessage<Data>
+  public sealed partial class KeywordData : pb::IMessage<KeywordData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<Data> _parser = new pb::MessageParser<Data>(() => new Data());
+    private static readonly pb::MessageParser<KeywordData> _parser = new pb::MessageParser<KeywordData>(() => new KeywordData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<Data> Parser { get { return _parser; } }
+    public static pb::MessageParser<KeywordData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -95,7 +97,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Data() {
+    public KeywordData() {
       OnConstruction();
     }
 
@@ -103,7 +105,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Data(Data other) : this() {
+    public KeywordData(KeywordData other) : this() {
       comment_ = other.comment_;
       switch (other.ValueCase) {
         case ValueOneofCase.StringVal:
@@ -137,8 +139,8 @@ namespace EngineeroLabs.Protobuf.FitsProto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Data Clone() {
-      return new Data(this);
+    public KeywordData Clone() {
+      return new KeywordData(this);
     }
 
     /// <summary>Field number for the "string_val" field.</summary>
@@ -279,12 +281,12 @@ namespace EngineeroLabs.Protobuf.FitsProto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as Data);
+      return Equals(other as KeywordData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(Data other) {
+    public bool Equals(KeywordData other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -463,7 +465,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(Data other) {
+    public void MergeFrom(KeywordData other) {
       if (other == null) {
         return;
       }
@@ -609,16 +611,16 @@ namespace EngineeroLabs.Protobuf.FitsProto {
   /// <summary>
   /// Header message for FITS blocks.
   /// </summary>
-  public sealed partial class Header : pb::IMessage<Header>
+  public sealed partial class FitsHeader : pb::IMessage<FitsHeader>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<Header> _parser = new pb::MessageParser<Header>(() => new Header());
+    private static readonly pb::MessageParser<FitsHeader> _parser = new pb::MessageParser<FitsHeader>(() => new FitsHeader());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<Header> Parser { get { return _parser; } }
+    public static pb::MessageParser<FitsHeader> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -634,7 +636,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Header() {
+    public FitsHeader() {
       OnConstruction();
     }
 
@@ -642,7 +644,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Header(Header other) : this() {
+    public FitsHeader(FitsHeader other) : this() {
       simple_ = other.simple_;
       bitpix_ = other.bitpix_;
       size_ = other.size_.Clone();
@@ -656,8 +658,8 @@ namespace EngineeroLabs.Protobuf.FitsProto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Header Clone() {
-      return new Header(this);
+    public FitsHeader Clone() {
+      return new FitsHeader(this);
     }
 
     /// <summary>Field number for the "simple" field.</summary>
@@ -760,27 +762,27 @@ namespace EngineeroLabs.Protobuf.FitsProto {
 
     /// <summary>Field number for the "keywords" field.</summary>
     public const int KeywordsFieldNumber = 8;
-    private static readonly pbc::MapField<string, global::EngineeroLabs.Protobuf.FitsProto.Data>.Codec _map_keywords_codec
-        = new pbc::MapField<string, global::EngineeroLabs.Protobuf.FitsProto.Data>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::EngineeroLabs.Protobuf.FitsProto.Data.Parser), 66);
-    private readonly pbc::MapField<string, global::EngineeroLabs.Protobuf.FitsProto.Data> keywords_ = new pbc::MapField<string, global::EngineeroLabs.Protobuf.FitsProto.Data>();
+    private static readonly pbc::MapField<string, global::EngineeroLabs.Protobuf.FitsProto.KeywordData>.Codec _map_keywords_codec
+        = new pbc::MapField<string, global::EngineeroLabs.Protobuf.FitsProto.KeywordData>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::EngineeroLabs.Protobuf.FitsProto.KeywordData.Parser), 66);
+    private readonly pbc::MapField<string, global::EngineeroLabs.Protobuf.FitsProto.KeywordData> keywords_ = new pbc::MapField<string, global::EngineeroLabs.Protobuf.FitsProto.KeywordData>();
     /// <summary>
     /// all other keywords by type
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<string, global::EngineeroLabs.Protobuf.FitsProto.Data> Keywords {
+    public pbc::MapField<string, global::EngineeroLabs.Protobuf.FitsProto.KeywordData> Keywords {
       get { return keywords_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as Header);
+      return Equals(other as FitsHeader);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(Header other) {
+    public bool Equals(FitsHeader other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -928,7 +930,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(Header other) {
+    public void MergeFrom(FitsHeader other) {
       if (other == null) {
         return;
       }
@@ -1058,16 +1060,16 @@ namespace EngineeroLabs.Protobuf.FitsProto {
   /// <summary>
   /// Header-data unit, basic building block of a FITS file.
   /// </summary>
-  public sealed partial class Hdu : pb::IMessage<Hdu>
+  public sealed partial class FitsHdu : pb::IMessage<FitsHdu>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<Hdu> _parser = new pb::MessageParser<Hdu>(() => new Hdu());
+    private static readonly pb::MessageParser<FitsHdu> _parser = new pb::MessageParser<FitsHdu>(() => new FitsHdu());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<Hdu> Parser { get { return _parser; } }
+    public static pb::MessageParser<FitsHdu> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1083,7 +1085,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Hdu() {
+    public FitsHdu() {
       OnConstruction();
     }
 
@@ -1091,7 +1093,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Hdu(Hdu other) : this() {
+    public FitsHdu(FitsHdu other) : this() {
       header_ = other.header_.Clone();
       switch (other.PayloadCase) {
         case PayloadOneofCase.FloatData:
@@ -1119,21 +1121,21 @@ namespace EngineeroLabs.Protobuf.FitsProto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Hdu Clone() {
-      return new Hdu(this);
+    public FitsHdu Clone() {
+      return new FitsHdu(this);
     }
 
     /// <summary>Field number for the "header" field.</summary>
     public const int HeaderFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::EngineeroLabs.Protobuf.FitsProto.Header> _repeated_header_codec
-        = pb::FieldCodec.ForMessage(10, global::EngineeroLabs.Protobuf.FitsProto.Header.Parser);
-    private readonly pbc::RepeatedField<global::EngineeroLabs.Protobuf.FitsProto.Header> header_ = new pbc::RepeatedField<global::EngineeroLabs.Protobuf.FitsProto.Header>();
+    private static readonly pb::FieldCodec<global::EngineeroLabs.Protobuf.FitsProto.FitsHeader> _repeated_header_codec
+        = pb::FieldCodec.ForMessage(10, global::EngineeroLabs.Protobuf.FitsProto.FitsHeader.Parser);
+    private readonly pbc::RepeatedField<global::EngineeroLabs.Protobuf.FitsProto.FitsHeader> header_ = new pbc::RepeatedField<global::EngineeroLabs.Protobuf.FitsProto.FitsHeader>();
     /// <summary>
     /// Define the header-data unit.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::EngineeroLabs.Protobuf.FitsProto.Header> Header {
+    public pbc::RepeatedField<global::EngineeroLabs.Protobuf.FitsProto.FitsHeader> Header {
       get { return header_; }
     }
 
@@ -1141,8 +1143,8 @@ namespace EngineeroLabs.Protobuf.FitsProto {
     public const int FloatDataFieldNumber = 2;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.FloatData FloatData {
-      get { return payloadCase_ == PayloadOneofCase.FloatData ? (global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.FloatData) payload_ : null; }
+    public global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.FloatData FloatData {
+      get { return payloadCase_ == PayloadOneofCase.FloatData ? (global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.FloatData) payload_ : null; }
       set {
         payload_ = value;
         payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.FloatData;
@@ -1153,8 +1155,8 @@ namespace EngineeroLabs.Protobuf.FitsProto {
     public const int DoubleDataFieldNumber = 3;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.DoubleData DoubleData {
-      get { return payloadCase_ == PayloadOneofCase.DoubleData ? (global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.DoubleData) payload_ : null; }
+    public global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.DoubleData DoubleData {
+      get { return payloadCase_ == PayloadOneofCase.DoubleData ? (global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.DoubleData) payload_ : null; }
       set {
         payload_ = value;
         payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.DoubleData;
@@ -1165,8 +1167,8 @@ namespace EngineeroLabs.Protobuf.FitsProto {
     public const int Int32DataFieldNumber = 4;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int32Data Int32Data {
-      get { return payloadCase_ == PayloadOneofCase.Int32Data ? (global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int32Data) payload_ : null; }
+    public global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int32Data Int32Data {
+      get { return payloadCase_ == PayloadOneofCase.Int32Data ? (global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int32Data) payload_ : null; }
       set {
         payload_ = value;
         payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.Int32Data;
@@ -1177,8 +1179,8 @@ namespace EngineeroLabs.Protobuf.FitsProto {
     public const int Int64DataFieldNumber = 5;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int64Data Int64Data {
-      get { return payloadCase_ == PayloadOneofCase.Int64Data ? (global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int64Data) payload_ : null; }
+    public global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int64Data Int64Data {
+      get { return payloadCase_ == PayloadOneofCase.Int64Data ? (global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int64Data) payload_ : null; }
       set {
         payload_ = value;
         payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.Int64Data;
@@ -1189,8 +1191,8 @@ namespace EngineeroLabs.Protobuf.FitsProto {
     public const int Sint32DataFieldNumber = 6;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt32Data Sint32Data {
-      get { return payloadCase_ == PayloadOneofCase.Sint32Data ? (global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt32Data) payload_ : null; }
+    public global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt32Data Sint32Data {
+      get { return payloadCase_ == PayloadOneofCase.Sint32Data ? (global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt32Data) payload_ : null; }
       set {
         payload_ = value;
         payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.Sint32Data;
@@ -1201,8 +1203,8 @@ namespace EngineeroLabs.Protobuf.FitsProto {
     public const int Sint64DataFieldNumber = 7;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt64Data Sint64Data {
-      get { return payloadCase_ == PayloadOneofCase.Sint64Data ? (global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt64Data) payload_ : null; }
+    public global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt64Data Sint64Data {
+      get { return payloadCase_ == PayloadOneofCase.Sint64Data ? (global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt64Data) payload_ : null; }
       set {
         payload_ = value;
         payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.Sint64Data;
@@ -1237,12 +1239,12 @@ namespace EngineeroLabs.Protobuf.FitsProto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as Hdu);
+      return Equals(other as FitsHdu);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(Hdu other) {
+    public bool Equals(FitsHdu other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1387,7 +1389,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(Hdu other) {
+    public void MergeFrom(FitsHdu other) {
       if (other == null) {
         return;
       }
@@ -1395,37 +1397,37 @@ namespace EngineeroLabs.Protobuf.FitsProto {
       switch (other.PayloadCase) {
         case PayloadOneofCase.FloatData:
           if (FloatData == null) {
-            FloatData = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.FloatData();
+            FloatData = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.FloatData();
           }
           FloatData.MergeFrom(other.FloatData);
           break;
         case PayloadOneofCase.DoubleData:
           if (DoubleData == null) {
-            DoubleData = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.DoubleData();
+            DoubleData = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.DoubleData();
           }
           DoubleData.MergeFrom(other.DoubleData);
           break;
         case PayloadOneofCase.Int32Data:
           if (Int32Data == null) {
-            Int32Data = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int32Data();
+            Int32Data = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int32Data();
           }
           Int32Data.MergeFrom(other.Int32Data);
           break;
         case PayloadOneofCase.Int64Data:
           if (Int64Data == null) {
-            Int64Data = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int64Data();
+            Int64Data = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int64Data();
           }
           Int64Data.MergeFrom(other.Int64Data);
           break;
         case PayloadOneofCase.Sint32Data:
           if (Sint32Data == null) {
-            Sint32Data = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt32Data();
+            Sint32Data = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt32Data();
           }
           Sint32Data.MergeFrom(other.Sint32Data);
           break;
         case PayloadOneofCase.Sint64Data:
           if (Sint64Data == null) {
-            Sint64Data = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt64Data();
+            Sint64Data = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt64Data();
           }
           Sint64Data.MergeFrom(other.Sint64Data);
           break;
@@ -1451,7 +1453,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
             break;
           }
           case 18: {
-            global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.FloatData subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.FloatData();
+            global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.FloatData subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.FloatData();
             if (payloadCase_ == PayloadOneofCase.FloatData) {
               subBuilder.MergeFrom(FloatData);
             }
@@ -1460,7 +1462,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
             break;
           }
           case 26: {
-            global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.DoubleData subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.DoubleData();
+            global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.DoubleData subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.DoubleData();
             if (payloadCase_ == PayloadOneofCase.DoubleData) {
               subBuilder.MergeFrom(DoubleData);
             }
@@ -1469,7 +1471,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
             break;
           }
           case 34: {
-            global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int32Data subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int32Data();
+            global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int32Data subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int32Data();
             if (payloadCase_ == PayloadOneofCase.Int32Data) {
               subBuilder.MergeFrom(Int32Data);
             }
@@ -1478,7 +1480,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
             break;
           }
           case 42: {
-            global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int64Data subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int64Data();
+            global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int64Data subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int64Data();
             if (payloadCase_ == PayloadOneofCase.Int64Data) {
               subBuilder.MergeFrom(Int64Data);
             }
@@ -1487,7 +1489,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
             break;
           }
           case 50: {
-            global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt32Data subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt32Data();
+            global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt32Data subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt32Data();
             if (payloadCase_ == PayloadOneofCase.Sint32Data) {
               subBuilder.MergeFrom(Sint32Data);
             }
@@ -1496,7 +1498,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
             break;
           }
           case 58: {
-            global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt64Data subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt64Data();
+            global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt64Data subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt64Data();
             if (payloadCase_ == PayloadOneofCase.Sint64Data) {
               subBuilder.MergeFrom(Sint64Data);
             }
@@ -1524,7 +1526,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
             break;
           }
           case 18: {
-            global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.FloatData subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.FloatData();
+            global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.FloatData subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.FloatData();
             if (payloadCase_ == PayloadOneofCase.FloatData) {
               subBuilder.MergeFrom(FloatData);
             }
@@ -1533,7 +1535,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
             break;
           }
           case 26: {
-            global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.DoubleData subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.DoubleData();
+            global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.DoubleData subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.DoubleData();
             if (payloadCase_ == PayloadOneofCase.DoubleData) {
               subBuilder.MergeFrom(DoubleData);
             }
@@ -1542,7 +1544,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
             break;
           }
           case 34: {
-            global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int32Data subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int32Data();
+            global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int32Data subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int32Data();
             if (payloadCase_ == PayloadOneofCase.Int32Data) {
               subBuilder.MergeFrom(Int32Data);
             }
@@ -1551,7 +1553,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
             break;
           }
           case 42: {
-            global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int64Data subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.Int64Data();
+            global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int64Data subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.Int64Data();
             if (payloadCase_ == PayloadOneofCase.Int64Data) {
               subBuilder.MergeFrom(Int64Data);
             }
@@ -1560,7 +1562,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
             break;
           }
           case 50: {
-            global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt32Data subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt32Data();
+            global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt32Data subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt32Data();
             if (payloadCase_ == PayloadOneofCase.Sint32Data) {
               subBuilder.MergeFrom(Sint32Data);
             }
@@ -1569,7 +1571,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
             break;
           }
           case 58: {
-            global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt64Data subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.Hdu.Types.SInt64Data();
+            global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt64Data subBuilder = new global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Types.SInt64Data();
             if (payloadCase_ == PayloadOneofCase.Sint64Data) {
               subBuilder.MergeFrom(Sint64Data);
             }
@@ -1583,7 +1585,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
     #endif
 
     #region Nested types
-    /// <summary>Container for nested types declared in the Hdu message type.</summary>
+    /// <summary>Container for nested types declared in the FitsHdu message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
@@ -1604,7 +1606,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::EngineeroLabs.Protobuf.FitsProto.Hdu.Descriptor.NestedTypes[0]; }
+          get { return global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Descriptor.NestedTypes[0]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1784,7 +1786,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::EngineeroLabs.Protobuf.FitsProto.Hdu.Descriptor.NestedTypes[1]; }
+          get { return global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Descriptor.NestedTypes[1]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1964,7 +1966,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::EngineeroLabs.Protobuf.FitsProto.Hdu.Descriptor.NestedTypes[2]; }
+          get { return global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Descriptor.NestedTypes[2]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2144,7 +2146,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::EngineeroLabs.Protobuf.FitsProto.Hdu.Descriptor.NestedTypes[3]; }
+          get { return global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Descriptor.NestedTypes[3]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2324,7 +2326,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::EngineeroLabs.Protobuf.FitsProto.Hdu.Descriptor.NestedTypes[4]; }
+          get { return global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Descriptor.NestedTypes[4]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2504,7 +2506,7 @@ namespace EngineeroLabs.Protobuf.FitsProto {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::EngineeroLabs.Protobuf.FitsProto.Hdu.Descriptor.NestedTypes[5]; }
+          get { return global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Descriptor.NestedTypes[5]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2724,15 +2726,15 @@ namespace EngineeroLabs.Protobuf.FitsProto {
 
     /// <summary>Field number for the "hdu" field.</summary>
     public const int HduFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::EngineeroLabs.Protobuf.FitsProto.Hdu> _repeated_hdu_codec
-        = pb::FieldCodec.ForMessage(10, global::EngineeroLabs.Protobuf.FitsProto.Hdu.Parser);
-    private readonly pbc::RepeatedField<global::EngineeroLabs.Protobuf.FitsProto.Hdu> hdu_ = new pbc::RepeatedField<global::EngineeroLabs.Protobuf.FitsProto.Hdu>();
+    private static readonly pb::FieldCodec<global::EngineeroLabs.Protobuf.FitsProto.FitsHdu> _repeated_hdu_codec
+        = pb::FieldCodec.ForMessage(10, global::EngineeroLabs.Protobuf.FitsProto.FitsHdu.Parser);
+    private readonly pbc::RepeatedField<global::EngineeroLabs.Protobuf.FitsProto.FitsHdu> hdu_ = new pbc::RepeatedField<global::EngineeroLabs.Protobuf.FitsProto.FitsHdu>();
     /// <summary>
     /// mandatory primary, plus optional extensions
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::EngineeroLabs.Protobuf.FitsProto.Hdu> Hdu {
+    public pbc::RepeatedField<global::EngineeroLabs.Protobuf.FitsProto.FitsHdu> Hdu {
       get { return hdu_; }
     }
 

@@ -48,75 +48,75 @@ struct TableStruct_fits_2eproto {
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_fits_2eproto;
 namespace fits_proto {
-class Data;
-struct DataDefaultTypeInternal;
-extern DataDefaultTypeInternal _Data_default_instance_;
 class Fits;
 struct FitsDefaultTypeInternal;
 extern FitsDefaultTypeInternal _Fits_default_instance_;
-class Hdu;
-struct HduDefaultTypeInternal;
-extern HduDefaultTypeInternal _Hdu_default_instance_;
-class Hdu_DoubleData;
-struct Hdu_DoubleDataDefaultTypeInternal;
-extern Hdu_DoubleDataDefaultTypeInternal _Hdu_DoubleData_default_instance_;
-class Hdu_FloatData;
-struct Hdu_FloatDataDefaultTypeInternal;
-extern Hdu_FloatDataDefaultTypeInternal _Hdu_FloatData_default_instance_;
-class Hdu_Int32Data;
-struct Hdu_Int32DataDefaultTypeInternal;
-extern Hdu_Int32DataDefaultTypeInternal _Hdu_Int32Data_default_instance_;
-class Hdu_Int64Data;
-struct Hdu_Int64DataDefaultTypeInternal;
-extern Hdu_Int64DataDefaultTypeInternal _Hdu_Int64Data_default_instance_;
-class Hdu_SInt32Data;
-struct Hdu_SInt32DataDefaultTypeInternal;
-extern Hdu_SInt32DataDefaultTypeInternal _Hdu_SInt32Data_default_instance_;
-class Hdu_SInt64Data;
-struct Hdu_SInt64DataDefaultTypeInternal;
-extern Hdu_SInt64DataDefaultTypeInternal _Hdu_SInt64Data_default_instance_;
-class Header;
-struct HeaderDefaultTypeInternal;
-extern HeaderDefaultTypeInternal _Header_default_instance_;
-class Header_KeywordsEntry_DoNotUse;
-struct Header_KeywordsEntry_DoNotUseDefaultTypeInternal;
-extern Header_KeywordsEntry_DoNotUseDefaultTypeInternal _Header_KeywordsEntry_DoNotUse_default_instance_;
+class FitsHdu;
+struct FitsHduDefaultTypeInternal;
+extern FitsHduDefaultTypeInternal _FitsHdu_default_instance_;
+class FitsHdu_DoubleData;
+struct FitsHdu_DoubleDataDefaultTypeInternal;
+extern FitsHdu_DoubleDataDefaultTypeInternal _FitsHdu_DoubleData_default_instance_;
+class FitsHdu_FloatData;
+struct FitsHdu_FloatDataDefaultTypeInternal;
+extern FitsHdu_FloatDataDefaultTypeInternal _FitsHdu_FloatData_default_instance_;
+class FitsHdu_Int32Data;
+struct FitsHdu_Int32DataDefaultTypeInternal;
+extern FitsHdu_Int32DataDefaultTypeInternal _FitsHdu_Int32Data_default_instance_;
+class FitsHdu_Int64Data;
+struct FitsHdu_Int64DataDefaultTypeInternal;
+extern FitsHdu_Int64DataDefaultTypeInternal _FitsHdu_Int64Data_default_instance_;
+class FitsHdu_SInt32Data;
+struct FitsHdu_SInt32DataDefaultTypeInternal;
+extern FitsHdu_SInt32DataDefaultTypeInternal _FitsHdu_SInt32Data_default_instance_;
+class FitsHdu_SInt64Data;
+struct FitsHdu_SInt64DataDefaultTypeInternal;
+extern FitsHdu_SInt64DataDefaultTypeInternal _FitsHdu_SInt64Data_default_instance_;
+class FitsHeader;
+struct FitsHeaderDefaultTypeInternal;
+extern FitsHeaderDefaultTypeInternal _FitsHeader_default_instance_;
+class FitsHeader_KeywordsEntry_DoNotUse;
+struct FitsHeader_KeywordsEntry_DoNotUseDefaultTypeInternal;
+extern FitsHeader_KeywordsEntry_DoNotUseDefaultTypeInternal _FitsHeader_KeywordsEntry_DoNotUse_default_instance_;
+class KeywordData;
+struct KeywordDataDefaultTypeInternal;
+extern KeywordDataDefaultTypeInternal _KeywordData_default_instance_;
 }  // namespace fits_proto
 PROTOBUF_NAMESPACE_OPEN
-template<> ::fits_proto::Data* Arena::CreateMaybeMessage<::fits_proto::Data>(Arena*);
 template<> ::fits_proto::Fits* Arena::CreateMaybeMessage<::fits_proto::Fits>(Arena*);
-template<> ::fits_proto::Hdu* Arena::CreateMaybeMessage<::fits_proto::Hdu>(Arena*);
-template<> ::fits_proto::Hdu_DoubleData* Arena::CreateMaybeMessage<::fits_proto::Hdu_DoubleData>(Arena*);
-template<> ::fits_proto::Hdu_FloatData* Arena::CreateMaybeMessage<::fits_proto::Hdu_FloatData>(Arena*);
-template<> ::fits_proto::Hdu_Int32Data* Arena::CreateMaybeMessage<::fits_proto::Hdu_Int32Data>(Arena*);
-template<> ::fits_proto::Hdu_Int64Data* Arena::CreateMaybeMessage<::fits_proto::Hdu_Int64Data>(Arena*);
-template<> ::fits_proto::Hdu_SInt32Data* Arena::CreateMaybeMessage<::fits_proto::Hdu_SInt32Data>(Arena*);
-template<> ::fits_proto::Hdu_SInt64Data* Arena::CreateMaybeMessage<::fits_proto::Hdu_SInt64Data>(Arena*);
-template<> ::fits_proto::Header* Arena::CreateMaybeMessage<::fits_proto::Header>(Arena*);
-template<> ::fits_proto::Header_KeywordsEntry_DoNotUse* Arena::CreateMaybeMessage<::fits_proto::Header_KeywordsEntry_DoNotUse>(Arena*);
+template<> ::fits_proto::FitsHdu* Arena::CreateMaybeMessage<::fits_proto::FitsHdu>(Arena*);
+template<> ::fits_proto::FitsHdu_DoubleData* Arena::CreateMaybeMessage<::fits_proto::FitsHdu_DoubleData>(Arena*);
+template<> ::fits_proto::FitsHdu_FloatData* Arena::CreateMaybeMessage<::fits_proto::FitsHdu_FloatData>(Arena*);
+template<> ::fits_proto::FitsHdu_Int32Data* Arena::CreateMaybeMessage<::fits_proto::FitsHdu_Int32Data>(Arena*);
+template<> ::fits_proto::FitsHdu_Int64Data* Arena::CreateMaybeMessage<::fits_proto::FitsHdu_Int64Data>(Arena*);
+template<> ::fits_proto::FitsHdu_SInt32Data* Arena::CreateMaybeMessage<::fits_proto::FitsHdu_SInt32Data>(Arena*);
+template<> ::fits_proto::FitsHdu_SInt64Data* Arena::CreateMaybeMessage<::fits_proto::FitsHdu_SInt64Data>(Arena*);
+template<> ::fits_proto::FitsHeader* Arena::CreateMaybeMessage<::fits_proto::FitsHeader>(Arena*);
+template<> ::fits_proto::FitsHeader_KeywordsEntry_DoNotUse* Arena::CreateMaybeMessage<::fits_proto::FitsHeader_KeywordsEntry_DoNotUse>(Arena*);
+template<> ::fits_proto::KeywordData* Arena::CreateMaybeMessage<::fits_proto::KeywordData>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace fits_proto {
 
 // ===================================================================
 
-class Data final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.Data) */ {
+class KeywordData final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.KeywordData) */ {
  public:
-  inline Data() : Data(nullptr) {}
-  ~Data() override;
-  explicit PROTOBUF_CONSTEXPR Data(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline KeywordData() : KeywordData(nullptr) {}
+  ~KeywordData() override;
+  explicit PROTOBUF_CONSTEXPR KeywordData(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  Data(const Data& from);
-  Data(Data&& from) noexcept
-    : Data() {
+  KeywordData(const KeywordData& from);
+  KeywordData(KeywordData&& from) noexcept
+    : KeywordData() {
     *this = ::std::move(from);
   }
 
-  inline Data& operator=(const Data& from) {
+  inline KeywordData& operator=(const KeywordData& from) {
     CopyFrom(from);
     return *this;
   }
-  inline Data& operator=(Data&& from) noexcept {
+  inline KeywordData& operator=(KeywordData&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -139,7 +139,7 @@ class Data final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const Data& default_instance() {
+  static const KeywordData& default_instance() {
     return *internal_default_instance();
   }
   enum ValueCase {
@@ -154,17 +154,17 @@ class Data final :
     VALUE_NOT_SET = 0,
   };
 
-  static inline const Data* internal_default_instance() {
-    return reinterpret_cast<const Data*>(
-               &_Data_default_instance_);
+  static inline const KeywordData* internal_default_instance() {
+    return reinterpret_cast<const KeywordData*>(
+               &_KeywordData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     0;
 
-  friend void swap(Data& a, Data& b) {
+  friend void swap(KeywordData& a, KeywordData& b) {
     a.Swap(&b);
   }
-  inline void Swap(Data* other) {
+  inline void Swap(KeywordData* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -177,7 +177,7 @@ class Data final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(Data* other) {
+  void UnsafeArenaSwap(KeywordData* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -185,14 +185,14 @@ class Data final :
 
   // implements Message ----------------------------------------------
 
-  Data* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<Data>(arena);
+  KeywordData* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<KeywordData>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const Data& from);
+  void CopyFrom(const KeywordData& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const Data& from) {
-    Data::MergeImpl(*this, from);
+  void MergeFrom( const KeywordData& from) {
+    KeywordData::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -210,15 +210,15 @@ class Data final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(Data* other);
+  void InternalSwap(KeywordData* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fits_proto.Data";
+    return "fits_proto.KeywordData";
   }
   protected:
-  explicit Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit KeywordData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -367,7 +367,7 @@ class Data final :
 
   void clear_value();
   ValueCase value_case() const;
-  // @@protoc_insertion_point(class_scope:fits_proto.Data)
+  // @@protoc_insertion_point(class_scope:fits_proto.KeywordData)
  private:
   class _Internal;
   void set_has_string_val();
@@ -408,23 +408,23 @@ class Data final :
 };
 // -------------------------------------------------------------------
 
-class Header_KeywordsEntry_DoNotUse : public ::PROTOBUF_NAMESPACE_ID::internal::MapEntry<Header_KeywordsEntry_DoNotUse, 
-    std::string, ::fits_proto::Data,
+class FitsHeader_KeywordsEntry_DoNotUse : public ::PROTOBUF_NAMESPACE_ID::internal::MapEntry<FitsHeader_KeywordsEntry_DoNotUse, 
+    std::string, ::fits_proto::KeywordData,
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_STRING,
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_MESSAGE> {
 public:
-  typedef ::PROTOBUF_NAMESPACE_ID::internal::MapEntry<Header_KeywordsEntry_DoNotUse, 
-    std::string, ::fits_proto::Data,
+  typedef ::PROTOBUF_NAMESPACE_ID::internal::MapEntry<FitsHeader_KeywordsEntry_DoNotUse, 
+    std::string, ::fits_proto::KeywordData,
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_STRING,
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_MESSAGE> SuperType;
-  Header_KeywordsEntry_DoNotUse();
-  explicit PROTOBUF_CONSTEXPR Header_KeywordsEntry_DoNotUse(
+  FitsHeader_KeywordsEntry_DoNotUse();
+  explicit PROTOBUF_CONSTEXPR FitsHeader_KeywordsEntry_DoNotUse(
       ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
-  explicit Header_KeywordsEntry_DoNotUse(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  void MergeFrom(const Header_KeywordsEntry_DoNotUse& other);
-  static const Header_KeywordsEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const Header_KeywordsEntry_DoNotUse*>(&_Header_KeywordsEntry_DoNotUse_default_instance_); }
+  explicit FitsHeader_KeywordsEntry_DoNotUse(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  void MergeFrom(const FitsHeader_KeywordsEntry_DoNotUse& other);
+  static const FitsHeader_KeywordsEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const FitsHeader_KeywordsEntry_DoNotUse*>(&_FitsHeader_KeywordsEntry_DoNotUse_default_instance_); }
   static bool ValidateKey(std::string* s) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(s->data(), static_cast<int>(s->size()), ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE, "fits_proto.Header.KeywordsEntry.key");
+    return ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(s->data(), static_cast<int>(s->size()), ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE, "fits_proto.FitsHeader.KeywordsEntry.key");
  }
   static bool ValidateValue(void*) { return true; }
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
@@ -434,24 +434,24 @@ public:
 
 // -------------------------------------------------------------------
 
-class Header final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.Header) */ {
+class FitsHeader final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.FitsHeader) */ {
  public:
-  inline Header() : Header(nullptr) {}
-  ~Header() override;
-  explicit PROTOBUF_CONSTEXPR Header(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline FitsHeader() : FitsHeader(nullptr) {}
+  ~FitsHeader() override;
+  explicit PROTOBUF_CONSTEXPR FitsHeader(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  Header(const Header& from);
-  Header(Header&& from) noexcept
-    : Header() {
+  FitsHeader(const FitsHeader& from);
+  FitsHeader(FitsHeader&& from) noexcept
+    : FitsHeader() {
     *this = ::std::move(from);
   }
 
-  inline Header& operator=(const Header& from) {
+  inline FitsHeader& operator=(const FitsHeader& from) {
     CopyFrom(from);
     return *this;
   }
-  inline Header& operator=(Header&& from) noexcept {
+  inline FitsHeader& operator=(FitsHeader&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -474,20 +474,20 @@ class Header final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const Header& default_instance() {
+  static const FitsHeader& default_instance() {
     return *internal_default_instance();
   }
-  static inline const Header* internal_default_instance() {
-    return reinterpret_cast<const Header*>(
-               &_Header_default_instance_);
+  static inline const FitsHeader* internal_default_instance() {
+    return reinterpret_cast<const FitsHeader*>(
+               &_FitsHeader_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     2;
 
-  friend void swap(Header& a, Header& b) {
+  friend void swap(FitsHeader& a, FitsHeader& b) {
     a.Swap(&b);
   }
-  inline void Swap(Header* other) {
+  inline void Swap(FitsHeader* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -500,7 +500,7 @@ class Header final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(Header* other) {
+  void UnsafeArenaSwap(FitsHeader* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -508,14 +508,14 @@ class Header final :
 
   // implements Message ----------------------------------------------
 
-  Header* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<Header>(arena);
+  FitsHeader* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<FitsHeader>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const Header& from);
+  void CopyFrom(const FitsHeader& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const Header& from) {
-    Header::MergeImpl(*this, from);
+  void MergeFrom( const FitsHeader& from) {
+    FitsHeader::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -533,15 +533,15 @@ class Header final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(Header* other);
+  void InternalSwap(FitsHeader* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fits_proto.Header";
+    return "fits_proto.FitsHeader";
   }
   protected:
-  explicit Header(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit FitsHeader(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   private:
   static void ArenaDtor(void* object);
@@ -589,21 +589,21 @@ class Header final :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >*
       mutable_size();
 
-  // map<string, .fits_proto.Data> keywords = 8;
+  // map<string, .fits_proto.KeywordData> keywords = 8;
   int keywords_size() const;
   private:
   int _internal_keywords_size() const;
   public:
   void clear_keywords();
   private:
-  const ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::Data >&
+  const ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::KeywordData >&
       _internal_keywords() const;
-  ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::Data >*
+  ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::KeywordData >*
       _internal_mutable_keywords();
   public:
-  const ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::Data >&
+  const ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::KeywordData >&
       keywords() const;
-  ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::Data >*
+  ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::KeywordData >*
       mutable_keywords();
 
   // string comment = 4;
@@ -675,7 +675,7 @@ class Header final :
   void _internal_set_n_extensions(int32_t value);
   public:
 
-  // @@protoc_insertion_point(class_scope:fits_proto.Header)
+  // @@protoc_insertion_point(class_scope:fits_proto.FitsHeader)
  private:
   class _Internal;
 
@@ -686,8 +686,8 @@ class Header final :
     ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t > size_;
     mutable std::atomic<int> _size_cached_byte_size_;
     ::PROTOBUF_NAMESPACE_ID::internal::MapField<
-        Header_KeywordsEntry_DoNotUse,
-        std::string, ::fits_proto::Data,
+        FitsHeader_KeywordsEntry_DoNotUse,
+        std::string, ::fits_proto::KeywordData,
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_STRING,
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_MESSAGE> keywords_;
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr comment_;
@@ -703,24 +703,24 @@ class Header final :
 };
 // -------------------------------------------------------------------
 
-class Hdu_FloatData final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.Hdu.FloatData) */ {
+class FitsHdu_FloatData final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.FitsHdu.FloatData) */ {
  public:
-  inline Hdu_FloatData() : Hdu_FloatData(nullptr) {}
-  ~Hdu_FloatData() override;
-  explicit PROTOBUF_CONSTEXPR Hdu_FloatData(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline FitsHdu_FloatData() : FitsHdu_FloatData(nullptr) {}
+  ~FitsHdu_FloatData() override;
+  explicit PROTOBUF_CONSTEXPR FitsHdu_FloatData(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  Hdu_FloatData(const Hdu_FloatData& from);
-  Hdu_FloatData(Hdu_FloatData&& from) noexcept
-    : Hdu_FloatData() {
+  FitsHdu_FloatData(const FitsHdu_FloatData& from);
+  FitsHdu_FloatData(FitsHdu_FloatData&& from) noexcept
+    : FitsHdu_FloatData() {
     *this = ::std::move(from);
   }
 
-  inline Hdu_FloatData& operator=(const Hdu_FloatData& from) {
+  inline FitsHdu_FloatData& operator=(const FitsHdu_FloatData& from) {
     CopyFrom(from);
     return *this;
   }
-  inline Hdu_FloatData& operator=(Hdu_FloatData&& from) noexcept {
+  inline FitsHdu_FloatData& operator=(FitsHdu_FloatData&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -743,20 +743,20 @@ class Hdu_FloatData final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const Hdu_FloatData& default_instance() {
+  static const FitsHdu_FloatData& default_instance() {
     return *internal_default_instance();
   }
-  static inline const Hdu_FloatData* internal_default_instance() {
-    return reinterpret_cast<const Hdu_FloatData*>(
-               &_Hdu_FloatData_default_instance_);
+  static inline const FitsHdu_FloatData* internal_default_instance() {
+    return reinterpret_cast<const FitsHdu_FloatData*>(
+               &_FitsHdu_FloatData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     3;
 
-  friend void swap(Hdu_FloatData& a, Hdu_FloatData& b) {
+  friend void swap(FitsHdu_FloatData& a, FitsHdu_FloatData& b) {
     a.Swap(&b);
   }
-  inline void Swap(Hdu_FloatData* other) {
+  inline void Swap(FitsHdu_FloatData* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -769,7 +769,7 @@ class Hdu_FloatData final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(Hdu_FloatData* other) {
+  void UnsafeArenaSwap(FitsHdu_FloatData* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -777,14 +777,14 @@ class Hdu_FloatData final :
 
   // implements Message ----------------------------------------------
 
-  Hdu_FloatData* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<Hdu_FloatData>(arena);
+  FitsHdu_FloatData* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<FitsHdu_FloatData>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const Hdu_FloatData& from);
+  void CopyFrom(const FitsHdu_FloatData& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const Hdu_FloatData& from) {
-    Hdu_FloatData::MergeImpl(*this, from);
+  void MergeFrom( const FitsHdu_FloatData& from) {
+    FitsHdu_FloatData::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -802,15 +802,15 @@ class Hdu_FloatData final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(Hdu_FloatData* other);
+  void InternalSwap(FitsHdu_FloatData* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fits_proto.Hdu.FloatData";
+    return "fits_proto.FitsHdu.FloatData";
   }
   protected:
-  explicit Hdu_FloatData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit FitsHdu_FloatData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -848,7 +848,7 @@ class Hdu_FloatData final :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >*
       mutable_data();
 
-  // @@protoc_insertion_point(class_scope:fits_proto.Hdu.FloatData)
+  // @@protoc_insertion_point(class_scope:fits_proto.FitsHdu.FloatData)
  private:
   class _Internal;
 
@@ -864,24 +864,24 @@ class Hdu_FloatData final :
 };
 // -------------------------------------------------------------------
 
-class Hdu_DoubleData final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.Hdu.DoubleData) */ {
+class FitsHdu_DoubleData final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.FitsHdu.DoubleData) */ {
  public:
-  inline Hdu_DoubleData() : Hdu_DoubleData(nullptr) {}
-  ~Hdu_DoubleData() override;
-  explicit PROTOBUF_CONSTEXPR Hdu_DoubleData(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline FitsHdu_DoubleData() : FitsHdu_DoubleData(nullptr) {}
+  ~FitsHdu_DoubleData() override;
+  explicit PROTOBUF_CONSTEXPR FitsHdu_DoubleData(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  Hdu_DoubleData(const Hdu_DoubleData& from);
-  Hdu_DoubleData(Hdu_DoubleData&& from) noexcept
-    : Hdu_DoubleData() {
+  FitsHdu_DoubleData(const FitsHdu_DoubleData& from);
+  FitsHdu_DoubleData(FitsHdu_DoubleData&& from) noexcept
+    : FitsHdu_DoubleData() {
     *this = ::std::move(from);
   }
 
-  inline Hdu_DoubleData& operator=(const Hdu_DoubleData& from) {
+  inline FitsHdu_DoubleData& operator=(const FitsHdu_DoubleData& from) {
     CopyFrom(from);
     return *this;
   }
-  inline Hdu_DoubleData& operator=(Hdu_DoubleData&& from) noexcept {
+  inline FitsHdu_DoubleData& operator=(FitsHdu_DoubleData&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -904,20 +904,20 @@ class Hdu_DoubleData final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const Hdu_DoubleData& default_instance() {
+  static const FitsHdu_DoubleData& default_instance() {
     return *internal_default_instance();
   }
-  static inline const Hdu_DoubleData* internal_default_instance() {
-    return reinterpret_cast<const Hdu_DoubleData*>(
-               &_Hdu_DoubleData_default_instance_);
+  static inline const FitsHdu_DoubleData* internal_default_instance() {
+    return reinterpret_cast<const FitsHdu_DoubleData*>(
+               &_FitsHdu_DoubleData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     4;
 
-  friend void swap(Hdu_DoubleData& a, Hdu_DoubleData& b) {
+  friend void swap(FitsHdu_DoubleData& a, FitsHdu_DoubleData& b) {
     a.Swap(&b);
   }
-  inline void Swap(Hdu_DoubleData* other) {
+  inline void Swap(FitsHdu_DoubleData* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -930,7 +930,7 @@ class Hdu_DoubleData final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(Hdu_DoubleData* other) {
+  void UnsafeArenaSwap(FitsHdu_DoubleData* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -938,14 +938,14 @@ class Hdu_DoubleData final :
 
   // implements Message ----------------------------------------------
 
-  Hdu_DoubleData* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<Hdu_DoubleData>(arena);
+  FitsHdu_DoubleData* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<FitsHdu_DoubleData>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const Hdu_DoubleData& from);
+  void CopyFrom(const FitsHdu_DoubleData& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const Hdu_DoubleData& from) {
-    Hdu_DoubleData::MergeImpl(*this, from);
+  void MergeFrom( const FitsHdu_DoubleData& from) {
+    FitsHdu_DoubleData::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -963,15 +963,15 @@ class Hdu_DoubleData final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(Hdu_DoubleData* other);
+  void InternalSwap(FitsHdu_DoubleData* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fits_proto.Hdu.DoubleData";
+    return "fits_proto.FitsHdu.DoubleData";
   }
   protected:
-  explicit Hdu_DoubleData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit FitsHdu_DoubleData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -1009,7 +1009,7 @@ class Hdu_DoubleData final :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >*
       mutable_data();
 
-  // @@protoc_insertion_point(class_scope:fits_proto.Hdu.DoubleData)
+  // @@protoc_insertion_point(class_scope:fits_proto.FitsHdu.DoubleData)
  private:
   class _Internal;
 
@@ -1025,24 +1025,24 @@ class Hdu_DoubleData final :
 };
 // -------------------------------------------------------------------
 
-class Hdu_Int32Data final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.Hdu.Int32Data) */ {
+class FitsHdu_Int32Data final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.FitsHdu.Int32Data) */ {
  public:
-  inline Hdu_Int32Data() : Hdu_Int32Data(nullptr) {}
-  ~Hdu_Int32Data() override;
-  explicit PROTOBUF_CONSTEXPR Hdu_Int32Data(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline FitsHdu_Int32Data() : FitsHdu_Int32Data(nullptr) {}
+  ~FitsHdu_Int32Data() override;
+  explicit PROTOBUF_CONSTEXPR FitsHdu_Int32Data(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  Hdu_Int32Data(const Hdu_Int32Data& from);
-  Hdu_Int32Data(Hdu_Int32Data&& from) noexcept
-    : Hdu_Int32Data() {
+  FitsHdu_Int32Data(const FitsHdu_Int32Data& from);
+  FitsHdu_Int32Data(FitsHdu_Int32Data&& from) noexcept
+    : FitsHdu_Int32Data() {
     *this = ::std::move(from);
   }
 
-  inline Hdu_Int32Data& operator=(const Hdu_Int32Data& from) {
+  inline FitsHdu_Int32Data& operator=(const FitsHdu_Int32Data& from) {
     CopyFrom(from);
     return *this;
   }
-  inline Hdu_Int32Data& operator=(Hdu_Int32Data&& from) noexcept {
+  inline FitsHdu_Int32Data& operator=(FitsHdu_Int32Data&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -1065,20 +1065,20 @@ class Hdu_Int32Data final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const Hdu_Int32Data& default_instance() {
+  static const FitsHdu_Int32Data& default_instance() {
     return *internal_default_instance();
   }
-  static inline const Hdu_Int32Data* internal_default_instance() {
-    return reinterpret_cast<const Hdu_Int32Data*>(
-               &_Hdu_Int32Data_default_instance_);
+  static inline const FitsHdu_Int32Data* internal_default_instance() {
+    return reinterpret_cast<const FitsHdu_Int32Data*>(
+               &_FitsHdu_Int32Data_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     5;
 
-  friend void swap(Hdu_Int32Data& a, Hdu_Int32Data& b) {
+  friend void swap(FitsHdu_Int32Data& a, FitsHdu_Int32Data& b) {
     a.Swap(&b);
   }
-  inline void Swap(Hdu_Int32Data* other) {
+  inline void Swap(FitsHdu_Int32Data* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -1091,7 +1091,7 @@ class Hdu_Int32Data final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(Hdu_Int32Data* other) {
+  void UnsafeArenaSwap(FitsHdu_Int32Data* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -1099,14 +1099,14 @@ class Hdu_Int32Data final :
 
   // implements Message ----------------------------------------------
 
-  Hdu_Int32Data* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<Hdu_Int32Data>(arena);
+  FitsHdu_Int32Data* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<FitsHdu_Int32Data>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const Hdu_Int32Data& from);
+  void CopyFrom(const FitsHdu_Int32Data& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const Hdu_Int32Data& from) {
-    Hdu_Int32Data::MergeImpl(*this, from);
+  void MergeFrom( const FitsHdu_Int32Data& from) {
+    FitsHdu_Int32Data::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -1124,15 +1124,15 @@ class Hdu_Int32Data final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(Hdu_Int32Data* other);
+  void InternalSwap(FitsHdu_Int32Data* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fits_proto.Hdu.Int32Data";
+    return "fits_proto.FitsHdu.Int32Data";
   }
   protected:
-  explicit Hdu_Int32Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit FitsHdu_Int32Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -1170,7 +1170,7 @@ class Hdu_Int32Data final :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >*
       mutable_data();
 
-  // @@protoc_insertion_point(class_scope:fits_proto.Hdu.Int32Data)
+  // @@protoc_insertion_point(class_scope:fits_proto.FitsHdu.Int32Data)
  private:
   class _Internal;
 
@@ -1187,24 +1187,24 @@ class Hdu_Int32Data final :
 };
 // -------------------------------------------------------------------
 
-class Hdu_Int64Data final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.Hdu.Int64Data) */ {
+class FitsHdu_Int64Data final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.FitsHdu.Int64Data) */ {
  public:
-  inline Hdu_Int64Data() : Hdu_Int64Data(nullptr) {}
-  ~Hdu_Int64Data() override;
-  explicit PROTOBUF_CONSTEXPR Hdu_Int64Data(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline FitsHdu_Int64Data() : FitsHdu_Int64Data(nullptr) {}
+  ~FitsHdu_Int64Data() override;
+  explicit PROTOBUF_CONSTEXPR FitsHdu_Int64Data(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  Hdu_Int64Data(const Hdu_Int64Data& from);
-  Hdu_Int64Data(Hdu_Int64Data&& from) noexcept
-    : Hdu_Int64Data() {
+  FitsHdu_Int64Data(const FitsHdu_Int64Data& from);
+  FitsHdu_Int64Data(FitsHdu_Int64Data&& from) noexcept
+    : FitsHdu_Int64Data() {
     *this = ::std::move(from);
   }
 
-  inline Hdu_Int64Data& operator=(const Hdu_Int64Data& from) {
+  inline FitsHdu_Int64Data& operator=(const FitsHdu_Int64Data& from) {
     CopyFrom(from);
     return *this;
   }
-  inline Hdu_Int64Data& operator=(Hdu_Int64Data&& from) noexcept {
+  inline FitsHdu_Int64Data& operator=(FitsHdu_Int64Data&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -1227,20 +1227,20 @@ class Hdu_Int64Data final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const Hdu_Int64Data& default_instance() {
+  static const FitsHdu_Int64Data& default_instance() {
     return *internal_default_instance();
   }
-  static inline const Hdu_Int64Data* internal_default_instance() {
-    return reinterpret_cast<const Hdu_Int64Data*>(
-               &_Hdu_Int64Data_default_instance_);
+  static inline const FitsHdu_Int64Data* internal_default_instance() {
+    return reinterpret_cast<const FitsHdu_Int64Data*>(
+               &_FitsHdu_Int64Data_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     6;
 
-  friend void swap(Hdu_Int64Data& a, Hdu_Int64Data& b) {
+  friend void swap(FitsHdu_Int64Data& a, FitsHdu_Int64Data& b) {
     a.Swap(&b);
   }
-  inline void Swap(Hdu_Int64Data* other) {
+  inline void Swap(FitsHdu_Int64Data* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -1253,7 +1253,7 @@ class Hdu_Int64Data final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(Hdu_Int64Data* other) {
+  void UnsafeArenaSwap(FitsHdu_Int64Data* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -1261,14 +1261,14 @@ class Hdu_Int64Data final :
 
   // implements Message ----------------------------------------------
 
-  Hdu_Int64Data* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<Hdu_Int64Data>(arena);
+  FitsHdu_Int64Data* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<FitsHdu_Int64Data>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const Hdu_Int64Data& from);
+  void CopyFrom(const FitsHdu_Int64Data& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const Hdu_Int64Data& from) {
-    Hdu_Int64Data::MergeImpl(*this, from);
+  void MergeFrom( const FitsHdu_Int64Data& from) {
+    FitsHdu_Int64Data::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -1286,15 +1286,15 @@ class Hdu_Int64Data final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(Hdu_Int64Data* other);
+  void InternalSwap(FitsHdu_Int64Data* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fits_proto.Hdu.Int64Data";
+    return "fits_proto.FitsHdu.Int64Data";
   }
   protected:
-  explicit Hdu_Int64Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit FitsHdu_Int64Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -1332,7 +1332,7 @@ class Hdu_Int64Data final :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< int64_t >*
       mutable_data();
 
-  // @@protoc_insertion_point(class_scope:fits_proto.Hdu.Int64Data)
+  // @@protoc_insertion_point(class_scope:fits_proto.FitsHdu.Int64Data)
  private:
   class _Internal;
 
@@ -1349,24 +1349,24 @@ class Hdu_Int64Data final :
 };
 // -------------------------------------------------------------------
 
-class Hdu_SInt32Data final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.Hdu.SInt32Data) */ {
+class FitsHdu_SInt32Data final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.FitsHdu.SInt32Data) */ {
  public:
-  inline Hdu_SInt32Data() : Hdu_SInt32Data(nullptr) {}
-  ~Hdu_SInt32Data() override;
-  explicit PROTOBUF_CONSTEXPR Hdu_SInt32Data(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline FitsHdu_SInt32Data() : FitsHdu_SInt32Data(nullptr) {}
+  ~FitsHdu_SInt32Data() override;
+  explicit PROTOBUF_CONSTEXPR FitsHdu_SInt32Data(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  Hdu_SInt32Data(const Hdu_SInt32Data& from);
-  Hdu_SInt32Data(Hdu_SInt32Data&& from) noexcept
-    : Hdu_SInt32Data() {
+  FitsHdu_SInt32Data(const FitsHdu_SInt32Data& from);
+  FitsHdu_SInt32Data(FitsHdu_SInt32Data&& from) noexcept
+    : FitsHdu_SInt32Data() {
     *this = ::std::move(from);
   }
 
-  inline Hdu_SInt32Data& operator=(const Hdu_SInt32Data& from) {
+  inline FitsHdu_SInt32Data& operator=(const FitsHdu_SInt32Data& from) {
     CopyFrom(from);
     return *this;
   }
-  inline Hdu_SInt32Data& operator=(Hdu_SInt32Data&& from) noexcept {
+  inline FitsHdu_SInt32Data& operator=(FitsHdu_SInt32Data&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -1389,20 +1389,20 @@ class Hdu_SInt32Data final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const Hdu_SInt32Data& default_instance() {
+  static const FitsHdu_SInt32Data& default_instance() {
     return *internal_default_instance();
   }
-  static inline const Hdu_SInt32Data* internal_default_instance() {
-    return reinterpret_cast<const Hdu_SInt32Data*>(
-               &_Hdu_SInt32Data_default_instance_);
+  static inline const FitsHdu_SInt32Data* internal_default_instance() {
+    return reinterpret_cast<const FitsHdu_SInt32Data*>(
+               &_FitsHdu_SInt32Data_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     7;
 
-  friend void swap(Hdu_SInt32Data& a, Hdu_SInt32Data& b) {
+  friend void swap(FitsHdu_SInt32Data& a, FitsHdu_SInt32Data& b) {
     a.Swap(&b);
   }
-  inline void Swap(Hdu_SInt32Data* other) {
+  inline void Swap(FitsHdu_SInt32Data* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -1415,7 +1415,7 @@ class Hdu_SInt32Data final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(Hdu_SInt32Data* other) {
+  void UnsafeArenaSwap(FitsHdu_SInt32Data* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -1423,14 +1423,14 @@ class Hdu_SInt32Data final :
 
   // implements Message ----------------------------------------------
 
-  Hdu_SInt32Data* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<Hdu_SInt32Data>(arena);
+  FitsHdu_SInt32Data* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<FitsHdu_SInt32Data>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const Hdu_SInt32Data& from);
+  void CopyFrom(const FitsHdu_SInt32Data& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const Hdu_SInt32Data& from) {
-    Hdu_SInt32Data::MergeImpl(*this, from);
+  void MergeFrom( const FitsHdu_SInt32Data& from) {
+    FitsHdu_SInt32Data::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -1448,15 +1448,15 @@ class Hdu_SInt32Data final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(Hdu_SInt32Data* other);
+  void InternalSwap(FitsHdu_SInt32Data* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fits_proto.Hdu.SInt32Data";
+    return "fits_proto.FitsHdu.SInt32Data";
   }
   protected:
-  explicit Hdu_SInt32Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit FitsHdu_SInt32Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -1494,7 +1494,7 @@ class Hdu_SInt32Data final :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >*
       mutable_data();
 
-  // @@protoc_insertion_point(class_scope:fits_proto.Hdu.SInt32Data)
+  // @@protoc_insertion_point(class_scope:fits_proto.FitsHdu.SInt32Data)
  private:
   class _Internal;
 
@@ -1511,24 +1511,24 @@ class Hdu_SInt32Data final :
 };
 // -------------------------------------------------------------------
 
-class Hdu_SInt64Data final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.Hdu.SInt64Data) */ {
+class FitsHdu_SInt64Data final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.FitsHdu.SInt64Data) */ {
  public:
-  inline Hdu_SInt64Data() : Hdu_SInt64Data(nullptr) {}
-  ~Hdu_SInt64Data() override;
-  explicit PROTOBUF_CONSTEXPR Hdu_SInt64Data(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline FitsHdu_SInt64Data() : FitsHdu_SInt64Data(nullptr) {}
+  ~FitsHdu_SInt64Data() override;
+  explicit PROTOBUF_CONSTEXPR FitsHdu_SInt64Data(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  Hdu_SInt64Data(const Hdu_SInt64Data& from);
-  Hdu_SInt64Data(Hdu_SInt64Data&& from) noexcept
-    : Hdu_SInt64Data() {
+  FitsHdu_SInt64Data(const FitsHdu_SInt64Data& from);
+  FitsHdu_SInt64Data(FitsHdu_SInt64Data&& from) noexcept
+    : FitsHdu_SInt64Data() {
     *this = ::std::move(from);
   }
 
-  inline Hdu_SInt64Data& operator=(const Hdu_SInt64Data& from) {
+  inline FitsHdu_SInt64Data& operator=(const FitsHdu_SInt64Data& from) {
     CopyFrom(from);
     return *this;
   }
-  inline Hdu_SInt64Data& operator=(Hdu_SInt64Data&& from) noexcept {
+  inline FitsHdu_SInt64Data& operator=(FitsHdu_SInt64Data&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -1551,20 +1551,20 @@ class Hdu_SInt64Data final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const Hdu_SInt64Data& default_instance() {
+  static const FitsHdu_SInt64Data& default_instance() {
     return *internal_default_instance();
   }
-  static inline const Hdu_SInt64Data* internal_default_instance() {
-    return reinterpret_cast<const Hdu_SInt64Data*>(
-               &_Hdu_SInt64Data_default_instance_);
+  static inline const FitsHdu_SInt64Data* internal_default_instance() {
+    return reinterpret_cast<const FitsHdu_SInt64Data*>(
+               &_FitsHdu_SInt64Data_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     8;
 
-  friend void swap(Hdu_SInt64Data& a, Hdu_SInt64Data& b) {
+  friend void swap(FitsHdu_SInt64Data& a, FitsHdu_SInt64Data& b) {
     a.Swap(&b);
   }
-  inline void Swap(Hdu_SInt64Data* other) {
+  inline void Swap(FitsHdu_SInt64Data* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -1577,7 +1577,7 @@ class Hdu_SInt64Data final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(Hdu_SInt64Data* other) {
+  void UnsafeArenaSwap(FitsHdu_SInt64Data* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -1585,14 +1585,14 @@ class Hdu_SInt64Data final :
 
   // implements Message ----------------------------------------------
 
-  Hdu_SInt64Data* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<Hdu_SInt64Data>(arena);
+  FitsHdu_SInt64Data* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<FitsHdu_SInt64Data>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const Hdu_SInt64Data& from);
+  void CopyFrom(const FitsHdu_SInt64Data& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const Hdu_SInt64Data& from) {
-    Hdu_SInt64Data::MergeImpl(*this, from);
+  void MergeFrom( const FitsHdu_SInt64Data& from) {
+    FitsHdu_SInt64Data::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -1610,15 +1610,15 @@ class Hdu_SInt64Data final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(Hdu_SInt64Data* other);
+  void InternalSwap(FitsHdu_SInt64Data* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fits_proto.Hdu.SInt64Data";
+    return "fits_proto.FitsHdu.SInt64Data";
   }
   protected:
-  explicit Hdu_SInt64Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit FitsHdu_SInt64Data(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -1656,7 +1656,7 @@ class Hdu_SInt64Data final :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< int64_t >*
       mutable_data();
 
-  // @@protoc_insertion_point(class_scope:fits_proto.Hdu.SInt64Data)
+  // @@protoc_insertion_point(class_scope:fits_proto.FitsHdu.SInt64Data)
  private:
   class _Internal;
 
@@ -1673,24 +1673,24 @@ class Hdu_SInt64Data final :
 };
 // -------------------------------------------------------------------
 
-class Hdu final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.Hdu) */ {
+class FitsHdu final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fits_proto.FitsHdu) */ {
  public:
-  inline Hdu() : Hdu(nullptr) {}
-  ~Hdu() override;
-  explicit PROTOBUF_CONSTEXPR Hdu(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline FitsHdu() : FitsHdu(nullptr) {}
+  ~FitsHdu() override;
+  explicit PROTOBUF_CONSTEXPR FitsHdu(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  Hdu(const Hdu& from);
-  Hdu(Hdu&& from) noexcept
-    : Hdu() {
+  FitsHdu(const FitsHdu& from);
+  FitsHdu(FitsHdu&& from) noexcept
+    : FitsHdu() {
     *this = ::std::move(from);
   }
 
-  inline Hdu& operator=(const Hdu& from) {
+  inline FitsHdu& operator=(const FitsHdu& from) {
     CopyFrom(from);
     return *this;
   }
-  inline Hdu& operator=(Hdu&& from) noexcept {
+  inline FitsHdu& operator=(FitsHdu&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -1713,7 +1713,7 @@ class Hdu final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const Hdu& default_instance() {
+  static const FitsHdu& default_instance() {
     return *internal_default_instance();
   }
   enum PayloadCase {
@@ -1726,17 +1726,17 @@ class Hdu final :
     PAYLOAD_NOT_SET = 0,
   };
 
-  static inline const Hdu* internal_default_instance() {
-    return reinterpret_cast<const Hdu*>(
-               &_Hdu_default_instance_);
+  static inline const FitsHdu* internal_default_instance() {
+    return reinterpret_cast<const FitsHdu*>(
+               &_FitsHdu_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     9;
 
-  friend void swap(Hdu& a, Hdu& b) {
+  friend void swap(FitsHdu& a, FitsHdu& b) {
     a.Swap(&b);
   }
-  inline void Swap(Hdu* other) {
+  inline void Swap(FitsHdu* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -1749,7 +1749,7 @@ class Hdu final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(Hdu* other) {
+  void UnsafeArenaSwap(FitsHdu* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -1757,14 +1757,14 @@ class Hdu final :
 
   // implements Message ----------------------------------------------
 
-  Hdu* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<Hdu>(arena);
+  FitsHdu* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<FitsHdu>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const Hdu& from);
+  void CopyFrom(const FitsHdu& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const Hdu& from) {
-    Hdu::MergeImpl(*this, from);
+  void MergeFrom( const FitsHdu& from) {
+    FitsHdu::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -1782,15 +1782,15 @@ class Hdu final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(Hdu* other);
+  void InternalSwap(FitsHdu* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fits_proto.Hdu";
+    return "fits_proto.FitsHdu";
   }
   protected:
-  explicit Hdu(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit FitsHdu(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -1801,12 +1801,12 @@ class Hdu final :
 
   // nested types ----------------------------------------------------
 
-  typedef Hdu_FloatData FloatData;
-  typedef Hdu_DoubleData DoubleData;
-  typedef Hdu_Int32Data Int32Data;
-  typedef Hdu_Int64Data Int64Data;
-  typedef Hdu_SInt32Data SInt32Data;
-  typedef Hdu_SInt64Data SInt64Data;
+  typedef FitsHdu_FloatData FloatData;
+  typedef FitsHdu_DoubleData DoubleData;
+  typedef FitsHdu_Int32Data Int32Data;
+  typedef FitsHdu_Int64Data Int64Data;
+  typedef FitsHdu_SInt32Data SInt32Data;
+  typedef FitsHdu_SInt64Data SInt64Data;
 
   // accessors -------------------------------------------------------
 
@@ -1819,135 +1819,135 @@ class Hdu final :
     kSint32DataFieldNumber = 6,
     kSint64DataFieldNumber = 7,
   };
-  // repeated .fits_proto.Header header = 1;
+  // repeated .fits_proto.FitsHeader header = 1;
   int header_size() const;
   private:
   int _internal_header_size() const;
   public:
   void clear_header();
-  ::fits_proto::Header* mutable_header(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::Header >*
+  ::fits_proto::FitsHeader* mutable_header(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::FitsHeader >*
       mutable_header();
   private:
-  const ::fits_proto::Header& _internal_header(int index) const;
-  ::fits_proto::Header* _internal_add_header();
+  const ::fits_proto::FitsHeader& _internal_header(int index) const;
+  ::fits_proto::FitsHeader* _internal_add_header();
   public:
-  const ::fits_proto::Header& header(int index) const;
-  ::fits_proto::Header* add_header();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::Header >&
+  const ::fits_proto::FitsHeader& header(int index) const;
+  ::fits_proto::FitsHeader* add_header();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::FitsHeader >&
       header() const;
 
-  // .fits_proto.Hdu.FloatData float_data = 2;
+  // .fits_proto.FitsHdu.FloatData float_data = 2;
   bool has_float_data() const;
   private:
   bool _internal_has_float_data() const;
   public:
   void clear_float_data();
-  const ::fits_proto::Hdu_FloatData& float_data() const;
-  PROTOBUF_NODISCARD ::fits_proto::Hdu_FloatData* release_float_data();
-  ::fits_proto::Hdu_FloatData* mutable_float_data();
-  void set_allocated_float_data(::fits_proto::Hdu_FloatData* float_data);
+  const ::fits_proto::FitsHdu_FloatData& float_data() const;
+  PROTOBUF_NODISCARD ::fits_proto::FitsHdu_FloatData* release_float_data();
+  ::fits_proto::FitsHdu_FloatData* mutable_float_data();
+  void set_allocated_float_data(::fits_proto::FitsHdu_FloatData* float_data);
   private:
-  const ::fits_proto::Hdu_FloatData& _internal_float_data() const;
-  ::fits_proto::Hdu_FloatData* _internal_mutable_float_data();
+  const ::fits_proto::FitsHdu_FloatData& _internal_float_data() const;
+  ::fits_proto::FitsHdu_FloatData* _internal_mutable_float_data();
   public:
   void unsafe_arena_set_allocated_float_data(
-      ::fits_proto::Hdu_FloatData* float_data);
-  ::fits_proto::Hdu_FloatData* unsafe_arena_release_float_data();
+      ::fits_proto::FitsHdu_FloatData* float_data);
+  ::fits_proto::FitsHdu_FloatData* unsafe_arena_release_float_data();
 
-  // .fits_proto.Hdu.DoubleData double_data = 3;
+  // .fits_proto.FitsHdu.DoubleData double_data = 3;
   bool has_double_data() const;
   private:
   bool _internal_has_double_data() const;
   public:
   void clear_double_data();
-  const ::fits_proto::Hdu_DoubleData& double_data() const;
-  PROTOBUF_NODISCARD ::fits_proto::Hdu_DoubleData* release_double_data();
-  ::fits_proto::Hdu_DoubleData* mutable_double_data();
-  void set_allocated_double_data(::fits_proto::Hdu_DoubleData* double_data);
+  const ::fits_proto::FitsHdu_DoubleData& double_data() const;
+  PROTOBUF_NODISCARD ::fits_proto::FitsHdu_DoubleData* release_double_data();
+  ::fits_proto::FitsHdu_DoubleData* mutable_double_data();
+  void set_allocated_double_data(::fits_proto::FitsHdu_DoubleData* double_data);
   private:
-  const ::fits_proto::Hdu_DoubleData& _internal_double_data() const;
-  ::fits_proto::Hdu_DoubleData* _internal_mutable_double_data();
+  const ::fits_proto::FitsHdu_DoubleData& _internal_double_data() const;
+  ::fits_proto::FitsHdu_DoubleData* _internal_mutable_double_data();
   public:
   void unsafe_arena_set_allocated_double_data(
-      ::fits_proto::Hdu_DoubleData* double_data);
-  ::fits_proto::Hdu_DoubleData* unsafe_arena_release_double_data();
+      ::fits_proto::FitsHdu_DoubleData* double_data);
+  ::fits_proto::FitsHdu_DoubleData* unsafe_arena_release_double_data();
 
-  // .fits_proto.Hdu.Int32Data int32_data = 4;
+  // .fits_proto.FitsHdu.Int32Data int32_data = 4;
   bool has_int32_data() const;
   private:
   bool _internal_has_int32_data() const;
   public:
   void clear_int32_data();
-  const ::fits_proto::Hdu_Int32Data& int32_data() const;
-  PROTOBUF_NODISCARD ::fits_proto::Hdu_Int32Data* release_int32_data();
-  ::fits_proto::Hdu_Int32Data* mutable_int32_data();
-  void set_allocated_int32_data(::fits_proto::Hdu_Int32Data* int32_data);
+  const ::fits_proto::FitsHdu_Int32Data& int32_data() const;
+  PROTOBUF_NODISCARD ::fits_proto::FitsHdu_Int32Data* release_int32_data();
+  ::fits_proto::FitsHdu_Int32Data* mutable_int32_data();
+  void set_allocated_int32_data(::fits_proto::FitsHdu_Int32Data* int32_data);
   private:
-  const ::fits_proto::Hdu_Int32Data& _internal_int32_data() const;
-  ::fits_proto::Hdu_Int32Data* _internal_mutable_int32_data();
+  const ::fits_proto::FitsHdu_Int32Data& _internal_int32_data() const;
+  ::fits_proto::FitsHdu_Int32Data* _internal_mutable_int32_data();
   public:
   void unsafe_arena_set_allocated_int32_data(
-      ::fits_proto::Hdu_Int32Data* int32_data);
-  ::fits_proto::Hdu_Int32Data* unsafe_arena_release_int32_data();
+      ::fits_proto::FitsHdu_Int32Data* int32_data);
+  ::fits_proto::FitsHdu_Int32Data* unsafe_arena_release_int32_data();
 
-  // .fits_proto.Hdu.Int64Data int64_data = 5;
+  // .fits_proto.FitsHdu.Int64Data int64_data = 5;
   bool has_int64_data() const;
   private:
   bool _internal_has_int64_data() const;
   public:
   void clear_int64_data();
-  const ::fits_proto::Hdu_Int64Data& int64_data() const;
-  PROTOBUF_NODISCARD ::fits_proto::Hdu_Int64Data* release_int64_data();
-  ::fits_proto::Hdu_Int64Data* mutable_int64_data();
-  void set_allocated_int64_data(::fits_proto::Hdu_Int64Data* int64_data);
+  const ::fits_proto::FitsHdu_Int64Data& int64_data() const;
+  PROTOBUF_NODISCARD ::fits_proto::FitsHdu_Int64Data* release_int64_data();
+  ::fits_proto::FitsHdu_Int64Data* mutable_int64_data();
+  void set_allocated_int64_data(::fits_proto::FitsHdu_Int64Data* int64_data);
   private:
-  const ::fits_proto::Hdu_Int64Data& _internal_int64_data() const;
-  ::fits_proto::Hdu_Int64Data* _internal_mutable_int64_data();
+  const ::fits_proto::FitsHdu_Int64Data& _internal_int64_data() const;
+  ::fits_proto::FitsHdu_Int64Data* _internal_mutable_int64_data();
   public:
   void unsafe_arena_set_allocated_int64_data(
-      ::fits_proto::Hdu_Int64Data* int64_data);
-  ::fits_proto::Hdu_Int64Data* unsafe_arena_release_int64_data();
+      ::fits_proto::FitsHdu_Int64Data* int64_data);
+  ::fits_proto::FitsHdu_Int64Data* unsafe_arena_release_int64_data();
 
-  // .fits_proto.Hdu.SInt32Data sint32_data = 6;
+  // .fits_proto.FitsHdu.SInt32Data sint32_data = 6;
   bool has_sint32_data() const;
   private:
   bool _internal_has_sint32_data() const;
   public:
   void clear_sint32_data();
-  const ::fits_proto::Hdu_SInt32Data& sint32_data() const;
-  PROTOBUF_NODISCARD ::fits_proto::Hdu_SInt32Data* release_sint32_data();
-  ::fits_proto::Hdu_SInt32Data* mutable_sint32_data();
-  void set_allocated_sint32_data(::fits_proto::Hdu_SInt32Data* sint32_data);
+  const ::fits_proto::FitsHdu_SInt32Data& sint32_data() const;
+  PROTOBUF_NODISCARD ::fits_proto::FitsHdu_SInt32Data* release_sint32_data();
+  ::fits_proto::FitsHdu_SInt32Data* mutable_sint32_data();
+  void set_allocated_sint32_data(::fits_proto::FitsHdu_SInt32Data* sint32_data);
   private:
-  const ::fits_proto::Hdu_SInt32Data& _internal_sint32_data() const;
-  ::fits_proto::Hdu_SInt32Data* _internal_mutable_sint32_data();
+  const ::fits_proto::FitsHdu_SInt32Data& _internal_sint32_data() const;
+  ::fits_proto::FitsHdu_SInt32Data* _internal_mutable_sint32_data();
   public:
   void unsafe_arena_set_allocated_sint32_data(
-      ::fits_proto::Hdu_SInt32Data* sint32_data);
-  ::fits_proto::Hdu_SInt32Data* unsafe_arena_release_sint32_data();
+      ::fits_proto::FitsHdu_SInt32Data* sint32_data);
+  ::fits_proto::FitsHdu_SInt32Data* unsafe_arena_release_sint32_data();
 
-  // .fits_proto.Hdu.SInt64Data sint64_data = 7;
+  // .fits_proto.FitsHdu.SInt64Data sint64_data = 7;
   bool has_sint64_data() const;
   private:
   bool _internal_has_sint64_data() const;
   public:
   void clear_sint64_data();
-  const ::fits_proto::Hdu_SInt64Data& sint64_data() const;
-  PROTOBUF_NODISCARD ::fits_proto::Hdu_SInt64Data* release_sint64_data();
-  ::fits_proto::Hdu_SInt64Data* mutable_sint64_data();
-  void set_allocated_sint64_data(::fits_proto::Hdu_SInt64Data* sint64_data);
+  const ::fits_proto::FitsHdu_SInt64Data& sint64_data() const;
+  PROTOBUF_NODISCARD ::fits_proto::FitsHdu_SInt64Data* release_sint64_data();
+  ::fits_proto::FitsHdu_SInt64Data* mutable_sint64_data();
+  void set_allocated_sint64_data(::fits_proto::FitsHdu_SInt64Data* sint64_data);
   private:
-  const ::fits_proto::Hdu_SInt64Data& _internal_sint64_data() const;
-  ::fits_proto::Hdu_SInt64Data* _internal_mutable_sint64_data();
+  const ::fits_proto::FitsHdu_SInt64Data& _internal_sint64_data() const;
+  ::fits_proto::FitsHdu_SInt64Data* _internal_mutable_sint64_data();
   public:
   void unsafe_arena_set_allocated_sint64_data(
-      ::fits_proto::Hdu_SInt64Data* sint64_data);
-  ::fits_proto::Hdu_SInt64Data* unsafe_arena_release_sint64_data();
+      ::fits_proto::FitsHdu_SInt64Data* sint64_data);
+  ::fits_proto::FitsHdu_SInt64Data* unsafe_arena_release_sint64_data();
 
   void clear_payload();
   PayloadCase payload_case() const;
-  // @@protoc_insertion_point(class_scope:fits_proto.Hdu)
+  // @@protoc_insertion_point(class_scope:fits_proto.FitsHdu)
  private:
   class _Internal;
   void set_has_float_data();
@@ -1964,16 +1964,16 @@ class Hdu final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
-    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::Header > header_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::FitsHeader > header_;
     union PayloadUnion {
       constexpr PayloadUnion() : _constinit_{} {}
         ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized _constinit_;
-      ::fits_proto::Hdu_FloatData* float_data_;
-      ::fits_proto::Hdu_DoubleData* double_data_;
-      ::fits_proto::Hdu_Int32Data* int32_data_;
-      ::fits_proto::Hdu_Int64Data* int64_data_;
-      ::fits_proto::Hdu_SInt32Data* sint32_data_;
-      ::fits_proto::Hdu_SInt64Data* sint64_data_;
+      ::fits_proto::FitsHdu_FloatData* float_data_;
+      ::fits_proto::FitsHdu_DoubleData* double_data_;
+      ::fits_proto::FitsHdu_Int32Data* int32_data_;
+      ::fits_proto::FitsHdu_Int64Data* int64_data_;
+      ::fits_proto::FitsHdu_SInt32Data* sint32_data_;
+      ::fits_proto::FitsHdu_SInt64Data* sint64_data_;
     } payload_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
     uint32_t _oneof_case_[1];
@@ -2107,22 +2107,22 @@ class Fits final :
   enum : int {
     kHduFieldNumber = 1,
   };
-  // repeated .fits_proto.Hdu hdu = 1;
+  // repeated .fits_proto.FitsHdu hdu = 1;
   int hdu_size() const;
   private:
   int _internal_hdu_size() const;
   public:
   void clear_hdu();
-  ::fits_proto::Hdu* mutable_hdu(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::Hdu >*
+  ::fits_proto::FitsHdu* mutable_hdu(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::FitsHdu >*
       mutable_hdu();
   private:
-  const ::fits_proto::Hdu& _internal_hdu(int index) const;
-  ::fits_proto::Hdu* _internal_add_hdu();
+  const ::fits_proto::FitsHdu& _internal_hdu(int index) const;
+  ::fits_proto::FitsHdu* _internal_add_hdu();
   public:
-  const ::fits_proto::Hdu& hdu(int index) const;
-  ::fits_proto::Hdu* add_hdu();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::Hdu >&
+  const ::fits_proto::FitsHdu& hdu(int index) const;
+  ::fits_proto::FitsHdu* add_hdu();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::FitsHdu >&
       hdu() const;
 
   // @@protoc_insertion_point(class_scope:fits_proto.Fits)
@@ -2133,7 +2133,7 @@ class Fits final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
-    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::Hdu > hdu_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::FitsHdu > hdu_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   };
   union { Impl_ _impl_; };
@@ -2148,50 +2148,50 @@ class Fits final :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
-// Data
+// KeywordData
 
 // string string_val = 1;
-inline bool Data::_internal_has_string_val() const {
+inline bool KeywordData::_internal_has_string_val() const {
   return value_case() == kStringVal;
 }
-inline bool Data::has_string_val() const {
+inline bool KeywordData::has_string_val() const {
   return _internal_has_string_val();
 }
-inline void Data::set_has_string_val() {
+inline void KeywordData::set_has_string_val() {
   _impl_._oneof_case_[0] = kStringVal;
 }
-inline void Data::clear_string_val() {
+inline void KeywordData::clear_string_val() {
   if (_internal_has_string_val()) {
     _impl_.value_.string_val_.Destroy();
     clear_has_value();
   }
 }
-inline const std::string& Data::string_val() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Data.string_val)
+inline const std::string& KeywordData::string_val() const {
+  // @@protoc_insertion_point(field_get:fits_proto.KeywordData.string_val)
   return _internal_string_val();
 }
 template <typename ArgT0, typename... ArgT>
-inline void Data::set_string_val(ArgT0&& arg0, ArgT... args) {
+inline void KeywordData::set_string_val(ArgT0&& arg0, ArgT... args) {
   if (!_internal_has_string_val()) {
     clear_value();
     set_has_string_val();
     _impl_.value_.string_val_.InitDefault();
   }
   _impl_.value_.string_val_.Set( static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:fits_proto.Data.string_val)
+  // @@protoc_insertion_point(field_set:fits_proto.KeywordData.string_val)
 }
-inline std::string* Data::mutable_string_val() {
+inline std::string* KeywordData::mutable_string_val() {
   std::string* _s = _internal_mutable_string_val();
-  // @@protoc_insertion_point(field_mutable:fits_proto.Data.string_val)
+  // @@protoc_insertion_point(field_mutable:fits_proto.KeywordData.string_val)
   return _s;
 }
-inline const std::string& Data::_internal_string_val() const {
+inline const std::string& KeywordData::_internal_string_val() const {
   if (_internal_has_string_val()) {
     return _impl_.value_.string_val_.Get();
   }
   return ::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited();
 }
-inline void Data::_internal_set_string_val(const std::string& value) {
+inline void KeywordData::_internal_set_string_val(const std::string& value) {
   if (!_internal_has_string_val()) {
     clear_value();
     set_has_string_val();
@@ -2199,7 +2199,7 @@ inline void Data::_internal_set_string_val(const std::string& value) {
   }
   _impl_.value_.string_val_.Set(value, GetArenaForAllocation());
 }
-inline std::string* Data::_internal_mutable_string_val() {
+inline std::string* KeywordData::_internal_mutable_string_val() {
   if (!_internal_has_string_val()) {
     clear_value();
     set_has_string_val();
@@ -2207,8 +2207,8 @@ inline std::string* Data::_internal_mutable_string_val() {
   }
   return _impl_.value_.string_val_.Mutable(      GetArenaForAllocation());
 }
-inline std::string* Data::release_string_val() {
-  // @@protoc_insertion_point(field_release:fits_proto.Data.string_val)
+inline std::string* KeywordData::release_string_val() {
+  // @@protoc_insertion_point(field_release:fits_proto.KeywordData.string_val)
   if (_internal_has_string_val()) {
     clear_has_value();
     return _impl_.value_.string_val_.Release();
@@ -2216,7 +2216,7 @@ inline std::string* Data::release_string_val() {
     return nullptr;
   }
 }
-inline void Data::set_allocated_string_val(std::string* string_val) {
+inline void KeywordData::set_allocated_string_val(std::string* string_val) {
   if (has_value()) {
     clear_value();
   }
@@ -2224,311 +2224,311 @@ inline void Data::set_allocated_string_val(std::string* string_val) {
     set_has_string_val();
     _impl_.value_.string_val_.InitAllocated(string_val, GetArenaForAllocation());
   }
-  // @@protoc_insertion_point(field_set_allocated:fits_proto.Data.string_val)
+  // @@protoc_insertion_point(field_set_allocated:fits_proto.KeywordData.string_val)
 }
 
 // int32 int32_val = 2;
-inline bool Data::_internal_has_int32_val() const {
+inline bool KeywordData::_internal_has_int32_val() const {
   return value_case() == kInt32Val;
 }
-inline bool Data::has_int32_val() const {
+inline bool KeywordData::has_int32_val() const {
   return _internal_has_int32_val();
 }
-inline void Data::set_has_int32_val() {
+inline void KeywordData::set_has_int32_val() {
   _impl_._oneof_case_[0] = kInt32Val;
 }
-inline void Data::clear_int32_val() {
+inline void KeywordData::clear_int32_val() {
   if (_internal_has_int32_val()) {
     _impl_.value_.int32_val_ = 0;
     clear_has_value();
   }
 }
-inline int32_t Data::_internal_int32_val() const {
+inline int32_t KeywordData::_internal_int32_val() const {
   if (_internal_has_int32_val()) {
     return _impl_.value_.int32_val_;
   }
   return 0;
 }
-inline void Data::_internal_set_int32_val(int32_t value) {
+inline void KeywordData::_internal_set_int32_val(int32_t value) {
   if (!_internal_has_int32_val()) {
     clear_value();
     set_has_int32_val();
   }
   _impl_.value_.int32_val_ = value;
 }
-inline int32_t Data::int32_val() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Data.int32_val)
+inline int32_t KeywordData::int32_val() const {
+  // @@protoc_insertion_point(field_get:fits_proto.KeywordData.int32_val)
   return _internal_int32_val();
 }
-inline void Data::set_int32_val(int32_t value) {
+inline void KeywordData::set_int32_val(int32_t value) {
   _internal_set_int32_val(value);
-  // @@protoc_insertion_point(field_set:fits_proto.Data.int32_val)
+  // @@protoc_insertion_point(field_set:fits_proto.KeywordData.int32_val)
 }
 
 // sint32 sint32_val = 3;
-inline bool Data::_internal_has_sint32_val() const {
+inline bool KeywordData::_internal_has_sint32_val() const {
   return value_case() == kSint32Val;
 }
-inline bool Data::has_sint32_val() const {
+inline bool KeywordData::has_sint32_val() const {
   return _internal_has_sint32_val();
 }
-inline void Data::set_has_sint32_val() {
+inline void KeywordData::set_has_sint32_val() {
   _impl_._oneof_case_[0] = kSint32Val;
 }
-inline void Data::clear_sint32_val() {
+inline void KeywordData::clear_sint32_val() {
   if (_internal_has_sint32_val()) {
     _impl_.value_.sint32_val_ = 0;
     clear_has_value();
   }
 }
-inline int32_t Data::_internal_sint32_val() const {
+inline int32_t KeywordData::_internal_sint32_val() const {
   if (_internal_has_sint32_val()) {
     return _impl_.value_.sint32_val_;
   }
   return 0;
 }
-inline void Data::_internal_set_sint32_val(int32_t value) {
+inline void KeywordData::_internal_set_sint32_val(int32_t value) {
   if (!_internal_has_sint32_val()) {
     clear_value();
     set_has_sint32_val();
   }
   _impl_.value_.sint32_val_ = value;
 }
-inline int32_t Data::sint32_val() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Data.sint32_val)
+inline int32_t KeywordData::sint32_val() const {
+  // @@protoc_insertion_point(field_get:fits_proto.KeywordData.sint32_val)
   return _internal_sint32_val();
 }
-inline void Data::set_sint32_val(int32_t value) {
+inline void KeywordData::set_sint32_val(int32_t value) {
   _internal_set_sint32_val(value);
-  // @@protoc_insertion_point(field_set:fits_proto.Data.sint32_val)
+  // @@protoc_insertion_point(field_set:fits_proto.KeywordData.sint32_val)
 }
 
 // int64 int64_val = 4;
-inline bool Data::_internal_has_int64_val() const {
+inline bool KeywordData::_internal_has_int64_val() const {
   return value_case() == kInt64Val;
 }
-inline bool Data::has_int64_val() const {
+inline bool KeywordData::has_int64_val() const {
   return _internal_has_int64_val();
 }
-inline void Data::set_has_int64_val() {
+inline void KeywordData::set_has_int64_val() {
   _impl_._oneof_case_[0] = kInt64Val;
 }
-inline void Data::clear_int64_val() {
+inline void KeywordData::clear_int64_val() {
   if (_internal_has_int64_val()) {
     _impl_.value_.int64_val_ = int64_t{0};
     clear_has_value();
   }
 }
-inline int64_t Data::_internal_int64_val() const {
+inline int64_t KeywordData::_internal_int64_val() const {
   if (_internal_has_int64_val()) {
     return _impl_.value_.int64_val_;
   }
   return int64_t{0};
 }
-inline void Data::_internal_set_int64_val(int64_t value) {
+inline void KeywordData::_internal_set_int64_val(int64_t value) {
   if (!_internal_has_int64_val()) {
     clear_value();
     set_has_int64_val();
   }
   _impl_.value_.int64_val_ = value;
 }
-inline int64_t Data::int64_val() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Data.int64_val)
+inline int64_t KeywordData::int64_val() const {
+  // @@protoc_insertion_point(field_get:fits_proto.KeywordData.int64_val)
   return _internal_int64_val();
 }
-inline void Data::set_int64_val(int64_t value) {
+inline void KeywordData::set_int64_val(int64_t value) {
   _internal_set_int64_val(value);
-  // @@protoc_insertion_point(field_set:fits_proto.Data.int64_val)
+  // @@protoc_insertion_point(field_set:fits_proto.KeywordData.int64_val)
 }
 
 // sint64 sint64_val = 5;
-inline bool Data::_internal_has_sint64_val() const {
+inline bool KeywordData::_internal_has_sint64_val() const {
   return value_case() == kSint64Val;
 }
-inline bool Data::has_sint64_val() const {
+inline bool KeywordData::has_sint64_val() const {
   return _internal_has_sint64_val();
 }
-inline void Data::set_has_sint64_val() {
+inline void KeywordData::set_has_sint64_val() {
   _impl_._oneof_case_[0] = kSint64Val;
 }
-inline void Data::clear_sint64_val() {
+inline void KeywordData::clear_sint64_val() {
   if (_internal_has_sint64_val()) {
     _impl_.value_.sint64_val_ = int64_t{0};
     clear_has_value();
   }
 }
-inline int64_t Data::_internal_sint64_val() const {
+inline int64_t KeywordData::_internal_sint64_val() const {
   if (_internal_has_sint64_val()) {
     return _impl_.value_.sint64_val_;
   }
   return int64_t{0};
 }
-inline void Data::_internal_set_sint64_val(int64_t value) {
+inline void KeywordData::_internal_set_sint64_val(int64_t value) {
   if (!_internal_has_sint64_val()) {
     clear_value();
     set_has_sint64_val();
   }
   _impl_.value_.sint64_val_ = value;
 }
-inline int64_t Data::sint64_val() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Data.sint64_val)
+inline int64_t KeywordData::sint64_val() const {
+  // @@protoc_insertion_point(field_get:fits_proto.KeywordData.sint64_val)
   return _internal_sint64_val();
 }
-inline void Data::set_sint64_val(int64_t value) {
+inline void KeywordData::set_sint64_val(int64_t value) {
   _internal_set_sint64_val(value);
-  // @@protoc_insertion_point(field_set:fits_proto.Data.sint64_val)
+  // @@protoc_insertion_point(field_set:fits_proto.KeywordData.sint64_val)
 }
 
 // float float_val = 6;
-inline bool Data::_internal_has_float_val() const {
+inline bool KeywordData::_internal_has_float_val() const {
   return value_case() == kFloatVal;
 }
-inline bool Data::has_float_val() const {
+inline bool KeywordData::has_float_val() const {
   return _internal_has_float_val();
 }
-inline void Data::set_has_float_val() {
+inline void KeywordData::set_has_float_val() {
   _impl_._oneof_case_[0] = kFloatVal;
 }
-inline void Data::clear_float_val() {
+inline void KeywordData::clear_float_val() {
   if (_internal_has_float_val()) {
     _impl_.value_.float_val_ = 0;
     clear_has_value();
   }
 }
-inline float Data::_internal_float_val() const {
+inline float KeywordData::_internal_float_val() const {
   if (_internal_has_float_val()) {
     return _impl_.value_.float_val_;
   }
   return 0;
 }
-inline void Data::_internal_set_float_val(float value) {
+inline void KeywordData::_internal_set_float_val(float value) {
   if (!_internal_has_float_val()) {
     clear_value();
     set_has_float_val();
   }
   _impl_.value_.float_val_ = value;
 }
-inline float Data::float_val() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Data.float_val)
+inline float KeywordData::float_val() const {
+  // @@protoc_insertion_point(field_get:fits_proto.KeywordData.float_val)
   return _internal_float_val();
 }
-inline void Data::set_float_val(float value) {
+inline void KeywordData::set_float_val(float value) {
   _internal_set_float_val(value);
-  // @@protoc_insertion_point(field_set:fits_proto.Data.float_val)
+  // @@protoc_insertion_point(field_set:fits_proto.KeywordData.float_val)
 }
 
 // double double_val = 7;
-inline bool Data::_internal_has_double_val() const {
+inline bool KeywordData::_internal_has_double_val() const {
   return value_case() == kDoubleVal;
 }
-inline bool Data::has_double_val() const {
+inline bool KeywordData::has_double_val() const {
   return _internal_has_double_val();
 }
-inline void Data::set_has_double_val() {
+inline void KeywordData::set_has_double_val() {
   _impl_._oneof_case_[0] = kDoubleVal;
 }
-inline void Data::clear_double_val() {
+inline void KeywordData::clear_double_val() {
   if (_internal_has_double_val()) {
     _impl_.value_.double_val_ = 0;
     clear_has_value();
   }
 }
-inline double Data::_internal_double_val() const {
+inline double KeywordData::_internal_double_val() const {
   if (_internal_has_double_val()) {
     return _impl_.value_.double_val_;
   }
   return 0;
 }
-inline void Data::_internal_set_double_val(double value) {
+inline void KeywordData::_internal_set_double_val(double value) {
   if (!_internal_has_double_val()) {
     clear_value();
     set_has_double_val();
   }
   _impl_.value_.double_val_ = value;
 }
-inline double Data::double_val() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Data.double_val)
+inline double KeywordData::double_val() const {
+  // @@protoc_insertion_point(field_get:fits_proto.KeywordData.double_val)
   return _internal_double_val();
 }
-inline void Data::set_double_val(double value) {
+inline void KeywordData::set_double_val(double value) {
   _internal_set_double_val(value);
-  // @@protoc_insertion_point(field_set:fits_proto.Data.double_val)
+  // @@protoc_insertion_point(field_set:fits_proto.KeywordData.double_val)
 }
 
 // bool bool_val = 8;
-inline bool Data::_internal_has_bool_val() const {
+inline bool KeywordData::_internal_has_bool_val() const {
   return value_case() == kBoolVal;
 }
-inline bool Data::has_bool_val() const {
+inline bool KeywordData::has_bool_val() const {
   return _internal_has_bool_val();
 }
-inline void Data::set_has_bool_val() {
+inline void KeywordData::set_has_bool_val() {
   _impl_._oneof_case_[0] = kBoolVal;
 }
-inline void Data::clear_bool_val() {
+inline void KeywordData::clear_bool_val() {
   if (_internal_has_bool_val()) {
     _impl_.value_.bool_val_ = false;
     clear_has_value();
   }
 }
-inline bool Data::_internal_bool_val() const {
+inline bool KeywordData::_internal_bool_val() const {
   if (_internal_has_bool_val()) {
     return _impl_.value_.bool_val_;
   }
   return false;
 }
-inline void Data::_internal_set_bool_val(bool value) {
+inline void KeywordData::_internal_set_bool_val(bool value) {
   if (!_internal_has_bool_val()) {
     clear_value();
     set_has_bool_val();
   }
   _impl_.value_.bool_val_ = value;
 }
-inline bool Data::bool_val() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Data.bool_val)
+inline bool KeywordData::bool_val() const {
+  // @@protoc_insertion_point(field_get:fits_proto.KeywordData.bool_val)
   return _internal_bool_val();
 }
-inline void Data::set_bool_val(bool value) {
+inline void KeywordData::set_bool_val(bool value) {
   _internal_set_bool_val(value);
-  // @@protoc_insertion_point(field_set:fits_proto.Data.bool_val)
+  // @@protoc_insertion_point(field_set:fits_proto.KeywordData.bool_val)
 }
 
 // string comment = 9;
-inline void Data::clear_comment() {
+inline void KeywordData::clear_comment() {
   _impl_.comment_.ClearToEmpty();
 }
-inline const std::string& Data::comment() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Data.comment)
+inline const std::string& KeywordData::comment() const {
+  // @@protoc_insertion_point(field_get:fits_proto.KeywordData.comment)
   return _internal_comment();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void Data::set_comment(ArgT0&& arg0, ArgT... args) {
+void KeywordData::set_comment(ArgT0&& arg0, ArgT... args) {
  
  _impl_.comment_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:fits_proto.Data.comment)
+  // @@protoc_insertion_point(field_set:fits_proto.KeywordData.comment)
 }
-inline std::string* Data::mutable_comment() {
+inline std::string* KeywordData::mutable_comment() {
   std::string* _s = _internal_mutable_comment();
-  // @@protoc_insertion_point(field_mutable:fits_proto.Data.comment)
+  // @@protoc_insertion_point(field_mutable:fits_proto.KeywordData.comment)
   return _s;
 }
-inline const std::string& Data::_internal_comment() const {
+inline const std::string& KeywordData::_internal_comment() const {
   return _impl_.comment_.Get();
 }
-inline void Data::_internal_set_comment(const std::string& value) {
+inline void KeywordData::_internal_set_comment(const std::string& value) {
   
   _impl_.comment_.Set(value, GetArenaForAllocation());
 }
-inline std::string* Data::_internal_mutable_comment() {
+inline std::string* KeywordData::_internal_mutable_comment() {
   
   return _impl_.comment_.Mutable(GetArenaForAllocation());
 }
-inline std::string* Data::release_comment() {
-  // @@protoc_insertion_point(field_release:fits_proto.Data.comment)
+inline std::string* KeywordData::release_comment() {
+  // @@protoc_insertion_point(field_release:fits_proto.KeywordData.comment)
   return _impl_.comment_.Release();
 }
-inline void Data::set_allocated_comment(std::string* comment) {
+inline void KeywordData::set_allocated_comment(std::string* comment) {
   if (comment != nullptr) {
     
   } else {
@@ -2540,147 +2540,147 @@ inline void Data::set_allocated_comment(std::string* comment) {
     _impl_.comment_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:fits_proto.Data.comment)
+  // @@protoc_insertion_point(field_set_allocated:fits_proto.KeywordData.comment)
 }
 
-inline bool Data::has_value() const {
+inline bool KeywordData::has_value() const {
   return value_case() != VALUE_NOT_SET;
 }
-inline void Data::clear_has_value() {
+inline void KeywordData::clear_has_value() {
   _impl_._oneof_case_[0] = VALUE_NOT_SET;
 }
-inline Data::ValueCase Data::value_case() const {
-  return Data::ValueCase(_impl_._oneof_case_[0]);
+inline KeywordData::ValueCase KeywordData::value_case() const {
+  return KeywordData::ValueCase(_impl_._oneof_case_[0]);
 }
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
 
-// Header
+// FitsHeader
 
 // bool simple = 1;
-inline void Header::clear_simple() {
+inline void FitsHeader::clear_simple() {
   _impl_.simple_ = false;
 }
-inline bool Header::_internal_simple() const {
+inline bool FitsHeader::_internal_simple() const {
   return _impl_.simple_;
 }
-inline bool Header::simple() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Header.simple)
+inline bool FitsHeader::simple() const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHeader.simple)
   return _internal_simple();
 }
-inline void Header::_internal_set_simple(bool value) {
+inline void FitsHeader::_internal_set_simple(bool value) {
   
   _impl_.simple_ = value;
 }
-inline void Header::set_simple(bool value) {
+inline void FitsHeader::set_simple(bool value) {
   _internal_set_simple(value);
-  // @@protoc_insertion_point(field_set:fits_proto.Header.simple)
+  // @@protoc_insertion_point(field_set:fits_proto.FitsHeader.simple)
 }
 
 // int32 bitpix = 2;
-inline void Header::clear_bitpix() {
+inline void FitsHeader::clear_bitpix() {
   _impl_.bitpix_ = 0;
 }
-inline int32_t Header::_internal_bitpix() const {
+inline int32_t FitsHeader::_internal_bitpix() const {
   return _impl_.bitpix_;
 }
-inline int32_t Header::bitpix() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Header.bitpix)
+inline int32_t FitsHeader::bitpix() const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHeader.bitpix)
   return _internal_bitpix();
 }
-inline void Header::_internal_set_bitpix(int32_t value) {
+inline void FitsHeader::_internal_set_bitpix(int32_t value) {
   
   _impl_.bitpix_ = value;
 }
-inline void Header::set_bitpix(int32_t value) {
+inline void FitsHeader::set_bitpix(int32_t value) {
   _internal_set_bitpix(value);
-  // @@protoc_insertion_point(field_set:fits_proto.Header.bitpix)
+  // @@protoc_insertion_point(field_set:fits_proto.FitsHeader.bitpix)
 }
 
 // repeated int32 size = 3;
-inline int Header::_internal_size_size() const {
+inline int FitsHeader::_internal_size_size() const {
   return _impl_.size_.size();
 }
-inline int Header::size_size() const {
+inline int FitsHeader::size_size() const {
   return _internal_size_size();
 }
-inline void Header::clear_size() {
+inline void FitsHeader::clear_size() {
   _impl_.size_.Clear();
 }
-inline int32_t Header::_internal_size(int index) const {
+inline int32_t FitsHeader::_internal_size(int index) const {
   return _impl_.size_.Get(index);
 }
-inline int32_t Header::size(int index) const {
-  // @@protoc_insertion_point(field_get:fits_proto.Header.size)
+inline int32_t FitsHeader::size(int index) const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHeader.size)
   return _internal_size(index);
 }
-inline void Header::set_size(int index, int32_t value) {
+inline void FitsHeader::set_size(int index, int32_t value) {
   _impl_.size_.Set(index, value);
-  // @@protoc_insertion_point(field_set:fits_proto.Header.size)
+  // @@protoc_insertion_point(field_set:fits_proto.FitsHeader.size)
 }
-inline void Header::_internal_add_size(int32_t value) {
+inline void FitsHeader::_internal_add_size(int32_t value) {
   _impl_.size_.Add(value);
 }
-inline void Header::add_size(int32_t value) {
+inline void FitsHeader::add_size(int32_t value) {
   _internal_add_size(value);
-  // @@protoc_insertion_point(field_add:fits_proto.Header.size)
+  // @@protoc_insertion_point(field_add:fits_proto.FitsHeader.size)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >&
-Header::_internal_size() const {
+FitsHeader::_internal_size() const {
   return _impl_.size_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >&
-Header::size() const {
-  // @@protoc_insertion_point(field_list:fits_proto.Header.size)
+FitsHeader::size() const {
+  // @@protoc_insertion_point(field_list:fits_proto.FitsHeader.size)
   return _internal_size();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >*
-Header::_internal_mutable_size() {
+FitsHeader::_internal_mutable_size() {
   return &_impl_.size_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >*
-Header::mutable_size() {
-  // @@protoc_insertion_point(field_mutable_list:fits_proto.Header.size)
+FitsHeader::mutable_size() {
+  // @@protoc_insertion_point(field_mutable_list:fits_proto.FitsHeader.size)
   return _internal_mutable_size();
 }
 
 // string comment = 4;
-inline void Header::clear_comment() {
+inline void FitsHeader::clear_comment() {
   _impl_.comment_.ClearToEmpty();
 }
-inline const std::string& Header::comment() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Header.comment)
+inline const std::string& FitsHeader::comment() const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHeader.comment)
   return _internal_comment();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void Header::set_comment(ArgT0&& arg0, ArgT... args) {
+void FitsHeader::set_comment(ArgT0&& arg0, ArgT... args) {
  
  _impl_.comment_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:fits_proto.Header.comment)
+  // @@protoc_insertion_point(field_set:fits_proto.FitsHeader.comment)
 }
-inline std::string* Header::mutable_comment() {
+inline std::string* FitsHeader::mutable_comment() {
   std::string* _s = _internal_mutable_comment();
-  // @@protoc_insertion_point(field_mutable:fits_proto.Header.comment)
+  // @@protoc_insertion_point(field_mutable:fits_proto.FitsHeader.comment)
   return _s;
 }
-inline const std::string& Header::_internal_comment() const {
+inline const std::string& FitsHeader::_internal_comment() const {
   return _impl_.comment_.Get();
 }
-inline void Header::_internal_set_comment(const std::string& value) {
+inline void FitsHeader::_internal_set_comment(const std::string& value) {
   
   _impl_.comment_.Set(value, GetArenaForAllocation());
 }
-inline std::string* Header::_internal_mutable_comment() {
+inline std::string* FitsHeader::_internal_mutable_comment() {
   
   return _impl_.comment_.Mutable(GetArenaForAllocation());
 }
-inline std::string* Header::release_comment() {
-  // @@protoc_insertion_point(field_release:fits_proto.Header.comment)
+inline std::string* FitsHeader::release_comment() {
+  // @@protoc_insertion_point(field_release:fits_proto.FitsHeader.comment)
   return _impl_.comment_.Release();
 }
-inline void Header::set_allocated_comment(std::string* comment) {
+inline void FitsHeader::set_allocated_comment(std::string* comment) {
   if (comment != nullptr) {
     
   } else {
@@ -2692,45 +2692,45 @@ inline void Header::set_allocated_comment(std::string* comment) {
     _impl_.comment_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:fits_proto.Header.comment)
+  // @@protoc_insertion_point(field_set_allocated:fits_proto.FitsHeader.comment)
 }
 
 // string history = 5;
-inline void Header::clear_history() {
+inline void FitsHeader::clear_history() {
   _impl_.history_.ClearToEmpty();
 }
-inline const std::string& Header::history() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Header.history)
+inline const std::string& FitsHeader::history() const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHeader.history)
   return _internal_history();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void Header::set_history(ArgT0&& arg0, ArgT... args) {
+void FitsHeader::set_history(ArgT0&& arg0, ArgT... args) {
  
  _impl_.history_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:fits_proto.Header.history)
+  // @@protoc_insertion_point(field_set:fits_proto.FitsHeader.history)
 }
-inline std::string* Header::mutable_history() {
+inline std::string* FitsHeader::mutable_history() {
   std::string* _s = _internal_mutable_history();
-  // @@protoc_insertion_point(field_mutable:fits_proto.Header.history)
+  // @@protoc_insertion_point(field_mutable:fits_proto.FitsHeader.history)
   return _s;
 }
-inline const std::string& Header::_internal_history() const {
+inline const std::string& FitsHeader::_internal_history() const {
   return _impl_.history_.Get();
 }
-inline void Header::_internal_set_history(const std::string& value) {
+inline void FitsHeader::_internal_set_history(const std::string& value) {
   
   _impl_.history_.Set(value, GetArenaForAllocation());
 }
-inline std::string* Header::_internal_mutable_history() {
+inline std::string* FitsHeader::_internal_mutable_history() {
   
   return _impl_.history_.Mutable(GetArenaForAllocation());
 }
-inline std::string* Header::release_history() {
-  // @@protoc_insertion_point(field_release:fits_proto.Header.history)
+inline std::string* FitsHeader::release_history() {
+  // @@protoc_insertion_point(field_release:fits_proto.FitsHeader.history)
   return _impl_.history_.Release();
 }
-inline void Header::set_allocated_history(std::string* history) {
+inline void FitsHeader::set_allocated_history(std::string* history) {
   if (history != nullptr) {
     
   } else {
@@ -2742,65 +2742,65 @@ inline void Header::set_allocated_history(std::string* history) {
     _impl_.history_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:fits_proto.Header.history)
+  // @@protoc_insertion_point(field_set_allocated:fits_proto.FitsHeader.history)
 }
 
 // int32 n_extensions = 6;
-inline void Header::clear_n_extensions() {
+inline void FitsHeader::clear_n_extensions() {
   _impl_.n_extensions_ = 0;
 }
-inline int32_t Header::_internal_n_extensions() const {
+inline int32_t FitsHeader::_internal_n_extensions() const {
   return _impl_.n_extensions_;
 }
-inline int32_t Header::n_extensions() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Header.n_extensions)
+inline int32_t FitsHeader::n_extensions() const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHeader.n_extensions)
   return _internal_n_extensions();
 }
-inline void Header::_internal_set_n_extensions(int32_t value) {
+inline void FitsHeader::_internal_set_n_extensions(int32_t value) {
   
   _impl_.n_extensions_ = value;
 }
-inline void Header::set_n_extensions(int32_t value) {
+inline void FitsHeader::set_n_extensions(int32_t value) {
   _internal_set_n_extensions(value);
-  // @@protoc_insertion_point(field_set:fits_proto.Header.n_extensions)
+  // @@protoc_insertion_point(field_set:fits_proto.FitsHeader.n_extensions)
 }
 
 // string extension = 7;
-inline void Header::clear_extension() {
+inline void FitsHeader::clear_extension() {
   _impl_.extension_.ClearToEmpty();
 }
-inline const std::string& Header::extension() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Header.extension)
+inline const std::string& FitsHeader::extension() const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHeader.extension)
   return _internal_extension();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void Header::set_extension(ArgT0&& arg0, ArgT... args) {
+void FitsHeader::set_extension(ArgT0&& arg0, ArgT... args) {
  
  _impl_.extension_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:fits_proto.Header.extension)
+  // @@protoc_insertion_point(field_set:fits_proto.FitsHeader.extension)
 }
-inline std::string* Header::mutable_extension() {
+inline std::string* FitsHeader::mutable_extension() {
   std::string* _s = _internal_mutable_extension();
-  // @@protoc_insertion_point(field_mutable:fits_proto.Header.extension)
+  // @@protoc_insertion_point(field_mutable:fits_proto.FitsHeader.extension)
   return _s;
 }
-inline const std::string& Header::_internal_extension() const {
+inline const std::string& FitsHeader::_internal_extension() const {
   return _impl_.extension_.Get();
 }
-inline void Header::_internal_set_extension(const std::string& value) {
+inline void FitsHeader::_internal_set_extension(const std::string& value) {
   
   _impl_.extension_.Set(value, GetArenaForAllocation());
 }
-inline std::string* Header::_internal_mutable_extension() {
+inline std::string* FitsHeader::_internal_mutable_extension() {
   
   return _impl_.extension_.Mutable(GetArenaForAllocation());
 }
-inline std::string* Header::release_extension() {
-  // @@protoc_insertion_point(field_release:fits_proto.Header.extension)
+inline std::string* FitsHeader::release_extension() {
+  // @@protoc_insertion_point(field_release:fits_proto.FitsHeader.extension)
   return _impl_.extension_.Release();
 }
-inline void Header::set_allocated_extension(std::string* extension) {
+inline void FitsHeader::set_allocated_extension(std::string* extension) {
   if (extension != nullptr) {
     
   } else {
@@ -2812,399 +2812,399 @@ inline void Header::set_allocated_extension(std::string* extension) {
     _impl_.extension_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:fits_proto.Header.extension)
+  // @@protoc_insertion_point(field_set_allocated:fits_proto.FitsHeader.extension)
 }
 
-// map<string, .fits_proto.Data> keywords = 8;
-inline int Header::_internal_keywords_size() const {
+// map<string, .fits_proto.KeywordData> keywords = 8;
+inline int FitsHeader::_internal_keywords_size() const {
   return _impl_.keywords_.size();
 }
-inline int Header::keywords_size() const {
+inline int FitsHeader::keywords_size() const {
   return _internal_keywords_size();
 }
-inline void Header::clear_keywords() {
+inline void FitsHeader::clear_keywords() {
   _impl_.keywords_.Clear();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::Data >&
-Header::_internal_keywords() const {
+inline const ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::KeywordData >&
+FitsHeader::_internal_keywords() const {
   return _impl_.keywords_.GetMap();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::Data >&
-Header::keywords() const {
-  // @@protoc_insertion_point(field_map:fits_proto.Header.keywords)
+inline const ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::KeywordData >&
+FitsHeader::keywords() const {
+  // @@protoc_insertion_point(field_map:fits_proto.FitsHeader.keywords)
   return _internal_keywords();
 }
-inline ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::Data >*
-Header::_internal_mutable_keywords() {
+inline ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::KeywordData >*
+FitsHeader::_internal_mutable_keywords() {
   return _impl_.keywords_.MutableMap();
 }
-inline ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::Data >*
-Header::mutable_keywords() {
-  // @@protoc_insertion_point(field_mutable_map:fits_proto.Header.keywords)
+inline ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::fits_proto::KeywordData >*
+FitsHeader::mutable_keywords() {
+  // @@protoc_insertion_point(field_mutable_map:fits_proto.FitsHeader.keywords)
   return _internal_mutable_keywords();
 }
 
 // -------------------------------------------------------------------
 
-// Hdu_FloatData
+// FitsHdu_FloatData
 
 // repeated float data = 1;
-inline int Hdu_FloatData::_internal_data_size() const {
+inline int FitsHdu_FloatData::_internal_data_size() const {
   return _impl_.data_.size();
 }
-inline int Hdu_FloatData::data_size() const {
+inline int FitsHdu_FloatData::data_size() const {
   return _internal_data_size();
 }
-inline void Hdu_FloatData::clear_data() {
+inline void FitsHdu_FloatData::clear_data() {
   _impl_.data_.Clear();
 }
-inline float Hdu_FloatData::_internal_data(int index) const {
+inline float FitsHdu_FloatData::_internal_data(int index) const {
   return _impl_.data_.Get(index);
 }
-inline float Hdu_FloatData::data(int index) const {
-  // @@protoc_insertion_point(field_get:fits_proto.Hdu.FloatData.data)
+inline float FitsHdu_FloatData::data(int index) const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHdu.FloatData.data)
   return _internal_data(index);
 }
-inline void Hdu_FloatData::set_data(int index, float value) {
+inline void FitsHdu_FloatData::set_data(int index, float value) {
   _impl_.data_.Set(index, value);
-  // @@protoc_insertion_point(field_set:fits_proto.Hdu.FloatData.data)
+  // @@protoc_insertion_point(field_set:fits_proto.FitsHdu.FloatData.data)
 }
-inline void Hdu_FloatData::_internal_add_data(float value) {
+inline void FitsHdu_FloatData::_internal_add_data(float value) {
   _impl_.data_.Add(value);
 }
-inline void Hdu_FloatData::add_data(float value) {
+inline void FitsHdu_FloatData::add_data(float value) {
   _internal_add_data(value);
-  // @@protoc_insertion_point(field_add:fits_proto.Hdu.FloatData.data)
+  // @@protoc_insertion_point(field_add:fits_proto.FitsHdu.FloatData.data)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >&
-Hdu_FloatData::_internal_data() const {
+FitsHdu_FloatData::_internal_data() const {
   return _impl_.data_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >&
-Hdu_FloatData::data() const {
-  // @@protoc_insertion_point(field_list:fits_proto.Hdu.FloatData.data)
+FitsHdu_FloatData::data() const {
+  // @@protoc_insertion_point(field_list:fits_proto.FitsHdu.FloatData.data)
   return _internal_data();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >*
-Hdu_FloatData::_internal_mutable_data() {
+FitsHdu_FloatData::_internal_mutable_data() {
   return &_impl_.data_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >*
-Hdu_FloatData::mutable_data() {
-  // @@protoc_insertion_point(field_mutable_list:fits_proto.Hdu.FloatData.data)
+FitsHdu_FloatData::mutable_data() {
+  // @@protoc_insertion_point(field_mutable_list:fits_proto.FitsHdu.FloatData.data)
   return _internal_mutable_data();
 }
 
 // -------------------------------------------------------------------
 
-// Hdu_DoubleData
+// FitsHdu_DoubleData
 
 // repeated double data = 1;
-inline int Hdu_DoubleData::_internal_data_size() const {
+inline int FitsHdu_DoubleData::_internal_data_size() const {
   return _impl_.data_.size();
 }
-inline int Hdu_DoubleData::data_size() const {
+inline int FitsHdu_DoubleData::data_size() const {
   return _internal_data_size();
 }
-inline void Hdu_DoubleData::clear_data() {
+inline void FitsHdu_DoubleData::clear_data() {
   _impl_.data_.Clear();
 }
-inline double Hdu_DoubleData::_internal_data(int index) const {
+inline double FitsHdu_DoubleData::_internal_data(int index) const {
   return _impl_.data_.Get(index);
 }
-inline double Hdu_DoubleData::data(int index) const {
-  // @@protoc_insertion_point(field_get:fits_proto.Hdu.DoubleData.data)
+inline double FitsHdu_DoubleData::data(int index) const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHdu.DoubleData.data)
   return _internal_data(index);
 }
-inline void Hdu_DoubleData::set_data(int index, double value) {
+inline void FitsHdu_DoubleData::set_data(int index, double value) {
   _impl_.data_.Set(index, value);
-  // @@protoc_insertion_point(field_set:fits_proto.Hdu.DoubleData.data)
+  // @@protoc_insertion_point(field_set:fits_proto.FitsHdu.DoubleData.data)
 }
-inline void Hdu_DoubleData::_internal_add_data(double value) {
+inline void FitsHdu_DoubleData::_internal_add_data(double value) {
   _impl_.data_.Add(value);
 }
-inline void Hdu_DoubleData::add_data(double value) {
+inline void FitsHdu_DoubleData::add_data(double value) {
   _internal_add_data(value);
-  // @@protoc_insertion_point(field_add:fits_proto.Hdu.DoubleData.data)
+  // @@protoc_insertion_point(field_add:fits_proto.FitsHdu.DoubleData.data)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >&
-Hdu_DoubleData::_internal_data() const {
+FitsHdu_DoubleData::_internal_data() const {
   return _impl_.data_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >&
-Hdu_DoubleData::data() const {
-  // @@protoc_insertion_point(field_list:fits_proto.Hdu.DoubleData.data)
+FitsHdu_DoubleData::data() const {
+  // @@protoc_insertion_point(field_list:fits_proto.FitsHdu.DoubleData.data)
   return _internal_data();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >*
-Hdu_DoubleData::_internal_mutable_data() {
+FitsHdu_DoubleData::_internal_mutable_data() {
   return &_impl_.data_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >*
-Hdu_DoubleData::mutable_data() {
-  // @@protoc_insertion_point(field_mutable_list:fits_proto.Hdu.DoubleData.data)
+FitsHdu_DoubleData::mutable_data() {
+  // @@protoc_insertion_point(field_mutable_list:fits_proto.FitsHdu.DoubleData.data)
   return _internal_mutable_data();
 }
 
 // -------------------------------------------------------------------
 
-// Hdu_Int32Data
+// FitsHdu_Int32Data
 
 // repeated int32 data = 1;
-inline int Hdu_Int32Data::_internal_data_size() const {
+inline int FitsHdu_Int32Data::_internal_data_size() const {
   return _impl_.data_.size();
 }
-inline int Hdu_Int32Data::data_size() const {
+inline int FitsHdu_Int32Data::data_size() const {
   return _internal_data_size();
 }
-inline void Hdu_Int32Data::clear_data() {
+inline void FitsHdu_Int32Data::clear_data() {
   _impl_.data_.Clear();
 }
-inline int32_t Hdu_Int32Data::_internal_data(int index) const {
+inline int32_t FitsHdu_Int32Data::_internal_data(int index) const {
   return _impl_.data_.Get(index);
 }
-inline int32_t Hdu_Int32Data::data(int index) const {
-  // @@protoc_insertion_point(field_get:fits_proto.Hdu.Int32Data.data)
+inline int32_t FitsHdu_Int32Data::data(int index) const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHdu.Int32Data.data)
   return _internal_data(index);
 }
-inline void Hdu_Int32Data::set_data(int index, int32_t value) {
+inline void FitsHdu_Int32Data::set_data(int index, int32_t value) {
   _impl_.data_.Set(index, value);
-  // @@protoc_insertion_point(field_set:fits_proto.Hdu.Int32Data.data)
+  // @@protoc_insertion_point(field_set:fits_proto.FitsHdu.Int32Data.data)
 }
-inline void Hdu_Int32Data::_internal_add_data(int32_t value) {
+inline void FitsHdu_Int32Data::_internal_add_data(int32_t value) {
   _impl_.data_.Add(value);
 }
-inline void Hdu_Int32Data::add_data(int32_t value) {
+inline void FitsHdu_Int32Data::add_data(int32_t value) {
   _internal_add_data(value);
-  // @@protoc_insertion_point(field_add:fits_proto.Hdu.Int32Data.data)
+  // @@protoc_insertion_point(field_add:fits_proto.FitsHdu.Int32Data.data)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >&
-Hdu_Int32Data::_internal_data() const {
+FitsHdu_Int32Data::_internal_data() const {
   return _impl_.data_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >&
-Hdu_Int32Data::data() const {
-  // @@protoc_insertion_point(field_list:fits_proto.Hdu.Int32Data.data)
+FitsHdu_Int32Data::data() const {
+  // @@protoc_insertion_point(field_list:fits_proto.FitsHdu.Int32Data.data)
   return _internal_data();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >*
-Hdu_Int32Data::_internal_mutable_data() {
+FitsHdu_Int32Data::_internal_mutable_data() {
   return &_impl_.data_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >*
-Hdu_Int32Data::mutable_data() {
-  // @@protoc_insertion_point(field_mutable_list:fits_proto.Hdu.Int32Data.data)
+FitsHdu_Int32Data::mutable_data() {
+  // @@protoc_insertion_point(field_mutable_list:fits_proto.FitsHdu.Int32Data.data)
   return _internal_mutable_data();
 }
 
 // -------------------------------------------------------------------
 
-// Hdu_Int64Data
+// FitsHdu_Int64Data
 
 // repeated int64 data = 1;
-inline int Hdu_Int64Data::_internal_data_size() const {
+inline int FitsHdu_Int64Data::_internal_data_size() const {
   return _impl_.data_.size();
 }
-inline int Hdu_Int64Data::data_size() const {
+inline int FitsHdu_Int64Data::data_size() const {
   return _internal_data_size();
 }
-inline void Hdu_Int64Data::clear_data() {
+inline void FitsHdu_Int64Data::clear_data() {
   _impl_.data_.Clear();
 }
-inline int64_t Hdu_Int64Data::_internal_data(int index) const {
+inline int64_t FitsHdu_Int64Data::_internal_data(int index) const {
   return _impl_.data_.Get(index);
 }
-inline int64_t Hdu_Int64Data::data(int index) const {
-  // @@protoc_insertion_point(field_get:fits_proto.Hdu.Int64Data.data)
+inline int64_t FitsHdu_Int64Data::data(int index) const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHdu.Int64Data.data)
   return _internal_data(index);
 }
-inline void Hdu_Int64Data::set_data(int index, int64_t value) {
+inline void FitsHdu_Int64Data::set_data(int index, int64_t value) {
   _impl_.data_.Set(index, value);
-  // @@protoc_insertion_point(field_set:fits_proto.Hdu.Int64Data.data)
+  // @@protoc_insertion_point(field_set:fits_proto.FitsHdu.Int64Data.data)
 }
-inline void Hdu_Int64Data::_internal_add_data(int64_t value) {
+inline void FitsHdu_Int64Data::_internal_add_data(int64_t value) {
   _impl_.data_.Add(value);
 }
-inline void Hdu_Int64Data::add_data(int64_t value) {
+inline void FitsHdu_Int64Data::add_data(int64_t value) {
   _internal_add_data(value);
-  // @@protoc_insertion_point(field_add:fits_proto.Hdu.Int64Data.data)
+  // @@protoc_insertion_point(field_add:fits_proto.FitsHdu.Int64Data.data)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< int64_t >&
-Hdu_Int64Data::_internal_data() const {
+FitsHdu_Int64Data::_internal_data() const {
   return _impl_.data_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< int64_t >&
-Hdu_Int64Data::data() const {
-  // @@protoc_insertion_point(field_list:fits_proto.Hdu.Int64Data.data)
+FitsHdu_Int64Data::data() const {
+  // @@protoc_insertion_point(field_list:fits_proto.FitsHdu.Int64Data.data)
   return _internal_data();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< int64_t >*
-Hdu_Int64Data::_internal_mutable_data() {
+FitsHdu_Int64Data::_internal_mutable_data() {
   return &_impl_.data_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< int64_t >*
-Hdu_Int64Data::mutable_data() {
-  // @@protoc_insertion_point(field_mutable_list:fits_proto.Hdu.Int64Data.data)
+FitsHdu_Int64Data::mutable_data() {
+  // @@protoc_insertion_point(field_mutable_list:fits_proto.FitsHdu.Int64Data.data)
   return _internal_mutable_data();
 }
 
 // -------------------------------------------------------------------
 
-// Hdu_SInt32Data
+// FitsHdu_SInt32Data
 
 // repeated sint32 data = 1;
-inline int Hdu_SInt32Data::_internal_data_size() const {
+inline int FitsHdu_SInt32Data::_internal_data_size() const {
   return _impl_.data_.size();
 }
-inline int Hdu_SInt32Data::data_size() const {
+inline int FitsHdu_SInt32Data::data_size() const {
   return _internal_data_size();
 }
-inline void Hdu_SInt32Data::clear_data() {
+inline void FitsHdu_SInt32Data::clear_data() {
   _impl_.data_.Clear();
 }
-inline int32_t Hdu_SInt32Data::_internal_data(int index) const {
+inline int32_t FitsHdu_SInt32Data::_internal_data(int index) const {
   return _impl_.data_.Get(index);
 }
-inline int32_t Hdu_SInt32Data::data(int index) const {
-  // @@protoc_insertion_point(field_get:fits_proto.Hdu.SInt32Data.data)
+inline int32_t FitsHdu_SInt32Data::data(int index) const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHdu.SInt32Data.data)
   return _internal_data(index);
 }
-inline void Hdu_SInt32Data::set_data(int index, int32_t value) {
+inline void FitsHdu_SInt32Data::set_data(int index, int32_t value) {
   _impl_.data_.Set(index, value);
-  // @@protoc_insertion_point(field_set:fits_proto.Hdu.SInt32Data.data)
+  // @@protoc_insertion_point(field_set:fits_proto.FitsHdu.SInt32Data.data)
 }
-inline void Hdu_SInt32Data::_internal_add_data(int32_t value) {
+inline void FitsHdu_SInt32Data::_internal_add_data(int32_t value) {
   _impl_.data_.Add(value);
 }
-inline void Hdu_SInt32Data::add_data(int32_t value) {
+inline void FitsHdu_SInt32Data::add_data(int32_t value) {
   _internal_add_data(value);
-  // @@protoc_insertion_point(field_add:fits_proto.Hdu.SInt32Data.data)
+  // @@protoc_insertion_point(field_add:fits_proto.FitsHdu.SInt32Data.data)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >&
-Hdu_SInt32Data::_internal_data() const {
+FitsHdu_SInt32Data::_internal_data() const {
   return _impl_.data_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >&
-Hdu_SInt32Data::data() const {
-  // @@protoc_insertion_point(field_list:fits_proto.Hdu.SInt32Data.data)
+FitsHdu_SInt32Data::data() const {
+  // @@protoc_insertion_point(field_list:fits_proto.FitsHdu.SInt32Data.data)
   return _internal_data();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >*
-Hdu_SInt32Data::_internal_mutable_data() {
+FitsHdu_SInt32Data::_internal_mutable_data() {
   return &_impl_.data_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< int32_t >*
-Hdu_SInt32Data::mutable_data() {
-  // @@protoc_insertion_point(field_mutable_list:fits_proto.Hdu.SInt32Data.data)
+FitsHdu_SInt32Data::mutable_data() {
+  // @@protoc_insertion_point(field_mutable_list:fits_proto.FitsHdu.SInt32Data.data)
   return _internal_mutable_data();
 }
 
 // -------------------------------------------------------------------
 
-// Hdu_SInt64Data
+// FitsHdu_SInt64Data
 
 // repeated sint64 data = 1;
-inline int Hdu_SInt64Data::_internal_data_size() const {
+inline int FitsHdu_SInt64Data::_internal_data_size() const {
   return _impl_.data_.size();
 }
-inline int Hdu_SInt64Data::data_size() const {
+inline int FitsHdu_SInt64Data::data_size() const {
   return _internal_data_size();
 }
-inline void Hdu_SInt64Data::clear_data() {
+inline void FitsHdu_SInt64Data::clear_data() {
   _impl_.data_.Clear();
 }
-inline int64_t Hdu_SInt64Data::_internal_data(int index) const {
+inline int64_t FitsHdu_SInt64Data::_internal_data(int index) const {
   return _impl_.data_.Get(index);
 }
-inline int64_t Hdu_SInt64Data::data(int index) const {
-  // @@protoc_insertion_point(field_get:fits_proto.Hdu.SInt64Data.data)
+inline int64_t FitsHdu_SInt64Data::data(int index) const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHdu.SInt64Data.data)
   return _internal_data(index);
 }
-inline void Hdu_SInt64Data::set_data(int index, int64_t value) {
+inline void FitsHdu_SInt64Data::set_data(int index, int64_t value) {
   _impl_.data_.Set(index, value);
-  // @@protoc_insertion_point(field_set:fits_proto.Hdu.SInt64Data.data)
+  // @@protoc_insertion_point(field_set:fits_proto.FitsHdu.SInt64Data.data)
 }
-inline void Hdu_SInt64Data::_internal_add_data(int64_t value) {
+inline void FitsHdu_SInt64Data::_internal_add_data(int64_t value) {
   _impl_.data_.Add(value);
 }
-inline void Hdu_SInt64Data::add_data(int64_t value) {
+inline void FitsHdu_SInt64Data::add_data(int64_t value) {
   _internal_add_data(value);
-  // @@protoc_insertion_point(field_add:fits_proto.Hdu.SInt64Data.data)
+  // @@protoc_insertion_point(field_add:fits_proto.FitsHdu.SInt64Data.data)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< int64_t >&
-Hdu_SInt64Data::_internal_data() const {
+FitsHdu_SInt64Data::_internal_data() const {
   return _impl_.data_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< int64_t >&
-Hdu_SInt64Data::data() const {
-  // @@protoc_insertion_point(field_list:fits_proto.Hdu.SInt64Data.data)
+FitsHdu_SInt64Data::data() const {
+  // @@protoc_insertion_point(field_list:fits_proto.FitsHdu.SInt64Data.data)
   return _internal_data();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< int64_t >*
-Hdu_SInt64Data::_internal_mutable_data() {
+FitsHdu_SInt64Data::_internal_mutable_data() {
   return &_impl_.data_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< int64_t >*
-Hdu_SInt64Data::mutable_data() {
-  // @@protoc_insertion_point(field_mutable_list:fits_proto.Hdu.SInt64Data.data)
+FitsHdu_SInt64Data::mutable_data() {
+  // @@protoc_insertion_point(field_mutable_list:fits_proto.FitsHdu.SInt64Data.data)
   return _internal_mutable_data();
 }
 
 // -------------------------------------------------------------------
 
-// Hdu
+// FitsHdu
 
-// repeated .fits_proto.Header header = 1;
-inline int Hdu::_internal_header_size() const {
+// repeated .fits_proto.FitsHeader header = 1;
+inline int FitsHdu::_internal_header_size() const {
   return _impl_.header_.size();
 }
-inline int Hdu::header_size() const {
+inline int FitsHdu::header_size() const {
   return _internal_header_size();
 }
-inline void Hdu::clear_header() {
+inline void FitsHdu::clear_header() {
   _impl_.header_.Clear();
 }
-inline ::fits_proto::Header* Hdu::mutable_header(int index) {
-  // @@protoc_insertion_point(field_mutable:fits_proto.Hdu.header)
+inline ::fits_proto::FitsHeader* FitsHdu::mutable_header(int index) {
+  // @@protoc_insertion_point(field_mutable:fits_proto.FitsHdu.header)
   return _impl_.header_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::Header >*
-Hdu::mutable_header() {
-  // @@protoc_insertion_point(field_mutable_list:fits_proto.Hdu.header)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::FitsHeader >*
+FitsHdu::mutable_header() {
+  // @@protoc_insertion_point(field_mutable_list:fits_proto.FitsHdu.header)
   return &_impl_.header_;
 }
-inline const ::fits_proto::Header& Hdu::_internal_header(int index) const {
+inline const ::fits_proto::FitsHeader& FitsHdu::_internal_header(int index) const {
   return _impl_.header_.Get(index);
 }
-inline const ::fits_proto::Header& Hdu::header(int index) const {
-  // @@protoc_insertion_point(field_get:fits_proto.Hdu.header)
+inline const ::fits_proto::FitsHeader& FitsHdu::header(int index) const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHdu.header)
   return _internal_header(index);
 }
-inline ::fits_proto::Header* Hdu::_internal_add_header() {
+inline ::fits_proto::FitsHeader* FitsHdu::_internal_add_header() {
   return _impl_.header_.Add();
 }
-inline ::fits_proto::Header* Hdu::add_header() {
-  ::fits_proto::Header* _add = _internal_add_header();
-  // @@protoc_insertion_point(field_add:fits_proto.Hdu.header)
+inline ::fits_proto::FitsHeader* FitsHdu::add_header() {
+  ::fits_proto::FitsHeader* _add = _internal_add_header();
+  // @@protoc_insertion_point(field_add:fits_proto.FitsHdu.header)
   return _add;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::Header >&
-Hdu::header() const {
-  // @@protoc_insertion_point(field_list:fits_proto.Hdu.header)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::FitsHeader >&
+FitsHdu::header() const {
+  // @@protoc_insertion_point(field_list:fits_proto.FitsHdu.header)
   return _impl_.header_;
 }
 
-// .fits_proto.Hdu.FloatData float_data = 2;
-inline bool Hdu::_internal_has_float_data() const {
+// .fits_proto.FitsHdu.FloatData float_data = 2;
+inline bool FitsHdu::_internal_has_float_data() const {
   return payload_case() == kFloatData;
 }
-inline bool Hdu::has_float_data() const {
+inline bool FitsHdu::has_float_data() const {
   return _internal_has_float_data();
 }
-inline void Hdu::set_has_float_data() {
+inline void FitsHdu::set_has_float_data() {
   _impl_._oneof_case_[0] = kFloatData;
 }
-inline void Hdu::clear_float_data() {
+inline void FitsHdu::clear_float_data() {
   if (_internal_has_float_data()) {
     if (GetArenaForAllocation() == nullptr) {
       delete _impl_.payload_.float_data_;
@@ -3212,11 +3212,11 @@ inline void Hdu::clear_float_data() {
     clear_has_payload();
   }
 }
-inline ::fits_proto::Hdu_FloatData* Hdu::release_float_data() {
-  // @@protoc_insertion_point(field_release:fits_proto.Hdu.float_data)
+inline ::fits_proto::FitsHdu_FloatData* FitsHdu::release_float_data() {
+  // @@protoc_insertion_point(field_release:fits_proto.FitsHdu.float_data)
   if (_internal_has_float_data()) {
     clear_has_payload();
-    ::fits_proto::Hdu_FloatData* temp = _impl_.payload_.float_data_;
+    ::fits_proto::FitsHdu_FloatData* temp = _impl_.payload_.float_data_;
     if (GetArenaForAllocation() != nullptr) {
       temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
     }
@@ -3226,59 +3226,59 @@ inline ::fits_proto::Hdu_FloatData* Hdu::release_float_data() {
     return nullptr;
   }
 }
-inline const ::fits_proto::Hdu_FloatData& Hdu::_internal_float_data() const {
+inline const ::fits_proto::FitsHdu_FloatData& FitsHdu::_internal_float_data() const {
   return _internal_has_float_data()
       ? *_impl_.payload_.float_data_
-      : reinterpret_cast< ::fits_proto::Hdu_FloatData&>(::fits_proto::_Hdu_FloatData_default_instance_);
+      : reinterpret_cast< ::fits_proto::FitsHdu_FloatData&>(::fits_proto::_FitsHdu_FloatData_default_instance_);
 }
-inline const ::fits_proto::Hdu_FloatData& Hdu::float_data() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Hdu.float_data)
+inline const ::fits_proto::FitsHdu_FloatData& FitsHdu::float_data() const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHdu.float_data)
   return _internal_float_data();
 }
-inline ::fits_proto::Hdu_FloatData* Hdu::unsafe_arena_release_float_data() {
-  // @@protoc_insertion_point(field_unsafe_arena_release:fits_proto.Hdu.float_data)
+inline ::fits_proto::FitsHdu_FloatData* FitsHdu::unsafe_arena_release_float_data() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:fits_proto.FitsHdu.float_data)
   if (_internal_has_float_data()) {
     clear_has_payload();
-    ::fits_proto::Hdu_FloatData* temp = _impl_.payload_.float_data_;
+    ::fits_proto::FitsHdu_FloatData* temp = _impl_.payload_.float_data_;
     _impl_.payload_.float_data_ = nullptr;
     return temp;
   } else {
     return nullptr;
   }
 }
-inline void Hdu::unsafe_arena_set_allocated_float_data(::fits_proto::Hdu_FloatData* float_data) {
+inline void FitsHdu::unsafe_arena_set_allocated_float_data(::fits_proto::FitsHdu_FloatData* float_data) {
   clear_payload();
   if (float_data) {
     set_has_float_data();
     _impl_.payload_.float_data_ = float_data;
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:fits_proto.Hdu.float_data)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:fits_proto.FitsHdu.float_data)
 }
-inline ::fits_proto::Hdu_FloatData* Hdu::_internal_mutable_float_data() {
+inline ::fits_proto::FitsHdu_FloatData* FitsHdu::_internal_mutable_float_data() {
   if (!_internal_has_float_data()) {
     clear_payload();
     set_has_float_data();
-    _impl_.payload_.float_data_ = CreateMaybeMessage< ::fits_proto::Hdu_FloatData >(GetArenaForAllocation());
+    _impl_.payload_.float_data_ = CreateMaybeMessage< ::fits_proto::FitsHdu_FloatData >(GetArenaForAllocation());
   }
   return _impl_.payload_.float_data_;
 }
-inline ::fits_proto::Hdu_FloatData* Hdu::mutable_float_data() {
-  ::fits_proto::Hdu_FloatData* _msg = _internal_mutable_float_data();
-  // @@protoc_insertion_point(field_mutable:fits_proto.Hdu.float_data)
+inline ::fits_proto::FitsHdu_FloatData* FitsHdu::mutable_float_data() {
+  ::fits_proto::FitsHdu_FloatData* _msg = _internal_mutable_float_data();
+  // @@protoc_insertion_point(field_mutable:fits_proto.FitsHdu.float_data)
   return _msg;
 }
 
-// .fits_proto.Hdu.DoubleData double_data = 3;
-inline bool Hdu::_internal_has_double_data() const {
+// .fits_proto.FitsHdu.DoubleData double_data = 3;
+inline bool FitsHdu::_internal_has_double_data() const {
   return payload_case() == kDoubleData;
 }
-inline bool Hdu::has_double_data() const {
+inline bool FitsHdu::has_double_data() const {
   return _internal_has_double_data();
 }
-inline void Hdu::set_has_double_data() {
+inline void FitsHdu::set_has_double_data() {
   _impl_._oneof_case_[0] = kDoubleData;
 }
-inline void Hdu::clear_double_data() {
+inline void FitsHdu::clear_double_data() {
   if (_internal_has_double_data()) {
     if (GetArenaForAllocation() == nullptr) {
       delete _impl_.payload_.double_data_;
@@ -3286,11 +3286,11 @@ inline void Hdu::clear_double_data() {
     clear_has_payload();
   }
 }
-inline ::fits_proto::Hdu_DoubleData* Hdu::release_double_data() {
-  // @@protoc_insertion_point(field_release:fits_proto.Hdu.double_data)
+inline ::fits_proto::FitsHdu_DoubleData* FitsHdu::release_double_data() {
+  // @@protoc_insertion_point(field_release:fits_proto.FitsHdu.double_data)
   if (_internal_has_double_data()) {
     clear_has_payload();
-    ::fits_proto::Hdu_DoubleData* temp = _impl_.payload_.double_data_;
+    ::fits_proto::FitsHdu_DoubleData* temp = _impl_.payload_.double_data_;
     if (GetArenaForAllocation() != nullptr) {
       temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
     }
@@ -3300,59 +3300,59 @@ inline ::fits_proto::Hdu_DoubleData* Hdu::release_double_data() {
     return nullptr;
   }
 }
-inline const ::fits_proto::Hdu_DoubleData& Hdu::_internal_double_data() const {
+inline const ::fits_proto::FitsHdu_DoubleData& FitsHdu::_internal_double_data() const {
   return _internal_has_double_data()
       ? *_impl_.payload_.double_data_
-      : reinterpret_cast< ::fits_proto::Hdu_DoubleData&>(::fits_proto::_Hdu_DoubleData_default_instance_);
+      : reinterpret_cast< ::fits_proto::FitsHdu_DoubleData&>(::fits_proto::_FitsHdu_DoubleData_default_instance_);
 }
-inline const ::fits_proto::Hdu_DoubleData& Hdu::double_data() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Hdu.double_data)
+inline const ::fits_proto::FitsHdu_DoubleData& FitsHdu::double_data() const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHdu.double_data)
   return _internal_double_data();
 }
-inline ::fits_proto::Hdu_DoubleData* Hdu::unsafe_arena_release_double_data() {
-  // @@protoc_insertion_point(field_unsafe_arena_release:fits_proto.Hdu.double_data)
+inline ::fits_proto::FitsHdu_DoubleData* FitsHdu::unsafe_arena_release_double_data() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:fits_proto.FitsHdu.double_data)
   if (_internal_has_double_data()) {
     clear_has_payload();
-    ::fits_proto::Hdu_DoubleData* temp = _impl_.payload_.double_data_;
+    ::fits_proto::FitsHdu_DoubleData* temp = _impl_.payload_.double_data_;
     _impl_.payload_.double_data_ = nullptr;
     return temp;
   } else {
     return nullptr;
   }
 }
-inline void Hdu::unsafe_arena_set_allocated_double_data(::fits_proto::Hdu_DoubleData* double_data) {
+inline void FitsHdu::unsafe_arena_set_allocated_double_data(::fits_proto::FitsHdu_DoubleData* double_data) {
   clear_payload();
   if (double_data) {
     set_has_double_data();
     _impl_.payload_.double_data_ = double_data;
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:fits_proto.Hdu.double_data)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:fits_proto.FitsHdu.double_data)
 }
-inline ::fits_proto::Hdu_DoubleData* Hdu::_internal_mutable_double_data() {
+inline ::fits_proto::FitsHdu_DoubleData* FitsHdu::_internal_mutable_double_data() {
   if (!_internal_has_double_data()) {
     clear_payload();
     set_has_double_data();
-    _impl_.payload_.double_data_ = CreateMaybeMessage< ::fits_proto::Hdu_DoubleData >(GetArenaForAllocation());
+    _impl_.payload_.double_data_ = CreateMaybeMessage< ::fits_proto::FitsHdu_DoubleData >(GetArenaForAllocation());
   }
   return _impl_.payload_.double_data_;
 }
-inline ::fits_proto::Hdu_DoubleData* Hdu::mutable_double_data() {
-  ::fits_proto::Hdu_DoubleData* _msg = _internal_mutable_double_data();
-  // @@protoc_insertion_point(field_mutable:fits_proto.Hdu.double_data)
+inline ::fits_proto::FitsHdu_DoubleData* FitsHdu::mutable_double_data() {
+  ::fits_proto::FitsHdu_DoubleData* _msg = _internal_mutable_double_data();
+  // @@protoc_insertion_point(field_mutable:fits_proto.FitsHdu.double_data)
   return _msg;
 }
 
-// .fits_proto.Hdu.Int32Data int32_data = 4;
-inline bool Hdu::_internal_has_int32_data() const {
+// .fits_proto.FitsHdu.Int32Data int32_data = 4;
+inline bool FitsHdu::_internal_has_int32_data() const {
   return payload_case() == kInt32Data;
 }
-inline bool Hdu::has_int32_data() const {
+inline bool FitsHdu::has_int32_data() const {
   return _internal_has_int32_data();
 }
-inline void Hdu::set_has_int32_data() {
+inline void FitsHdu::set_has_int32_data() {
   _impl_._oneof_case_[0] = kInt32Data;
 }
-inline void Hdu::clear_int32_data() {
+inline void FitsHdu::clear_int32_data() {
   if (_internal_has_int32_data()) {
     if (GetArenaForAllocation() == nullptr) {
       delete _impl_.payload_.int32_data_;
@@ -3360,11 +3360,11 @@ inline void Hdu::clear_int32_data() {
     clear_has_payload();
   }
 }
-inline ::fits_proto::Hdu_Int32Data* Hdu::release_int32_data() {
-  // @@protoc_insertion_point(field_release:fits_proto.Hdu.int32_data)
+inline ::fits_proto::FitsHdu_Int32Data* FitsHdu::release_int32_data() {
+  // @@protoc_insertion_point(field_release:fits_proto.FitsHdu.int32_data)
   if (_internal_has_int32_data()) {
     clear_has_payload();
-    ::fits_proto::Hdu_Int32Data* temp = _impl_.payload_.int32_data_;
+    ::fits_proto::FitsHdu_Int32Data* temp = _impl_.payload_.int32_data_;
     if (GetArenaForAllocation() != nullptr) {
       temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
     }
@@ -3374,59 +3374,59 @@ inline ::fits_proto::Hdu_Int32Data* Hdu::release_int32_data() {
     return nullptr;
   }
 }
-inline const ::fits_proto::Hdu_Int32Data& Hdu::_internal_int32_data() const {
+inline const ::fits_proto::FitsHdu_Int32Data& FitsHdu::_internal_int32_data() const {
   return _internal_has_int32_data()
       ? *_impl_.payload_.int32_data_
-      : reinterpret_cast< ::fits_proto::Hdu_Int32Data&>(::fits_proto::_Hdu_Int32Data_default_instance_);
+      : reinterpret_cast< ::fits_proto::FitsHdu_Int32Data&>(::fits_proto::_FitsHdu_Int32Data_default_instance_);
 }
-inline const ::fits_proto::Hdu_Int32Data& Hdu::int32_data() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Hdu.int32_data)
+inline const ::fits_proto::FitsHdu_Int32Data& FitsHdu::int32_data() const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHdu.int32_data)
   return _internal_int32_data();
 }
-inline ::fits_proto::Hdu_Int32Data* Hdu::unsafe_arena_release_int32_data() {
-  // @@protoc_insertion_point(field_unsafe_arena_release:fits_proto.Hdu.int32_data)
+inline ::fits_proto::FitsHdu_Int32Data* FitsHdu::unsafe_arena_release_int32_data() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:fits_proto.FitsHdu.int32_data)
   if (_internal_has_int32_data()) {
     clear_has_payload();
-    ::fits_proto::Hdu_Int32Data* temp = _impl_.payload_.int32_data_;
+    ::fits_proto::FitsHdu_Int32Data* temp = _impl_.payload_.int32_data_;
     _impl_.payload_.int32_data_ = nullptr;
     return temp;
   } else {
     return nullptr;
   }
 }
-inline void Hdu::unsafe_arena_set_allocated_int32_data(::fits_proto::Hdu_Int32Data* int32_data) {
+inline void FitsHdu::unsafe_arena_set_allocated_int32_data(::fits_proto::FitsHdu_Int32Data* int32_data) {
   clear_payload();
   if (int32_data) {
     set_has_int32_data();
     _impl_.payload_.int32_data_ = int32_data;
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:fits_proto.Hdu.int32_data)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:fits_proto.FitsHdu.int32_data)
 }
-inline ::fits_proto::Hdu_Int32Data* Hdu::_internal_mutable_int32_data() {
+inline ::fits_proto::FitsHdu_Int32Data* FitsHdu::_internal_mutable_int32_data() {
   if (!_internal_has_int32_data()) {
     clear_payload();
     set_has_int32_data();
-    _impl_.payload_.int32_data_ = CreateMaybeMessage< ::fits_proto::Hdu_Int32Data >(GetArenaForAllocation());
+    _impl_.payload_.int32_data_ = CreateMaybeMessage< ::fits_proto::FitsHdu_Int32Data >(GetArenaForAllocation());
   }
   return _impl_.payload_.int32_data_;
 }
-inline ::fits_proto::Hdu_Int32Data* Hdu::mutable_int32_data() {
-  ::fits_proto::Hdu_Int32Data* _msg = _internal_mutable_int32_data();
-  // @@protoc_insertion_point(field_mutable:fits_proto.Hdu.int32_data)
+inline ::fits_proto::FitsHdu_Int32Data* FitsHdu::mutable_int32_data() {
+  ::fits_proto::FitsHdu_Int32Data* _msg = _internal_mutable_int32_data();
+  // @@protoc_insertion_point(field_mutable:fits_proto.FitsHdu.int32_data)
   return _msg;
 }
 
-// .fits_proto.Hdu.Int64Data int64_data = 5;
-inline bool Hdu::_internal_has_int64_data() const {
+// .fits_proto.FitsHdu.Int64Data int64_data = 5;
+inline bool FitsHdu::_internal_has_int64_data() const {
   return payload_case() == kInt64Data;
 }
-inline bool Hdu::has_int64_data() const {
+inline bool FitsHdu::has_int64_data() const {
   return _internal_has_int64_data();
 }
-inline void Hdu::set_has_int64_data() {
+inline void FitsHdu::set_has_int64_data() {
   _impl_._oneof_case_[0] = kInt64Data;
 }
-inline void Hdu::clear_int64_data() {
+inline void FitsHdu::clear_int64_data() {
   if (_internal_has_int64_data()) {
     if (GetArenaForAllocation() == nullptr) {
       delete _impl_.payload_.int64_data_;
@@ -3434,11 +3434,11 @@ inline void Hdu::clear_int64_data() {
     clear_has_payload();
   }
 }
-inline ::fits_proto::Hdu_Int64Data* Hdu::release_int64_data() {
-  // @@protoc_insertion_point(field_release:fits_proto.Hdu.int64_data)
+inline ::fits_proto::FitsHdu_Int64Data* FitsHdu::release_int64_data() {
+  // @@protoc_insertion_point(field_release:fits_proto.FitsHdu.int64_data)
   if (_internal_has_int64_data()) {
     clear_has_payload();
-    ::fits_proto::Hdu_Int64Data* temp = _impl_.payload_.int64_data_;
+    ::fits_proto::FitsHdu_Int64Data* temp = _impl_.payload_.int64_data_;
     if (GetArenaForAllocation() != nullptr) {
       temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
     }
@@ -3448,59 +3448,59 @@ inline ::fits_proto::Hdu_Int64Data* Hdu::release_int64_data() {
     return nullptr;
   }
 }
-inline const ::fits_proto::Hdu_Int64Data& Hdu::_internal_int64_data() const {
+inline const ::fits_proto::FitsHdu_Int64Data& FitsHdu::_internal_int64_data() const {
   return _internal_has_int64_data()
       ? *_impl_.payload_.int64_data_
-      : reinterpret_cast< ::fits_proto::Hdu_Int64Data&>(::fits_proto::_Hdu_Int64Data_default_instance_);
+      : reinterpret_cast< ::fits_proto::FitsHdu_Int64Data&>(::fits_proto::_FitsHdu_Int64Data_default_instance_);
 }
-inline const ::fits_proto::Hdu_Int64Data& Hdu::int64_data() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Hdu.int64_data)
+inline const ::fits_proto::FitsHdu_Int64Data& FitsHdu::int64_data() const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHdu.int64_data)
   return _internal_int64_data();
 }
-inline ::fits_proto::Hdu_Int64Data* Hdu::unsafe_arena_release_int64_data() {
-  // @@protoc_insertion_point(field_unsafe_arena_release:fits_proto.Hdu.int64_data)
+inline ::fits_proto::FitsHdu_Int64Data* FitsHdu::unsafe_arena_release_int64_data() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:fits_proto.FitsHdu.int64_data)
   if (_internal_has_int64_data()) {
     clear_has_payload();
-    ::fits_proto::Hdu_Int64Data* temp = _impl_.payload_.int64_data_;
+    ::fits_proto::FitsHdu_Int64Data* temp = _impl_.payload_.int64_data_;
     _impl_.payload_.int64_data_ = nullptr;
     return temp;
   } else {
     return nullptr;
   }
 }
-inline void Hdu::unsafe_arena_set_allocated_int64_data(::fits_proto::Hdu_Int64Data* int64_data) {
+inline void FitsHdu::unsafe_arena_set_allocated_int64_data(::fits_proto::FitsHdu_Int64Data* int64_data) {
   clear_payload();
   if (int64_data) {
     set_has_int64_data();
     _impl_.payload_.int64_data_ = int64_data;
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:fits_proto.Hdu.int64_data)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:fits_proto.FitsHdu.int64_data)
 }
-inline ::fits_proto::Hdu_Int64Data* Hdu::_internal_mutable_int64_data() {
+inline ::fits_proto::FitsHdu_Int64Data* FitsHdu::_internal_mutable_int64_data() {
   if (!_internal_has_int64_data()) {
     clear_payload();
     set_has_int64_data();
-    _impl_.payload_.int64_data_ = CreateMaybeMessage< ::fits_proto::Hdu_Int64Data >(GetArenaForAllocation());
+    _impl_.payload_.int64_data_ = CreateMaybeMessage< ::fits_proto::FitsHdu_Int64Data >(GetArenaForAllocation());
   }
   return _impl_.payload_.int64_data_;
 }
-inline ::fits_proto::Hdu_Int64Data* Hdu::mutable_int64_data() {
-  ::fits_proto::Hdu_Int64Data* _msg = _internal_mutable_int64_data();
-  // @@protoc_insertion_point(field_mutable:fits_proto.Hdu.int64_data)
+inline ::fits_proto::FitsHdu_Int64Data* FitsHdu::mutable_int64_data() {
+  ::fits_proto::FitsHdu_Int64Data* _msg = _internal_mutable_int64_data();
+  // @@protoc_insertion_point(field_mutable:fits_proto.FitsHdu.int64_data)
   return _msg;
 }
 
-// .fits_proto.Hdu.SInt32Data sint32_data = 6;
-inline bool Hdu::_internal_has_sint32_data() const {
+// .fits_proto.FitsHdu.SInt32Data sint32_data = 6;
+inline bool FitsHdu::_internal_has_sint32_data() const {
   return payload_case() == kSint32Data;
 }
-inline bool Hdu::has_sint32_data() const {
+inline bool FitsHdu::has_sint32_data() const {
   return _internal_has_sint32_data();
 }
-inline void Hdu::set_has_sint32_data() {
+inline void FitsHdu::set_has_sint32_data() {
   _impl_._oneof_case_[0] = kSint32Data;
 }
-inline void Hdu::clear_sint32_data() {
+inline void FitsHdu::clear_sint32_data() {
   if (_internal_has_sint32_data()) {
     if (GetArenaForAllocation() == nullptr) {
       delete _impl_.payload_.sint32_data_;
@@ -3508,11 +3508,11 @@ inline void Hdu::clear_sint32_data() {
     clear_has_payload();
   }
 }
-inline ::fits_proto::Hdu_SInt32Data* Hdu::release_sint32_data() {
-  // @@protoc_insertion_point(field_release:fits_proto.Hdu.sint32_data)
+inline ::fits_proto::FitsHdu_SInt32Data* FitsHdu::release_sint32_data() {
+  // @@protoc_insertion_point(field_release:fits_proto.FitsHdu.sint32_data)
   if (_internal_has_sint32_data()) {
     clear_has_payload();
-    ::fits_proto::Hdu_SInt32Data* temp = _impl_.payload_.sint32_data_;
+    ::fits_proto::FitsHdu_SInt32Data* temp = _impl_.payload_.sint32_data_;
     if (GetArenaForAllocation() != nullptr) {
       temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
     }
@@ -3522,59 +3522,59 @@ inline ::fits_proto::Hdu_SInt32Data* Hdu::release_sint32_data() {
     return nullptr;
   }
 }
-inline const ::fits_proto::Hdu_SInt32Data& Hdu::_internal_sint32_data() const {
+inline const ::fits_proto::FitsHdu_SInt32Data& FitsHdu::_internal_sint32_data() const {
   return _internal_has_sint32_data()
       ? *_impl_.payload_.sint32_data_
-      : reinterpret_cast< ::fits_proto::Hdu_SInt32Data&>(::fits_proto::_Hdu_SInt32Data_default_instance_);
+      : reinterpret_cast< ::fits_proto::FitsHdu_SInt32Data&>(::fits_proto::_FitsHdu_SInt32Data_default_instance_);
 }
-inline const ::fits_proto::Hdu_SInt32Data& Hdu::sint32_data() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Hdu.sint32_data)
+inline const ::fits_proto::FitsHdu_SInt32Data& FitsHdu::sint32_data() const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHdu.sint32_data)
   return _internal_sint32_data();
 }
-inline ::fits_proto::Hdu_SInt32Data* Hdu::unsafe_arena_release_sint32_data() {
-  // @@protoc_insertion_point(field_unsafe_arena_release:fits_proto.Hdu.sint32_data)
+inline ::fits_proto::FitsHdu_SInt32Data* FitsHdu::unsafe_arena_release_sint32_data() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:fits_proto.FitsHdu.sint32_data)
   if (_internal_has_sint32_data()) {
     clear_has_payload();
-    ::fits_proto::Hdu_SInt32Data* temp = _impl_.payload_.sint32_data_;
+    ::fits_proto::FitsHdu_SInt32Data* temp = _impl_.payload_.sint32_data_;
     _impl_.payload_.sint32_data_ = nullptr;
     return temp;
   } else {
     return nullptr;
   }
 }
-inline void Hdu::unsafe_arena_set_allocated_sint32_data(::fits_proto::Hdu_SInt32Data* sint32_data) {
+inline void FitsHdu::unsafe_arena_set_allocated_sint32_data(::fits_proto::FitsHdu_SInt32Data* sint32_data) {
   clear_payload();
   if (sint32_data) {
     set_has_sint32_data();
     _impl_.payload_.sint32_data_ = sint32_data;
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:fits_proto.Hdu.sint32_data)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:fits_proto.FitsHdu.sint32_data)
 }
-inline ::fits_proto::Hdu_SInt32Data* Hdu::_internal_mutable_sint32_data() {
+inline ::fits_proto::FitsHdu_SInt32Data* FitsHdu::_internal_mutable_sint32_data() {
   if (!_internal_has_sint32_data()) {
     clear_payload();
     set_has_sint32_data();
-    _impl_.payload_.sint32_data_ = CreateMaybeMessage< ::fits_proto::Hdu_SInt32Data >(GetArenaForAllocation());
+    _impl_.payload_.sint32_data_ = CreateMaybeMessage< ::fits_proto::FitsHdu_SInt32Data >(GetArenaForAllocation());
   }
   return _impl_.payload_.sint32_data_;
 }
-inline ::fits_proto::Hdu_SInt32Data* Hdu::mutable_sint32_data() {
-  ::fits_proto::Hdu_SInt32Data* _msg = _internal_mutable_sint32_data();
-  // @@protoc_insertion_point(field_mutable:fits_proto.Hdu.sint32_data)
+inline ::fits_proto::FitsHdu_SInt32Data* FitsHdu::mutable_sint32_data() {
+  ::fits_proto::FitsHdu_SInt32Data* _msg = _internal_mutable_sint32_data();
+  // @@protoc_insertion_point(field_mutable:fits_proto.FitsHdu.sint32_data)
   return _msg;
 }
 
-// .fits_proto.Hdu.SInt64Data sint64_data = 7;
-inline bool Hdu::_internal_has_sint64_data() const {
+// .fits_proto.FitsHdu.SInt64Data sint64_data = 7;
+inline bool FitsHdu::_internal_has_sint64_data() const {
   return payload_case() == kSint64Data;
 }
-inline bool Hdu::has_sint64_data() const {
+inline bool FitsHdu::has_sint64_data() const {
   return _internal_has_sint64_data();
 }
-inline void Hdu::set_has_sint64_data() {
+inline void FitsHdu::set_has_sint64_data() {
   _impl_._oneof_case_[0] = kSint64Data;
 }
-inline void Hdu::clear_sint64_data() {
+inline void FitsHdu::clear_sint64_data() {
   if (_internal_has_sint64_data()) {
     if (GetArenaForAllocation() == nullptr) {
       delete _impl_.payload_.sint64_data_;
@@ -3582,11 +3582,11 @@ inline void Hdu::clear_sint64_data() {
     clear_has_payload();
   }
 }
-inline ::fits_proto::Hdu_SInt64Data* Hdu::release_sint64_data() {
-  // @@protoc_insertion_point(field_release:fits_proto.Hdu.sint64_data)
+inline ::fits_proto::FitsHdu_SInt64Data* FitsHdu::release_sint64_data() {
+  // @@protoc_insertion_point(field_release:fits_proto.FitsHdu.sint64_data)
   if (_internal_has_sint64_data()) {
     clear_has_payload();
-    ::fits_proto::Hdu_SInt64Data* temp = _impl_.payload_.sint64_data_;
+    ::fits_proto::FitsHdu_SInt64Data* temp = _impl_.payload_.sint64_data_;
     if (GetArenaForAllocation() != nullptr) {
       temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
     }
@@ -3596,62 +3596,62 @@ inline ::fits_proto::Hdu_SInt64Data* Hdu::release_sint64_data() {
     return nullptr;
   }
 }
-inline const ::fits_proto::Hdu_SInt64Data& Hdu::_internal_sint64_data() const {
+inline const ::fits_proto::FitsHdu_SInt64Data& FitsHdu::_internal_sint64_data() const {
   return _internal_has_sint64_data()
       ? *_impl_.payload_.sint64_data_
-      : reinterpret_cast< ::fits_proto::Hdu_SInt64Data&>(::fits_proto::_Hdu_SInt64Data_default_instance_);
+      : reinterpret_cast< ::fits_proto::FitsHdu_SInt64Data&>(::fits_proto::_FitsHdu_SInt64Data_default_instance_);
 }
-inline const ::fits_proto::Hdu_SInt64Data& Hdu::sint64_data() const {
-  // @@protoc_insertion_point(field_get:fits_proto.Hdu.sint64_data)
+inline const ::fits_proto::FitsHdu_SInt64Data& FitsHdu::sint64_data() const {
+  // @@protoc_insertion_point(field_get:fits_proto.FitsHdu.sint64_data)
   return _internal_sint64_data();
 }
-inline ::fits_proto::Hdu_SInt64Data* Hdu::unsafe_arena_release_sint64_data() {
-  // @@protoc_insertion_point(field_unsafe_arena_release:fits_proto.Hdu.sint64_data)
+inline ::fits_proto::FitsHdu_SInt64Data* FitsHdu::unsafe_arena_release_sint64_data() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:fits_proto.FitsHdu.sint64_data)
   if (_internal_has_sint64_data()) {
     clear_has_payload();
-    ::fits_proto::Hdu_SInt64Data* temp = _impl_.payload_.sint64_data_;
+    ::fits_proto::FitsHdu_SInt64Data* temp = _impl_.payload_.sint64_data_;
     _impl_.payload_.sint64_data_ = nullptr;
     return temp;
   } else {
     return nullptr;
   }
 }
-inline void Hdu::unsafe_arena_set_allocated_sint64_data(::fits_proto::Hdu_SInt64Data* sint64_data) {
+inline void FitsHdu::unsafe_arena_set_allocated_sint64_data(::fits_proto::FitsHdu_SInt64Data* sint64_data) {
   clear_payload();
   if (sint64_data) {
     set_has_sint64_data();
     _impl_.payload_.sint64_data_ = sint64_data;
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:fits_proto.Hdu.sint64_data)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:fits_proto.FitsHdu.sint64_data)
 }
-inline ::fits_proto::Hdu_SInt64Data* Hdu::_internal_mutable_sint64_data() {
+inline ::fits_proto::FitsHdu_SInt64Data* FitsHdu::_internal_mutable_sint64_data() {
   if (!_internal_has_sint64_data()) {
     clear_payload();
     set_has_sint64_data();
-    _impl_.payload_.sint64_data_ = CreateMaybeMessage< ::fits_proto::Hdu_SInt64Data >(GetArenaForAllocation());
+    _impl_.payload_.sint64_data_ = CreateMaybeMessage< ::fits_proto::FitsHdu_SInt64Data >(GetArenaForAllocation());
   }
   return _impl_.payload_.sint64_data_;
 }
-inline ::fits_proto::Hdu_SInt64Data* Hdu::mutable_sint64_data() {
-  ::fits_proto::Hdu_SInt64Data* _msg = _internal_mutable_sint64_data();
-  // @@protoc_insertion_point(field_mutable:fits_proto.Hdu.sint64_data)
+inline ::fits_proto::FitsHdu_SInt64Data* FitsHdu::mutable_sint64_data() {
+  ::fits_proto::FitsHdu_SInt64Data* _msg = _internal_mutable_sint64_data();
+  // @@protoc_insertion_point(field_mutable:fits_proto.FitsHdu.sint64_data)
   return _msg;
 }
 
-inline bool Hdu::has_payload() const {
+inline bool FitsHdu::has_payload() const {
   return payload_case() != PAYLOAD_NOT_SET;
 }
-inline void Hdu::clear_has_payload() {
+inline void FitsHdu::clear_has_payload() {
   _impl_._oneof_case_[0] = PAYLOAD_NOT_SET;
 }
-inline Hdu::PayloadCase Hdu::payload_case() const {
-  return Hdu::PayloadCase(_impl_._oneof_case_[0]);
+inline FitsHdu::PayloadCase FitsHdu::payload_case() const {
+  return FitsHdu::PayloadCase(_impl_._oneof_case_[0]);
 }
 // -------------------------------------------------------------------
 
 // Fits
 
-// repeated .fits_proto.Hdu hdu = 1;
+// repeated .fits_proto.FitsHdu hdu = 1;
 inline int Fits::_internal_hdu_size() const {
   return _impl_.hdu_.size();
 }
@@ -3661,31 +3661,31 @@ inline int Fits::hdu_size() const {
 inline void Fits::clear_hdu() {
   _impl_.hdu_.Clear();
 }
-inline ::fits_proto::Hdu* Fits::mutable_hdu(int index) {
+inline ::fits_proto::FitsHdu* Fits::mutable_hdu(int index) {
   // @@protoc_insertion_point(field_mutable:fits_proto.Fits.hdu)
   return _impl_.hdu_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::Hdu >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::FitsHdu >*
 Fits::mutable_hdu() {
   // @@protoc_insertion_point(field_mutable_list:fits_proto.Fits.hdu)
   return &_impl_.hdu_;
 }
-inline const ::fits_proto::Hdu& Fits::_internal_hdu(int index) const {
+inline const ::fits_proto::FitsHdu& Fits::_internal_hdu(int index) const {
   return _impl_.hdu_.Get(index);
 }
-inline const ::fits_proto::Hdu& Fits::hdu(int index) const {
+inline const ::fits_proto::FitsHdu& Fits::hdu(int index) const {
   // @@protoc_insertion_point(field_get:fits_proto.Fits.hdu)
   return _internal_hdu(index);
 }
-inline ::fits_proto::Hdu* Fits::_internal_add_hdu() {
+inline ::fits_proto::FitsHdu* Fits::_internal_add_hdu() {
   return _impl_.hdu_.Add();
 }
-inline ::fits_proto::Hdu* Fits::add_hdu() {
-  ::fits_proto::Hdu* _add = _internal_add_hdu();
+inline ::fits_proto::FitsHdu* Fits::add_hdu() {
+  ::fits_proto::FitsHdu* _add = _internal_add_hdu();
   // @@protoc_insertion_point(field_add:fits_proto.Fits.hdu)
   return _add;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::Hdu >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::fits_proto::FitsHdu >&
 Fits::hdu() const {
   // @@protoc_insertion_point(field_list:fits_proto.Fits.hdu)
   return _impl_.hdu_;

@@ -13,7 +13,7 @@ option java_outer_classname = "FitsProto";
 option csharp_namespace = "EngineeroLabs.Protobuf.FitsProto";
 
 // Data element
-message Data {
+message KeywordData {
   oneof value {
     string string_val = 1;
     int32 int32_val = 2;
@@ -28,7 +28,7 @@ message Data {
 }
 
 // Header message for FITS blocks.
-message Header {
+message FitsHeader {
   bool simple = 1;  // True if conforms to FITS standard
   int32 bitpix = 2;  // redundant for protobuf
   repeated int32 size = 3;  // comprises all NAXIS from standard
@@ -36,12 +36,12 @@ message Header {
   string history = 5;
   int32 n_extensions = 6;  // number of extensions
   string extension = 7;  // extension name/type
-  map<string, Data> keywords = 8;  // all other keywords by type
+  map<string, KeywordData> keywords = 8;  // all other keywords by type
 }
 
 
 // Header-data unit, basic building block of a FITS file.
-message Hdu {
+message FitsHdu {
   // Define data message types for use in HDU.
   message FloatData {
     repeated float data = 1;
@@ -63,7 +63,7 @@ message Hdu {
   }
 
   // Define the header-data unit.
-  repeated Header header = 1;
+  repeated FitsHeader header = 1;
   oneof payload {
     FloatData float_data = 2;
     DoubleData double_data = 3;
@@ -76,5 +76,5 @@ message Hdu {
 
 // The actual FITS file message.
 message Fits {
-  repeated Hdu hdu = 1;  // mandatory primary, plus optional extensions
+  repeated FitsHdu hdu = 1;  // mandatory primary, plus optional extensions
 }
