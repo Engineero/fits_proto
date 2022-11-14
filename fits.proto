@@ -2,7 +2,7 @@
 
 // Declaration
 syntax = "proto3";
-package fits.proto;
+package fits_proto;
 // import "google/protobuf/timestamp.proto";  // example import
 
 // Java declaration
