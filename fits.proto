@@ -12,6 +12,9 @@ option java_outer_classname = "FitsProto";
 // C# declaration
 option csharp_namespace = "EngineeroLabs.Protobuf.FitsProto";
 
+// Go declaration
+option go_package = "engineerolabs.com/fits_proto";
+
 // Data element
 message KeywordData {
   oneof value {
